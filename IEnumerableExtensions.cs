@@ -24,6 +24,22 @@ namespace Slothsoft.UnityExtensions {
                 return source.Skip(random.Next(source.Count())).FirstOrDefault();
             }
         }
+        public static T RandomElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
+            if (source == null || source.Count() == 0) {
+                return default;
+            }
+            var weights = source.Select(element => new { element, weight = weighting(element) });
+            int totalWeight = weights.Select(container => container.weight).Sum();
+            int randomWeight = random.Next(totalWeight);
+
+            foreach (var container in weights) {
+                if (container.weight > randomWeight) {
+                    return container.element;
+                }
+                randomWeight -= container.weight;
+            }
+            throw new Exception();
+        }
         //https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm
         public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source) {
             T[] elements = source.ToArray();
