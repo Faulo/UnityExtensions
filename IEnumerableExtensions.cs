@@ -24,19 +24,25 @@ namespace Slothsoft.UnityExtensions {
                 return source.Skip(random.Next(source.Count())).FirstOrDefault();
             }
         }
-        public static T RandomElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
+        public static T RandomWeightedElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
+            var weights = new Dictionary<T, int>();
+            foreach (var element in source) {
+                weights[element] = weighting(element);
+            }
+            return RandomWeightedElement(source, weights);
+        }
+        public static T RandomWeightedElement<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
             if (source == null || source.Count() == 0) {
                 return default;
             }
-            var weights = source.Select(element => new { element, weight = weighting(element) });
-            int totalWeight = weights.Select(container => container.weight).Sum();
+            int totalWeight = weights.Values.Sum();
             int randomWeight = random.Next(totalWeight);
 
-            foreach (var container in weights) {
-                if (container.weight > randomWeight) {
-                    return container.element;
+            foreach (var element in weights.Keys) {
+                if (weights[element] > randomWeight) {
+                    return element;
                 }
-                randomWeight -= container.weight;
+                randomWeight -= weights[element];
             }
             throw new Exception();
         }
