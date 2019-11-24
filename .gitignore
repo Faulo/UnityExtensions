@@ -1,1 +1,10 @@
-*.meta
+/*
+/*/
+
+!.gitignore
+!.gitmodules
+!.gitattributes
+
+!/Assets/
+!/ProjectSettings/
+!/Packages/
