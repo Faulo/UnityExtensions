@@ -63,7 +63,7 @@ namespace Slothsoft.UnityExtensions {
             return RandomWeightedElement(source, weights);
         }
         public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
-            return source.RandomElement();
+            return source.RandomWeightedElementDescending(key => weights[key]);
         }
         //https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm
         public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source) {

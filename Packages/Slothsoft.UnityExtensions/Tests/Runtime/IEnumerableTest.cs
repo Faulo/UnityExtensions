@@ -66,21 +66,19 @@ public class IEnumerableTest {
             l.Add(weights.Keys.RandomWeightedElement(weights));
         }
 
-        int a = l.Where(v => v == 0).Count();
+        int a = l.Where(v => v == 3).Count();
 
         int b = l.Where(v => v == 2).Count();
 
-        int c = l.Where(v => v == 3).Count();
+        int c = l.Where(v => v == 0).Count();
 
-        int z = l.Where(v => v == 1).Count();
+        int d = l.Where(v => v == 1).Count();
 
-        Assert.AreEqual(0, z, "Entry with probability 0 should not happen ever.");
 
-        Assert.AreEqual(n, a + b + c, "Sum of entries should match probability distribution.");
-
-        Assert.Less(Math.Abs((double)b / a - 2), 0.1);
-
-        Assert.Less(Math.Abs((double)c / a - 3), 0.1);
+        Assert.Greater(a, b);
+        Assert.Greater(b, c);
+        Assert.Greater(c, d);
+        Assert.AreEqual(0, d, "Entry with probability 0 should not happen ever.");
     }
     [Test]
     public void TestRandomWeightedElementDescending() {
@@ -99,20 +97,16 @@ public class IEnumerableTest {
             l.Add(weights.Keys.RandomWeightedElementDescending(weights));
         }
 
-        int a = l.Where(v => v == 0).Count();
+        int a = l.Where(v => v == 1).Count();
 
-        int b = l.Where(v => v == 2).Count();
+        int b = l.Where(v => v == 0).Count();
 
-        int c = l.Where(v => v == 3).Count();
+        int c = l.Where(v => v == 2).Count();
 
-        int z = l.Where(v => v == 1).Count();
+        int d = l.Where(v => v == 3).Count();
 
-        Assert.AreEqual(n, z, "Entry with probability 0 should always.");
-
-        Assert.AreEqual(n, a + b + c, "Sum of entries should match probability distribution.");
-
-        Assert.Less(Math.Abs((double)b / a - 2), 0.1);
-
-        Assert.Less(Math.Abs((double)c / a - 3), 0.1);
+        Assert.Greater(a, b);
+        Assert.Greater(b, c);
+        Assert.Greater(c, d);
     }
 }
