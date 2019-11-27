@@ -49,36 +49,59 @@ public class IEnumerableTest {
         Assert.IsFalse(new int[] { 0 }.None(i => i == 0));
         Assert.IsTrue(new int[] { 1 }.None(i => i == 0));
     }
+
+
+    private readonly int randomNumberIterations = 1000;
     [Test]
-    public void TestRandomWeightedElement() {
-        var weights = new Dictionary<int, int> {
-            [0] = 1,
-            [1] = 0,
-            [2] = 2,
-            [3] = 3
+    public void TestRandomWeightedElementFromListWith0Elements() {
+        for (int i = 0; i < randomNumberIterations; i++) {
+            Assert.IsNull(new object[0].RandomWeightedElement(o => 0));
+        }
+    }
+    [Test]
+    public void TestRandomWeightedElementFromListWith1ElementZeroChance() {
+        for (int i = 0; i < randomNumberIterations; i++) {
+            Assert.IsNull(new object[1] { new object() }.RandomWeightedElement(o => 0));
+        }
+    }
+    [Test]
+    public void TestRandomWeightedElementFromListWith2ElementsZeroChance() {
+        for (int i = 0; i < randomNumberIterations; i++) {
+            Assert.AreEqual(1, new int[] { 0, 1 }.RandomWeightedElement(number => number));
+        }
+    }
+    [Test]
+    public void TestRandomWeightedElementFromListWithSuperfluousWeights() {
+        for (int i = 0; i < randomNumberIterations; i++) {
+            Assert.AreEqual(1, new int[] { 0, 1 }.RandomWeightedElement(
+                new Dictionary<int, int> { [0] = 0, [1] = 1, [2] = 2 }
+            ));
+        }
+    }
+    [Test]
+    public void TestRandomWeightedElementFromLootTable() {
+        var table = new Dictionary<string, int> {
+            ["Uncommon"] = 9,
+            ["Common"] = 90,
+            ["Mythic"] = 0,
+            ["Rare"] = 1
         };
+        var results = new Dictionary<string, int> {
+            ["Common"] = 0,
+            ["Uncommon"] = 0,
+            ["Rare"] = 0,
+            ["Mythic"] = 0
+        };
+        int probabilitySum = table.Values.Sum();
+        int numberOfElements = 1000 * 1000;
 
-        var l = new List<int>();
-
-        int n = 1000 * 1000;
-
-        for (int i = 0; i < n; i++) {
-            l.Add(weights.Keys.RandomWeightedElement(weights));
+        for (int j = 0; j < numberOfElements; j++) {
+            results[table.Keys.RandomWeightedElement(table)]++;
         }
 
-        int a = l.Where(v => v == 3).Count();
-
-        int b = l.Where(v => v == 2).Count();
-
-        int c = l.Where(v => v == 0).Count();
-
-        int d = l.Where(v => v == 1).Count();
-
-
-        Assert.Greater(a, b);
-        Assert.Greater(b, c);
-        Assert.Greater(c, d);
-        Assert.AreEqual(0, d, "Entry with probability 0 should not happen ever.");
+        foreach (var key in table.Keys) {
+            Assert.AreEqual(table[key], probabilitySum * results[key] / (double)numberOfElements, 0.1);
+        }
     }
     [Test]
     public void TestRandomWeightedElementDescending() {

@@ -29,26 +29,28 @@ namespace Slothsoft.UnityExtensions {
         }
         public static T RandomWeightedElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
             source = source.ToArray();
+            if (source == null || source.Count() == 0) {
+                return default;
+            }
             var weights = new Dictionary<T, int>();
             foreach (var element in source) {
                 weights[element] = weighting(element);
             }
-            return RandomWeightedElement(source, weights);
-        }
-        public static T RandomWeightedElement<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
-            if (source == null || source.Count() == 0) {
+            int totalWeight = weights.Values.Sum();
+            if (totalWeight == 0) {
                 return default;
             }
-            int totalWeight = weights.Values.Sum();
             int randomWeight = random.Next(totalWeight);
-
-            foreach (var element in weights.Keys.OrderBy(element => weights[element])) {
+            foreach (var element in weights.Keys) {
                 if (weights[element] > randomWeight) {
                     return element;
                 }
                 randomWeight -= weights[element];
             }
             throw new Exception();
+        }
+        public static T RandomWeightedElement<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
+            return RandomWeightedElement(source, key => weights[key]);
         }
         public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, Func<T, int> weighting) {
             source = source.ToArray();
