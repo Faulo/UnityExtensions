@@ -8,7 +8,7 @@ namespace Slothsoft.UnityExtensions.Internal {
     /// Draws the property field for any field marked with ExpandableAttribute.
     /// </summary>
     [CustomPropertyDrawer(typeof(ExpandableAttribute), true)]
-    public class ExpandableAttributeDrawer : PropertyDrawer {
+    internal class ExpandableAttributeDrawer : PropertyDrawer {
         private static ExpandableSettings settings => UnityExtensionsSettings.Instance?.expandableSettings ?? new ExpandableSettings();
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
@@ -31,7 +31,7 @@ namespace Slothsoft.UnityExtensions.Internal {
 
             field.NextVisible(true);
 
-            if (settings.showScriptRow) {
+            if (settings.showSourceFile) {
                 totalHeight += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
             }
 
@@ -78,7 +78,7 @@ namespace Slothsoft.UnityExtensions.Internal {
             marchingRect.y += settings.totalSpacing + EditorGUIUtility.standardVerticalSpacing;
 
 
-            if (settings.showScriptRow) {
+            if (settings.showSourceFile) {
                 marchingRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
                 propertyRects.Add(marchingRect);
             }
@@ -94,8 +94,7 @@ namespace Slothsoft.UnityExtensions.Internal {
             bodyRect.yMax = marchingRect.yMax;
             #endregion
 
-            // Draw the background
-            EditorGUI.HelpBox(bodyRect, "", MessageType.None);
+            DrawBackground(bodyRect);
 
 
             #region Draw Fields
@@ -105,7 +104,7 @@ namespace Slothsoft.UnityExtensions.Internal {
             field = targetObject.GetIterator();
             field.NextVisible(true);
 
-            if (settings.showScriptRow) {
+            if (settings.showSourceFile) {
                 // Show the disabled script field
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUI.PropertyField(propertyRects[index], field, true);
@@ -129,6 +128,26 @@ namespace Slothsoft.UnityExtensions.Internal {
 
             EditorGUI.indentLevel--;
             #endregion
+        }
+
+        /// <summary>
+        /// Draws the Background
+        /// </summary>
+        /// <param name="rect">The Rect where the background is drawn.</param>
+        private void DrawBackground(Rect rect) {
+            switch (settings.backgroundStyle) {
+                case ExpandableBackgroundStyle.None:
+                    break;
+                case ExpandableBackgroundStyle.HelpBox:
+                    EditorGUI.HelpBox(rect, "", MessageType.None);
+                    break;
+                case ExpandableBackgroundStyle.Darken:
+                    EditorGUI.DrawRect(rect, settings.darkenColor);
+                    break;
+                case ExpandableBackgroundStyle.Lighten:
+                    EditorGUI.DrawRect(rect, settings.lightenColor);
+                    break;
+            }
         }
     }
 }

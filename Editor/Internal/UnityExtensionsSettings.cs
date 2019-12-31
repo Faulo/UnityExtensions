@@ -4,7 +4,7 @@ using UnityEngine;
 using CustomProjectSettings;
 
 namespace Slothsoft.UnityExtensions.Internal {
-    public class UnityExtensionsSettings : CustomSettings<UnityExtensionsSettings> {
+    internal class UnityExtensionsSettings : CustomSettings<UnityExtensionsSettings> {
         public override void OnWillSave() { }
         protected override void OnInitialise() { }
 
