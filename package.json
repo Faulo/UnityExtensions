@@ -1,8 +1,8 @@
 {
   "name": "net.slothsoft.unity-extensions",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "displayName": "Slothsoft's Unity Extensions",
-  "description": "Extension functions to IEnumerable and Transform.",
+  "description": "Extension functions to IEnumerable and Transform. Also, the [Expandable] attribute for ScriptableObjects.",
   "unity": "2019.2",
   "keywords": [],
   "dependencies": {
