@@ -7,7 +7,6 @@ namespace Slothsoft.UnityExtensions {
     /// </summary>
     public class ExpandableAttribute : PropertyAttribute {
         public ExpandableAttribute() {
-
         }
     }
 }

@@ -1,6 +1,8 @@
 {
     "name": "Slothsoft.UnityExtensions.Runtime",
-    "references": [],
+    "references": [
+        "heatblayze.CustomProjectSettings.Runtime"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

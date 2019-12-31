@@ -3,29 +3,13 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Slothsoft.UnityExtensions {
+namespace Slothsoft.UnityExtensions.Internal {
     /// <summary>
     /// Draws the property field for any field marked with ExpandableAttribute.
     /// </summary>
     [CustomPropertyDrawer(typeof(ExpandableAttribute), true)]
     public class ExpandableAttributeDrawer : PropertyDrawer {
-        // Use the following area to change the style of the expandable ScriptableObject drawers;
-        #region Style Setup
-        /// <summary>
-        /// Whether the default editor Script field should be shown.
-        /// </summary>
-        private const bool SHOW_SCRIPT_FIELD = true;
-
-        /// <summary>
-        /// The spacing on the inside of the background rect.
-        /// </summary>
-        private const float INNER_SPACING = 4.0f;
-
-        /// <summary>
-        /// The spacing on the outside of the background rect.
-        /// </summary>
-        private const float OUTER_SPACING = 2.0f;
-        #endregion
+        private static ExpandableSettings settings => UnityExtensionsSettings.Instance?.expandableSettings ?? new ExpandableSettings();
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
             float totalHeight = 0.0f;
@@ -47,7 +31,7 @@ namespace Slothsoft.UnityExtensions {
 
             field.NextVisible(true);
 
-            if (SHOW_SCRIPT_FIELD) {
+            if (settings.showScriptRow) {
                 totalHeight += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
             }
 
@@ -55,8 +39,7 @@ namespace Slothsoft.UnityExtensions {
                 totalHeight += EditorGUI.GetPropertyHeight(field, true) + EditorGUIUtility.standardVerticalSpacing;
             }
 
-            totalHeight += INNER_SPACING * 2;
-            totalHeight += OUTER_SPACING * 2;
+            totalHeight += settings.totalSpacing * 2;
 
             return totalHeight;
         }
@@ -87,16 +70,15 @@ namespace Slothsoft.UnityExtensions {
 
             Rect bodyRect = new Rect(fieldRect);
             bodyRect.xMin += EditorGUI.indentLevel * 14;
-            bodyRect.yMin += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing
-                + OUTER_SPACING;
+            bodyRect.yMin += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing + settings.outerSpacing;
 
             SerializedProperty field = targetObject.GetIterator();
             field.NextVisible(true);
 
-            marchingRect.y += INNER_SPACING + OUTER_SPACING + EditorGUIUtility.standardVerticalSpacing;
+            marchingRect.y += settings.totalSpacing + EditorGUIUtility.standardVerticalSpacing;
 
 
-            if (SHOW_SCRIPT_FIELD) {
+            if (settings.showScriptRow) {
                 marchingRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
                 propertyRects.Add(marchingRect);
             }
@@ -107,7 +89,7 @@ namespace Slothsoft.UnityExtensions {
                 propertyRects.Add(marchingRect);
             }
 
-            marchingRect.y += INNER_SPACING;
+            marchingRect.y += settings.innerSpacing;
 
             bodyRect.yMax = marchingRect.yMax;
             #endregion
@@ -123,7 +105,7 @@ namespace Slothsoft.UnityExtensions {
             field = targetObject.GetIterator();
             field.NextVisible(true);
 
-            if (SHOW_SCRIPT_FIELD) {
+            if (settings.showScriptRow) {
                 // Show the disabled script field
                 EditorGUI.BeginDisabledGroup(true);
                 EditorGUI.PropertyField(propertyRects[index], field, true);
