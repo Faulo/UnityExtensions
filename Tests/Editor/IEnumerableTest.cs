@@ -65,6 +65,12 @@ public class IEnumerableTest {
         }
     }
     [Test]
+    public void TestRandomWeightedElementFromListWith1ElementNegativeChance() {
+        for (int i = 0; i < randomNumberIterations; i++) {
+            Assert.Throws<ArgumentOutOfRangeException>(() => new object[1] { new object() }.RandomWeightedElement(o => -1));
+        }
+    }
+    [Test]
     public void TestRandomWeightedElementFromListWith2ElementsZeroChance() {
         for (int i = 0; i < randomNumberIterations; i++) {
             Assert.AreEqual(1, new int[] { 0, 1 }.RandomWeightedElement(number => number));

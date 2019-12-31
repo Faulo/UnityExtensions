@@ -35,6 +35,9 @@ namespace Slothsoft.UnityExtensions {
             var weights = new Dictionary<T, int>();
             foreach (var element in source) {
                 weights[element] = weighting(element);
+                if (weights[element] < 0) {
+                    throw new ArgumentOutOfRangeException("Weight cannot be negative.");
+                }
             }
             int totalWeight = weights.Values.Sum();
             if (totalWeight == 0) {
