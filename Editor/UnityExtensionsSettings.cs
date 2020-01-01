@@ -18,6 +18,6 @@ namespace Slothsoft.UnityExtensions.Editor {
         internal static UnityExtensionsSettings instanceCache;
 
         [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
-        public ExpandableSettings expandableSettings = new ExpandableSettings();
+        internal ExpandableSettings expandableSettings = new ExpandableSettings();
     }
 }
