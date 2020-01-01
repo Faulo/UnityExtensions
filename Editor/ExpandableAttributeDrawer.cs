@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEditor;
 
-namespace Slothsoft.UnityExtensions.Internal {
+namespace Slothsoft.UnityExtensions.Editor {
     /// <summary>
     /// Draws the property field for any field marked with ExpandableAttribute.
     /// </summary>

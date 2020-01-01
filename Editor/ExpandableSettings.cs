@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Internal {
+namespace Slothsoft.UnityExtensions.Editor {
     [Serializable]
     internal class ExpandableSettings {
         [Header("Additional Rows")]

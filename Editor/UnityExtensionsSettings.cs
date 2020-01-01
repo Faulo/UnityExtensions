@@ -4,7 +4,7 @@ using System.Linq;
 using UnityEditor;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Internal {
+namespace Slothsoft.UnityExtensions.Editor {
     [CreateAssetMenu(menuName = "Slothsoft/Unity Extension Settings", fileName = "Slothsoft.UnityExtensionsSettings.asset")]
     internal class UnityExtensionsSettings : ScriptableObject {
         internal static UnityExtensionsSettings instance => Resources.LoadAll<UnityExtensionsSettings>("").FirstOrDefault();
