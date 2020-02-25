@@ -5,41 +5,74 @@ using System.Linq;
 using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.Rendering.HighDefinition;
+using UnityEngine.Rendering.Universal;
 
 namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
-    public class RenderPipelineConverter : MonoBehaviour {
-        static IEnumerable<MaterialUpgrader> GetMaterialUpgraders(bool toHDRP) {
-            yield return new ToLitMaterialUpgrader(toHDRP, "Universal Render Pipeline/Lit", "HDRP/Lit");
-            yield return new ToLitMaterialUpgrader(toHDRP, "Universal Render Pipeline/Unlit", "HDRP/Unlit");
+    public class RenderPipelineConverter : EditorWindow {
+        [MenuItem("Window/Render Pipeline/Slothsoft's HDRP <=> URP Conversion Wizard")]
+        public static void ShowWindow() {
+            GetWindow<RenderPipelineConverter>();
         }
-        static bool IsHDRPComponent(Component component) => component is UnityEngine.Rendering.HighDefinition.HDAdditionalCameraData || component is UnityEngine.Rendering.HighDefinition.HDAdditionalLightData || component is UnityEngine.Rendering.HighDefinition.HDAdditionalReflectionData;
-        static bool IsURPComponent(Component component) => component is UnityEngine.Rendering.Universal.UniversalAdditionalCameraData || component is UnityEngine.Rendering.Universal.UniversalAdditionalLightData;
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Upgrade materials to HDRP", priority = CoreUtils.editMenuPriority1)]
+
+        public void OnGUI() {
+            titleContent = EditorGUIUtility.TrTextContent("HDRP <=> URP Conversion");
+
+            GUILayout.BeginVertical("box");
+            GUILayout.Label("Switch from URP to HDRP:");
+            if (GUILayout.Button("Upgrade materials to HDRP")) {
+                UpgradeMaterialsHDRP();
+            }
+            if (GUILayout.Button("Upgrade lights to HDRP")) {
+                UpgradeLightsHDRP();
+            }
+            if (GUILayout.Button("Remove URP components from project")) {
+                UpgradeComponentsHDRP();
+            }
+            GUILayout.EndVertical();
+
+            GUILayout.BeginVertical("box");
+            GUILayout.Label("Switch from HDRP to URP:");
+            if (GUILayout.Button("Upgrade materials to URP")) {
+                UpgradeMaterialsURP();
+            }
+            if (GUILayout.Button("Upgrade lights to URP")) {
+                UpgradeLightsURP();
+            }
+            if (GUILayout.Button("Remove HDRP components from project")) {
+                UpgradeComponentsURP();
+            }
+            GUILayout.EndVertical();
+        }
         internal static void UpgradeMaterialsHDRP() {
             UpgradeMaterials(true);
         }
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Upgrade lights to HDRP", priority = CoreUtils.editMenuPriority1)]
         internal static void UpgradeLightsHDRP() {
             UpgradeLights(new LightUpgrader(true, UnityExtensionsSettings.instance.renderPipelineConversionSettings));
         }
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Remove URP components from project", priority = CoreUtils.editMenuPriority1)]
         internal static void UpgradeComponentsHDRP() {
             RemoveComponents(IsURPComponent);
         }
 
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Upgrade materials to URP", priority = CoreUtils.editMenuPriority2)]
         internal static void UpgradeMaterialsURP() {
             UpgradeMaterials(false);
         }
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Upgrade lights to URP", priority = CoreUtils.editMenuPriority2)]
         internal static void UpgradeLightsURP() {
             UpgradeLights(new LightUpgrader(false, UnityExtensionsSettings.instance.renderPipelineConversionSettings));
         }
-        [MenuItem("Edit/Render Pipeline/HDRP <=> URP Conversion/Remove HDRP components from project", priority = CoreUtils.editMenuPriority2)]
         internal static void UpgradeComponentsURP() {
             RemoveComponents(IsHDRPComponent);
         }
+
+        static IEnumerable<MaterialUpgrader> GetMaterialUpgraders(bool toHDRP) {
+            yield return new ToLitMaterialUpgrader(toHDRP, "Universal Render Pipeline/Lit", "HDRP/Lit");
+            yield return new ToLitMaterialUpgrader(toHDRP, "Universal Render Pipeline/Unlit", "HDRP/Unlit");
+        }
+
+        static bool IsHDRPComponent(Component component) => component is HDAdditionalCameraData || component is HDAdditionalLightData || component is HDAdditionalReflectionData;
+
+        static bool IsURPComponent(Component component) => component is UniversalAdditionalCameraData || component is UniversalAdditionalLightData;
+
 
         static void UpgradeMaterials(bool toHDRP) {
             MaterialUpgrader.UpgradeProjectFolder(GetMaterialUpgraders(toHDRP).ToList(), "Upgrade materials");
