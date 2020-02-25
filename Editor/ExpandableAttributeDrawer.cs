@@ -1,7 +1,7 @@
-﻿using UnityEngine;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     /// <summary>
@@ -9,7 +9,7 @@ namespace Slothsoft.UnityExtensions.Editor {
     /// </summary>
     [CustomPropertyDrawer(typeof(ExpandableAttribute), true)]
     internal class ExpandableAttributeDrawer : PropertyDrawer {
-        private static ExpandableSettings settings => UnityExtensionsSettings.instance?.expandableSettings ?? new ExpandableSettings();
+        private static ExpandableSettings settings => UnityExtensionsSettings.instance.expandableSettings;
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
             float totalHeight = 0.0f;

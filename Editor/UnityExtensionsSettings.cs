@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.Linq;
-using UnityEditor;
+﻿using System.Linq;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
@@ -12,12 +9,18 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (instanceCache == null) {
                     instanceCache = Resources.LoadAll<UnityExtensionsSettings>("").FirstOrDefault();
                 }
-                return instanceCache;
+                return instanceCache ?? new UnityExtensionsSettings();
             }
         }
         internal static UnityExtensionsSettings instanceCache;
 
         [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
         internal ExpandableSettings expandableSettings = new ExpandableSettings();
+
+        [SerializeField, Tooltip("Use the following options to change render pipeline conversion")]
+        internal RenderPipelineConversionSettings renderPipelineConversionSettings = new RenderPipelineConversionSettings();
+
+        [SerializeField, Tooltip("Use the following options to locate prefabs.")]
+        internal PrefabUtilsSettings prefabUtilsSettings = new PrefabUtilsSettings();
     }
 }
