@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace Slothsoft.UnityExtensions {
     public static class IEnumerableExtensions {
-        private static readonly Random random = new Random();
+        static readonly Random random = new Random();
+        public static IEnumerable<TResult> SelectNotNull<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector) {
+            return source.Select(selector).Where(result => result != null);
+        }
         public static void ForAll<T>(this IEnumerable<T> source, Action<T> action) {
             foreach (T item in source) {
                 action(item);

@@ -3,9 +3,17 @@ using Slothsoft.UnityExtensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using UnityEngine;
 
 public class IEnumerableTest {
+    [Test]
+    public void TestSelectNotNull() {
+        IEnumerable<int> testArray = new int[] { 1, 2, 3, 4, 5 };
+
+        var expected = new string[] { "1", "3", "5" };
+        var result = testArray.SelectNotNull(i => (i % 2) == 0 ? null : i.ToString());
+
+        Assert.AreEqual(expected, result);
+    }
     [Test]
     public void TestForAll() {
         int testSum = 0;
