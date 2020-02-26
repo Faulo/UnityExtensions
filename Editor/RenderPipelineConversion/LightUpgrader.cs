@@ -20,7 +20,7 @@ namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
             } else {
                 var intensityProperty = properties.FirstOrDefault(property => property.propertyPath == settings.lightIntensityProperty);
                 if (intensityProperty != null) {
-                    intensityProperty.value = ScaleIntensity(light.type, float.Parse(intensityProperty.value)).ToString(CultureInfo.InvariantCulture);
+                    intensityProperty.value = ScaleIntensity(light.type, float.Parse(intensityProperty.value, CultureInfo.InvariantCulture)).ToString(CultureInfo.InvariantCulture);
                     PrefabUtility.SetPropertyModifications(light, properties);
                     PrefabUtility.SavePrefabAsset(light.gameObject);
                 }
@@ -31,8 +31,8 @@ namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
             switch (type) {
                 case LightType.Directional:
                     return toHDRP
-                        ? value * settings.pointLightIntensityMultiplier
-                        : value / settings.pointLightIntensityMultiplier;
+                        ? value * settings.directionalLightIntensityMultiplier
+                        : value / settings.directionalLightIntensityMultiplier;
                 case LightType.Point:
                     return toHDRP
                         ? value * settings.pointLightIntensityMultiplier
