@@ -9,7 +9,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (instanceCache == null) {
                     instanceCache = Resources.LoadAll<UnityExtensionsSettings>("").FirstOrDefault();
                 }
-                return instanceCache ?? new UnityExtensionsSettings();
+                return instanceCache ?? CreateInstance<UnityExtensionsSettings>();
             }
         }
         internal static UnityExtensionsSettings instanceCache;
