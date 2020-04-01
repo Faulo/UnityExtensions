@@ -3,13 +3,15 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     [CreateAssetMenu(menuName = "Slothsoft/Unity Extension Settings", fileName = "Slothsoft.UnityExtensionsSettings.asset")]
-    internal class UnityExtensionsSettings : ScriptableObject {
+    class UnityExtensionsSettings : ScriptableObject {
         internal static UnityExtensionsSettings instance {
             get {
                 if (instanceCache == null) {
                     instanceCache = Resources.LoadAll<UnityExtensionsSettings>("").FirstOrDefault();
                 }
-                return instanceCache ?? CreateInstance<UnityExtensionsSettings>();
+                return instanceCache
+                    ? instanceCache
+                    : CreateInstance<UnityExtensionsSettings>();
             }
         }
         internal static UnityExtensionsSettings instanceCache;
@@ -22,5 +24,13 @@ namespace Slothsoft.UnityExtensions.Editor {
 
         [SerializeField, Tooltip("Use the following options to locate prefabs.")]
         internal PrefabUtilsSettings prefabUtilsSettings = new PrefabUtilsSettings();
+
+        [SerializeField, Tooltip("Use the following options to adjust .csproj file generation.")]
+        internal ProjectFileSettings[] projectFileSettings = new ProjectFileSettings[0];
+        internal bool projectFileSettingsEnabled => projectFileSettings.Length > 0;
+        internal ProjectFileSettings ProjectFileSettingsForAssembly(string assemblyName) {
+            return projectFileSettings
+                .FirstOrDefault(settings => settings == null ? false : settings.Matches(assemblyName));
+        }
     }
 }
