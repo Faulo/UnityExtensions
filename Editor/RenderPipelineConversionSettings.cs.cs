@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     [Serializable]
-    internal class RenderPipelineConversionSettings {
+    class RenderPipelineConversionSettings {
         [Header("Lighting conversion")]
         [SerializeField, Range(0, 100), Tooltip("Multiplier to directional light intensity when converting URP => HDRP.")]
         internal float directionalLightIntensityMultiplier = 5;

@@ -20,7 +20,7 @@ namespace Slothsoft.UnityExtensions {
             return source;
         }
         public static IEnumerable<T> Except<T>(this IEnumerable<T> source, params T[] args) {
-            return source.Except((IEnumerable<T>) args);
+            return source.Except((IEnumerable<T>)args);
         }
         public static T RandomElement<T>(this IEnumerable<T> source) {
             if (source == null || source.Count() == 0) {

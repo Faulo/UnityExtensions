@@ -25,7 +25,7 @@ public class IEnumerableTest {
     }
     [Test]
     public void TestExcept() {
-        IEnumerable<int> testArray = new int[] { 1, 2, 3, 4};
+        IEnumerable<int> testArray = new int[] { 1, 2, 3, 4 };
 
         Assert.AreEqual(6, testArray.Except(1, 3, 5).Sum());
     }
@@ -59,7 +59,7 @@ public class IEnumerableTest {
     }
 
 
-    private readonly int randomNumberIterations = 1000;
+    readonly int randomNumberIterations = 1000;
     [Test]
     public void TestRandomWeightedElementFromListWith0Elements() {
         for (int i = 0; i < randomNumberIterations; i++) {
