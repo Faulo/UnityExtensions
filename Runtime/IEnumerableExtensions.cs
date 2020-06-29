@@ -9,12 +9,12 @@ namespace Slothsoft.UnityExtensions {
             return source.Select(selector).Where(result => result != null);
         }
         public static void ForAll<T>(this IEnumerable<T> source, Action<T> action) {
-            foreach (T item in source) {
+            foreach (var item in source) {
                 action(item);
             }
         }
         public static IEnumerable<T> Log<T>(this IEnumerable<T> source) {
-            foreach (T item in source) {
+            foreach (var item in source) {
                 UnityEngine.Debug.Log(item);
             }
             return source;
@@ -63,7 +63,7 @@ namespace Slothsoft.UnityExtensions {
             foreach (var element in source) {
                 weights[element] = weighting(element);
             }
-            var sum = weights.Values.Sum();
+            int sum = weights.Values.Sum();
             foreach (var element in source) {
                 weights[element] = sum - weights[element];
             }
@@ -74,7 +74,7 @@ namespace Slothsoft.UnityExtensions {
         }
         //https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm
         public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source) {
-            T[] elements = source.ToArray();
+            var elements = source.ToArray();
             for (int i = elements.Length - 1; i >= 0; i--) {
                 int swapIndex = random.Next(i + 1);
                 yield return elements[swapIndex];
@@ -87,6 +87,40 @@ namespace Slothsoft.UnityExtensions {
         }
         public static bool None<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate) {
             return !source.Any(predicate);
+        }
+        public static IEnumerable<Tuple<TFirst, TSecond>> Multiply<TFirst, TSecond>(this IEnumerable<TFirst> firstList, IEnumerable<TSecond> secondList) {
+            foreach (var first in firstList) {
+                foreach (var second in secondList) {
+                    yield return Tuple.Create(first, second);
+                }
+            }
+        }
+        public static IEnumerable<TReturn> Multiply<TFirst, TSecond, TReturn>(this IEnumerable<TFirst> firstList, IEnumerable<TSecond> secondList, Func<TFirst, TSecond, TReturn> callback) {
+            foreach (var first in firstList) {
+                foreach (var second in secondList) {
+                    yield return callback(first, second);
+                }
+            }
+        }
+        public static ISet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source) {
+            var result = new HashSet<TSource>();
+            foreach (var value in source) {
+                if (!result.Contains(value)) {
+                    result.Add(value);
+                }
+            }
+            return result;
+        }
+        public static bool Equals<T>(this IEnumerable<T> source, IEnumerable<T> target) {
+            if (source.Count() != target.Count()) {
+                return false;
+            }
+            foreach (var element in source) {
+                if (!target.Contains(element)) {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
