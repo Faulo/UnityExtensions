@@ -1,10 +1,8 @@
-﻿using SyntaxTree.VisualStudio.Unity.Bridge;
-using System.IO;
+﻿using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
 using UnityEditor;
-using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     [InitializeOnLoad]
@@ -16,7 +14,9 @@ namespace Slothsoft.UnityExtensions.Editor {
             public override Encoding Encoding => Encoding.UTF8;
         }
         static ProjectFileFixer() {
-            ProjectFilesGenerator.ProjectFileGeneration += ProjectFileGenerationListener;
+#if ENABLE_VSTU
+            SyntaxTree.VisualStudio.Unity.Bridge.ProjectFilesGenerator.ProjectFileGeneration += ProjectFileGenerationListener;
+#endif
         }
         static string ProjectFileGenerationListener(string fileName, string fileContent) {
             if (UnityExtensionsSettings.instance.projectFileSettingsEnabled) {

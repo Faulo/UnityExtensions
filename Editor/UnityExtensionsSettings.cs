@@ -32,5 +32,8 @@ namespace Slothsoft.UnityExtensions.Editor {
             return projectFileSettings
                 .FirstOrDefault(settings => settings == null ? false : settings.Matches(assemblyName));
         }
+
+        [SerializeField, Tooltip("Add C# namespace based on assembly and folder hierarchy to every new .cs file.")]
+        internal bool addNamespaceToCSharpFiles = false;
     }
 }

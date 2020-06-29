@@ -9,7 +9,7 @@ public class IEnumerableTest {
     public void TestSelectNotNull() {
         IEnumerable<int> testArray = new int[] { 1, 2, 3, 4, 5 };
 
-        var expected = new string[] { "1", "3", "5" };
+        string[] expected = new string[] { "1", "3", "5" };
         var result = testArray.SelectNotNull(i => (i % 2) == 0 ? null : i.ToString());
 
         Assert.AreEqual(expected, result);
@@ -25,7 +25,7 @@ public class IEnumerableTest {
     }
     [Test]
     public void TestExcept() {
-        IEnumerable<int> testArray = new int[] { 1, 2, 3, 4};
+        IEnumerable<int> testArray = new int[] { 1, 2, 3, 4 };
 
         Assert.AreEqual(6, testArray.Except(1, 3, 5).Sum());
     }
@@ -59,7 +59,7 @@ public class IEnumerableTest {
     }
 
 
-    private readonly int randomNumberIterations = 1000;
+    readonly int randomNumberIterations = 1000;
     [Test]
     public void TestRandomWeightedElementFromListWith0Elements() {
         for (int i = 0; i < randomNumberIterations; i++) {
@@ -113,7 +113,7 @@ public class IEnumerableTest {
             results[table.Keys.RandomWeightedElement(table)]++;
         }
 
-        foreach (var key in table.Keys) {
+        foreach (string key in table.Keys) {
             Assert.AreEqual(table[key], probabilitySum * results[key] / (double)numberOfElements, 0.1);
         }
     }
