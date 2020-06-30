@@ -1,34 +1,35 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     public class Build : MonoBehaviour {
-        static BuildPlayerOptions GetDefaultBuildPlayerOptions() {
-            var type = typeof(BuildPlayerWindow.DefaultBuildMethods);
-            var method = type.GetMethod("GetBuildPlayerOptionsInternal", BindingFlags.NonPublic | BindingFlags.Static);
-            return (BuildPlayerOptions)method.Invoke(null, new object[] { false, new BuildPlayerOptions() });
-        }
-
-        static void BuildNow(BuildTarget target) {
+        static void BuildNow(BuildTarget target, BuildTargetGroup targetGroup) {
             string path = Environment.GetCommandLineArgs().Last();
 
-            var options = GetDefaultBuildPlayerOptions();
-            options.locationPathName = path;
-            options.target = target;
+            var options = new BuildPlayerOptions {
+                locationPathName = path,
+                target = target,
+                targetGroup = targetGroup,
+                scenes = EditorBuildSettings.scenes
+                    .Where(scene => scene.enabled)
+                    .Select(scene => scene.path)
+                    .ToArray(),
+            };
+
 
             BuildPipeline.BuildPlayer(options);
 
             EditorApplication.Exit(0);
         }
 
-        public static void Win32() => BuildNow(BuildTarget.StandaloneWindows);
-        public static void Win64() => BuildNow(BuildTarget.StandaloneWindows64);
-        public static void WSA() => BuildNow(BuildTarget.WSAPlayer);
-        public static void WebGL() => BuildNow(BuildTarget.WebGL);
-        public static void Android() => BuildNow(BuildTarget.Android);
-        public static void Apple() => BuildNow(BuildTarget.iOS);
+        public static void Linux() => BuildNow(BuildTarget.StandaloneLinux64, BuildTargetGroup.Standalone);
+        public static void Win32() => BuildNow(BuildTarget.StandaloneWindows, BuildTargetGroup.Standalone);
+        public static void Win64() => BuildNow(BuildTarget.StandaloneWindows64, BuildTargetGroup.Standalone);
+        public static void WSA() => BuildNow(BuildTarget.WSAPlayer, BuildTargetGroup.WSA);
+        public static void WebGL() => BuildNow(BuildTarget.WebGL, BuildTargetGroup.WebGL);
+        public static void Android() => BuildNow(BuildTarget.Android, BuildTargetGroup.Android);
+        public static void Apple() => BuildNow(BuildTarget.iOS, BuildTargetGroup.iOS);
     }
 }
