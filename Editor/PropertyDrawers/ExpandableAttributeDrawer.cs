@@ -16,17 +16,21 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
 
             totalHeight += EditorGUIUtility.singleLineHeight;
 
-            if (property.objectReferenceValue == null) {
+            if (!property.isExpanded) {
                 return totalHeight;
             }
 
-            if (!property.isExpanded) {
+            if (property.propertyType != SerializedPropertyType.ObjectReference) {
+                return totalHeight;
+            }
+
+            if (property.objectReferenceValue == default) {
                 return totalHeight;
             }
 
             var targetObject = new SerializedObject(property.objectReferenceValue);
 
-            if (targetObject == null) {
+            if (targetObject == default) {
                 return totalHeight;
             }
 
