@@ -58,6 +58,10 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
 
             EditorGUI.PropertyField(fieldRect, property, label, true);
 
+            if (property.propertyType != SerializedPropertyType.ObjectReference) {
+                return;
+            }
+
             if (property.objectReferenceValue == null) {
                 return;
             }
