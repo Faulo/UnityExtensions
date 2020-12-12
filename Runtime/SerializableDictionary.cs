@@ -31,10 +31,10 @@ namespace Slothsoft.UnityExtensions {
             Clear();
 
             while (keys.Count < values.Count) {
-                keys.Add(default(TKey));
+                keys.Add(default);
             }
             while (values.Count < keys.Count) {
-                values.Add(default(TValue));
+                values.Add(default);
             }
 
             if (keys.Count != values.Count) {
