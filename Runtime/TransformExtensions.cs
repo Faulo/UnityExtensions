@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using System.Linq;
+using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
     public static class TransformExtensions {
@@ -19,6 +21,12 @@ namespace Slothsoft.UnityExtensions {
         }
         public static void SetScaleZ(this Transform transform, float value) {
             transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, value);
+        }
+        public static IEnumerable<Transform> GetDescendants(this Transform parent) {
+            return parent
+                .Cast<Transform>()
+                .SelectMany(GetDescendants)
+                .Prepend(parent);
         }
     }
 }

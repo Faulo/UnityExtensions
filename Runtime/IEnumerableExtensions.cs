@@ -122,5 +122,20 @@ namespace Slothsoft.UnityExtensions {
             }
             return true;
         }
+        public static IEnumerable<TSource> Without<TSource>(this IEnumerable<TSource> source, TSource item)
+            where TSource : class {
+            return source
+                .Where(testItem => testItem != item);
+        }
+        public delegate bool TrySelectFunc<T>(out T output);
+        public static IEnumerable<TTarget> TrySelect<TSource, TTarget>(
+            this IEnumerable<TSource> source,
+            Func<TSource, TrySelectFunc<TTarget>> selector) {
+            foreach (var element in source) {
+                if (selector(element)(out var result)) {
+                    yield return result;
+                }
+            }
+        }
     }
 }
