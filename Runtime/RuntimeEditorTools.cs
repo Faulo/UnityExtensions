@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using UnityEditor;
-using UnityEditor.Experimental.SceneManagement;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
@@ -46,11 +45,7 @@ namespace Slothsoft.UnityExtensions {
             if (!component) {
                 return;
             }
-
             gameObject = component.gameObject;
-            if (PrefabStageUtility.GetPrefabStage(gameObject) == null) {
-                return;
-            }
 
             buttonStyle = new GUIStyle(EditorStyles.miniButton) { richText = true };
             foldoutStyle = new GUIStyle(EditorStyles.foldout) { richText = true };
