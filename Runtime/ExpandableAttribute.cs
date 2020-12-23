@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System;
+using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
     /// <summary>
@@ -6,7 +7,25 @@ namespace Slothsoft.UnityExtensions {
     /// area that allows for changing the values on the object without having to change editor.
     /// </summary>
     public class ExpandableAttribute : PropertyAttribute {
-        public ExpandableAttribute() {
+        Type implements;
+        public ExpandableAttribute(Type implements = null) {
+            this.implements = implements;
+        }
+        public string label => implements == null
+            ? ""
+            : $" : {implements.Name}";
+        public bool ValidateType(UnityEngine.Object obj) {
+            if (implements != null) {
+                var objType = obj.GetType();
+                if (!implements.IsAssignableFrom(objType)) {
+                    Debug.LogWarning(
+                        $"Validation failed! Class <i>{objType.Name}</i> of object '{obj.name}' does not implement <i>{implements.Name}</i>.",
+                        obj
+                    );
+                    return false;
+                }
+            }
+            return true;
         }
     }
 }
