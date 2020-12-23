@@ -11,6 +11,8 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
     class ExpandableAttributeDrawer : PropertyDrawer {
         static ExpandableSettings settings => UnityExtensionsSettings.instance.expandableSettings;
 
+        new ExpandableAttribute attribute => base.attribute as ExpandableAttribute;
+
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
             float totalHeight = 0.0f;
 
@@ -63,6 +65,11 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             }
 
             if (property.objectReferenceValue == null) {
+                return;
+            }
+
+            if (!attribute.ValidateType(property.objectReferenceValue)) {
+                property.objectReferenceValue = null;
                 return;
             }
 
