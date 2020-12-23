@@ -7,15 +7,21 @@ namespace Slothsoft.UnityExtensions {
     /// area that allows for changing the values on the object without having to change editor.
     /// </summary>
     public class ExpandableAttribute : PropertyAttribute {
-        Type[] restrictedTypes;
-        public ExpandableAttribute(params Type[] restrictedTypes) {
-            this.restrictedTypes = restrictedTypes;
+        Type implements;
+        public ExpandableAttribute(Type implements = null) {
+            this.implements = implements;
         }
+        public string label => implements == null
+            ? ""
+            : $" : {implements.Name}";
         public bool ValidateType(UnityEngine.Object obj) {
-            var objType = obj.GetType();
-            foreach (var type in restrictedTypes) {
-                if (!type.IsAssignableFrom(objType)) {
-                    Debug.LogWarning($"Validation failed! Class <i>{objType.Name}</i> of object {obj.name} does not implement <i>{type.Name}</i>.");
+            if (implements != null) {
+                var objType = obj.GetType();
+                if (!implements.IsAssignableFrom(objType)) {
+                    Debug.LogWarning(
+                        $"Validation failed! Class <i>{objType.Name}</i> of object '{obj.name}' does not implement <i>{implements.Name}</i>.",
+                        obj
+                    );
                     return false;
                 }
             }

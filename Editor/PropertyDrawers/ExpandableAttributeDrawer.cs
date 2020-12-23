@@ -62,7 +62,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             var fieldRect = new Rect(position) {
                 height = EditorGUIUtility.singleLineHeight
             };
-
+            label.text += attribute.label;
             EditorGUI.PropertyField(fieldRect, property, label, true);
 
             if (!CanExpand(property)) {
