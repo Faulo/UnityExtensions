@@ -13,28 +13,33 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
 
         new ExpandableAttribute attribute => base.attribute as ExpandableAttribute;
 
+        bool CanExpand(SerializedProperty property) {
+            if (property.propertyType != SerializedPropertyType.ObjectReference) {
+                return false;
+            }
+            if (property.isArray) {
+                return false;
+            }
+            if (!property.objectReferenceValue) {
+                return false;
+            }
+            return true;
+        }
+
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
             float totalHeight = 0.0f;
 
             totalHeight += EditorGUIUtility.singleLineHeight;
 
+            if (!CanExpand(property)) {
+                return totalHeight;
+            }
+
             if (!property.isExpanded) {
                 return totalHeight;
             }
 
-            if (property.propertyType != SerializedPropertyType.ObjectReference) {
-                return totalHeight;
-            }
-
-            if (property.objectReferenceValue == default) {
-                return totalHeight;
-            }
-
             var targetObject = new SerializedObject(property.objectReferenceValue);
-
-            if (targetObject == default) {
-                return totalHeight;
-            }
 
             var field = targetObject.GetIterator();
 
@@ -60,11 +65,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
 
             EditorGUI.PropertyField(fieldRect, property, label, true);
 
-            if (property.propertyType != SerializedPropertyType.ObjectReference) {
-                return;
-            }
-
-            if (property.objectReferenceValue == null) {
+            if (!CanExpand(property)) {
                 return;
             }
 
@@ -80,11 +81,6 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             }
 
             var targetObject = new SerializedObject(property.objectReferenceValue);
-
-            if (targetObject == null) {
-                return;
-            }
-
 
             #region Format Field Rects
             var propertyRects = new List<Rect>();
@@ -140,7 +136,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                     EditorGUI.PropertyField(propertyRects[index], field, true);
                 } catch (StackOverflowException) {
                     field.objectReferenceValue = null;
-                    Debug.LogError("Detected self-nesting cauisng a StackOverflowException, avoid using the same object iside a nested structure.");
+                    Debug.LogError("Detected self-nesting causing a StackOverflowException, avoid using the same object inside a nested structure.");
                 }
 
                 index++;
