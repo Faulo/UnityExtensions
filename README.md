@@ -12,6 +12,15 @@ Some C# Extension functions for common Unity problems.
 - Unity 2019.3
 
 ## Installation
+### Install via OpenUPM
+
+The package is available on the [openupm registry](https://openupm.com). You may install it via [openupm-cli](https://github.com/openupm/openupm-cli).
+
+```
+openupm add net.slothsoft.unity-extensions
+```
+
+### Install via git
 - Open Unity.
 - Navigate to Window > Package Manager > + > Add package from git URL...
 - Enter this repository's URL: https://github.com/Faulo/UnityExtensions
