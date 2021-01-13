@@ -1,5 +1,6 @@
 # UnityExtensions
 [![openupm](https://img.shields.io/npm/v/net.slothsoft.unity-extensions?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/net.slothsoft.unity-extensions/)
+
 Some C# Extension functions for common Unity problems.
 
 ## Key features:
@@ -13,7 +14,7 @@ Some C# Extension functions for common Unity problems.
 
 ## Installation
 ### Install via manifest.json
-The package is available on the [openupm registry](https://openupm.com). The easiest way to install is is to set up a scoped registry via Unity's manifest.json:
+The package is available on the [openupm registry](https://openupm.com/packages/net.slothsoft.unity-extensions/). The easiest way to install it is to set up a scoped registry via Unity's manifest.json:
 ```
 {
   "scopedRegistries": [
