@@ -27,6 +27,13 @@ namespace Slothsoft.UnityExtensions {
         /// The object to write editor tools for.
         /// </summary>
         protected new T target;
+
+        [Obsolete("Use 'target' instead.")]
+        protected T component => target;
+
+        [Obsolete("Use 'target.gameObject' instead.")]
+        protected GameObject gameObject => (target as Component).gameObject;
+
         /// <summary>
         /// The current indendation level. Increase and decrease when drawing GUI stuff.
         /// </summary>
