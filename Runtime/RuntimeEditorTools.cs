@@ -18,19 +18,15 @@ namespace Slothsoft.UnityExtensions {
     /// }
     /// </code>
     /// </example>
-    public abstract class RuntimeEditorTools<T> : Editor where T : Component {
+    public abstract class RuntimeEditorTools<T> : Editor where T : UnityEngine.Object {
         GUIStyle buttonStyle;
         GUIStyle foldoutStyle;
         GUIStyle objectStyle;
         readonly Dictionary<string, bool> foldoutFlags = new Dictionary<string, bool>();
         /// <summary>
-        /// The component to write editor tools for.
+        /// The object to write editor tools for.
         /// </summary>
-        protected T component;
-        /// <summary>
-        /// The component's GameObject.
-        /// </summary>
-        protected GameObject gameObject;
+        protected new T target;
         /// <summary>
         /// The current indendation level. Increase and decrease when drawing GUI stuff.
         /// </summary>
@@ -41,11 +37,10 @@ namespace Slothsoft.UnityExtensions {
         public override void OnInspectorGUI() {
             DrawDefaultInspector();
 
-            component = target as T;
-            if (!component) {
+            target = base.target as T;
+            if (!target) {
                 return;
             }
-            gameObject = component.gameObject;
 
             buttonStyle = new GUIStyle(EditorStyles.miniButton) { richText = true };
             foldoutStyle = new GUIStyle(EditorStyles.foldout) { richText = true };
@@ -66,10 +61,10 @@ namespace Slothsoft.UnityExtensions {
             using (new GUILayout.HorizontalScope()) {
                 GUILayout.Space(indentLevel * EditorGUIUtility.singleLineHeight / 2);
                 if (GUILayout.Button(label, buttonStyle)) {
-                    Undo.RecordObject(gameObject, label);
+                    Undo.RecordObject(target, label);
                     action();
-                    EditorUtility.SetDirty(gameObject);
-                    PrefabUtility.RecordPrefabInstancePropertyModifications(gameObject);
+                    EditorUtility.SetDirty(target);
+                    PrefabUtility.RecordPrefabInstancePropertyModifications(target);
                 }
             }
         }
