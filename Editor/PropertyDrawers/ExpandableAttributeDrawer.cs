@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEngine;
 

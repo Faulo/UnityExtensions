@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditorInternal;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor {
+namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     [Serializable]
     public class ProjectFileSettings {
         enum WarningLevel {

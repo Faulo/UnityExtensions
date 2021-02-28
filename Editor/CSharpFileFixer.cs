@@ -1,4 +1,5 @@
 ﻿using System.IO;
+using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {
