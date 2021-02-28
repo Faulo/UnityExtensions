@@ -9,18 +9,17 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
         internal static UnityExtensionsSettings instance {
             get {
+                if (!instanceCache && File.Exists(SETTINGS_PATH)) {
+                    instanceCache = AssetDatabase.LoadAssetAtPath<UnityExtensionsSettings>(SETTINGS_PATH);
+                }
                 if (!instanceCache) {
-                    var file = new FileInfo(SETTINGS_PATH);
-                    if (file.Exists) {
-                        instanceCache = AssetDatabase.LoadAssetAtPath<UnityExtensionsSettings>(SETTINGS_PATH);
-                    } else {
-                        instanceCache = CreateInstance<UnityExtensionsSettings>();
-                        if (!file.Directory.Exists) {
-                            file.Directory.Create();
-                        }
-                        AssetDatabase.CreateAsset(instanceCache, SETTINGS_PATH);
-                        AssetDatabase.Refresh();
+                    instanceCache = CreateInstance<UnityExtensionsSettings>();
+                    var directory = new FileInfo(SETTINGS_PATH).Directory;
+                    if (!directory.Exists) {
+                        directory.Create();
                     }
+                    AssetDatabase.CreateAsset(instanceCache, SETTINGS_PATH);
+                    AssetDatabase.Refresh();
                 }
                 return instanceCache;
             }
