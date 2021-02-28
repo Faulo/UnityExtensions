@@ -1,5 +1,5 @@
 {
-    "name": "Slothsoft.UnityExtensions.Editor.Tests",
+    "name": "Slothsoft.UnityExtensions.Tests.EditMode",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
@@ -18,5 +18,6 @@
     "defineConstraints": [
         "UNITY_INCLUDE_TESTS"
     ],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

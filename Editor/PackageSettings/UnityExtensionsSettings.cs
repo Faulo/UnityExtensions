@@ -1,21 +1,31 @@
-﻿using System.Linq;
+﻿using System.IO;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor {
-    [CreateAssetMenu(menuName = "Slothsoft/Unity Extension Settings", fileName = "Slothsoft.UnityExtensionsSettings.asset")]
+namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     class UnityExtensionsSettings : ScriptableObject {
+        const string SETTINGS_PATH = "Assets/Plugins/Slothsoft/UnityExtensionsSettings.asset";
+
         internal static UnityExtensionsSettings instance {
             get {
-                if (instanceCache == null) {
-                    instanceCache = Resources.LoadAll<UnityExtensionsSettings>("").FirstOrDefault();
+                if (!instanceCache && File.Exists(SETTINGS_PATH)) {
+                    instanceCache = AssetDatabase.LoadAssetAtPath<UnityExtensionsSettings>(SETTINGS_PATH);
                 }
-                return instanceCache
-                    ? instanceCache
-                    : CreateInstance<UnityExtensionsSettings>();
+                if (!instanceCache) {
+                    instanceCache = CreateInstance<UnityExtensionsSettings>();
+                    var directory = new FileInfo(SETTINGS_PATH).Directory;
+                    if (!directory.Exists) {
+                        directory.Create();
+                    }
+                    AssetDatabase.CreateAsset(instanceCache, SETTINGS_PATH);
+                    AssetDatabase.Refresh();
+                }
+                return instanceCache;
             }
         }
         internal static UnityExtensionsSettings instanceCache;
-
+        [Header("Slothsoft's Unity Extensions Settings")]
         [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
         internal ExpandableSettings expandableSettings = new ExpandableSettings();
 

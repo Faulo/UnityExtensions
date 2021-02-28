@@ -1,9 +1,9 @@
 {
   "name": "net.slothsoft.unity-extensions",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "displayName": "Slothsoft's Unity Extensions",
   "description": "Extension functions to IEnumerable and Transform. Also, the [Expandable] attribute for ScriptableObjects. Also, a render pipeline converter. Also, a .csproj fixer. Also, a c# namespace fixer. Also, [Layer] and [SortingLayer] attributes. Also, Tilemap helper functions. Also, RuntimeEditorTools.",
-  "unity": "2019.3",
+  "unity": "2020.2",
   "keywords": [],
   "dependencies": {
     "com.unity.test-framework": "1.0.13",
