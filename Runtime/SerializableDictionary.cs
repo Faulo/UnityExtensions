@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
@@ -9,6 +10,7 @@ namespace Slothsoft.UnityExtensions {
     /// </summary>
     /// <typeparam name="TKey"><seealso cref="Dictionary&lt;TKey, TValue>"/></typeparam>
     /// <typeparam name="TValue"><seealso cref="Dictionary&lt;TKey, TValue>"/></typeparam>
+    [Obsolete("SerializableDictionary is not supported anymore. Consider using SerializableKeyValuePairs instead.")]
     public class SerializableDictionary<TKey, TValue> : Dictionary<TKey, TValue>, ISerializationCallbackReceiver {
         [SerializeField]
         List<TKey> keys = new List<TKey>();
