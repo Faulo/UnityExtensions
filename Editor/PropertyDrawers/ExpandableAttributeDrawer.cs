@@ -28,7 +28,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
         }
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
-            float totalHeight = 0.0f;
+            float totalHeight = EditorGUIUtility.standardVerticalSpacing;
 
             totalHeight += EditorGUIUtility.singleLineHeight;
 
@@ -55,6 +55,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             }
 
             totalHeight += settings.totalSpacing * 2;
+            totalHeight += EditorGUIUtility.standardVerticalSpacing;
 
             return totalHeight;
         }
@@ -109,6 +110,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             }
 
             marchingRect.y += settings.innerSpacing;
+            marchingRect.y += EditorGUIUtility.standardVerticalSpacing;
 
             bodyRect.yMax = marchingRect.yMax;
             #endregion

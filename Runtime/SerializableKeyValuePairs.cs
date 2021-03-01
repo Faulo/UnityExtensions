@@ -8,7 +8,9 @@ namespace Slothsoft.UnityExtensions {
     public class SerializableKeyValuePairs<TKey, TValue> : IReadOnlyDictionary<TKey, TValue>, ISerializationCallbackReceiver {
         [Serializable]
         struct Pair {
+            [SerializeField, Expandable]
             public TKey key;
+            [SerializeField, Expandable]
             public TValue value;
         }
         [SerializeField]
