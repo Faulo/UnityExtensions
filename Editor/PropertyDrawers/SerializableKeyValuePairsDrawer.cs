@@ -83,29 +83,24 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                     var key = item.FindPropertyRelative("key");
                     var value = item.FindPropertyRelative("value");
 
+                    rect.x = position.x - EditorGUIUtility.fieldWidth;
+                    rect.y = position.y;
+                    rect.width = EditorGUIUtility.fieldWidth;
+                    rect.height = EditorGUIUtility.singleLineHeight;
+                    EditorGUI.LabelField(rect, new GUIContent($"#{i}"), new GUIStyle(EditorStyles.miniLabel) { alignment = TextAnchor.MiddleRight });
 
                     if (isSingleLine) {
-                        rect.x = position.x - (EditorGUIUtility.fieldWidth / 2);
-                        rect.y = position.y;
-                        rect.width = EditorGUIUtility.fieldWidth;
-                        rect.height = Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
-
-                        EditorGUI.PrefixLabel(rect, new GUIContent($"{i}"), EditorStyles.miniLabel);
                         rect.x = position.x;
                         rect.width = position.width / 2;
+                        rect.height = Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
                         EditorGUI.PropertyField(rect, key, GUIContent.none, true);
                         rect.x += position.width / 2;
                         EditorGUI.PropertyField(rect, value, GUIContent.none, true);
                         position.y += rect.height;
                     } else {
-                        rect.x = position.x - (EditorGUIUtility.fieldWidth / 2);
-                        rect.y = position.y;
-                        rect.width = EditorGUIUtility.fieldWidth;
-                        rect.height = EditorGUI.GetPropertyHeight(key, true);
-
-                        EditorGUI.PrefixLabel(rect, new GUIContent($"{i}"), EditorStyles.miniLabel);
                         rect.x = position.x;
                         rect.width = position.width;
+                        rect.height = EditorGUI.GetPropertyHeight(key, true);
                         EditorGUI.PropertyField(rect, key, true);
                         position.y += rect.height;
                         rect.y = position.y;
