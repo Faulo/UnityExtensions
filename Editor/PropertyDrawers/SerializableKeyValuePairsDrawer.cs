@@ -3,7 +3,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
-    [CustomPropertyDrawer(typeof(SerializableKeyValuePairs<,>), true)]
+    [CustomPropertyDrawer(typeof(SerializableKeyValuePairs<,>))]
     public class SerializableKeyValuePairsDrawer : PropertyDrawer {
         enum LineMode {
             ShortKeyShortValue,
