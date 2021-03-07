@@ -3,24 +3,44 @@ using UnityEditor;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
-    [CustomPropertyDrawer(typeof(SerializableKeyValuePairs<,>))]
+    [CustomPropertyDrawer(typeof(SerializableKeyValuePairs<,>), true)]
     public class SerializableKeyValuePairsDrawer : PropertyDrawer {
+        enum LineMode {
+            ShortKeyShortValue,
+            ShortKeyLongValue,
+            LongKeyShortValue,
+            LongKeyLongValue
+        }
+        protected virtual (Type key, Type value) GetGenericTypes() {
+            var types = fieldInfo.FieldType.GetGenericArguments();
+            if (types.Length != 2) {
+                Debug.LogWarning($"Unable to determine generic types from {fieldInfo}! If you extended {typeof(SerializableKeyValuePairsDrawer)}, you should override {nameof(SerializableKeyValuePairsDrawer)}::{nameof(genericTypes)}!");
+            }
+            return (types[0], types[1]);
+        }
 
-        bool isSingleLine {
-            get {
-                var dictionaryTypes = fieldInfo.FieldType.GetGenericArguments();
-                if (dictionaryTypes.Length != 2) {
-                    Debug.LogWarning($"Should have 2 generic types from {fieldInfo}, what's up?");
-                }
-                var keyType = dictionaryTypes[0];
-                var valueType = dictionaryTypes[1];
+        (Type key, Type value) genericTypes;
+        LineMode lineMode;
 
-                return IsInlineType(keyType) || IsInlineType(valueType);
+        bool isSingleLine => IsInlineType(genericTypes.key) || IsInlineType(genericTypes.value);
+        bool IsInlineType(Type type) => !(type.IsClass || type.IsInterface);
+
+        void Initialize() {
+            genericTypes = GetGenericTypes();
+            if (IsInlineType(genericTypes.key)) {
+                lineMode = IsInlineType(genericTypes.value)
+                    ? LineMode.ShortKeyShortValue
+                    : LineMode.ShortKeyLongValue;
+            } else {
+                lineMode = IsInlineType(genericTypes.value)
+                    ? LineMode.LongKeyShortValue
+                    : LineMode.LongKeyLongValue;
             }
         }
-        bool IsInlineType(Type type) => type.IsEnum || type.IsValueType;
 
         public override float GetPropertyHeight(SerializedProperty property, GUIContent label) {
+            Initialize();
+
             float totalHeight = EditorGUIUtility.standardVerticalSpacing;
 
             totalHeight += EditorGUIUtility.singleLineHeight;
@@ -32,12 +52,12 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                     var key = item.FindPropertyRelative("key");
                     var value = item.FindPropertyRelative("value");
 
-                    if (isSingleLine) {
-                        totalHeight += Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
-                    } else {
+                    if (lineMode == LineMode.LongKeyLongValue) {
                         totalHeight += EditorGUI.GetPropertyHeight(key, true);
                         totalHeight += EditorGUI.GetPropertyHeight(value, true);
                         totalHeight += EditorGUIUtility.standardVerticalSpacing;
+                    } else {
+                        totalHeight += Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
                     }
                 }
             }
@@ -46,6 +66,8 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
         }
 
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
+            Initialize();
+
             var items = property.FindPropertyRelative("items");
 
             var rect = position;
@@ -89,15 +111,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                     rect.height = EditorGUIUtility.singleLineHeight;
                     EditorGUI.LabelField(rect, new GUIContent($"#{i}"), new GUIStyle(EditorStyles.miniLabel) { alignment = TextAnchor.MiddleRight });
 
-                    if (isSingleLine) {
-                        rect.x = position.x;
-                        rect.width = position.width / 2;
-                        rect.height = Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
-                        EditorGUI.PropertyField(rect, key, GUIContent.none, true);
-                        rect.x += position.width / 2;
-                        EditorGUI.PropertyField(rect, value, GUIContent.none, true);
-                        position.y += rect.height;
-                    } else {
+                    if (lineMode == LineMode.LongKeyLongValue) {
                         rect.x = position.x;
                         rect.width = position.width;
                         rect.height = EditorGUI.GetPropertyHeight(key, true);
@@ -108,6 +122,22 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                         EditorGUI.PropertyField(rect, value, true);
                         position.y += rect.height;
                         position.y += EditorGUIUtility.standardVerticalSpacing;
+                    } else {
+                        (float key, float value) ratio = lineMode switch {
+                            LineMode.ShortKeyShortValue => (0.5f, 0.5f),
+                            LineMode.ShortKeyLongValue => (0.3f, 0.7f),
+                            LineMode.LongKeyShortValue => (0.7f, 0.3f),
+                            LineMode.LongKeyLongValue => throw new NotImplementedException(),
+                            _ => throw new NotImplementedException(),
+                        };
+                        rect.x = position.x;
+                        rect.width = position.width * ratio.key;
+                        rect.height = Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));
+                        EditorGUI.PropertyField(rect, key, GUIContent.none, true);
+                        rect.x += rect.width;
+                        rect.width = position.width * ratio.value;
+                        EditorGUI.PropertyField(rect, value, GUIContent.none, true);
+                        position.y += rect.height;
                     }
                 }
                 EditorGUI.indentLevel--;
