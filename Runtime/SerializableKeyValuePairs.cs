@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections;
+using System.Collections.Concurrent;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,38 +17,44 @@ namespace Slothsoft.UnityExtensions {
         [SerializeField]
         Pair[] items = Array.Empty<Pair>();
 
-        Dictionary<TKey, TValue> dictionary {
+        ConcurrentDictionary<TKey, TValue> dictionary {
             get {
-                if (dictionaryCache == null) {
+                if (isDirty) {
+                    isDirty = false;
                     LoadItems();
                 }
                 return dictionaryCache;
             }
         }
-        Dictionary<TKey, TValue> dictionaryCache;
+        ConcurrentDictionary<TKey, TValue> dictionaryCache = new ConcurrentDictionary<TKey, TValue>();
+        bool isDirty = true;
 
         public void OnBeforeSerialize() {
-            dictionaryCache = null;
+            isDirty = true;
         }
         public void OnAfterDeserialize() {
-            dictionaryCache = null;
+            isDirty = true;
         }
 
         public void SetItems(IReadOnlyDictionary<TKey, TValue> dictionary) {
-            items = new Pair[dictionary.Count];
-            int i = 0;
-            foreach (var pair in dictionary) {
-                items[i].key = pair.Key;
-                items[i].value = pair.Value;
-                i++;
+            lock (dictionaryCache) {
+                items = new Pair[dictionary.Count];
+                int i = 0;
+                foreach (var pair in dictionary) {
+                    items[i].key = pair.Key;
+                    items[i].value = pair.Value;
+                    i++;
+                }
+                isDirty = true;
             }
-            dictionaryCache = null;
         }
 
         void LoadItems() {
-            dictionaryCache = new Dictionary<TKey, TValue>();
-            for (int i = 0; i < items.Length; i++) {
-                dictionaryCache[items[i].key] = items[i].value;
+            lock (dictionaryCache) {
+                dictionaryCache.Clear();
+                for (int i = 0; i < items.Length; i++) {
+                    dictionaryCache[items[i].key] = items[i].value;
+                }
             }
         }
 
