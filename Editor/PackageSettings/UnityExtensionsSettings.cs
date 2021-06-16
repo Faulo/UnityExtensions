@@ -1,30 +1,50 @@
-﻿using System.IO;
+﻿using System;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.SettingsManagement;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
-    class UnityExtensionsSettings : ScriptableObject {
-        const string SETTINGS_PATH = "Assets/Plugins/Slothsoft/UnityExtensionsSettings.asset";
+    [Serializable]
+    class UnityExtensionsSettings {
+        const string SETTINGS_PACKAGE = "net.slothsoft.unity-extensions";
+        const string SETTINGS_MENU = "Project/Slothsoft's Unity Extensions";
+        const string SETTINGS_PATH = "ProjectSettings/UnityExtensionsSettings.asset";
+
+        [SettingsProvider]
+        public static SettingsProvider CreateSettingsProvider() {
+            var provider = new UserSettingsProvider(
+                SETTINGS_MENU,
+                settings,
+                new[] { typeof(UnityExtensionsSettings).Assembly },
+                SettingsScope.Project
+            );
+            return provider;
+        }
+
+        static Settings settings {
+            get {
+                if (settingsCache == null) {
+                    settingsCache = new Settings(SETTINGS_PACKAGE);
+                }
+                return settingsCache;
+            }
+        }
+        static Settings settingsCache;
 
         internal static UnityExtensionsSettings instance {
             get {
-                if (!instanceCache && File.Exists(SETTINGS_PATH)) {
-                    instanceCache = AssetDatabase.LoadAssetAtPath<UnityExtensionsSettings>(SETTINGS_PATH);
-                }
-                if (!instanceCache) {
-                    instanceCache = CreateInstance<UnityExtensionsSettings>();
-                    var directory = new FileInfo(SETTINGS_PATH).Directory;
-                    if (!directory.Exists) {
-                        directory.Create();
-                    }
-                    AssetDatabase.CreateAsset(instanceCache, SETTINGS_PATH);
-                    AssetDatabase.Refresh();
+                if (instanceCache == null) {
+                    instanceCache = settings.Get(nameof(instance), SettingsScope.Project, new UnityExtensionsSettings());
                 }
                 return instanceCache;
             }
         }
-        internal static UnityExtensionsSettings instanceCache;
+        static UnityExtensionsSettings instanceCache;
+
+        [UserSetting("[Expandable] Settings", "[Expandable] Settings")]
+        static UserSetting<int[]> m_expandableSettings = new UserSetting<int[]>(settings, nameof(m_expandableSettings), default);
+
         [Header("Slothsoft's Unity Extensions Settings")]
         [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
         internal ExpandableSettings expandableSettings = new ExpandableSettings();
