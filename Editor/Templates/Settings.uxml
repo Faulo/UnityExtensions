@@ -1,10 +1,5 @@
-<?xml version="1.0" encoding="utf-8"?>
-<UXML
-    xmlns="UnityEngine.UIElements"
-    xmlns:uie="UnityEditor.UIElements"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd"
-    >
+<?xml version="1.0" encoding="UTF-8"?>
+<UXML xmlns="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
   <ScrollView class="unity-scroll-view unity-scroll-view--vertical unity-scroll-view--scroll">
     <VisualElement>
       <VisualElement name="packageManagerContainer">
@@ -12,6 +7,7 @@
           <Label name="titleLabel" text="Slothsoft's Unity Extensions" class="unity-text-element unity-label" style="font-size: 19px; margin: 2px 4px; padding: 0 2px 2px 2px; -unity-font-style: bold;"/>
         </VisualElement>
         <uie:InspectorElement/>
-    </VisualElement></VisualElement>
+      </VisualElement>
+    </VisualElement>
   </ScrollView>
 </UXML>

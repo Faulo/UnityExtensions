@@ -1,5 +1,4 @@
-﻿using System.Linq;
-using UnityEditor;
+﻿using UnityEditor;
 using UnityEditor.SettingsManagement;
 using UnityEditor.UIElements;
 using UnityEngine;
@@ -9,17 +8,36 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     class UnityExtensionsSettings {
         const string SETTINGS_PACKAGE = "net.slothsoft.unity-extensions";
         const string SETTINGS_MENU = "Project/Slothsoft's Unity Extensions";
-        const string SETTINGS_TEMPLATE = "Packages/net.slothsoft.unity-extensions/Templates/Settings.uxml";
+        const string SETTINGS_TEMPLATE = "Packages/net.slothsoft.unity-extensions/Editor/Templates/Settings.uxml";
 
         class SettingsObject : ScriptableObject {
+            [Space]
             [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
-            public ExpandableSettings expandableSettings;
+            ExpandableSettings expandableSettings;
 
-            public void Load() {
+            [Space]
+            [SerializeField, Tooltip("Use the following options to change render pipeline conversion")]
+            RenderPipelineConversionSettings renderPipelineConversionSettings;
+
+            [Space]
+            [SerializeField, Tooltip("Use the following options to locate prefabs.")]
+            PrefabUtilsSettings prefabUtilsSettings;
+
+            [Space]
+            [SerializeField, Tooltip("Use the following options to change how C# files are generated")]
+            CSharpSettings cSharpSettings;
+
+            void Load() {
                 expandableSettings = m_expandableSettings.value;
+                renderPipelineConversionSettings = m_renderPipelineConversionSettings.value;
+                prefabUtilsSettings = m_prefabUtilsSettings.value;
+                cSharpSettings = m_cSharpSettings.value;
             }
-            public void Save() {
+            void Save() {
                 m_expandableSettings.ApplyModifiedProperties();
+                m_renderPipelineConversionSettings.ApplyModifiedProperties();
+                m_prefabUtilsSettings.ApplyModifiedProperties();
+                m_cSharpSettings.ApplyModifiedProperties();
             }
 
             static SettingsObject instance;
@@ -33,7 +51,12 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
                     var template = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(SETTINGS_TEMPLATE);
                     template.CloneTree(rootElement);
                     rootElement.Bind(new SerializedObject(instance));
-                }
+                },
+                inspectorUpdateHandler = () => {
+                    if (instance) {
+                        instance.Save();
+                    }
+                },
             };
         }
 
@@ -61,21 +84,16 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         static UserSetting<ExpandableSettings> m_expandableSettings = new UserSetting<ExpandableSettings>(settings, nameof(m_expandableSettings), new ExpandableSettings());
         internal ExpandableSettings expandableSettings => m_expandableSettings.value;
 
-        [SerializeField, Tooltip("Use the following options to change render pipeline conversion")]
-        internal RenderPipelineConversionSettings renderPipelineConversionSettings = new RenderPipelineConversionSettings();
+        [UserSetting]
+        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new UserSetting<RenderPipelineConversionSettings>(settings, nameof(m_expandableSettings), new RenderPipelineConversionSettings());
+        internal RenderPipelineConversionSettings renderPipelineConversionSettings => m_renderPipelineConversionSettings.value;
 
-        [SerializeField, Tooltip("Use the following options to locate prefabs.")]
-        internal PrefabUtilsSettings prefabUtilsSettings = new PrefabUtilsSettings();
+        [UserSetting]
+        static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new UserSetting<PrefabUtilsSettings>(settings, nameof(m_expandableSettings), new PrefabUtilsSettings());
+        internal PrefabUtilsSettings prefabUtilsSettings => m_prefabUtilsSettings.value;
 
-        [SerializeField, Tooltip("Use the following options to adjust .csproj file generation.")]
-        internal ProjectFileSettings[] projectFileSettings = new ProjectFileSettings[0];
-        internal bool projectFileSettingsEnabled => projectFileSettings.Length > 0;
-        internal ProjectFileSettings ProjectFileSettingsForAssembly(string assemblyName) {
-            return projectFileSettings
-                .FirstOrDefault(settings => settings == null ? false : settings.Matches(assemblyName));
-        }
-
-        [SerializeField, Tooltip("Add C# namespace based on assembly and folder hierarchy to every new .cs file.")]
-        internal bool addNamespaceToCSharpFiles = false;
+        [UserSetting]
+        static UserSetting<CSharpSettings> m_cSharpSettings = new UserSetting<CSharpSettings>(settings, nameof(m_expandableSettings), new CSharpSettings());
+        internal CSharpSettings cSharpSettings => m_cSharpSettings.value;
     }
 }

@@ -1,9 +1,6 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEditor;
 using UnityEditor.SettingsManagement;
-using UnityEngine;
 
 public class SerializableSetting : IUserSetting {
 

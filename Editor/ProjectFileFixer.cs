@@ -15,7 +15,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         }
 
         public static string OnGeneratedCSProject(string fileName, string fileContent) {
-            if (UnityExtensionsSettings.instance.projectFileSettingsEnabled) {
+            if (UnityExtensionsSettings.instance.cSharpSettings.rewriteProjectFiles) {
                 var file = new FileInfo(fileName);
                 if (file.Extension == PROJECT_FILE_EXTENSION) {
                     var projectDocument = XDocument.Parse(fileContent);
@@ -25,7 +25,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                         .First()
                         .Value;
 
-                    var settings = UnityExtensionsSettings.instance.ProjectFileSettingsForAssembly(assemblyName);
+                    var settings = UnityExtensionsSettings.instance.cSharpSettings.ProjectFileSettingsForAssembly(assemblyName);
                     if (settings != default) {
                         foreach (var element in projectDocument.Descendants(XName.Get("LangVersion", NS_CSPROJ))) {
                             element.Value = settings.setCSharpVersionTo;
@@ -34,10 +34,9 @@ namespace Slothsoft.UnityExtensions.Editor {
                             element.Value = settings.setWarningLevelTo;
                         }
 
-                        using (var str = new Utf8StringWriter()) {
-                            projectDocument.Save(str);
-                            fileContent = str.ToString();
-                        }
+                        using var str = new Utf8StringWriter();
+                        projectDocument.Save(str);
+                        fileContent = str.ToString();
                     }
                 }
             }
