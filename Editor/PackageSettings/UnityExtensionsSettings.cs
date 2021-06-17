@@ -1,28 +1,43 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using UnityEditor;
 using UnityEditor.SettingsManagement;
+using UnityEditor.UIElements;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
-    [Serializable]
     class UnityExtensionsSettings {
         const string SETTINGS_PACKAGE = "net.slothsoft.unity-extensions";
         const string SETTINGS_MENU = "Project/Slothsoft's Unity Extensions";
-        const string SETTINGS_PATH = "ProjectSettings/UnityExtensionsSettings.asset";
+        const string SETTINGS_TEMPLATE = "Packages/net.slothsoft.unity-extensions/Templates/Settings.uxml";
 
-        [SettingsProvider]
-        public static SettingsProvider CreateSettingsProvider() {
-            var provider = new UserSettingsProvider(
-                SETTINGS_MENU,
-                settings,
-                new[] { typeof(UnityExtensionsSettings).Assembly },
-                SettingsScope.Project
-            );
-            return provider;
+        class SettingsObject : ScriptableObject {
+            [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
+            public ExpandableSettings expandableSettings;
+
+            public void Load() {
+                expandableSettings = m_expandableSettings.value;
+            }
+            public void Save() {
+                m_expandableSettings.ApplyModifiedProperties();
+            }
+
+            static SettingsObject instance;
+            [SettingsProvider]
+            public static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
+                activateHandler = (searchContext, rootElement) => {
+                    if (!instance) {
+                        instance = CreateInstance<SettingsObject>();
+                        instance.Load();
+                    }
+                    var template = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(SETTINGS_TEMPLATE);
+                    template.CloneTree(rootElement);
+                    rootElement.Bind(new SerializedObject(instance));
+                }
+            };
         }
 
-        static Settings settings {
+        internal static Settings settings {
             get {
                 if (settingsCache == null) {
                     settingsCache = new Settings(SETTINGS_PACKAGE);
@@ -42,12 +57,9 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         }
         static UnityExtensionsSettings instanceCache;
 
-        [UserSetting("[Expandable] Settings", "[Expandable] Settings")]
-        static UserSetting<int[]> m_expandableSettings = new UserSetting<int[]>(settings, nameof(m_expandableSettings), default);
-
-        [Header("Slothsoft's Unity Extensions Settings")]
-        [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
-        internal ExpandableSettings expandableSettings = new ExpandableSettings();
+        [UserSetting]
+        static UserSetting<ExpandableSettings> m_expandableSettings = new UserSetting<ExpandableSettings>(settings, nameof(m_expandableSettings), new ExpandableSettings());
+        internal ExpandableSettings expandableSettings => m_expandableSettings.value;
 
         [SerializeField, Tooltip("Use the following options to change render pipeline conversion")]
         internal RenderPipelineConversionSettings renderPipelineConversionSettings = new RenderPipelineConversionSettings();
