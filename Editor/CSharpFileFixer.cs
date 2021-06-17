@@ -8,7 +8,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         const string CSHARP_EXTENSION = ".cs";
 
         public static void OnWillCreateAsset(string path) {
-            if (!UnityExtensionsSettings.instance.addNamespaceToCSharpFiles) {
+            if (!UnityExtensionsSettings.instance.cSharpSettings.addNamespaceToCSharpFiles) {
                 return;
             }
             path = AssetDatabase.GetAssetPathFromTextMetaFilePath(path);
