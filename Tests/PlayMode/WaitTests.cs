@@ -4,7 +4,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.PlayMode {
     public class WaitTests {
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
