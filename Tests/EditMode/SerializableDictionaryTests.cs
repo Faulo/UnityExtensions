@@ -3,18 +3,21 @@ using NUnit.Framework;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class SerializableDictionaryTests {
-        [Test]
+        [TestCase("0", "1")]
+        [TestCase("1", "2")]
         [Obsolete]
-        public void TestSerializable() {
-            var dict = new SerializableDictionary<int, int> {
-                [0] = 1
+        public void TestSerializable(string key, string value) {
+            var dict = new SerializableDictionary<string, string> {
+                [key] = value
             };
 
             dict.OnBeforeSerialize();
 
+            dict.Clear();
+
             dict.OnAfterDeserialize();
 
-            Assert.AreEqual(1, dict[0]);
+            Assert.AreEqual(value, dict[key]);
         }
     }
 }
