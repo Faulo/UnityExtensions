@@ -83,7 +83,7 @@ namespace Slothsoft.UnityExtensions {
             using (new GUILayout.HorizontalScope()) {
                 GUILayout.Space(indentLevel * EditorGUIUtility.singleLineHeight / 2);
                 if (GUILayout.Button(label, buttonStyle)) {
-                    EditorCoroutineUtility.StartCoroutine(Co_Button(label, coroutine), target);
+                    Unity.EditorCoroutines.Editor.EditorCoroutineUtility.StartCoroutine(Co_Button(label, coroutine), target);
                 }
             }
         }
