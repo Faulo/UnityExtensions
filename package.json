@@ -8,7 +8,7 @@
   "dependencies": {
 	"com.unity.testtools.codecoverage": "1.1.1",
     "com.unity.editorcoroutines": "1.0.0",
-    "com.unity.test-framework": "1.1.31",
+    "com.unity.test-framework": "1.1.22",
     "com.unity.modules.tilemap": "1.0.0",
     "com.unity.settings-manager": "2.0.1"
   },
