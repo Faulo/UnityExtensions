@@ -1,8 +1,10 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class SerializableDictionaryTests {
         [Test]
+        [Obsolete]
         public void TestSerializable() {
             var dict = new SerializableDictionary<int, int> {
                 [0] = 1

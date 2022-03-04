@@ -2,7 +2,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class Vector2Tests {
         [Test]
         public void TestDeconstruct() {
