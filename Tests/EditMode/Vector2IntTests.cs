@@ -21,5 +21,23 @@ namespace Slothsoft.UnityExtensions.Tests {
             Assert.AreEqual(Vector2Int.up, vector.WithY(1));
             Assert.AreEqual(Vector2Int.zero, vector);
         }
+        [TestCase(1, 2, 1, 2, 0)]
+        [TestCase(3, 2, 3, 2, 0)]
+        public void TestSwizzleXY(int x, int y, int expectedX, int expectedY, int expectedZ) {
+            var vector = new Vector2Int(x, y);
+            Assert.AreEqual(new Vector3Int(expectedX, expectedY, expectedZ), vector.SwizzleXY());
+        }
+        [TestCase(1, 2, 1, 0, 2)]
+        [TestCase(3, 2, 3, 0, 2)]
+        public void TestSwizzleXZ(int x, int y, int expectedX, int expectedY, int expectedZ) {
+            var vector = new Vector2Int(x, y);
+            Assert.AreEqual(new Vector3Int(expectedX, expectedY, expectedZ), vector.SwizzleXZ());
+        }
+        [TestCase(1, 2, 0, 1, 2)]
+        [TestCase(3, 2, 0, 3, 2)]
+        public void TestSwizzleYZ(int x, int y, int expectedX, int expectedY, int expectedZ) {
+            var vector = new Vector2Int(x, y);
+            Assert.AreEqual(new Vector3Int(expectedX, expectedY, expectedZ), vector.SwizzleYZ());
+        }
     }
 }

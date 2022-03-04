@@ -36,33 +36,5 @@ namespace Slothsoft.UnityExtensions {
                 ? Vector2Int.right * Math.Sign(direction.x)
                 : Vector2Int.up * Math.Sign(direction.y);
         }
-
-        /// <summary>
-        /// Aligns a vector to one of the 2 horizontal cardinal directions.
-        /// </summary>
-        /// <param name="direction">The vector to align.</param>
-        /// <returns>One of [<see cref="Vector2Int.zero">, <see cref="Vector2Int.right">, <see cref="Vector2Int.left">.</returns>
-        public static Vector2Int SnapToHorizontal(this Vector2 direction) {
-            float x = Math.Abs(direction.x);
-            float y = Math.Abs(direction.y);
-            if (Mathf.Approximately(x, y)) {
-                return Vector2Int.zero;
-            }
-            return Vector2Int.right * Math.Sign(direction.x);
-        }
-
-        /// <summary>
-        /// Aligns a vector to one of the 2 vertical cardinal directions.
-        /// </summary>
-        /// <param name="direction">The vector to align.</param>
-        /// <returns>One of [<see cref="Vector2Int.zero">, <see cref="Vector2Int.up">, <see cref="Vector2Int.down">.</returns>
-        public static Vector2Int SnapToVertical(this Vector2 direction) {
-            float x = Math.Abs(direction.x);
-            float y = Math.Abs(direction.y);
-            if (Mathf.Approximately(x, y)) {
-                return Vector2Int.zero;
-            }
-            return Vector2Int.up * Math.Sign(direction.y);
-        }
     }
 }

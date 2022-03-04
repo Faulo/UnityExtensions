@@ -1,4 +1,5 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests {
@@ -28,20 +29,39 @@ namespace Slothsoft.UnityExtensions.Tests {
             Assert.AreEqual(Vector3.forward, vector.WithZ(1));
             Assert.AreEqual(Vector3.zero, vector);
         }
-        static readonly (Vector3 source, Vector3Int target)[] ROUNDED_INTEGERS = new[] {
-            (Vector3.zero, Vector3Int.zero),
-            (new Vector3(0.6f, -0.6f, 0.2f), new Vector3Int(1, -1, 0)),
-        };
-        [Test]
-        public void TestRoundToInt([ValueSource(nameof(ROUNDED_INTEGERS))] (Vector3 source, Vector3Int target) pair) {
-            Assert.AreEqual(pair.target, pair.source.RoundToInt());
+        [TestCase(0, -0, 10, 0, 0, 10)]
+        [TestCase(0.6f, -0.6f, 0.2f, 1, -1, 0)]
+        [Obsolete]
+        public void TestRoundToInt(float x, float y, float z, int expectedX, int expectedY, int expectedZ) {
+            var vector = new Vector3(x, y, z);
+            Assert.AreEqual(new Vector3Int(expectedX, expectedY, expectedZ), vector.RoundToInt());
         }
-        [Test]
-        public void TestSwizzle() {
-            var vector = new Vector3(1, 2, 3);
-            Assert.AreEqual(new Vector2(1, 2), vector.SwizzleXY());
-            Assert.AreEqual(new Vector2(1, 3), vector.SwizzleXZ());
-            Assert.AreEqual(new Vector2(2, 3), vector.SwizzleYZ());
+        [TestCase(1, 2, 3, 1, 2)]
+        [TestCase(3, 2, 1, 3, 2)]
+        public void TestSwizzleXY(float x, float y, float z, float expectedX, float expectedY) {
+            var vector = new Vector3(x, y, z);
+            Assert.AreEqual(new Vector2(expectedX, expectedY), vector.SwizzleXY());
+        }
+        [TestCase(1, 2, 3, 1, 3)]
+        [TestCase(3, 2, 1, 3, 1)]
+        public void TestSwizzleXZ(float x, float y, float z, float expectedX, float expectedY) {
+            var vector = new Vector3(x, y, z);
+            Assert.AreEqual(new Vector2(expectedX, expectedY), vector.SwizzleXZ());
+        }
+        [TestCase(1, 2, 3, 2, 3)]
+        [TestCase(3, 2, 1, 2, 1)]
+        public void TestSwizzleYZ(float x, float y, float z, float expectedX, float expectedY) {
+            var vector = new Vector3(x, y, z);
+            Assert.AreEqual(new Vector2(expectedX, expectedY), vector.SwizzleYZ());
+        }
+        [TestCase(1, -1, 1, 0, 0, 0)]
+        [TestCase(0, -1, 10, 0, 0, 1)]
+        [TestCase(5, -1, -4, 1, 0, 0)]
+        [TestCase(0.9f, -1, 0.4f, 0, -1, 0)]
+        [TestCase(0.6f, -0.6f, 0.2f, 0, 0, 0)]
+        public void SnapToCardinal(float x, float y, float z, int expectedX, int expectedY, int expectedZ) {
+            var vector = new Vector3(x, y, z);
+            Assert.AreEqual(new Vector3Int(expectedX, expectedY, expectedZ), vector.SnapToCardinal());
         }
     }
 }
