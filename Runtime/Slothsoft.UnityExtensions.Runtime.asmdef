@@ -1,6 +1,9 @@
 {
     "name": "Slothsoft.UnityExtensions.Runtime",
-    "references": [],
+    "rootNamespace": "",
+    "references": [
+        "GUID:478a2357cc57436488a56e564b08d223"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
@@ -8,5 +11,6 @@
     "precompiledReferences": [],
     "autoReferenced": true,
     "defineConstraints": [],
-    "versionDefines": []
+    "versionDefines": [],
+    "noEngineReferences": false
 }

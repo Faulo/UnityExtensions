@@ -1,6 +1,8 @@
 #if UNITY_EDITOR
 using System;
+using System.Collections;
 using System.Collections.Generic;
+using Unity.EditorCoroutines.Editor;
 using UnityEditor;
 using UnityEngine;
 
@@ -62,7 +64,7 @@ namespace Slothsoft.UnityExtensions {
             }
         }
         /// <summary>
-        /// Draw a button with the label <paramref name="label"/>. If the button gets clicked, perform <paramref name="label"/>.
+        /// Draw a button with the label <paramref name="label"/>. If the button gets clicked, perform <paramref name="action"/>.
         /// </summary>
         protected void DrawButton(string label, Action action) {
             using (new GUILayout.HorizontalScope()) {
@@ -75,6 +77,24 @@ namespace Slothsoft.UnityExtensions {
                 }
             }
         }
+        /// <summary>
+        /// Draw a button with the label <paramref name="label"/>. If the button gets clicked, start coroutine <paramref name="coroutine"/>.
+        /// </summary>
+        protected void DrawButton(string label, Func<IEnumerator> coroutine) {
+            using (new GUILayout.HorizontalScope()) {
+                GUILayout.Space(indentLevel * EditorGUIUtility.singleLineHeight / 2);
+                if (GUILayout.Button(label, buttonStyle)) {
+                    EditorCoroutineUtility.StartCoroutine(Co_Button(label, coroutine), target);
+                }
+            }
+        }
+        IEnumerator Co_Button(string label, Func<IEnumerator> coroutine) {
+            Undo.RecordObject(target, label);
+            yield return coroutine();
+            EditorUtility.SetDirty(target);
+            PrefabUtility.RecordPrefabInstancePropertyModifications(target);
+        }
+
         /// <summary>
         /// Draw a foldout with the label <paramref name="label"/>.
         /// </summary>
