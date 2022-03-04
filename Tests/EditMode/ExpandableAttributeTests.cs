@@ -25,5 +25,17 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
 
             Assert.IsFalse(attribute.ValidateType(obj), $"{typeof(B)} must not pass validation.");
         }
+        [Test]
+        public void TestEmptyLabel() {
+            var attribute = new ExpandableAttribute();
+
+            Assert.AreEqual(string.Empty, attribute.label);
+        }
+        [Test]
+        public void TestInterfaceLabel() {
+            var attribute = new ExpandableAttribute(typeof(ITwo));
+
+            Assert.AreEqual($" : {typeof(ITwo).Name}", attribute.label);
+        }
     }
 }
