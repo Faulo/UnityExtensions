@@ -23,5 +23,24 @@ namespace Slothsoft.UnityExtensions {
             Mathf.RoundToInt(vector.y),
             Mathf.RoundToInt(vector.z)
         );
+
+        public static Vector3Int SnapToCardinal(this Vector3 direction) {
+            float x = Math.Abs(direction.x);
+            float y = Math.Abs(direction.y);
+            float z = Math.Abs(direction.z);
+            if (Mathf.Approximately(x, y) && Mathf.Approximately(y, z)) {
+                return Vector3Int.zero;
+            }
+            if (x > y && x > z) {
+                return Vector3Int.right * Math.Sign(direction.x);
+            }
+            if (y > x && y > z) {
+                return Vector3Int.up * Math.Sign(direction.y);
+            }
+            if (z > x && z > y) {
+                return Vector3Int.forward * Math.Sign(direction.z);
+            }
+            return Vector3Int.zero;
+        }
     }
 }
