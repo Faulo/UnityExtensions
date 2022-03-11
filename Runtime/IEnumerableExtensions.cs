@@ -183,7 +183,7 @@ namespace Slothsoft.UnityExtensions {
         /// <summary>
         /// Checks whether every item in <paramref name="source"/> also exists in <paramref name="target"/>.
         /// </summary>
-        public static bool Equals<T>(this IEnumerable<T> source, IEnumerable<T> target) {
+        public static bool IsEquivalentTo<T>(this IEnumerable<T> source, IEnumerable<T> target) {
             if (source.Count() != target.Count()) {
                 return false;
             }
@@ -199,9 +199,9 @@ namespace Slothsoft.UnityExtensions {
         /// Creates a list with all elements from <paramref name="source"/> except for <paramref name="item"/>.
         /// </summary>
         public static IEnumerable<TSource> Without<TSource>(this IEnumerable<TSource> source, TSource item)
-            where TSource : class {
+            where TSource : IEquatable<TSource> {
             return source
-                .Where(testItem => testItem != item);
+                .Where(testItem => !testItem.Equals(item));
         }
 
         public delegate bool TrySelectFunc<T>(out T output);

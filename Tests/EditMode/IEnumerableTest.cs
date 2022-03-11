@@ -246,5 +246,51 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
             Assert.Greater(c, d);
         }
         #endregion
+
+        #region ToHashSet
+        [Test]
+        public void TestToHashSet() {
+            CollectionAssert.AreEqual(new[] { 1, 2, 3, 4 }, new[] { 1, 2, 3, 4, 4, 1, 2 }.ToHashSet());
+        }
+        #endregion
+
+        #region IsEquivalentTo
+        [Test]
+        public void TestIsEquivalentToTrue() {
+            Assert.IsTrue(new[] { 1, 2, 3, 4 }.IsEquivalentTo(new[] { 4, 3, 2, 1 }));
+        }
+        [Test]
+        public void TestIsEquivalentToFalseWrongCount() {
+            Assert.IsFalse(new[] { 1, 2, 3, 4 }.IsEquivalentTo(new[] { 1, 2, 3, 4, 4 }));
+        }
+        [Test]
+        public void TestIsEquivalentToFalseWrongElements() {
+            Assert.IsFalse(new[] { 1, 2, 3, 4 }.IsEquivalentTo(new[] { 1, 2, 4, 4 }));
+        }
+        #endregion
+
+        #region Without
+        [Test]
+        public void TestWithout() {
+            CollectionAssert.AreEqual(new[] { 1, 2, 3 }, new[] { 1, 2, 3, 4, 4 }.Without(4));
+        }
+        #endregion
+
+        #region TrySelect
+        [Test]
+        public void TestTrySelect() {
+            CollectionAssert.AreEqual(
+                new[] { 2, 4 },
+                new[] { 1, 2, 3, 4 }
+                    .TrySelect<int, int>(i => {
+                        bool selector(out int output) {
+                            output = i;
+                            return i % 2 == 0;
+                        }
+                        return selector;
+                    })
+            );
+        }
+        #endregion
     }
 }
