@@ -2,9 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
+using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class IEnumerableTest {
+        #region SelectNotNull
         [Test]
         public void TestSelectNotNull() {
             IEnumerable<int> testArray = new int[] { 1, 2, 3, 4, 5 };
@@ -14,6 +16,9 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
 
             Assert.AreEqual(expected, result);
         }
+        #endregion
+
+        #region ForAll
         [Test]
         public void TestForAll() {
             int testSum = 0;
@@ -24,11 +29,41 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
             Assert.AreEqual(testSum, testArray.Sum());
         }
         [Test]
+        public void TestForAllReturnsCollection() {
+            IEnumerable<int> testArray = new int[] { 1, 2, 3, 4, 5 };
+
+            CollectionAssert.AreEqual(testArray, testArray.ForAll(i => { }));
+        }
+        #endregion
+
+        #region Log
+        [Test]
+        public void TestLog() {
+            string[] expectedMessages = new[] { "Hello", "World!" };
+            var actualMessages = new List<string>();
+            void listener(string condition, string stackTrace, LogType type) {
+                if (type == LogType.Log) {
+                    actualMessages.Add(condition);
+                }
+            }
+            Application.logMessageReceived += listener;
+            expectedMessages.Log();
+            Application.logMessageReceived -= listener;
+
+            CollectionAssert.AreEqual(expectedMessages, actualMessages);
+        }
+        #endregion
+
+        #region Except
+        [Test]
         public void TestExcept() {
             IEnumerable<int> testArray = new int[] { 1, 2, 3, 4 };
 
             Assert.AreEqual(6, testArray.Except(1, 3, 5).Sum());
         }
+        #endregion
+
+        #region  RandomElement
         int[] testArray = new int[] { 1, 2, 3 };
         [Test]
         public void TestRandomElementWithArray() {
@@ -65,6 +100,9 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
         public void TestRandomElementReturnsZeroWhenEmpty() {
             Assert.AreEqual(0, Array.Empty<int>().RandomElement());
         }
+        #endregion
+
+        #region Shuffle
         [Test]
         public void TestShuffle() {
             IEnumerable<int> testArray = new int[] { 1, 2, 3 };
@@ -74,6 +112,9 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
                 new string[] { "123", "132", "213", "231", "312", "321" }
             );
         }
+        #endregion
+
+        #region None
         [Test]
         public void TestNoneWithoutPredicate() {
             Assert.IsTrue(new int[] { }.None());
@@ -84,8 +125,9 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
             Assert.IsFalse(new int[] { 0 }.None(i => i == 0));
             Assert.IsTrue(new int[] { 1 }.None(i => i == 0));
         }
+        #endregion
 
-
+        #region RandomWeightedElement
         readonly int randomNumberIterations = 1000;
         [Test]
         public void TestRandomWeightedElementThrowsWhenNull() {
@@ -159,6 +201,9 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
                 Assert.AreEqual(table[key], probabilitySum * results[key] / (double)numberOfElements, 0.1);
             }
         }
+        #endregion
+
+        #region RandomWeightedElementDescending
         [Test]
         public void TestRandomWeightedElementDescendingThrowsWhenNull() {
             Assert.Throws<UnityEngine.Assertions.AssertionException>(
@@ -200,5 +245,6 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
             Assert.Greater(b, c);
             Assert.Greater(c, d);
         }
+        #endregion
     }
 }

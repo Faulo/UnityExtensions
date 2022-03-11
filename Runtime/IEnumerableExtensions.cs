@@ -9,10 +9,11 @@ namespace Slothsoft.UnityExtensions {
         public static IEnumerable<TResult> SelectNotNull<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector) {
             return source.Select(selector).Where(result => result != null);
         }
-        public static void ForAll<T>(this IEnumerable<T> source, Action<T> action) {
+        public static IEnumerable<T> ForAll<T>(this IEnumerable<T> source, Action<T> action) {
             foreach (var item in source) {
                 action(item);
             }
+            return source;
         }
         public static IEnumerable<T> Log<T>(this IEnumerable<T> source) {
             foreach (var item in source) {
