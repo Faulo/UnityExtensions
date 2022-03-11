@@ -1,62 +1,137 @@
-﻿using NUnit.Framework;
+﻿using System;
+using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class TransformTests {
-        [Test]
-        public void TestSetX() {
-            var gameObject = new GameObject();
-            gameObject.transform.position = Vector3.zero;
+        [TestCase(0)]
+        [TestCase(1)]
+        [TestCase(2)]
+        public void TestGetChildren(int childCount) {
+            var context = new GameObject();
 
-            gameObject.transform.SetX(10);
+            var children = new Transform[childCount];
+            for (int i = 0; i < childCount; i++) {
+                children[i] = new GameObject().transform;
+                children[i].parent = context.transform;
+            }
 
-            Assert.AreEqual(gameObject.transform.position, new Vector3(10, 0, 0));
-        }
-        [Test]
-        public void TestSetY() {
-            var gameObject = new GameObject();
-            gameObject.transform.position = Vector3.zero;
-
-            gameObject.transform.SetY(10);
-
-            Assert.AreEqual(gameObject.transform.position, new Vector3(0, 10, 0));
-        }
-        [Test]
-        public void TestSetZ() {
-            var gameObject = new GameObject();
-            gameObject.transform.position = Vector3.zero;
-
-            gameObject.transform.SetZ(10);
-
-            Assert.AreEqual(gameObject.transform.position, new Vector3(0, 0, 10));
+            CollectionAssert.AreEqual(children, context.transform.GetChildren());
         }
 
-        [Test]
-        public void TestSetScaleX() {
-            var gameObject = new GameObject();
-            gameObject.transform.localScale = Vector3.one;
+        [TestCase(0)]
+        [TestCase(1)]
+        [TestCase(2)]
+        public void TestClear(int childCount) {
+            var context = new GameObject();
 
-            gameObject.transform.SetScaleX(10);
+            var children = new Transform[childCount];
+            for (int i = 0; i < childCount; i++) {
+                children[i] = new GameObject().transform;
+                children[i].parent = context.transform;
+            }
 
-            Assert.AreEqual(gameObject.transform.localScale, new Vector3(10, 1, 1));
+            context.transform.Clear();
+
+            Assert.AreEqual(0, context.transform.childCount);
         }
+
         [Test]
-        public void TestSetScaleY() {
-            var gameObject = new GameObject();
-            gameObject.transform.localScale = Vector3.one;
+        public void TestTryGetComponentInChildrenReturnsSelf() {
+            var context = CreateHierarchy();
 
-            gameObject.transform.SetScaleY(10);
+            bool success = context.TryGetComponentInChildren<Transform>(out var result);
 
-            Assert.AreEqual(gameObject.transform.localScale, new Vector3(1, 10, 1));
+            Assert.IsTrue(success);
+            Assert.AreEqual(context, result);
         }
+
         [Test]
-        public void TestSetScaleZ() {
-            var gameObject = new GameObject();
-            gameObject.transform.localScale = Vector3.one;
+        public void TestTryGetComponentInParentReturnsSelf() {
+            var context = CreateHierarchy();
 
-            gameObject.transform.SetScaleZ(10);
+            bool success = context.TryGetComponentInParent<Transform>(out var result);
 
-            Assert.AreEqual(gameObject.transform.localScale, new Vector3(1, 1, 10));
+            Assert.IsTrue(success);
+            Assert.AreEqual(context, result);
+        }
+
+        [Test]
+        public void TestTryGetComponentInHierarchyReturnsSelf() {
+            var context = CreateHierarchy();
+
+            bool success = context.TryGetComponentInHierarchy<Transform>(out var result);
+
+            Assert.IsTrue(success);
+            Assert.AreEqual(context, result);
+        }
+
+        [TestCase(nameof(Transform), true)]
+        [TestCase(nameof(Renderer), false)]
+        [TestCase(nameof(BoxCollider), false)]
+        [TestCase(nameof(SphereCollider), true)]
+        public void TestTryGetComponentInChildren(string type, bool expectedResult) {
+            var context = CreateHierarchy();
+
+            bool actualresult = type switch {
+                nameof(Transform) => context.TryGetComponentInChildren<Transform>(out _),
+                nameof(Renderer) => context.TryGetComponentInChildren<Renderer>(out _),
+                nameof(BoxCollider) => context.TryGetComponentInChildren<BoxCollider>(out _),
+                nameof(SphereCollider) => context.TryGetComponentInChildren<SphereCollider>(out _),
+                _ => throw new NotImplementedException(),
+            };
+
+            Assert.AreEqual(expectedResult, actualresult);
+        }
+
+        [TestCase(nameof(Transform), true)]
+        [TestCase(nameof(Renderer), false)]
+        [TestCase(nameof(BoxCollider), true)]
+        [TestCase(nameof(SphereCollider), false)]
+        public void TestTryGetComponentInParent(string type, bool expectedResult) {
+            var context = CreateHierarchy();
+
+            bool actualresult = type switch {
+                nameof(Transform) => context.TryGetComponentInParent<Transform>(out _),
+                nameof(Renderer) => context.TryGetComponentInParent<Renderer>(out _),
+                nameof(BoxCollider) => context.TryGetComponentInParent<BoxCollider>(out _),
+                nameof(SphereCollider) => context.TryGetComponentInParent<SphereCollider>(out _),
+                _ => throw new NotImplementedException(),
+            };
+
+            Assert.AreEqual(expectedResult, actualresult);
+        }
+
+        [TestCase(nameof(Transform), true)]
+        [TestCase(nameof(Renderer), false)]
+        [TestCase(nameof(BoxCollider), true)]
+        [TestCase(nameof(SphereCollider), true)]
+        public void TestTryGetComponentInHierarchy(string type, bool expectedResult) {
+            var context = CreateHierarchy();
+
+            bool actualresult = type switch {
+                nameof(Transform) => context.TryGetComponentInHierarchy<Transform>(out _),
+                nameof(Renderer) => context.TryGetComponentInHierarchy<Renderer>(out _),
+                nameof(BoxCollider) => context.TryGetComponentInHierarchy<BoxCollider>(out _),
+                nameof(SphereCollider) => context.TryGetComponentInHierarchy<SphereCollider>(out _),
+                _ => throw new NotImplementedException(),
+            };
+
+            Assert.AreEqual(expectedResult, actualresult);
+        }
+
+        Transform CreateHierarchy() {
+            var parent = new GameObject();
+            var context = new GameObject();
+            var child = new GameObject();
+
+            context.transform.parent = parent.transform;
+            child.transform.parent = context.transform;
+
+            parent.AddComponent<BoxCollider>();
+            child.AddComponent<SphereCollider>();
+
+            return context.transform;
         }
     }
 }

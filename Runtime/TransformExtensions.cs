@@ -1,32 +1,93 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
     public static class TransformExtensions {
-        public static void SetX(this Transform transform, float value) {
-            transform.position = new Vector3(value, transform.position.y, transform.position.z);
+        /// <summary>
+        /// Retrieves all objects directly beneath <paramref name="parent"/> in the hierarchy.
+        /// </summary>
+        /// <param name="parent"></param>
+        /// <returns></returns>
+        public static Transform[] GetChildren(this Transform parent) {
+            var children = new Transform[parent.childCount];
+            for (int i = 0; i < parent.childCount; i++) {
+                children[i] = parent.GetChild(i);
+            }
+            return children;
         }
-        public static void SetY(this Transform transform, float value) {
-            transform.position = new Vector3(transform.position.x, value, transform.position.z);
+
+        /// <summary>
+        /// Deletes all children of <paramref name="parent"/>.
+        /// </summary>
+        /// <param name="parent"></param>
+        public static void Clear(this Transform parent) {
+            foreach (var child in parent.GetChildren()) {
+                if (Application.isPlaying) {
+                    Object.Destroy(child.gameObject);
+                } else {
+                    Object.DestroyImmediate(child.gameObject);
+                }
+            }
         }
-        public static void SetZ(this Transform transform, float value) {
-            transform.position = new Vector3(transform.position.x, transform.position.y, value);
+
+        /// <summary>
+        /// Attempts to locate a component in the hierarchy. First searches <paramref name="context"/>, then its ancestors.
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="context"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static bool TryGetComponentInParent<T>(this Transform context, out T target)
+            where T : class {
+            for (var ancestor = context; ancestor; ancestor = ancestor.parent) {
+                if (ancestor.TryGetComponent(out target)) {
+                    return true;
+                }
+            }
+            target = default;
+            return false;
         }
-        public static void SetScaleX(this Transform transform, float value) {
-            transform.localScale = new Vector3(value, transform.localScale.y, transform.localScale.z);
+
+        /// <summary>
+        /// Attempts to locate a component in the hierarchy. First searches <paramref name="context"/>, then its descendants (depth-first).
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="context"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static bool TryGetComponentInChildren<T>(this Transform context, out T target)
+            where T : class {
+            if (context.TryGetComponent(out target)) {
+                return true;
+            }
+            for (int i = 0; i < context.childCount; i++) {
+                if (context.GetChild(i).TryGetComponentInChildren(out target)) {
+                    return true;
+                }
+            }
+            return false;
         }
-        public static void SetScaleY(this Transform transform, float value) {
-            transform.localScale = new Vector3(transform.localScale.x, value, transform.localScale.z);
-        }
-        public static void SetScaleZ(this Transform transform, float value) {
-            transform.localScale = new Vector3(transform.localScale.x, transform.localScale.y, value);
-        }
-        public static IEnumerable<Transform> GetDescendants(this Transform parent) {
-            return parent
-                .Cast<Transform>()
-                .SelectMany(GetDescendants)
-                .Prepend(parent);
+
+        /// <summary>
+        /// Attempts to locate a component in the hierarchy. First searches <paramref name="context"/>, then its ancestors, then its descendants (depth-first).
+        /// </summary>
+        /// <typeparam name="T"></typeparam>
+        /// <param name="context"></param>
+        /// <param name="target"></param>
+        /// <returns></returns>
+        public static bool TryGetComponentInHierarchy<T>(this Transform context, out T target)
+            where T : class {
+            for (var ancestor = context; ancestor; ancestor = ancestor.parent) {
+                if (ancestor.TryGetComponent(out target)) {
+                    return true;
+                }
+            }
+            for (int i = 0; i < context.childCount; i++) {
+                if (context.GetChild(i).TryGetComponentInChildren(out target)) {
+                    return true;
+                }
+            }
+            target = default;
+            return false;
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class ExpandableAttributeTests {
         interface IOne {
         }
@@ -24,6 +24,18 @@ namespace Slothsoft.UnityExtensions.Tests {
             var obj = new GameObject().AddComponent<B>();
 
             Assert.IsFalse(attribute.ValidateType(obj), $"{typeof(B)} must not pass validation.");
+        }
+        [Test]
+        public void TestEmptyLabel() {
+            var attribute = new ExpandableAttribute();
+
+            Assert.AreEqual(string.Empty, attribute.label);
+        }
+        [Test]
+        public void TestInterfaceLabel() {
+            var attribute = new ExpandableAttribute(typeof(ITwo));
+
+            Assert.AreEqual($" : {typeof(ITwo).Name}", attribute.label);
         }
     }
 }

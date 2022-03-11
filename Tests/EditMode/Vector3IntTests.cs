@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests {
+namespace Slothsoft.UnityExtensions.Tests.EditMode {
     public class Vector3IntTests {
         [Test]
         public void TestDeconstruct() {
@@ -27,6 +27,24 @@ namespace Slothsoft.UnityExtensions.Tests {
             var vector = Vector3Int.zero;
             Assert.AreEqual(new Vector3Int(0, 0, 1), vector.WithZ(1));
             Assert.AreEqual(Vector3Int.zero, vector);
+        }
+        [TestCase(1, 2, 3, 1, 2)]
+        [TestCase(3, 2, 1, 3, 2)]
+        public void TestSwizzleXY(int x, int y, int z, int expectedX, int expectedY) {
+            var vector = new Vector3Int(x, y, z);
+            Assert.AreEqual(new Vector2Int(expectedX, expectedY), vector.SwizzleXY());
+        }
+        [TestCase(1, 2, 3, 1, 3)]
+        [TestCase(3, 2, 1, 3, 1)]
+        public void TestSwizzleXZ(int x, int y, int z, int expectedX, int expectedY) {
+            var vector = new Vector3Int(x, y, z);
+            Assert.AreEqual(new Vector2Int(expectedX, expectedY), vector.SwizzleXZ());
+        }
+        [TestCase(1, 2, 3, 2, 3)]
+        [TestCase(3, 2, 1, 2, 1)]
+        public void TestSwizzleYZ(int x, int y, int z, int expectedX, int expectedY) {
+            var vector = new Vector3Int(x, y, z);
+            Assert.AreEqual(new Vector2Int(expectedX, expectedY), vector.SwizzleYZ());
         }
     }
 }
