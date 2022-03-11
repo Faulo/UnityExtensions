@@ -1,7 +1,7 @@
 # UnityExtensions
 [![openupm](https://img.shields.io/npm/v/net.slothsoft.unity-extensions?label=openupm&registry_uri=https://package.openupm.com)](https://openupm.com/packages/net.slothsoft.unity-extensions/)
 
-Some C# Extension functions for common Unity problems.
+C# extension functions, attributes and editor tools for common Unity problems.
 
 ## Key features:
 - Additional Linq-like IEnumerable extensions.
