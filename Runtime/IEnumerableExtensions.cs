@@ -6,24 +6,49 @@ using UnityEngine.Assertions;
 namespace Slothsoft.UnityExtensions {
     public static class IEnumerableExtensions {
         static readonly Random random = new Random();
+
+        /// <summary>
+        /// Like <see cref="Enumerable.Select"/>, but only return non-null values.
+        /// </summary>
         public static IEnumerable<TResult> SelectNotNull<TSource, TResult>(this IEnumerable<TSource> source, Func<TSource, TResult> selector) {
-            return source.Select(selector).Where(result => result != null);
+            foreach (var item in source) {
+                var result = selector(item);
+                if (result != null) {
+                    yield return result;
+                }
+            }
         }
+
+        /// <summary>
+        /// Call the supplied <paramref name="action"/> for each element in <paramref name="source"/>.
+        /// </summary>
         public static IEnumerable<T> ForAll<T>(this IEnumerable<T> source, Action<T> action) {
             foreach (var item in source) {
                 action(item);
             }
             return source;
         }
+
+        /// <summary>
+        /// Call <see cref="UnityEngine.Debug.Log"/> for each element in <paramref name="source"/>.
+        /// </summary>
         public static IEnumerable<T> Log<T>(this IEnumerable<T> source) {
             foreach (var item in source) {
                 UnityEngine.Debug.Log(item);
             }
             return source;
         }
+
+        /// <summary>
+        /// Params variant of <see cref="Enumerable.Except"/>.
+        /// </summary>
         public static IEnumerable<T> Except<T>(this IEnumerable<T> source, params T[] args) {
             return source.Except((IEnumerable<T>)args);
         }
+
+        /// <summary>
+        /// Picks a random element from <paramref name="source"/> and returns it.
+        /// </summary>
         public static T RandomElement<T>(this IEnumerable<T> source) {
             Assert.IsNotNull(source, "Source must not be null.");
             if (source is not IReadOnlyList<T> elements) {
@@ -33,6 +58,10 @@ namespace Slothsoft.UnityExtensions {
                 ? default
                 : elements[random.Next(elements.Count)];
         }
+
+        /// <summary>
+        /// Picks a random element from <paramref name="source"/> and returns it, using the weights supplied by <paramref name="weighting"/>. The higher the weight, the more likely the element will be picked.
+        /// </summary>
         public static T RandomWeightedElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
             Assert.IsNotNull(source, "Source must not be null.");
             var weights = new Dictionary<T, int>();
@@ -41,6 +70,10 @@ namespace Slothsoft.UnityExtensions {
             }
             return RandomWeightedElement(source, weights);
         }
+
+        /// <summary>
+        /// Picks a random element from <paramref name="source"/> and returns it, using the weights supplied by <paramref name="weights"/>. The higher the weight, the more likely the element will be picked.
+        /// </summary>
         public static T RandomWeightedElement<T>(this IEnumerable<T> source, IReadOnlyDictionary<T, int> weights) {
             Assert.IsNotNull(source, "Source must not be null.");
             int totalWeight = source.CalculateTotalWeight(weights);
@@ -53,6 +86,10 @@ namespace Slothsoft.UnityExtensions {
             }
             return default;
         }
+
+        /// <summary>
+        /// Picks a random element from <paramref name="source"/> and returns it, using the weights supplied by <paramref name="weighting"/>. The higher the weight, the less likely the element will be picked.
+        /// </summary>
         public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, Func<T, int> weighting) {
             Assert.IsNotNull(source, "Source must not be null.");
             var weights = new Dictionary<T, int>();
@@ -61,6 +98,10 @@ namespace Slothsoft.UnityExtensions {
             }
             return source.RandomWeightedElementDescending(weights);
         }
+
+        /// <summary>
+        /// Picks a random element from <paramref name="source"/> and returns it, using the weights supplied by <paramref name="weights"/>. The higher the weight, the less likely the element will be picked.
+        /// </summary>
         public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, IReadOnlyDictionary<T, int> weights) {
             Assert.IsNotNull(source, "Source must not be null.");
             int totalWeight = source.CalculateTotalWeight(weights);
@@ -77,7 +118,10 @@ namespace Slothsoft.UnityExtensions {
             }
             return totalWeight;
         }
-        //https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm
+
+        /// <summary>
+        /// Returns all elements in <paramref name="source"/> in a random order. Uses the algorithm described in <seealso href="https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm"/>.
+        /// </summary>
         public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source) {
             var elements = source.ToArray();
             for (int i = elements.Length - 1; i >= 0; i--) {
@@ -86,13 +130,24 @@ namespace Slothsoft.UnityExtensions {
                 elements[swapIndex] = elements[i];
             }
         }
-        //https://stackoverflow.com/questions/8741439/what-is-the-opposite-method-of-anyt
+
+        /// <summary>
+        /// Inverse of <see cref="Enumerable.Any"/>.
+        /// </summary>
         public static bool None<TSource>(this IEnumerable<TSource> source) {
             return !source.Any();
         }
+
+        /// <summary>
+        /// Inverse of <see cref="Enumerable.Any"/>.
+        /// </summary>
         public static bool None<TSource>(this IEnumerable<TSource> source, Func<TSource, bool> predicate) {
             return !source.Any(predicate);
         }
+
+        /// <summary>
+        /// Merges two lists into one by creating a tuple of every combination of values.
+        /// </summary>
         public static IEnumerable<Tuple<TFirst, TSecond>> Multiply<TFirst, TSecond>(this IEnumerable<TFirst> firstList, IEnumerable<TSecond> secondList) {
             foreach (var first in firstList) {
                 foreach (var second in secondList) {
@@ -100,6 +155,10 @@ namespace Slothsoft.UnityExtensions {
                 }
             }
         }
+
+        /// <summary>
+        /// Merges two lists into one by calling <paramref name="callback"/> on every combination of values.
+        /// </summary>
         public static IEnumerable<TReturn> Multiply<TFirst, TSecond, TReturn>(this IEnumerable<TFirst> firstList, IEnumerable<TSecond> secondList, Func<TFirst, TSecond, TReturn> callback) {
             foreach (var first in firstList) {
                 foreach (var second in secondList) {
@@ -107,6 +166,10 @@ namespace Slothsoft.UnityExtensions {
                 }
             }
         }
+
+        /// <summary>
+        /// Creates a unique set from <paramref name="source"/>.
+        /// </summary>
         public static ISet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source) {
             var result = new HashSet<TSource>();
             foreach (var value in source) {
@@ -116,6 +179,10 @@ namespace Slothsoft.UnityExtensions {
             }
             return result;
         }
+
+        /// <summary>
+        /// Checks whether every item in <paramref name="source"/> also exists in <paramref name="target"/>.
+        /// </summary>
         public static bool Equals<T>(this IEnumerable<T> source, IEnumerable<T> target) {
             if (source.Count() != target.Count()) {
                 return false;
@@ -127,15 +194,21 @@ namespace Slothsoft.UnityExtensions {
             }
             return true;
         }
+
+        /// <summary>
+        /// Creates a list with all elements from <paramref name="source"/> except for <paramref name="item"/>.
+        /// </summary>
         public static IEnumerable<TSource> Without<TSource>(this IEnumerable<TSource> source, TSource item)
             where TSource : class {
             return source
                 .Where(testItem => testItem != item);
         }
+
         public delegate bool TrySelectFunc<T>(out T output);
-        public static IEnumerable<TTarget> TrySelect<TSource, TTarget>(
-            this IEnumerable<TSource> source,
-            Func<TSource, TrySelectFunc<TTarget>> selector) {
+        /// <summary>
+        /// Calls <paramref name="selector"/> on every item in <paramref name="source"/> and returns its output, if succesful.
+        /// </summary>
+        public static IEnumerable<TTarget> TrySelect<TSource, TTarget>(this IEnumerable<TSource> source, Func<TSource, TrySelectFunc<TTarget>> selector) {
             foreach (var element in source) {
                 if (selector(element)(out var result)) {
                     yield return result;
