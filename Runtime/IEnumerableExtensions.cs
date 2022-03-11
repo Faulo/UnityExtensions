@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEngine.Assertions;
 
 namespace Slothsoft.UnityExtensions {
     public static class IEnumerableExtensions {
@@ -23,54 +24,57 @@ namespace Slothsoft.UnityExtensions {
             return source.Except((IEnumerable<T>)args);
         }
         public static T RandomElement<T>(this IEnumerable<T> source) {
-            if (source == null || source.Count() == 0) {
-                return default;
-            } else {
-                return source.Skip(random.Next(source.Count())).FirstOrDefault();
+            Assert.IsNotNull(source, "Source must not be null.");
+            if (source is not IReadOnlyList<T> elements) {
+                elements = source.ToList();
             }
+            return elements.Count == 0
+                ? default
+                : elements[random.Next(elements.Count)];
         }
         public static T RandomWeightedElement<T>(this IEnumerable<T> source, Func<T, int> weighting) {
-            source = source.ToArray();
-            if (source == null || source.Count() == 0) {
-                return default;
-            }
+            Assert.IsNotNull(source, "Source must not be null.");
             var weights = new Dictionary<T, int>();
             foreach (var element in source) {
                 weights[element] = weighting(element);
-                if (weights[element] < 0) {
-                    throw new ArgumentOutOfRangeException("Weight cannot be negative.");
-                }
             }
-            int totalWeight = weights.Values.Sum();
-            if (totalWeight == 0) {
-                return default;
-            }
+            return RandomWeightedElement(source, weights);
+        }
+        public static T RandomWeightedElement<T>(this IEnumerable<T> source, IReadOnlyDictionary<T, int> weights) {
+            Assert.IsNotNull(source, "Source must not be null.");
+            int totalWeight = source.CalculateTotalWeight(weights);
             int randomWeight = random.Next(totalWeight);
-            foreach (var element in weights.Keys) {
+            foreach (var element in source) {
                 if (weights[element] > randomWeight) {
                     return element;
                 }
                 randomWeight -= weights[element];
             }
-            throw new Exception();
-        }
-        public static T RandomWeightedElement<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
-            return RandomWeightedElement(source, key => weights[key]);
+            return default;
         }
         public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, Func<T, int> weighting) {
-            source = source.ToArray();
+            Assert.IsNotNull(source, "Source must not be null.");
             var weights = new Dictionary<T, int>();
             foreach (var element in source) {
                 weights[element] = weighting(element);
             }
-            int sum = weights.Values.Sum();
-            foreach (var element in source) {
-                weights[element] = sum - weights[element];
-            }
-            return RandomWeightedElement(source, weights);
+            return source.RandomWeightedElementDescending(weights);
         }
-        public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, Dictionary<T, int> weights) {
-            return source.RandomWeightedElementDescending(key => weights[key]);
+        public static T RandomWeightedElementDescending<T>(this IEnumerable<T> source, IReadOnlyDictionary<T, int> weights) {
+            Assert.IsNotNull(source, "Source must not be null.");
+            int totalWeight = source.CalculateTotalWeight(weights);
+            return RandomWeightedElement(source, key => totalWeight - weights[key]);
+        }
+        static int CalculateTotalWeight<T>(this IEnumerable<T> source, IReadOnlyDictionary<T, int> weights) {
+            Assert.IsNotNull(source, "Source must not be null.");
+            int totalWeight = 0;
+            foreach (var key in source) {
+                if (weights.TryGetValue(key, out int weight)) {
+                    Assert.IsTrue(weight >= 0, "Weight must be positive or zero.");
+                    totalWeight += weight;
+                }
+            }
+            return totalWeight;
         }
         //https://stackoverflow.com/questions/1287567/is-using-random-and-orderby-a-good-shuffle-algorithm
         public static IEnumerable<T> Shuffle<T>(this IEnumerable<T> source) {
