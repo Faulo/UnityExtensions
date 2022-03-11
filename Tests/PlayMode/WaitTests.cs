@@ -6,6 +6,7 @@ using UnityEngine.TestTools;
 
 namespace Slothsoft.UnityExtensions.Tests.PlayMode {
     public class WaitTests {
+        float errorMargin => Time.fixedDeltaTime;
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
             var stopWatch = new Stopwatch();
@@ -13,7 +14,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
             stopWatch.Start();
             yield return Wait.forEndOfFrame;
             stopWatch.Stop();
-            Assert.Less(stopWatch.Elapsed.TotalSeconds, Time.fixedDeltaTime);
+            Assert.AreEqual(stopWatch.Elapsed.TotalSeconds, Time.fixedDeltaTime, errorMargin);
         }
         [UnityTest]
         public IEnumerator TestWaitFixedUpdate() {
@@ -22,7 +23,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
             stopWatch.Start();
             yield return Wait.forFixedUpdate;
             stopWatch.Stop();
-            Assert.Less(stopWatch.Elapsed.TotalSeconds, Time.fixedDeltaTime);
+            Assert.AreEqual(stopWatch.Elapsed.TotalSeconds, Time.fixedDeltaTime, errorMargin);
         }
         [UnityTest]
         public IEnumerator TestWaitForSeconds() {
@@ -31,7 +32,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
             stopWatch.Start();
             yield return Wait.forSeconds[0.1f];
             stopWatch.Stop();
-            Assert.GreaterOrEqual(stopWatch.Elapsed.TotalSeconds, 0.1f);
+            Assert.AreEqual(stopWatch.Elapsed.TotalSeconds, 0.1f, errorMargin);
         }
         [UnityTest]
         public IEnumerator TestWaitForSecondsRealtime() {
@@ -40,7 +41,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
             stopWatch.Start();
             yield return Wait.forSecondsRealtime[0.1f];
             stopWatch.Stop();
-            Assert.GreaterOrEqual(stopWatch.Elapsed.TotalSeconds, 0.1f);
+            Assert.AreEqual(stopWatch.Elapsed.TotalSeconds, 0.1f, errorMargin);
         }
     }
 }
