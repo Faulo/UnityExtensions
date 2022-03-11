@@ -9,6 +9,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
             var stopWatch = new Stopwatch();
+            yield return Wait.forEndOfFrame;
             stopWatch.Start();
             yield return Wait.forEndOfFrame;
             stopWatch.Stop();
@@ -17,6 +18,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
         [UnityTest]
         public IEnumerator TestWaitFixedUpdate() {
             var stopWatch = new Stopwatch();
+            yield return Wait.forFixedUpdate;
             stopWatch.Start();
             yield return Wait.forFixedUpdate;
             stopWatch.Stop();
@@ -25,18 +27,20 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
         [UnityTest]
         public IEnumerator TestWaitForSeconds() {
             var stopWatch = new Stopwatch();
+            yield return null;
             stopWatch.Start();
             yield return Wait.forSeconds[0.1f];
             stopWatch.Stop();
-            Assert.Greater(stopWatch.Elapsed.TotalSeconds, 0.1f);
+            Assert.GreaterOrEqual(stopWatch.Elapsed.TotalSeconds, 0.1f);
         }
         [UnityTest]
         public IEnumerator TestWaitForSecondsRealtime() {
             var stopWatch = new Stopwatch();
+            yield return null;
             stopWatch.Start();
             yield return Wait.forSecondsRealtime[0.1f];
             stopWatch.Stop();
-            Assert.Greater(stopWatch.Elapsed.TotalSeconds, 0.1f);
+            Assert.GreaterOrEqual(stopWatch.Elapsed.TotalSeconds, 0.1f);
         }
     }
 }
