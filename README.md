@@ -10,7 +10,7 @@ Some C# Extension functions for common Unity problems.
 - Project file fixer, to set C# version and warning level for .csproj files.
 
 ## Requirements
-- Unity 2019.3
+- Unity 2020.2
 
 ## Installation
 ### Install via manifest.json
@@ -27,7 +27,7 @@ The package is available on the [openupm registry](https://openupm.com/packages/
     }
   ],
   "dependencies": {
-    "net.slothsoft.unity-extensions": "1.0.0",
+    "net.slothsoft.unity-extensions": "1.5.0",
   }
 }
 ```
