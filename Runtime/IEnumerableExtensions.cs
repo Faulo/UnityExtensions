@@ -198,8 +198,7 @@ namespace Slothsoft.UnityExtensions {
         /// <summary>
         /// Creates a list with all elements from <paramref name="source"/> except for <paramref name="item"/>.
         /// </summary>
-        public static IEnumerable<TSource> Without<TSource>(this IEnumerable<TSource> source, TSource item)
-            where TSource : IEquatable<TSource> {
+        public static IEnumerable<TSource> Without<TSource>(this IEnumerable<TSource> source, TSource item) {
             return source
                 .Where(testItem => !testItem.Equals(item));
         }
