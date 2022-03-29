@@ -3,7 +3,7 @@
   "displayName": "Slothsoft's Unity Extensions",
   "version": "1.5.0",
   "description": "C# extension functions, attributes and editor tools for common Unity problems.",
-  "unity": "2020.2",
+  "unity": "2021.2",
   "keywords": [],
   "dependencies": {
 	"com.unity.testtools.codecoverage": "1.1.1",
