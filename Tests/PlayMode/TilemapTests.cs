@@ -54,7 +54,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
             Assert.AreEqual(tilemap, tilemap.GetInterface().GetImplementation());
         }
 
-        static int[] childCounts = new[] {
+        static readonly int[] integers = new[] {
             0,
             1,
             10
@@ -66,7 +66,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
 
         [Test]
         public void TestGetUsedTilesNonGeneric(
-            [ValueSource(nameof(childCounts))] int childCount,
+            [ValueSource(nameof(integers))] int childCount,
             [ValueSource(nameof(booleans))] bool useInterface) {
 
             var expectedChildren = new Dictionary<Vector3Int, TileBase>();
@@ -89,7 +89,7 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
 
         [Test]
         public void TestGetUsedTilesGeneric(
-            [ValueSource(nameof(childCounts))] int childCount,
+            [ValueSource(nameof(integers))] int childCount,
             [ValueSource(nameof(booleans))] bool useInterface) {
 
             var expectedChildren = new Dictionary<Vector3Int, TileB>();
@@ -107,6 +107,47 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
                 : tilemap.GetUsedTiles<TileB>();
 
             CollectionAssert.AreEquivalent(expectedChildren.Select(tile => (tile.Key, tile.Value)), actualChildren);
+        }
+
+        [Test]
+        public void TestClearTile([ValueSource(nameof(integers))] int x) {
+            var position = new Vector3Int(x, 0, 0);
+
+            tilemap.SetTile(position, tileA);
+
+            Assert.AreEqual(tileA, tilemap.GetTile(position));
+
+            tilemap.ClearTile(position);
+
+            Assert.IsNull(tilemap.GetTile(position));
+        }
+
+        [Test]
+        public void TestIsTile([ValueSource(nameof(booleans))] bool areEqual, [ValueSource(nameof(booleans))] bool useInterface) {
+            var position = new Vector3Int(1, 2, 3);
+
+            if (areEqual) {
+                tilemap.SetTile(position, tileA);
+            } else {
+                tilemap.SetTile(position, tileB);
+            }
+
+            bool actual = useInterface
+                ? tilemap.GetInterface().IsTile(position, tileA)
+                : tilemap.IsTile(position, tileA);
+
+            Assert.AreEqual(areEqual, actual);
+        }
+
+        [Test]
+        public void TestIsTileWithComparer([ValueSource(nameof(booleans))] bool areEqual, [ValueSource(nameof(booleans))] bool useInterface) {
+            var position = new Vector3Int(4, 5, 6);
+
+            bool actual = useInterface
+                ? tilemap.GetInterface().IsTile(position, tileB, (a, b) => areEqual)
+                : tilemap.IsTile(position, tileB, (a, b) => areEqual);
+
+            Assert.AreEqual(areEqual, actual);
         }
     }
 }
