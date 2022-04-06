@@ -14,7 +14,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
         protected virtual (Type key, Type value) GetGenericTypes() {
             var types = fieldInfo.FieldType.GetGenericArguments();
             if (types.Length != 2) {
-                Debug.LogWarning($"Unable to determine generic types from {fieldInfo}! If you extended {typeof(SerializableKeyValuePairsDrawer)}, you should override {nameof(SerializableKeyValuePairsDrawer)}::{nameof(genericTypes)}!");
+                Debug.LogWarning($"Unable to determine generic types from {fieldInfo}! If you extended {typeof(SerializableKeyValuePairsDrawer)}, you should override {nameof(SerializableKeyValuePairsDrawer)}::{nameof(GetGenericTypes)}!");
             }
             return (types[0], types[1]);
         }

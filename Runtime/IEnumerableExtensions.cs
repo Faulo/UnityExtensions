@@ -51,7 +51,7 @@ namespace Slothsoft.UnityExtensions {
         /// </summary>
         public static T RandomElement<T>(this IEnumerable<T> source) {
             Assert.IsNotNull(source, "Source must not be null.");
-            if (source is not IReadOnlyList<T> elements) {
+            if (!(source is IReadOnlyList<T> elements)) {
                 elements = source.ToList();
             }
             return elements.Count == 0

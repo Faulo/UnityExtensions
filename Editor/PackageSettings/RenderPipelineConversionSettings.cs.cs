@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor {
+namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     [Serializable]
     class RenderPipelineConversionSettings {
         [Header("Lighting conversion")]

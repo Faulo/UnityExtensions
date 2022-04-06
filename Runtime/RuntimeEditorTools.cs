@@ -27,7 +27,7 @@ namespace Slothsoft.UnityExtensions {
         /// <summary>
         /// The object to write editor tools for.
         /// </summary>
-        protected new T target;
+        protected new T target => base.target as T;
 
         [Obsolete("Use 'target' instead.")]
         protected T component => target;
@@ -45,7 +45,6 @@ namespace Slothsoft.UnityExtensions {
         public override void OnInspectorGUI() {
             DrawDefaultInspector();
 
-            target = base.target as T;
             if (!target) {
                 return;
             }
