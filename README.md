@@ -27,7 +27,7 @@ The package is available on the [openupm registry](https://openupm.com/packages/
     }
   ],
   "dependencies": {
-    "net.slothsoft.unity-extensions": "1.5.0",
+    "net.slothsoft.unity-extensions": "1.5.2",
   }
 }
 ```
