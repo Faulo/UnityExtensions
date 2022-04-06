@@ -42,11 +42,33 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
         TileA tileA;
         TileB tileB;
 
-        [TestCase(0)]
-        [TestCase(1)]
-        [TestCase(10)]
         [Test]
-        public void TestGetUsedTilesNonGeneric(int childCount) {
+        public void TestGetInterface() {
+            Assert.IsNotNull(tilemap.GetInterface());
+            Assert.AreEqual(tilemap, tilemap.GetInterface().GetComponent<Tilemap>());
+        }
+
+        [Test]
+        public void TestGetImplementation() {
+            Assert.IsNotNull(tilemap.GetInterface().GetImplementation());
+            Assert.AreEqual(tilemap, tilemap.GetInterface().GetImplementation());
+        }
+
+        static int[] childCounts = new[] {
+            0,
+            1,
+            10
+        };
+        static bool[] booleans = new[] {
+            false,
+            true
+        };
+
+        [Test]
+        public void TestGetUsedTilesNonGeneric(
+            [ValueSource(nameof(childCounts))] int childCount,
+            [ValueSource(nameof(booleans))] bool useInterface) {
+
             var expectedChildren = new Dictionary<Vector3Int, TileBase>();
             for (int i = 0; i < childCount; i++) {
                 var position = new Vector3Int(i, 0, 0);
@@ -58,16 +80,18 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
                 expectedChildren[position] = tileB;
             }
 
-            var actualChildren = tilemap.GetUsedTiles();
+            var actualChildren = useInterface
+                ? tilemap.GetInterface().GetUsedTiles()
+                : tilemap.GetUsedTiles();
 
             CollectionAssert.AreEquivalent(expectedChildren.Select(tile => (tile.Key, tile.Value)), actualChildren);
         }
 
-        [TestCase(0)]
-        [TestCase(1)]
-        [TestCase(10)]
         [Test]
-        public void TestGetUsedTilesGeneric(int childCount) {
+        public void TestGetUsedTilesGeneric(
+            [ValueSource(nameof(childCounts))] int childCount,
+            [ValueSource(nameof(booleans))] bool useInterface) {
+
             var expectedChildren = new Dictionary<Vector3Int, TileB>();
             for (int i = 0; i < childCount; i++) {
                 var position = new Vector3Int(i, 0, 0);
@@ -78,7 +102,9 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
                 expectedChildren[position] = tileB;
             }
 
-            var actualChildren = tilemap.GetUsedTiles<TileB>();
+            var actualChildren = useInterface
+                ? tilemap.GetInterface().GetUsedTiles<TileB>()
+                : tilemap.GetUsedTiles<TileB>();
 
             CollectionAssert.AreEquivalent(expectedChildren.Select(tile => (tile.Key, tile.Value)), actualChildren);
         }
