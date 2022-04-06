@@ -6,7 +6,7 @@ using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    public class ProjectFileFixer : AssetPostprocessor {
+    class ProjectFileFixer : AssetPostprocessor {
         const string PROJECT_FILE_EXTENSION = ".csproj";
         const string NS_CSPROJ = "http://schemas.microsoft.com/developer/msbuild/2003";
 
@@ -14,7 +14,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             public override Encoding Encoding => Encoding.UTF8;
         }
 
-        public static string OnGeneratedCSProject(string fileName, string fileContent) {
+        protected static string OnGeneratedCSProject(string fileName, string fileContent) {
             if (UnityExtensionsSettings.instance.cSharpSettings.rewriteProjectFiles) {
                 var file = new FileInfo(fileName);
                 if (file.Extension == PROJECT_FILE_EXTENSION) {

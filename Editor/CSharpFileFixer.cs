@@ -3,11 +3,11 @@ using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    public class CSharpFileFixer : UnityEditor.AssetModificationProcessor {
+    class CSharpFileFixer : UnityEditor.AssetModificationProcessor {
         const string META_EXTENSION = ".meta";
         const string CSHARP_EXTENSION = ".cs";
 
-        public static void OnWillCreateAsset(string path) {
+        protected static void OnWillCreateAsset(string path) {
             if (!UnityExtensionsSettings.instance.cSharpSettings.addNamespaceToCSharpFiles) {
                 return;
             }

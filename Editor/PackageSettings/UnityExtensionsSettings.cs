@@ -42,7 +42,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
             static SettingsObject instance;
             [SettingsProvider]
-            public static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
+            protected static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
                 activateHandler = (searchContext, rootElement) => {
                     if (!instance) {
                         instance = CreateInstance<SettingsObject>();
@@ -60,7 +60,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
             };
         }
 
-        internal static Settings settings {
+        static Settings settings {
             get {
                 if (settingsCache == null) {
                     settingsCache = new Settings(SETTINGS_PACKAGE);
