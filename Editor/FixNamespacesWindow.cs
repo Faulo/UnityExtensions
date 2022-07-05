@@ -19,6 +19,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             public MonoScript asset;
             public string contents;
             public bool isValid;
+            public string className => $"{ns.classNamespace}.{file.Name}";
         }
         [MenuItem("Window/Slothsoft's Unity Extensions/Fix C# Namespaces")]
         protected static void ShowWindow() {
@@ -68,7 +69,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         IEnumerable<ClassInfo> invalidFiles {
             get {
                 if (invalidFilesCache == null && namespaces != null) {
-                    invalidFilesCache = FindInvalidFiles(namespaces);
+                    invalidFilesCache = FindInvalidFiles(namespaces).ToList();
                 }
                 return invalidFilesCache;
             }
@@ -92,7 +93,11 @@ namespace Slothsoft.UnityExtensions.Editor {
                     EditorGUILayout.LabelField("Assign assembly first!");
                 } else {
                     foreach (var ns in namespaces) {
-                        EditorGUILayout.ObjectField(ns.classNamespace, ns.asset, ns.asset.GetType(), false);
+                        if (ns.asset) {
+                            EditorGUILayout.ObjectField(ns.classNamespace, ns.asset, ns.asset.GetType(), false);
+                        } else {
+                            EditorGUILayout.LabelField(ns.classNamespace);
+                        }
                     }
                 }
             }
@@ -102,11 +107,19 @@ namespace Slothsoft.UnityExtensions.Editor {
                     EditorGUILayout.LabelField("Assign assembly first!");
                 } else {
                     if (invalidFiles.Any()) {
-                        foreach (var file in invalidFiles.Where(file => !file.isValid)) {
-                            EditorGUILayout.ObjectField(file.ns.classNamespace, file.asset, file.asset.GetType(), false);
+                        if (invalidFiles.Any(file => !file.isValid)) {
+                            foreach (var file in invalidFiles.Where(file => !file.isValid)) {
+                                if (file.asset) {
+                                    EditorGUILayout.ObjectField(file.className, file.asset, file.asset.GetType(), false);
+                                } else {
+                                    EditorGUILayout.LabelField(file.className);
+                                }
+                            }
+                        } else {
+                            EditorGUILayout.LabelField("All namespace declarations match their folder!");
                         }
                     } else {
-                        EditorGUILayout.LabelField("All namespace declarations match their folder!");
+                        EditorGUILayout.LabelField("Failed to find any class files!");
                     }
                 }
             }
@@ -125,16 +138,13 @@ namespace Slothsoft.UnityExtensions.Editor {
             var list = new Stack<NamespaceInfo>();
             void crawl(DirectoryInfo directory, string ns) {
                 if (directory.GetFileSystemInfos().Any()) {
-                    var asset = PrefabUtils.LoadAssetAtPath<DefaultAsset>(directory);
-                    if (asset) {
-                        list.Push(new NamespaceInfo {
-                            asset = asset,
-                            classNamespace = ns,
-                            directory = directory,
-                        });
-                        foreach (var childDirectory in directory.GetDirectories()) {
-                            crawl(childDirectory, $"{ns}.{childDirectory.Name}");
-                        }
+                    list.Push(new NamespaceInfo {
+                        asset = PrefabUtils.LoadAssetAtPath<DefaultAsset>(directory),
+                        classNamespace = ns,
+                        directory = directory,
+                    });
+                    foreach (var childDirectory in directory.GetDirectories()) {
+                        crawl(childDirectory, $"{ns}.{childDirectory.Name}");
                     }
                 }
             }
@@ -145,20 +155,17 @@ namespace Slothsoft.UnityExtensions.Editor {
             foreach (var ns in namespaces) {
                 string usingDirective = string.Join("", namespaces.Except(new[] { ns }).Select(tmp => $"using {tmp.classNamespace};\r\n"));
                 foreach (var file in ns.directory.EnumerateFiles("*.cs")) {
-                    var asset = PrefabUtils.LoadAssetAtPath<MonoScript>(file);
-                    if (asset) {
-                        string contents = File.ReadAllText(file.FullName);
-                        var rule = new Regex(@"namespace ([\w.]+)");
-                        var match = rule.Match(contents);
-                        if (match.Success) {
-                            yield return new ClassInfo {
-                                asset = asset,
-                                file = file,
-                                ns = ns,
-                                isValid = match.Groups[1].Value == ns.classNamespace,
-                                contents = usingDirective + rule.Replace(contents, $"namespace {ns.classNamespace}"),
-                            };
-                        }
+                    string contents = File.ReadAllText(file.FullName);
+                    var rule = new Regex(@"namespace ([\w.]+)");
+                    var match = rule.Match(contents);
+                    if (match.Success) {
+                        yield return new ClassInfo {
+                            asset = PrefabUtils.LoadAssetAtPath<MonoScript>(file),
+                            file = file,
+                            ns = ns,
+                            isValid = match.Groups[1].Value == ns.classNamespace,
+                            contents = usingDirective + rule.Replace(contents, $"namespace {ns.classNamespace}"),
+                        };
                     }
                 }
             }
@@ -166,7 +173,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         void FixInvalidFiles(IEnumerable<ClassInfo> files) {
             if (files.Any(file => !file.isValid)) {
                 foreach (var file in files) {
-                    Debug.Log($"Writing class <b>{file.ns.classNamespace}.{file.asset.name}</b>...", file.asset);
+                    Debug.Log($"Writing class <b>{file.className}</b>...", file.asset);
                     File.WriteAllText(file.file.FullName, file.contents);
                 }
             } else {
