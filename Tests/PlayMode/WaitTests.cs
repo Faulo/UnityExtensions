@@ -9,6 +9,10 @@ namespace Slothsoft.UnityExtensions.Tests.PlayMode {
         float errorMargin => Time.fixedDeltaTime;
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
+            if (UnityEditorInternal.InternalEditorUtility.inBatchMode) {
+                Assert.Inconclusive("Can't use WaitForEndOfFrame in batch mode.");
+                yield break;
+            }
             var stopWatch = new Stopwatch();
             yield return Wait.forEndOfFrame;
             stopWatch.Start();
