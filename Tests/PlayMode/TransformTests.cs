@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Slothsoft.UnityExtensions.Tests.PlayMode {
-    public class TransformTests {
+    sealed class TransformTests {
         [TestCase(0, ExpectedResult = null)]
         [TestCase(1, ExpectedResult = null)]
         [TestCase(2, ExpectedResult = null)]

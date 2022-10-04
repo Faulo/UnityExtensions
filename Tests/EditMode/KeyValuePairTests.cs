@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using NUnit.Framework;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class KeyValuePairTests {
+    sealed class KeyValuePairTests {
         [Test]
         public void TestDeconstruct() {
             var dict = new Dictionary<int, string>() {

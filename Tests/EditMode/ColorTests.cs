@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class ColorTests {
+    sealed class ColorTests {
         [Test]
         public void TestDeconstructWithoutAlpha() {
             var (red, green, blue) = new Color(0f, 0.25f, 0.5f);

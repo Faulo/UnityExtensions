@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.TestTools;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class IEnumerableTest {
+    sealed class IEnumerableTest {
         #region SelectNotNull
         [Test]
         public void TestSelectNotNull() {
@@ -37,20 +38,19 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
         #endregion
 
         #region Log
+        static IEnumerable<string[]> logMessages = new string[][] {
+            new string[0],
+            new[] { "Hello", "World!" },
+            new[] { "" },
+        };
         [Test]
-        public void TestLog() {
-            string[] expectedMessages = new[] { "Hello", "World!" };
-            var actualMessages = new List<string>();
-            void listener(string condition, string stackTrace, LogType type) {
-                if (type == LogType.Log) {
-                    actualMessages.Add(condition);
-                }
-            }
-            Application.logMessageReceived += listener;
-            expectedMessages.Log();
-            Application.logMessageReceived -= listener;
+        public void TestLog([ValueSource(nameof(logMessages))] string[] messages) {
 
-            CollectionAssert.AreEqual(expectedMessages, actualMessages);
+            for (int i = 0; i < messages.Length; i++) {
+                LogAssert.Expect(LogType.Log, messages[i]);
+            }
+
+            messages.Log();
         }
         #endregion
 

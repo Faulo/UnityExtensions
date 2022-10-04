@@ -8,7 +8,7 @@ using UnityEngine.Tilemaps;
 using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.UnityExtensions.Tests.PlayMode {
-    public class TilemapTests {
+    sealed class TilemapTests {
         class TileA : TileBase { }
         class TileB : TileBase { }
 

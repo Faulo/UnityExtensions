@@ -3,7 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class Vector3Tests {
+    sealed class Vector3Tests {
         [Test]
         public void TestDeconstruct() {
             var (x, y, z) = new Vector3(1, 2, 3);

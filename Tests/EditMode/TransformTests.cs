@@ -3,7 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class TransformTests {
+    sealed class TransformTests {
         [TestCase(0)]
         [TestCase(1)]
         [TestCase(2)]

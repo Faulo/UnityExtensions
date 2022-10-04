@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class Vector3IntTests {
+    sealed class Vector3IntTests {
         [Test]
         public void TestDeconstruct() {
             var (x, y, z) = new Vector3Int(1, 2, 3);

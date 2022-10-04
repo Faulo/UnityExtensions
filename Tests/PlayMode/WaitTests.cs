@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.TestTools;
 
 namespace Slothsoft.UnityExtensions.Tests.PlayMode {
-    public class WaitTests {
+    sealed class WaitTests {
         float errorMargin => Time.fixedDeltaTime;
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
