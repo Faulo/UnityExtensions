@@ -33,7 +33,9 @@ namespace Slothsoft.UnityExtensions {
         protected T component => target;
 
         [Obsolete("Use 'target.gameObject' instead.")]
-        protected GameObject gameObject => (target as Component).gameObject;
+        protected GameObject gameObject => target is Component component
+            ? component.gameObject
+            : null;
 
         /// <summary>
         /// The current indendation level. Increase and decrease when drawing GUI stuff.

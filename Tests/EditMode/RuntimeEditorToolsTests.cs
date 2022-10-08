@@ -1,53 +1,103 @@
 using NUnit.Framework;
 using UnityEditor;
 using UnityEngine;
+using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    sealed class RuntimeEditorToolsTests {
-        class TestObject : ScriptableObject {
-        }
-        class TestEditor : RuntimeEditorTools<TestObject> {
-            protected override void DrawEditorTools() {
-            }
+    [TestFixture(typeof(TestObject), typeof(TestObjectEditor), false)]
+    [TestFixture(typeof(TestComponent), typeof(TestComponentEditor), true)]
+    sealed class RuntimeEditorToolsTests<TObject, TEditor>
+        where TObject : UnityObject
+        where TEditor : TestEditor<TObject> {
 
-            public void TestTarget(TestObject obj) {
-                Assert.AreEqual(obj, target);
-            }
+        TObject obj;
+        TEditor editor;
+        GameObject gameObject;
+        readonly bool isComponent;
 
-            public void TestIndentLevel() {
-                EditorGUI.indentLevel = 0;
-
-                Assert.AreEqual(0, indentLevel);
-
-                indentLevel++;
-
-                Assert.AreEqual(1, indentLevel);
-            }
+        public RuntimeEditorToolsTests(bool isComponent) {
+            this.isComponent = isComponent;
         }
 
         [SetUp]
         public void SetUpEditor() {
-            obj = ScriptableObject.CreateInstance<TestObject>();
-            editor = Editor.CreateEditor(obj, typeof(TestEditor)) as TestEditor;
+            if (isComponent) {
+                gameObject = new GameObject();
+                obj = gameObject.AddComponent(typeof(TObject)) as TObject;
+            } else {
+                obj = ScriptableObject.CreateInstance(typeof(TObject)) as TObject;
+            }
+            editor = Editor.CreateEditor(obj, typeof(TEditor)) as TEditor;
 
+            Assert.IsNotNull(obj);
             Assert.IsNotNull(editor);
         }
 
         [TearDown]
         public void CleanUpEditor() {
+            if (gameObject) {
+                UnityObject.DestroyImmediate(gameObject);
+            }
         }
-
-        TestObject obj;
-        TestEditor editor;
 
         [Test]
         public void TestTarget() {
-            editor.TestTarget(obj);
+            Assert.AreEqual(obj, editor.target);
+        }
+
+        [Test]
+        public void TestComponent() {
+            Assert.AreEqual(obj, editor.component);
+        }
+
+        [Test]
+        public void TestGameObject() {
+            if (isComponent) {
+                Assert.AreEqual(gameObject, editor.gameObject);
+            } else {
+                Assert.IsNull(editor.gameObject);
+            }
         }
 
         [Test]
         public void TestIndentLevel() {
-            editor.TestIndentLevel();
+            EditorGUI.indentLevel = 0;
+
+            Assert.AreEqual(0, editor.indentLevel);
+
+            editor.indentLevel++;
+
+            Assert.AreEqual(1, editor.indentLevel);
         }
+    }
+
+    sealed class TestObject : ScriptableObject {
+    }
+
+    sealed class TestComponent : MonoBehaviour {
+    }
+
+    abstract class TestEditor<T> : RuntimeEditorTools<T> where T : UnityObject {
+
+        public new T target => base.target;
+
+#pragma warning disable CS0618 // Typ oder Element ist veraltet
+        public new T component => base.component;
+        public new GameObject gameObject => base.gameObject;
+#pragma warning restore CS0618 // Typ oder Element ist veraltet
+
+        public new int indentLevel {
+            get => base.indentLevel;
+            set => base.indentLevel = value;
+        }
+
+        protected override void DrawEditorTools() {
+        }
+    }
+
+    sealed class TestObjectEditor : TestEditor<TestObject> {
+    }
+
+    sealed class TestComponentEditor : TestEditor<TestComponent> {
     }
 }
