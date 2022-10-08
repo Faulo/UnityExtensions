@@ -24,6 +24,12 @@ namespace Slothsoft.UnityExtensions {
         GUIStyle foldoutStyle;
         GUIStyle objectStyle;
         readonly Dictionary<string, bool> foldoutFlags = new Dictionary<string, bool>();
+
+        /// <summary>
+        /// The text on the topmost foldout button.
+        /// </summary>
+        protected virtual string label => $"<b>Editor Tools:</b> <i>{typeof(T)}</i>";
+
         /// <summary>
         /// The object to write editor tools for.
         /// </summary>
@@ -44,7 +50,7 @@ namespace Slothsoft.UnityExtensions {
             get => EditorGUI.indentLevel;
             set => EditorGUI.indentLevel = value;
         }
-        public override void OnInspectorGUI() {
+        public sealed override void OnInspectorGUI() {
             DrawDefaultInspector();
 
             if (!target) {
@@ -57,7 +63,7 @@ namespace Slothsoft.UnityExtensions {
 
             EditorGUILayout.Space(EditorGUIUtility.singleLineHeight);
 
-            if (DrawFoldout($"<b>Editor Tools:</b> <i>{typeof(T)}</i>")) {
+            if (DrawFoldout(label)) {
                 indentLevel++;
                 DrawEditorTools();
                 indentLevel--;

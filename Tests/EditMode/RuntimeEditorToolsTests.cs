@@ -69,6 +69,11 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
 
             Assert.AreEqual(1, editor.indentLevel);
         }
+
+        [Test]
+        public void TestLabel() {
+            StringAssert.Contains(typeof(TObject).ToString(), editor.label);
+        }
     }
 
     sealed class TestObject : ScriptableObject {
@@ -78,6 +83,8 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
     }
 
     abstract class TestEditor<T> : RuntimeEditorTools<T> where T : UnityObject {
+
+        public new string label => base.label;
 
         public new T target => base.target;
 
