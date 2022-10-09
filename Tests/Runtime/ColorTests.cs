@@ -1,7 +1,8 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(ColorExtensions))]
     sealed class ColorTests {
         [Test]
         public void TestDeconstructWithoutAlpha() {

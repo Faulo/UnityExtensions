@@ -2,7 +2,8 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(Vector2Extensions))]
     sealed class Vector2Tests {
         [Test]
         public void TestDeconstruct() {

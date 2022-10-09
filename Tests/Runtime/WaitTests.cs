@@ -4,7 +4,9 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.UnityExtensions.Tests.PlayMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(Wait))]
+    [RequiresPlayMode]
     sealed class WaitTests {
         float errorMargin => Time.fixedDeltaTime;
         [UnityTest]

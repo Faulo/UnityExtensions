@@ -7,7 +7,9 @@ using UnityEngine.TestTools;
 using UnityEngine.Tilemaps;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.UnityExtensions.Tests.PlayMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(TilemapExtensions))]
+    [RequiresPlayMode]
     sealed class TilemapTests {
         class TileA : TileBase { }
         class TileB : TileBase { }

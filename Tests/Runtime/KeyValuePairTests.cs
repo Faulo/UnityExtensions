@@ -1,7 +1,8 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(KeyValuePairExtensions))]
     sealed class KeyValuePairTests {
         [Test]
         public void TestDeconstruct() {

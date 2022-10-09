@@ -3,9 +3,9 @@ using UnityEditor;
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    [TestFixture(typeof(TestObject), typeof(TestObjectEditor), false)]
-    [TestFixture(typeof(TestComponent), typeof(TestComponentEditor), true)]
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(typeof(TestObject), typeof(TestObjectEditor), false, TestOf = typeof(RuntimeEditorTools<>))]
+    [TestFixture(typeof(TestComponent), typeof(TestComponentEditor), true, TestOf = typeof(RuntimeEditorTools<>))]
     sealed class RuntimeEditorToolsTests<TObject, TEditor>
         where TObject : UnityObject
         where TEditor : TestEditor<TObject> {

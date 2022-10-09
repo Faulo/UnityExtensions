@@ -2,8 +2,8 @@
     "name": "Slothsoft.UnityExtensions.Editor",
     "rootNamespace": "",
     "references": [
-        "GUID:507d80cf36f8258488bde8c39deefd3a",
-        "GUID:49818357e697641afb75d2f8acaf1861"
+        "Slothsoft.UnityExtensions",
+        "Unity.Settings.Editor"
     ],
     "includePlatforms": [
         "Editor"

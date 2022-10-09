@@ -5,7 +5,8 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(IEnumerableExtensions))]
     sealed class IEnumerableTest {
         #region SelectNotNull
         [Test]
