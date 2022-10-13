@@ -8,7 +8,7 @@ using UnityEditorInternal;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    public class PrefabUtils {
+    public static class PrefabUtils {
         static PrefabUtilsSettings settings => UnityExtensionsSettings.instance.prefabUtilsSettings;
 
         public static IEnumerable<GameObject> allPrefabs => AssetDatabase.GetAllAssetPaths()
@@ -37,7 +37,7 @@ namespace Slothsoft.UnityExtensions.Editor {
 
         public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null) {
             var directory = new FileInfo(assetPath ?? AssetDatabase.GetAssetPath(script)).Directory;
-            return PrefabUtils.LoadAssets<AssemblyDefinitionAsset>()
+            return LoadAssets<AssemblyDefinitionAsset>()
                 .Select(assembly => new { assembly, directory = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory })
                 .Where(info => directory.FullName.Contains(info.directory.FullName))
                 .OrderByDescending(info => info.directory.FullName.Length)

@@ -7,13 +7,13 @@ using UnityEditorInternal;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    class FixNamespacesWindow : EditorWindow {
-        class NamespaceInfo {
+    sealed class FixNamespacesWindow : EditorWindow {
+        sealed class NamespaceInfo {
             public DirectoryInfo directory;
             public DefaultAsset asset;
             public string classNamespace;
         }
-        class ClassInfo {
+        sealed class ClassInfo {
             public NamespaceInfo ns;
             public FileInfo file;
             public MonoScript asset;
@@ -22,7 +22,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             public string className => $"{ns.classNamespace}.{file.Name}";
         }
         [MenuItem("Window/Slothsoft's Unity Extensions/Fix C# Namespaces")]
-        protected static void ShowWindow() {
+        static void ShowWindow() {
             GetWindow<FixNamespacesWindow>();
         }
 
@@ -80,7 +80,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         bool listNamespaces = false;
         bool listFiles = false;
 
-        protected void OnGUI() {
+        void OnGUI() {
             GUILayout.BeginVertical("box");
             GUILayout.Label("Fix C# Namespaces");
             assembly = EditorGUILayout.ObjectField("Assembly", assembly, typeof(AssemblyDefinitionAsset), false) as AssemblyDefinitionAsset;

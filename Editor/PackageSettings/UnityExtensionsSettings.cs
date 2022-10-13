@@ -5,12 +5,12 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
-    class UnityExtensionsSettings {
+    sealed class UnityExtensionsSettings {
         const string SETTINGS_PACKAGE = "net.slothsoft.unity-extensions";
         const string SETTINGS_MENU = "Project/Slothsoft's Unity Extensions";
         const string SETTINGS_TEMPLATE = "Packages/net.slothsoft.unity-extensions/Editor/Templates/Settings.uxml";
 
-        class SettingsObject : ScriptableObject {
+        sealed class SettingsObject : ScriptableObject {
             [Space]
             [SerializeField, Tooltip("Use the following options to change the style of the [Expandable] ScriptableObject drawers")]
             ExpandableSettings expandableSettings;
@@ -42,7 +42,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
             static SettingsObject instance;
             [SettingsProvider]
-            protected static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
+            static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
                 activateHandler = (searchContext, rootElement) => {
                     if (!instance) {
                         instance = CreateInstance<SettingsObject>();

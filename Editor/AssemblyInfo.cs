@@ -1,4 +1,5 @@
 using System.Runtime.CompilerServices;
+using Slothsoft.UnityExtensions;
 
-[assembly: InternalsVisibleTo("Slothsoft.UnityExtensions.Editor.RenderPipelineConversion")]
-[assembly: InternalsVisibleTo("Slothsoft.UnityExtensions.Editor.Tests")]
+[assembly: InternalsVisibleTo(AssemblyInfo.NAMESPACE_EDITOR_CONVERSION)]
+[assembly: InternalsVisibleTo(AssemblyInfo.NAMESPACE_TESTS_EDITOR)]

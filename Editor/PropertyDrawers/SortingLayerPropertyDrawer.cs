@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
     [CustomPropertyDrawer(typeof(SortingLayerAttribute))]
-    class SortingLayerPropertyDrawer : PropertyDrawer {
+    sealed class SortingLayerPropertyDrawer : PropertyDrawer {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
             typeof(EditorGUI)
                 .GetMethods(BindingFlags.Static | BindingFlags.NonPublic)

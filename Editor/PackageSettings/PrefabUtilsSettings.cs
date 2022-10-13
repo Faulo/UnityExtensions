@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     [Serializable]
-    class PrefabUtilsSettings {
+    sealed class PrefabUtilsSettings {
         [Header("File system configuration")]
         [SerializeField, Tooltip("Root path to load prefabs from, if load.")]
         internal string assetsFolder = "Assets/";

@@ -6,7 +6,7 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
     [TestFixture(typeof(TextAsset), "CHANGELOG.md")]
     [TestFixture(typeof(TextAsset), "README.md")]
     [TestFixture(typeof(DefaultAsset), "WebGL IFrame Template.unitypackage")]
-    public class StaticAssetTests<T> {
+    sealed class StaticAssetTests<T> {
         string name;
 
         public StaticAssetTests(string name) {
