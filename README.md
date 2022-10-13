@@ -8,9 +8,11 @@ C# extension functions, attributes and editor tools for common Unity problems.
 - Expandable attribute, to in-place edit asset references.
 - HDRP <=> URP Asset converter.
 - Project file fixer, to set C# version and warning level for .csproj files.
+- A .cs template for proper namespace support.
+- A WebGL template for use in iframes.
 
 ## Requirements
-- Unity 2020.2
+- Unity 2020.3
 
 ## Installation
 ### Install via manifest.json
@@ -27,7 +29,7 @@ The package is available on the [openupm registry](https://openupm.com/packages/
     }
   ],
   "dependencies": {
-    "net.slothsoft.unity-extensions": "1.5.2",
+    "net.slothsoft.unity-extensions": "2.0.0",
   }
 }
 ```

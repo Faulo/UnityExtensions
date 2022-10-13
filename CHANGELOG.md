@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.0.0] - 2022-10-13
+- Added a C# template with namespace support.
+
 ## [1.5.0] - 2022-03-11
 - Added Tilemap and ITilemap extensions.
 - Added more IEnumerable extensions.
