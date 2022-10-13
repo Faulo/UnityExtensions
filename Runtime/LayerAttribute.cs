@@ -4,6 +4,6 @@ namespace Slothsoft.UnityExtensions {
     /// <summary>
     /// Attribute to select a single layer.
     /// </summary>
-    public class LayerAttribute : PropertyAttribute {
+    public sealed class LayerAttribute : PropertyAttribute {
     }
 }

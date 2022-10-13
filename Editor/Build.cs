@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Linq;
 using UnityEditor;
-using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    public class Build : MonoBehaviour {
+    public static class Build {
         static void BuildNow(BuildTarget target, BuildTargetGroup targetGroup) {
             string path = Environment.GetCommandLineArgs().Last();
 

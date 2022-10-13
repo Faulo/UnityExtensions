@@ -1,9 +1,34 @@
-﻿using System;
+using System;
+using System.Collections;
 using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.TestTools;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class TransformTests {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(TransformExtensions))]
+    sealed class TransformTests {
+        [TestCase(0, ExpectedResult = null)]
+        [TestCase(1, ExpectedResult = null)]
+        [TestCase(2, ExpectedResult = null)]
+        [UnityTest]
+        [RequiresPlayMode]
+        public IEnumerator TestRuntimeClear(int childCount) {
+            var context = new GameObject();
+
+            var children = new Transform[childCount];
+            for (int i = 0; i < childCount; i++) {
+                children[i] = new GameObject().transform;
+                children[i].parent = context.transform;
+            }
+
+            yield return null;
+
+            context.transform.Clear();
+
+            yield return null;
+
+            Assert.AreEqual(0, context.transform.childCount);
+        }
         [TestCase(0)]
         [TestCase(1)]
         [TestCase(2)]

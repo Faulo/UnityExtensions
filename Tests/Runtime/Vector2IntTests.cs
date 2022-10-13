@@ -1,8 +1,9 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class Vector2IntTests {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(Vector2IntExtensions))]
+    sealed class Vector2IntTests {
         [Test]
         public void TestDeconstruct() {
             var (x, y) = new Vector2Int(1, 2);

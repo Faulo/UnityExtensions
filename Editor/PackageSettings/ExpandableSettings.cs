@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     [Serializable]
-    class ExpandableSettings {
+    sealed class ExpandableSettings {
         [Header("Additional Rows")]
         [SerializeField, Tooltip("Whether the default editor Script field should be shown.")]
         internal bool showSourceFile = true;

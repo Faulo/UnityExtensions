@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
     [Serializable]
-    class ProjectFileSettings {
+    sealed class ProjectFileSettings {
         enum WarningLevel {
             _0TurnOffAllWarnings = 0,
             _1DisplayOnlySevereWarnings = 1,

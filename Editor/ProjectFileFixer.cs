@@ -6,15 +6,15 @@ using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    class ProjectFileFixer : AssetPostprocessor {
+    sealed class ProjectFileFixer : AssetPostprocessor {
         const string PROJECT_FILE_EXTENSION = ".csproj";
         const string NS_CSPROJ = "http://schemas.microsoft.com/developer/msbuild/2003";
 
-        class Utf8StringWriter : StringWriter {
+        sealed class Utf8StringWriter : StringWriter {
             public override Encoding Encoding => Encoding.UTF8;
         }
 
-        protected static string OnGeneratedCSProject(string fileName, string fileContent) {
+        static string OnGeneratedCSProject(string fileName, string fileContent) {
             if (UnityExtensionsSettings.instance.cSharpSettings.rewriteProjectFiles) {
                 var file = new FileInfo(fileName);
                 if (file.Extension == PROJECT_FILE_EXTENSION) {

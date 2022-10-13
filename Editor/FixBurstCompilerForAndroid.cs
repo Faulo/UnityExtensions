@@ -5,7 +5,7 @@ using UnityEditor.Build;
 using UnityEditor.Build.Reporting;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    public class FixBurstCompilerForAndroid : IPreprocessBuildWithReport {
+    public sealed class FixBurstCompilerForAndroid : IPreprocessBuildWithReport {
         const string ANDROID_ENV_NDK = "ANDROID_NDK_ROOT";
         const string ANDROID_PREF_USE_EMBEDDED = "NdkUseEmbedded";
         const string ANDROID_PREF_PATH = "AndroidNdkRootR16b";

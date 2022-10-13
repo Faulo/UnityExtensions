@@ -9,7 +9,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
     /// Draws the property field for any field marked with ExpandableAttribute.
     /// </summary>
     [CustomPropertyDrawer(typeof(ExpandableAttribute), true)]
-    class ExpandableAttributeDrawer : PropertyDrawer {
+    sealed class ExpandableAttributeDrawer : PropertyDrawer {
         static ExpandableSettings settings => UnityExtensionsSettings.instance.expandableSettings;
 
         new ExpandableAttribute attribute => base.attribute as ExpandableAttribute;

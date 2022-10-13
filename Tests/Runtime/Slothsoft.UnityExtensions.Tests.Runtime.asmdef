@@ -1,14 +1,12 @@
 {
-    "name": "Slothsoft.UnityExtensions.Tests.EditMode",
+    "name": "Slothsoft.UnityExtensions.Tests.Runtime",
     "rootNamespace": "",
     "references": [
         "UnityEngine.TestRunner",
         "UnityEditor.TestRunner",
-        "Slothsoft.UnityExtensions.Runtime"
+        "Slothsoft.UnityExtensions"
     ],
-    "includePlatforms": [
-        "Editor"
-    ],
+    "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": true,

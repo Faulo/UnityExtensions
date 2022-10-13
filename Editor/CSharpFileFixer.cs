@@ -3,26 +3,29 @@ using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    class CSharpFileFixer : UnityEditor.AssetModificationProcessor {
-        const string META_EXTENSION = ".meta";
-        const string CSHARP_EXTENSION = ".cs";
+    sealed class CSharpFileFixer : UnityEditor.AssetModificationProcessor {
+        const string EXTENSION_CSHARP = ".cs";
+        const string PLACEHOLDER_NAMESPACE = "#NAMESPACE#";
 
-        protected static void OnWillCreateAsset(string path) {
+        static void OnWillCreateAsset(string path) {
             if (!UnityExtensionsSettings.instance.cSharpSettings.addNamespaceToCSharpFiles) {
                 return;
             }
+
             path = AssetDatabase.GetAssetPathFromTextMetaFilePath(path);
             var file = new FileInfo(path);
-            if (file.Extension == CSHARP_EXTENSION) {
-                var script = AssetDatabase.LoadAssetAtPath<MonoScript>(path);
-                var assembly = PrefabUtils.GetAssembly(script, path);
-                if (assembly) {
-                    string contents = File.ReadAllText(file.FullName);
-                    if (!contents.Contains("namespace ") && contents.Contains("public class ")) {
-                        contents = contents.Replace("public class ", $"namespace {PrefabUtils.GetNamespace(assembly, path)} {{\r\npublic class ") + "}";
-                        File.WriteAllText(file.FullName, contents);
-                        AssetDatabase.Refresh();
-                    }
+
+            if (file.Extension == EXTENSION_CSHARP) {
+                string contents = File.ReadAllText(file.FullName);
+                if (contents.Contains(PLACEHOLDER_NAMESPACE)) {
+                    var script = AssetDatabase.LoadAssetAtPath<MonoScript>(path);
+                    var assembly = PrefabUtils.GetAssembly(script, path);
+                    string ns = assembly
+                        ? PrefabUtils.GetNamespace(assembly, path)
+                        : "AssemblyCSharp";
+                    contents = contents.Replace(PLACEHOLDER_NAMESPACE, ns);
+                    File.WriteAllText(file.FullName, contents);
+                    AssetDatabase.Refresh();
                 }
             }
         }

@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class SerializableKeyValuePairsTests {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(SerializableKeyValuePairs<,>))]
+    sealed class SerializableKeyValuePairsTests {
         [TestCase("0", "1")]
         [TestCase("1", "2")]
         public void TestSerializableThis(string key, string value) {

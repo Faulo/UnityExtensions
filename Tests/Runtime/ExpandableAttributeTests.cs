@@ -1,8 +1,10 @@
 ﻿using NUnit.Framework;
 using UnityEngine;
+using UnityEngine.TestTools;
 
-namespace Slothsoft.UnityExtensions.Tests.EditMode {
-    public class ExpandableAttributeTests {
+namespace Slothsoft.UnityExtensions.Tests.Runtime {
+    [TestFixture(TestOf = typeof(ExpandableAttribute))]
+    sealed class ExpandableAttributeTests {
         interface IOne {
         }
         interface ITwo {
@@ -23,6 +25,7 @@ namespace Slothsoft.UnityExtensions.Tests.EditMode {
             var attribute = new ExpandableAttribute(typeof(ITwo));
             var obj = new GameObject().AddComponent<B>();
 
+            LogAssert.Expect(LogType.Warning, "Validation failed! Class <i>B</i> of object 'New Game Object' does not implement <i>ITwo</i>.");
             Assert.IsFalse(attribute.ValidateType(obj), $"{typeof(B)} must not pass validation.");
         }
         [Test]
