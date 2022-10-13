@@ -1,11 +1,12 @@
 {
   "name": "net.slothsoft.unity-extensions",
   "displayName": "Slothsoft's Unity Extensions",
-  "version": "1.6.0",
+  "version": "2.0.0",
   "description": "C# extension functions, attributes and editor tools for common Unity problems.",
   "unity": "2020.3",
   "keywords": [],
   "dependencies": {
+    "com.unity.test-framework": "2.0.1-exp.1",
     "com.unity.settings-manager": "2.0.1",
     "com.unity.editorcoroutines": "1.0.0",
     "com.unity.modules.tilemap": "1.0.0",

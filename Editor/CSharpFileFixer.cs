@@ -16,15 +16,16 @@ namespace Slothsoft.UnityExtensions.Editor {
             var file = new FileInfo(path);
 
             if (file.Extension == EXTENSION_CSHARP) {
-                var script = AssetDatabase.LoadAssetAtPath<MonoScript>(path);
-                var assembly = PrefabUtils.GetAssembly(script, path);
-                if (assembly) {
-                    string contents = File.ReadAllText(file.FullName);
-                    if (contents.Contains(PLACEHOLDER_NAMESPACE)) {
-                        contents = contents.Replace(PLACEHOLDER_NAMESPACE, PrefabUtils.GetNamespace(assembly, path));
-                        File.WriteAllText(file.FullName, contents);
-                        AssetDatabase.Refresh();
-                    }
+                string contents = File.ReadAllText(file.FullName);
+                if (contents.Contains(PLACEHOLDER_NAMESPACE)) {
+                    var script = AssetDatabase.LoadAssetAtPath<MonoScript>(path);
+                    var assembly = PrefabUtils.GetAssembly(script, path);
+                    string ns = assembly
+                        ? PrefabUtils.GetNamespace(assembly, path)
+                        : "AssemblyCSharp";
+                    contents = contents.Replace(PLACEHOLDER_NAMESPACE, ns);
+                    File.WriteAllText(file.FullName, contents);
+                    AssetDatabase.Refresh();
                 }
             }
         }
