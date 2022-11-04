@@ -27,17 +27,23 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
             [SerializeField, Tooltip("Use the following options to change how C# files are generated")]
             CSharpSettings cSharpSettings;
 
+            [Space]
+            [SerializeField]
+            AndroidSettings androidSettings;
+
             void Load() {
                 expandableSettings = m_expandableSettings.value;
                 renderPipelineConversionSettings = m_renderPipelineConversionSettings.value;
                 prefabUtilsSettings = m_prefabUtilsSettings.value;
                 cSharpSettings = m_cSharpSettings.value;
+                androidSettings = m_androidSettings.value;
             }
             void Save() {
                 m_expandableSettings.ApplyModifiedProperties();
                 m_renderPipelineConversionSettings.ApplyModifiedProperties();
                 m_prefabUtilsSettings.ApplyModifiedProperties();
                 m_cSharpSettings.ApplyModifiedProperties();
+                m_androidSettings.ApplyModifiedProperties();
             }
 
             static SettingsObject instance;
@@ -85,15 +91,19 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         internal ExpandableSettings expandableSettings => m_expandableSettings.value;
 
         [UserSetting]
-        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new UserSetting<RenderPipelineConversionSettings>(settings, nameof(m_expandableSettings), new RenderPipelineConversionSettings());
+        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new UserSetting<RenderPipelineConversionSettings>(settings, nameof(m_renderPipelineConversionSettings), new RenderPipelineConversionSettings());
         internal RenderPipelineConversionSettings renderPipelineConversionSettings => m_renderPipelineConversionSettings.value;
 
         [UserSetting]
-        static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new UserSetting<PrefabUtilsSettings>(settings, nameof(m_expandableSettings), new PrefabUtilsSettings());
+        static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new UserSetting<PrefabUtilsSettings>(settings, nameof(m_prefabUtilsSettings), new PrefabUtilsSettings());
         internal PrefabUtilsSettings prefabUtilsSettings => m_prefabUtilsSettings.value;
 
         [UserSetting]
-        static UserSetting<CSharpSettings> m_cSharpSettings = new UserSetting<CSharpSettings>(settings, nameof(m_expandableSettings), new CSharpSettings());
+        static UserSetting<CSharpSettings> m_cSharpSettings = new UserSetting<CSharpSettings>(settings, nameof(m_cSharpSettings), new CSharpSettings());
         internal CSharpSettings cSharpSettings => m_cSharpSettings.value;
+
+        [UserSetting]
+        static UserSetting<AndroidSettings> m_androidSettings = new UserSetting<AndroidSettings>(settings, nameof(m_androidSettings), new AndroidSettings());
+        internal AndroidSettings androidSettings => m_androidSettings.value;
     }
 }
