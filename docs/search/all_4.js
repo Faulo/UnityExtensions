@@ -1,8 +1,6 @@
 var searchData=
 [
-  ['forall_3c_20t_20_3e_0',['ForAll&lt; T &gt;',['../class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#afabaed3789a4b87fa3833cc22c28e1ad',1,'Slothsoft::UnityExtensions::IEnumerableExtensions']]],
-  ['forendofframe_1',['forEndOfFrame',['../class_slothsoft_1_1_unity_extensions_1_1_wait.html#affed72b9b0e707f7a21a21f9ee2fdb03',1,'Slothsoft::UnityExtensions::Wait']]],
-  ['forfixedupdate_2',['forFixedUpdate',['../class_slothsoft_1_1_unity_extensions_1_1_wait.html#a5f7b3adf0165ac1ef063971865d68d3d',1,'Slothsoft::UnityExtensions::Wait']]],
-  ['forseconds_3',['forSeconds',['../class_slothsoft_1_1_unity_extensions_1_1_wait.html#a56269416194b1ea74b815d789e4425e5',1,'Slothsoft::UnityExtensions::Wait']]],
-  ['forsecondsrealtime_4',['forSecondsRealtime',['../class_slothsoft_1_1_unity_extensions_1_1_wait.html#ad6b0b8171e84dc6b0b4e57d36eeef77c',1,'Slothsoft::UnityExtensions::Wait']]]
+  ['getchildren_0',['GetChildren',['../class_slothsoft_1_1_unity_extensions_1_1_transform_extensions.html#aad7f2371bdc7dae622c8425017e8c242',1,'Slothsoft::UnityExtensions::TransformExtensions']]],
+  ['getimplementation_1',['GetImplementation',['../class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#ab3171db0d17cd9b0a9e38e659ac85f50',1,'Slothsoft::UnityExtensions::TilemapExtensions']]],
+  ['getinterface_2',['GetInterface',['../class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#add580277d60aa8418980a331dd3918df',1,'Slothsoft::UnityExtensions::TilemapExtensions']]]
 ];

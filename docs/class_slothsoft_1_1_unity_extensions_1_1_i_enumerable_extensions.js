@@ -17,6 +17,5 @@ var class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions =
     [ "Shuffle< T >", "class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#ad8dc1b352a9284441231d2b19bd047e4", null ],
     [ "ToHashSet< TSource >", "class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#a7fcd57cef83a9712827d7809e8ba586a", null ],
     [ "TrySelect< TSource, TTarget >", "class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#a1ab5d667882a8e580a3f83fca25eb118", null ],
-    [ "TrySelectFunc< T >", "class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#a208e7cfe5f02a392d085543daa3a0991", null ],
     [ "Without< TSource >", "class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#a4d4eb21d65251cf5a84b2cdabb4b7c11", null ]
 ];
