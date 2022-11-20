@@ -5,6 +5,7 @@
   "description": "C# extension functions, attributes and editor tools for common Unity problems.",
   "unity": "2020.3",
   "keywords": [],
+  "license": "MIT",
   "dependencies": {
     "com.unity.test-framework": "2.0.1-exp.1",
     "com.unity.settings-manager": "2.0.1",
