@@ -6,6 +6,8 @@
   "unity": "2020.3",
   "keywords": [],
   "license": "MIT",
+  "changelogUrl": "https://openupm.com/packages/net.slothsoft.unity-extensions/",
+  "documentationUrl": "https://faulo.github.io/UnityExtensions/",
   "dependencies": {
     "com.unity.test-framework": "2.0.1-exp.1",
     "com.unity.settings-manager": "2.0.1",
