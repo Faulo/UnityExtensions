@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.2.0] - 2023-01-02
+- Added support for Unity 2022.2.
+
 ## [2.0.0] - 2022-10-13
 - Added a C# template with namespace support.
 
