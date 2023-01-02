@@ -41,11 +41,8 @@ namespace Slothsoft.UnityExtensions.Editor {
                 .Replace(Path.DirectorySeparatorChar, '.');
             return CleanNamespace(GetNamespace(assembly) + scriptNamespace);
         }
-        static string GetNamespace(AssemblyDefinitionAsset assembly, MonoScript script) {
-            return GetNamespace(assembly, AssetDatabase.GetAssetPath(script));
-        }
         static string CleanNamespace(string ns) {
-            return string.Join('.', invalidTypeCharacters.Replace(ns, "").Split('.').Where(segment => !string.IsNullOrEmpty(segment)));
+            return string.Join(".", invalidTypeCharacters.Replace(ns, "").Split('.').Where(segment => !string.IsNullOrEmpty(segment)));
         }
 
         const string EXTENSION_CSHARP = ".cs";
