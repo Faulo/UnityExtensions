@@ -1,4 +1,4 @@
 var namespaces_dup =
 [
-    [ "Slothsoft", "namespace_slothsoft.html", "namespace_slothsoft" ]
+    [ "Slothsoft", "db/d8b/namespace_slothsoft.html", "db/d8b/namespace_slothsoft" ]
 ];

@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['layerattribute_0',['LayerAttribute',['../class_slothsoft_1_1_unity_extensions_1_1_layer_attribute.html',1,'Slothsoft::UnityExtensions']]],
-  ['log_3c_20t_20_3e_1',['Log&lt; T &gt;',['../class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#a7e4d95dfc4f29045995005991ecdde5a',1,'Slothsoft::UnityExtensions::IEnumerableExtensions']]]
+  ['keys_0',['Keys',['../da/d53/class_slothsoft_1_1_unity_extensions_1_1_serializable_key_value_pairs.html#a60ed6be4576a7ac87a38218d8bf85f5d',1,'Slothsoft::UnityExtensions::SerializableKeyValuePairs']]],
+  ['keyvaluepairextensions_1',['KeyValuePairExtensions',['../d8/d66/class_slothsoft_1_1_unity_extensions_1_1_key_value_pair_extensions.html',1,'Slothsoft::UnityExtensions']]],
+  ['keyvaluepairextensions_2ecs_2',['KeyValuePairExtensions.cs',['../d9/d4a/_key_value_pair_extensions_8cs.html',1,'']]]
 ];
