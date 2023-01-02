@@ -21,7 +21,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             string path = file.FullName;
             string root = new DirectoryInfo(".").FullName;
             if (path.StartsWith(root)) {
-                path = path.Substring(root.Length + 1);
+                path = path[(root.Length + 1)..];
             }
             return AssetDatabase.LoadAssetAtPath<T>(path);
         }
@@ -34,6 +34,7 @@ namespace Slothsoft.UnityExtensions.Editor {
 
 
         static readonly Regex invalidTypeCharacters = new Regex(@"[^\w.]+");
+        static bool stripRuntimeFromNamespace => UnityExtensionsSettings.instance.cSharpSettings.stripRuntimeFromNamespace;
 
         public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null) {
             var directory = new FileInfo(assetPath ?? AssetDatabase.GetAssetPath(script)).Directory;
@@ -45,13 +46,16 @@ namespace Slothsoft.UnityExtensions.Editor {
                 .FirstOrDefault();
         }
         public static string GetNamespace(AssemblyDefinitionAsset assembly) {
-            return CleanNamespace(assembly.name.Replace(".Runtime", ""));
+            string ns = assembly.name;
+            if (stripRuntimeFromNamespace) {
+                ns = assembly.name.Replace(".Runtime", "");
+            }
+            return CleanNamespace(ns);
         }
         public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath) {
             string assemblyPath = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory.FullName;
             string scriptPath = new FileInfo(assetPath).Directory.FullName;
-            string scriptNamespace = scriptPath
-                .Substring(assemblyPath.Length)
+            string scriptNamespace = scriptPath[assemblyPath.Length..]
                 .Replace(Path.DirectorySeparatorChar, '.');
             return CleanNamespace(GetNamespace(assembly) + scriptNamespace);
         }
