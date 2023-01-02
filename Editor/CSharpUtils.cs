@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
     public static class CSharpUtils {
-        static readonly Regex invalidTypeCharacters = new(@"[^\w.]+");
+        static readonly Regex invalidTypeCharacters = new Regex(@"[^\w.]+");
         static bool stripRuntimeFromNamespace => UnityExtensionsSettings.instance.cSharpSettings.stripRuntimeFromNamespace;
 
         public static AssemblyDefinitionAsset GetAssembly(MonoScript script)
