@@ -22,7 +22,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             string path = file.FullName;
             string root = new DirectoryInfo(".").FullName;
             if (path.StartsWith(root)) {
-                path = path[(root.Length + 1)..];
+                path = path.Substring(root.Length + 1);
             }
             return AssetDatabase.LoadAssetAtPath<T>(path);
         }
