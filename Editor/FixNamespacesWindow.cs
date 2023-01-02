@@ -32,7 +32,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (assemblyCache != value) {
                     assemblyCache = value;
                     assemblyDirectory = new FileInfo(AssetDatabase.GetAssetPath(value)).Directory;
-                    rootNamespace = PrefabUtils.GetNamespace(assembly);
+                    rootNamespace = CSharpUtils.GetNamespace(assembly);
                     namespaces = null;
                 }
             }

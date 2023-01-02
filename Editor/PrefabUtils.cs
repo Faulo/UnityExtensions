@@ -1,11 +1,12 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text.RegularExpressions;
 using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
+using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.UnityExtensions.Editor {
     public static class PrefabUtils {
@@ -17,7 +18,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             .Select(AssetDatabase.LoadMainAssetAtPath)
             .OfType<GameObject>();
 
-        public static T LoadAssetAtPath<T>(FileSystemInfo file) where T : Object {
+        public static T LoadAssetAtPath<T>(FileSystemInfo file) where T : UnityObject {
             string path = file.FullName;
             string root = new DirectoryInfo(".").FullName;
             if (path.StartsWith(root)) {
@@ -26,44 +27,24 @@ namespace Slothsoft.UnityExtensions.Editor {
             return AssetDatabase.LoadAssetAtPath<T>(path);
         }
 
-        public static IEnumerable<T> LoadAssets<T>(string searchFolder = "Assets") where T : Object {
+        public static IEnumerable<T> LoadAssets<T>(string searchFolder = "Assets") where T : UnityObject {
             return AssetDatabase.FindAssets($"t:{typeof(T).Name}", new[] { searchFolder })
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<T>);
         }
 
+        [Obsolete("Use 'CSharpUtils.GetAssembly' instead.")]
+        public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null)
+            => string.IsNullOrEmpty(assetPath)
+                ? CSharpUtils.GetAssembly(script)
+                : CSharpUtils.GetAssembly(assetPath);
 
-        static readonly Regex invalidTypeCharacters = new Regex(@"[^\w.]+");
-        static bool stripRuntimeFromNamespace => UnityExtensionsSettings.instance.cSharpSettings.stripRuntimeFromNamespace;
+        [Obsolete("Use 'CSharpUtils.GetNamespace' instead.")]
+        public static string GetNamespace(AssemblyDefinitionAsset assembly)
+            => CSharpUtils.GetNamespace(assembly);
 
-        public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null) {
-            var directory = new FileInfo(assetPath ?? AssetDatabase.GetAssetPath(script)).Directory;
-            return LoadAssets<AssemblyDefinitionAsset>()
-                .Select(assembly => new { assembly, directory = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory })
-                .Where(info => directory.FullName.Contains(info.directory.FullName))
-                .OrderByDescending(info => info.directory.FullName.Length)
-                .Select(info => info.assembly)
-                .FirstOrDefault();
-        }
-        public static string GetNamespace(AssemblyDefinitionAsset assembly) {
-            string ns = assembly.name;
-            if (stripRuntimeFromNamespace) {
-                ns = assembly.name.Replace(".Runtime", "");
-            }
-            return CleanNamespace(ns);
-        }
-        public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath) {
-            string assemblyPath = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory.FullName;
-            string scriptPath = new FileInfo(assetPath).Directory.FullName;
-            string scriptNamespace = scriptPath[assemblyPath.Length..]
-                .Replace(Path.DirectorySeparatorChar, '.');
-            return CleanNamespace(GetNamespace(assembly) + scriptNamespace);
-        }
-        static string GetNamespace(AssemblyDefinitionAsset assembly, MonoScript script) {
-            return GetNamespace(assembly, AssetDatabase.GetAssetPath(script));
-        }
-        static string CleanNamespace(string ns) {
-            return invalidTypeCharacters.Replace(ns, "").Trim();
-        }
+        [Obsolete("Use 'CSharpUtils.GetNamespace' instead.")]
+        public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath)
+            => CSharpUtils.GetNamespace(assembly, assetPath);
     }
 }
