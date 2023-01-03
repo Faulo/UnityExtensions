@@ -12,6 +12,9 @@ namespace Slothsoft.UnityExtensions.Editor {
     public static class PrefabUtils {
         static PrefabUtilsSettings settings => UnityExtensionsSettings.instance.prefabUtilsSettings;
 
+        /// <summary>
+        /// Loads all prefabs inside the project. Honors the settings '<see cref="PrefabUtilsSettings.assetsFolder"/>' and '<see cref="PrefabUtilsSettings.prefabExtension"/>'.
+        /// </summary>
         public static IEnumerable<GameObject> allPrefabs => AssetDatabase.GetAllAssetPaths()
             .Where(path => path.StartsWith(settings.assetsFolder))
             .Where(path => path.EndsWith(settings.prefabExtension))
