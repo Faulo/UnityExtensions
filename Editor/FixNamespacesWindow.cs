@@ -139,7 +139,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             void crawl(DirectoryInfo directory, string ns) {
                 if (directory.GetFileSystemInfos().Any()) {
                     list.Push(new NamespaceInfo {
-                        asset = PrefabUtils.LoadAssetAtPath<DefaultAsset>(directory),
+                        asset = AssetUtils.LoadAssetAtFile<DefaultAsset>(directory),
                         classNamespace = ns,
                         directory = directory,
                     });
@@ -160,7 +160,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     var match = rule.Match(contents);
                     if (match.Success) {
                         yield return new ClassInfo {
-                            asset = PrefabUtils.LoadAssetAtPath<MonoScript>(file),
+                            asset = AssetUtils.LoadAssetAtFile<MonoScript>(file),
                             file = file,
                             ns = ns,
                             isValid = match.Groups[1].Value == ns.classNamespace,

@@ -18,11 +18,11 @@ namespace Slothsoft.UnityExtensions.Editor {
             .Select(AssetDatabase.LoadMainAssetAtPath)
             .OfType<GameObject>();
 
-        [Obsolete("Use 'AssetUtils.LoadAssetAtPath' instead.")]
+        [Obsolete("Use 'AssetUtils.LoadAssetAtFile' instead.")]
         public static T LoadAssetAtPath<T>(FileSystemInfo file) where T : UnityObject
             => AssetUtils.LoadAssetAtFile<T>(file);
 
-        [Obsolete("Use 'AssetUtils.LoadAssets' instead.")]
+        [Obsolete("Use 'AssetUtils.LoadAssetsOfType' instead.")]
         public static IEnumerable<T> LoadAssets<T>(string searchFolder = "Assets") where T : UnityObject
             => AssetUtils.LoadAssetsOfType<T>(searchFolder);
 
