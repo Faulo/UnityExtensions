@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.3.0] - 2023-01-02
+- Added AssetUtils.
+
 ## [2.2.0] - 2023-01-02
 - Added support for Unity 2022.2.
 
