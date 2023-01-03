@@ -18,20 +18,13 @@ namespace Slothsoft.UnityExtensions.Editor {
             .Select(AssetDatabase.LoadMainAssetAtPath)
             .OfType<GameObject>();
 
-        public static T LoadAssetAtPath<T>(FileSystemInfo file) where T : UnityObject {
-            string path = file.FullName;
-            string root = new DirectoryInfo(".").FullName;
-            if (path.StartsWith(root)) {
-                path = path.Substring(root.Length + 1);
-            }
-            return AssetDatabase.LoadAssetAtPath<T>(path);
-        }
+        [Obsolete("Use 'AssetUtils.LoadAssetAtPath' instead.")]
+        public static T LoadAssetAtPath<T>(FileSystemInfo file) where T : UnityObject
+            => AssetUtils.LoadAssetAtFile<T>(file);
 
-        public static IEnumerable<T> LoadAssets<T>(string searchFolder = "Assets") where T : UnityObject {
-            return AssetDatabase.FindAssets($"t:{typeof(T).Name}", new[] { searchFolder })
-                .Select(AssetDatabase.GUIDToAssetPath)
-                .Select(AssetDatabase.LoadAssetAtPath<T>);
-        }
+        [Obsolete("Use 'AssetUtils.LoadAssets' instead.")]
+        public static IEnumerable<T> LoadAssets<T>(string searchFolder = "Assets") where T : UnityObject
+            => AssetUtils.LoadAssetsOfType<T>(searchFolder);
 
         [Obsolete("Use 'CSharpUtils.GetAssembly' instead.")]
         public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null)

@@ -19,7 +19,7 @@ namespace Slothsoft.UnityExtensions.Editor {
         public static AssemblyDefinitionAsset GetAssembly(FileInfo scriptFile)
             => GetAssembly(scriptFile.Directory);
         public static AssemblyDefinitionAsset GetAssembly(DirectoryInfo directory) {
-            return PrefabUtils.LoadAssets<AssemblyDefinitionAsset>()
+            return AssetUtils.LoadAssetsOfType<AssemblyDefinitionAsset>()
                 .Select(assembly => new { assembly, directory = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory })
                 .Where(info => directory.FullName.Contains(info.directory.FullName))
                 .OrderByDescending(info => info.directory.FullName.Length)
