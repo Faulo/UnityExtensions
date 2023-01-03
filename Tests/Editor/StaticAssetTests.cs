@@ -5,6 +5,7 @@ using UnityEngine;
 namespace Slothsoft.UnityExtensions.Tests.Editor {
     [TestFixture(typeof(TextAsset), "CHANGELOG.md")]
     [TestFixture(typeof(TextAsset), "README.md")]
+    [TestFixture(typeof(DefaultAsset), "Script CSharp Template.unitypackage")]
     [TestFixture(typeof(DefaultAsset), "WebGL IFrame Template.unitypackage")]
     sealed class StaticAssetTests<T> {
         string name;
