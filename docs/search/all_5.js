@@ -1,9 +1,12 @@
 var searchData=
 [
-  ['getchildren_0',['GetChildren',['../d7/dae/class_slothsoft_1_1_unity_extensions_1_1_transform_extensions.html#aad7f2371bdc7dae622c8425017e8c242',1,'Slothsoft::UnityExtensions::TransformExtensions']]],
-  ['getenumerator_1',['GetEnumerator',['../da/d53/class_slothsoft_1_1_unity_extensions_1_1_serializable_key_value_pairs.html#aacdbe89f4fc975a723b373b9449cee3b',1,'Slothsoft::UnityExtensions::SerializableKeyValuePairs']]],
-  ['getimplementation_2',['GetImplementation',['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#ab3171db0d17cd9b0a9e38e659ac85f50',1,'Slothsoft::UnityExtensions::TilemapExtensions']]],
-  ['getinterface_3',['GetInterface',['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#add580277d60aa8418980a331dd3918df',1,'Slothsoft::UnityExtensions::TilemapExtensions']]],
-  ['getusedtiles_4',['GetUsedTiles',['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#ac5a66a8c1dc1855d9469d265f8460610',1,'Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(this ITilemap tilemap)'],['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#ab3ed90a374951fb94eeb679c23881a5b',1,'Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(this Tilemap tilemap)']]],
-  ['getusedtiles_3c_20ttile_20_3e_5',['GetUsedTiles&lt; TTile &gt;',['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#a835b7fca7b9e662662184d6d77db42c2',1,'Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles&lt; TTile &gt;(this ITilemap tilemap)'],['../d9/d26/class_slothsoft_1_1_unity_extensions_1_1_tilemap_extensions.html#a3561424280e56485d90f292d8e2dab06',1,'Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles&lt; TTile &gt;(this Tilemap tilemap)']]]
+  ['fixburstcompilerforandroid_0',['FixBurstCompilerForAndroid',['../df/dcb/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_fix_burst_compiler_for_android.html',1,'Slothsoft::UnityExtensions::Editor']]],
+  ['fixburstcompilerforandroid_2ecs_1',['FixBurstCompilerForAndroid.cs',['../d0/d7e/_fix_burst_compiler_for_android_8cs.html',1,'']]],
+  ['fixnamespaceswindow_2',['FixNamespacesWindow',['../d2/d79/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_fix_namespaces_window.html',1,'Slothsoft::UnityExtensions::Editor']]],
+  ['fixnamespaceswindow_2ecs_3',['FixNamespacesWindow.cs',['../dc/db7/_fix_namespaces_window_8cs.html',1,'']]],
+  ['forall_3c_20t_20_3e_4',['ForAll&lt; T &gt;',['../d4/d71/class_slothsoft_1_1_unity_extensions_1_1_i_enumerable_extensions.html#afabaed3789a4b87fa3833cc22c28e1ad',1,'Slothsoft::UnityExtensions::IEnumerableExtensions']]],
+  ['forendofframe_5',['forEndOfFrame',['../d2/d2e/class_slothsoft_1_1_unity_extensions_1_1_wait.html#affed72b9b0e707f7a21a21f9ee2fdb03',1,'Slothsoft::UnityExtensions::Wait']]],
+  ['forfixedupdate_6',['forFixedUpdate',['../d2/d2e/class_slothsoft_1_1_unity_extensions_1_1_wait.html#a5f7b3adf0165ac1ef063971865d68d3d',1,'Slothsoft::UnityExtensions::Wait']]],
+  ['forseconds_7',['forSeconds',['../d2/d2e/class_slothsoft_1_1_unity_extensions_1_1_wait.html#a56269416194b1ea74b815d789e4425e5',1,'Slothsoft::UnityExtensions::Wait']]],
+  ['forsecondsrealtime_8',['forSecondsRealtime',['../d2/d2e/class_slothsoft_1_1_unity_extensions_1_1_wait.html#ad6b0b8171e84dc6b0b4e57d36eeef77c',1,'Slothsoft::UnityExtensions::Wait']]]
 ];

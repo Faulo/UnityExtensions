@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['vector2extensions_0',['Vector2Extensions',['../d5/d71/class_slothsoft_1_1_unity_extensions_1_1_vector2_extensions.html',1,'Slothsoft::UnityExtensions']]],
-  ['vector2intextensions_1',['Vector2IntExtensions',['../df/de7/class_slothsoft_1_1_unity_extensions_1_1_vector2_int_extensions.html',1,'Slothsoft::UnityExtensions']]],
-  ['vector3extensions_2',['Vector3Extensions',['../de/d18/class_slothsoft_1_1_unity_extensions_1_1_vector3_extensions.html',1,'Slothsoft::UnityExtensions']]],
-  ['vector3intextensions_3',['Vector3IntExtensions',['../d4/d53/class_slothsoft_1_1_unity_extensions_1_1_vector3_int_extensions.html',1,'Slothsoft::UnityExtensions']]]
+  ['prefabutils_0',['PrefabUtils',['../de/d58/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_prefab_utils.html',1,'Slothsoft::UnityExtensions::Editor']]],
+  ['prefabutilssettings_1',['PrefabUtilsSettings',['../db/dc5/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_package_settings_1_1_prefab_utils_settings.html',1,'Slothsoft::UnityExtensions::Editor::PackageSettings']]],
+  ['projectfilefixer_2',['ProjectFileFixer',['../db/d16/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_project_file_fixer.html',1,'Slothsoft::UnityExtensions::Editor']]],
+  ['projectfilesettings_3',['ProjectFileSettings',['../df/d84/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_package_settings_1_1_project_file_settings.html',1,'Slothsoft::UnityExtensions::Editor::PackageSettings']]]
 ];
