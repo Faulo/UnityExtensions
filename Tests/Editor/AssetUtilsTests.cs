@@ -16,6 +16,8 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
         readonly string searchFolder;
         readonly T expectedAsset;
 
+        string inconclusiveMessage => $"Failed to load asset of type '{typeof(T)}' at location '{assetPath}'!";
+
         public AssetUtilsTests(string assetPath, bool isDirectory, string searchFolder) {
             this.assetPath = assetPath;
             this.isDirectory = isDirectory;
@@ -26,6 +28,11 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetAtFile() {
+            if (!expectedAsset) {
+                Assert.Inconclusive(inconclusiveMessage);
+                return;
+            }
+
             var actualAsset = isDirectory
                 ? AssetUtils.LoadAssetAtFile<T>(new DirectoryInfo(assetPath))
                 : AssetUtils.LoadAssetAtFile<T>(new FileInfo(assetPath));
@@ -35,6 +42,11 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetsOfTypeNoSearchFolders() {
+            if (!expectedAsset) {
+                Assert.Inconclusive(inconclusiveMessage);
+                return;
+            }
+
             var actualAssets = AssetUtils.LoadAssetsOfType<T>();
 
             CollectionAssert.Contains(actualAssets, expectedAsset);
@@ -42,6 +54,11 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetsOfTypeCorrectSearchFolder() {
+            if (!expectedAsset) {
+                Assert.Inconclusive(inconclusiveMessage);
+                return;
+            }
+
             var actualAssets = AssetUtils.LoadAssetsOfType<T>(searchFolder);
 
             CollectionAssert.Contains(actualAssets, expectedAsset);
@@ -49,6 +66,11 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetsOfTypeWrongSearchFolders() {
+            if (!expectedAsset) {
+                Assert.Inconclusive(inconclusiveMessage);
+                return;
+            }
+
             var actualAssets = AssetUtils.LoadAssetsOfType<T>("ProjectSettings", "FolderThatDoesNotExist");
 
             CollectionAssert.DoesNotContain(actualAssets, expectedAsset);
@@ -56,6 +78,11 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetsOfTypeWrongType() {
+            if (!expectedAsset) {
+                Assert.Inconclusive(inconclusiveMessage);
+                return;
+            }
+
             var actualAssets = AssetUtils.LoadAssetsOfType<GameObject>();
 
             CollectionAssert.DoesNotContain(actualAssets, expectedAsset);
