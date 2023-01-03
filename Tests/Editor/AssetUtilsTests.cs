@@ -26,10 +26,9 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestLoadAssetAtFile() {
-            FileSystemInfo assetInfo = isDirectory
-                ? new DirectoryInfo(assetPath)
-                : new FileInfo(assetPath);
-            var actualAsset = AssetUtils.LoadAssetAtFile<T>(assetInfo);
+            var actualAsset = isDirectory
+                ? AssetUtils.LoadAssetAtFile<T>(new DirectoryInfo(assetPath))
+                : AssetUtils.LoadAssetAtFile<T>(new FileInfo(assetPath));
 
             Assert.AreEqual(expectedAsset, actualAsset);
         }
