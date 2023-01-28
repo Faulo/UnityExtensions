@@ -9,7 +9,7 @@
           ]
         }
       ],
-      "dest": "api",
+      "dest": ".docfx/api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -24,7 +24,7 @@
     "content": [
       {
         "files": [
-          "api/**.yml"
+          ".docfx/api/**.yml"
         ]
       }
     ],
@@ -42,7 +42,7 @@
         ]
       }
     ],
-    "dest": "Documentation",
+    "dest": ".docfx/docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
