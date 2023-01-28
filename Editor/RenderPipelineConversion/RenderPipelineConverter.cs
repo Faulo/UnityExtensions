@@ -9,7 +9,7 @@ using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.Rendering.Universal;
 
 namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
-    public class RenderPipelineConverter : EditorWindow {
+    internal class RenderPipelineConverter : EditorWindow {
         [MenuItem("Window/Render Pipeline/Slothsoft's HDRP <=> URP Conversion Wizard")]
         public static void ShowWindow() {
             GetWindow<RenderPipelineConverter>();
