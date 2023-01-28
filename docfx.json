@@ -42,7 +42,7 @@
         ]
       }
     ],
-    "dest": ".docfx/docs",
+    "dest": "docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [
