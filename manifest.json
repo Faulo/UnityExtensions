@@ -89,54 +89,6 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html",
-          "hash": "QYf1GNjjBTdnAGpqg92Tzg=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.html",
-          "hash": "qmdVmqBKze3rf0JZL7sNjA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html",
-          "hash": "hGAklg4Cuy6zRtjNa6IIaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.html",
-          "hash": "1bJfoCVKsXZmT/AKHG/qNA=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.yml",
       "output": {
         ".html": {
@@ -381,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "ScMMcKvbt9yUNfL+mqJIsA=="
+          "hash": "Uqi8lZTlb7dvkMX57YJ8og=="
         }
       },
       "is_incremental": false,
@@ -432,7 +384,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 30,
+          "total_file_count": 26,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
