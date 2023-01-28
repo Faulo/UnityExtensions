@@ -3,13 +3,14 @@
     {
       "src": [
         {
+	      "src": "../",
           "files": [
             "Runtime/**.cs",
             "Editor/**.cs"
           ]
         }
       ],
-      "dest": ".docfx/api",
+      "dest": "api",
       "disableGitFeatures": false,
       "disableDefaultFilter": false
     }
@@ -24,7 +25,14 @@
     "content": [
       {
         "files": [
-          ".docfx/api/**.yml"
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "*.md"
         ]
       }
     ],
@@ -42,7 +50,7 @@
         ]
       }
     ],
-    "dest": "docs",
+    "dest": "../docs",
     "globalMetadataFiles": [],
     "fileMetadataFiles": [],
     "template": [

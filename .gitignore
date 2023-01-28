@@ -1,3 +1,5 @@
-/.docfx/
+/.docfx/*/
+!/.docfx/index.md
+/docs/
 obj/
 obj.meta
