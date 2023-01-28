@@ -3,19 +3,19 @@ sorted: true
 references:
 - uid: Slothsoft.UnityExtensions
   name: Slothsoft.UnityExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.html
+  href: api/Slothsoft.UnityExtensions.html
   commentId: N:Slothsoft.UnityExtensions
   fullName: Slothsoft.UnityExtensions
   nameWithType: Slothsoft.UnityExtensions
 - uid: Slothsoft.UnityExtensions.ColorExtensions
   name: ColorExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html
   commentId: T:Slothsoft.UnityExtensions.ColorExtensions
   fullName: Slothsoft.UnityExtensions.ColorExtensions
   nameWithType: ColorExtensions
 - uid: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color,System.Single@,System.Single@,System.Single@)
   name: Deconstruct(Color, out Single, out Single, out Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_Color_System_Single__System_Single__System_Single__
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_Color_System_Single__System_Single__System_Single__
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color,System.Single@,System.Single@,System.Single@)
   name.vb: Deconstruct(Color, ByRef Single, ByRef Single, ByRef Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color, out System.Single, out System.Single, out System.Single)
@@ -24,7 +24,7 @@ references:
   nameWithType.vb: ColorExtensions.Deconstruct(Color, ByRef Single, ByRef Single, ByRef Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color,System.Single@,System.Single@,System.Single@,System.Single@)
   name: Deconstruct(Color, out Single, out Single, out Single, out Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_Color_System_Single__System_Single__System_Single__System_Single__
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_Color_System_Single__System_Single__System_Single__System_Single__
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color,System.Single@,System.Single@,System.Single@,System.Single@)
   name.vb: Deconstruct(Color, ByRef Single, ByRef Single, ByRef Single, ByRef Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct(Color, out System.Single, out System.Single, out System.Single, out System.Single)
@@ -33,85 +33,85 @@ references:
   nameWithType.vb: ColorExtensions.Deconstruct(Color, ByRef Single, ByRef Single, ByRef Single, ByRef Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.ColorExtensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ColorExtensions.Deconstruct
   nameWithType: ColorExtensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithAlpha(Color,System.Single)
   name: WithAlpha(Color, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithAlpha_Color_System_Single_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithAlpha_Color_System_Single_
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.WithAlpha(Color,System.Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithAlpha(Color, System.Single)
   nameWithType: ColorExtensions.WithAlpha(Color, Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithAlpha*
   name: WithAlpha
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithAlpha_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithAlpha_
   commentId: Overload:Slothsoft.UnityExtensions.ColorExtensions.WithAlpha
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithAlpha
   nameWithType: ColorExtensions.WithAlpha
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithBlue(Color,System.Single)
   name: WithBlue(Color, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithBlue_Color_System_Single_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithBlue_Color_System_Single_
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.WithBlue(Color,System.Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithBlue(Color, System.Single)
   nameWithType: ColorExtensions.WithBlue(Color, Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithBlue*
   name: WithBlue
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithBlue_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithBlue_
   commentId: Overload:Slothsoft.UnityExtensions.ColorExtensions.WithBlue
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithBlue
   nameWithType: ColorExtensions.WithBlue
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithGreen(Color,System.Single)
   name: WithGreen(Color, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithGreen_Color_System_Single_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithGreen_Color_System_Single_
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.WithGreen(Color,System.Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithGreen(Color, System.Single)
   nameWithType: ColorExtensions.WithGreen(Color, Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithGreen*
   name: WithGreen
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithGreen_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithGreen_
   commentId: Overload:Slothsoft.UnityExtensions.ColorExtensions.WithGreen
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithGreen
   nameWithType: ColorExtensions.WithGreen
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithRed(Color,System.Single)
   name: WithRed(Color, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithRed_Color_System_Single_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithRed_Color_System_Single_
   commentId: M:Slothsoft.UnityExtensions.ColorExtensions.WithRed(Color,System.Single)
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithRed(Color, System.Single)
   nameWithType: ColorExtensions.WithRed(Color, Single)
 - uid: Slothsoft.UnityExtensions.ColorExtensions.WithRed*
   name: WithRed
-  href: .docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithRed_
+  href: api/Slothsoft.UnityExtensions.ColorExtensions.html#Slothsoft_UnityExtensions_ColorExtensions_WithRed_
   commentId: Overload:Slothsoft.UnityExtensions.ColorExtensions.WithRed
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ColorExtensions.WithRed
   nameWithType: ColorExtensions.WithRed
 - uid: Slothsoft.UnityExtensions.Editor
   name: Slothsoft.UnityExtensions.Editor
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.html
+  href: api/Slothsoft.UnityExtensions.Editor.html
   commentId: N:Slothsoft.UnityExtensions.Editor
   fullName: Slothsoft.UnityExtensions.Editor
   nameWithType: Slothsoft.UnityExtensions.Editor
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils
   name: AssetUtils
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html
   commentId: T:Slothsoft.UnityExtensions.Editor.AssetUtils
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils
   nameWithType: AssetUtils
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile*
   name: LoadAssetAtFile
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile_
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile
   nameWithType: AssetUtils.LoadAssetAtFile
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
   name: LoadAssetAtFile<T>(FileSystemInfo)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_System_IO_FileSystemInfo_
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_System_IO_FileSystemInfo_
   commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
   name.vb: LoadAssetAtFile(Of T)(FileSystemInfo)
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile<T>(System.IO.FileSystemInfo)
@@ -120,14 +120,14 @@ references:
   nameWithType.vb: AssetUtils.LoadAssetAtFile(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType*
   name: LoadAssetsOfType
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetsOfType_
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetsOfType_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType
   nameWithType: AssetUtils.LoadAssetsOfType
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType``1(System.String[])
   name: LoadAssetsOfType<T>(String[])
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetsOfType__1_System_String___
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetsOfType__1_System_String___
   commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType``1(System.String[])
   name.vb: LoadAssetsOfType(Of T)(String())
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType<T>(System.String[])
@@ -136,282 +136,282 @@ references:
   nameWithType.vb: AssetUtils.LoadAssetsOfType(Of T)(String())
 - uid: Slothsoft.UnityExtensions.Editor.Build
   name: Build
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html
   commentId: T:Slothsoft.UnityExtensions.Editor.Build
   fullName: Slothsoft.UnityExtensions.Editor.Build
   nameWithType: Build
 - uid: Slothsoft.UnityExtensions.Editor.Build.Android
   name: Android()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Android
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Android
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.Android
   fullName: Slothsoft.UnityExtensions.Editor.Build.Android()
   nameWithType: Build.Android()
 - uid: Slothsoft.UnityExtensions.Editor.Build.Android*
   name: Android
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Android_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Android_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Android
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Android
   nameWithType: Build.Android
 - uid: Slothsoft.UnityExtensions.Editor.Build.Apple
   name: Apple()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Apple
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Apple
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.Apple
   fullName: Slothsoft.UnityExtensions.Editor.Build.Apple()
   nameWithType: Build.Apple()
 - uid: Slothsoft.UnityExtensions.Editor.Build.Apple*
   name: Apple
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Apple_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Apple_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Apple
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Apple
   nameWithType: Build.Apple
 - uid: Slothsoft.UnityExtensions.Editor.Build.Linux
   name: Linux()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Linux
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Linux
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.Linux
   fullName: Slothsoft.UnityExtensions.Editor.Build.Linux()
   nameWithType: Build.Linux()
 - uid: Slothsoft.UnityExtensions.Editor.Build.Linux*
   name: Linux
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Linux_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Linux_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Linux
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Linux
   nameWithType: Build.Linux
 - uid: Slothsoft.UnityExtensions.Editor.Build.WebGL
   name: WebGL()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WebGL
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WebGL
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.WebGL
   fullName: Slothsoft.UnityExtensions.Editor.Build.WebGL()
   nameWithType: Build.WebGL()
 - uid: Slothsoft.UnityExtensions.Editor.Build.WebGL*
   name: WebGL
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WebGL_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WebGL_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.WebGL
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.WebGL
   nameWithType: Build.WebGL
 - uid: Slothsoft.UnityExtensions.Editor.Build.Win32
   name: Win32()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win32
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win32
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.Win32
   fullName: Slothsoft.UnityExtensions.Editor.Build.Win32()
   nameWithType: Build.Win32()
 - uid: Slothsoft.UnityExtensions.Editor.Build.Win32*
   name: Win32
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win32_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win32_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Win32
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Win32
   nameWithType: Build.Win32
 - uid: Slothsoft.UnityExtensions.Editor.Build.Win64
   name: Win64()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win64
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win64
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.Win64
   fullName: Slothsoft.UnityExtensions.Editor.Build.Win64()
   nameWithType: Build.Win64()
 - uid: Slothsoft.UnityExtensions.Editor.Build.Win64*
   name: Win64
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win64_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Win64_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Win64
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Win64
   nameWithType: Build.Win64
 - uid: Slothsoft.UnityExtensions.Editor.Build.WSA
   name: WSA()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WSA
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WSA
   commentId: M:Slothsoft.UnityExtensions.Editor.Build.WSA
   fullName: Slothsoft.UnityExtensions.Editor.Build.WSA()
   nameWithType: Build.WSA()
 - uid: Slothsoft.UnityExtensions.Editor.Build.WSA*
   name: WSA
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WSA_
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WSA_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.WSA
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.WSA
   nameWithType: Build.WSA
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils
   name: CSharpUtils
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html
   commentId: T:Slothsoft.UnityExtensions.Editor.CSharpUtils
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils
   nameWithType: CSharpUtils
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   name: GetAssembly(MonoScript)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_MonoScript_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_MonoScript_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   nameWithType: CSharpUtils.GetAssembly(MonoScript)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
   name: GetAssembly(DirectoryInfo)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_DirectoryInfo_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_DirectoryInfo_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
   nameWithType: CSharpUtils.GetAssembly(DirectoryInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
   name: GetAssembly(FileInfo)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_FileInfo_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_FileInfo_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
   nameWithType: CSharpUtils.GetAssembly(FileInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.String)
   name: GetAssembly(String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.String)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.String)
   nameWithType: CSharpUtils.GetAssembly(String)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly*
   name: GetAssembly
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly
   nameWithType: CSharpUtils.GetAssembly
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset)
   name: GetNamespace(AssemblyDefinitionAsset)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_AssemblyDefinitionAsset_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_AssemblyDefinitionAsset_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset)
   nameWithType: CSharpUtils.GetNamespace(AssemblyDefinitionAsset)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset,System.String)
   name: GetNamespace(AssemblyDefinitionAsset, String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_AssemblyDefinitionAsset_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_AssemblyDefinitionAsset_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset,System.String)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace(AssemblyDefinitionAsset, System.String)
   nameWithType: CSharpUtils.GetNamespace(AssemblyDefinitionAsset, String)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace*
   name: GetNamespace
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetNamespace_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetNamespace
   nameWithType: CSharpUtils.GetNamespace
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders(System.String)
   name: TryReplacePlaceholders(String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_TryReplacePlaceholders_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_TryReplacePlaceholders_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders(System.String)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders(System.String)
   nameWithType: CSharpUtils.TryReplacePlaceholders(String)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders*
   name: TryReplacePlaceholders
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_TryReplacePlaceholders_
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_TryReplacePlaceholders_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.TryReplacePlaceholders
   nameWithType: CSharpUtils.TryReplacePlaceholders
 - uid: Slothsoft.UnityExtensions.Editor.EditorUtils
   name: EditorUtils
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.EditorUtils.html
+  href: api/Slothsoft.UnityExtensions.Editor.EditorUtils.html
   commentId: T:Slothsoft.UnityExtensions.Editor.EditorUtils
   fullName: Slothsoft.UnityExtensions.Editor.EditorUtils
   nameWithType: EditorUtils
 - uid: Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole
   name: ClearConsole()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.EditorUtils.html#Slothsoft_UnityExtensions_Editor_EditorUtils_ClearConsole
+  href: api/Slothsoft.UnityExtensions.Editor.EditorUtils.html#Slothsoft_UnityExtensions_Editor_EditorUtils_ClearConsole
   commentId: M:Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole
   fullName: Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole()
   nameWithType: EditorUtils.ClearConsole()
 - uid: Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole*
   name: ClearConsole
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.EditorUtils.html#Slothsoft_UnityExtensions_Editor_EditorUtils_ClearConsole_
+  href: api/Slothsoft.UnityExtensions.Editor.EditorUtils.html#Slothsoft_UnityExtensions_Editor_EditorUtils_ClearConsole_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.EditorUtils.ClearConsole
   nameWithType: EditorUtils.ClearConsole
 - uid: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid
   name: FixBurstCompilerForAndroid
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html
+  href: api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html
   commentId: T:Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid
   fullName: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid
   nameWithType: FixBurstCompilerForAndroid
 - uid: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder
   name: callbackOrder
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_callbackOrder
+  href: api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_callbackOrder
   commentId: P:Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder
   fullName: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder
   nameWithType: FixBurstCompilerForAndroid.callbackOrder
 - uid: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder*
   name: callbackOrder
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_callbackOrder_
+  href: api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_callbackOrder_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.callbackOrder
   nameWithType: FixBurstCompilerForAndroid.callbackOrder
 - uid: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild(BuildReport)
   name: OnPreprocessBuild(BuildReport)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_OnPreprocessBuild_BuildReport_
+  href: api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_OnPreprocessBuild_BuildReport_
   commentId: M:Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild(BuildReport)
   fullName: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild(BuildReport)
   nameWithType: FixBurstCompilerForAndroid.OnPreprocessBuild(BuildReport)
 - uid: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild*
   name: OnPreprocessBuild
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_OnPreprocessBuild_
+  href: api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html#Slothsoft_UnityExtensions_Editor_FixBurstCompilerForAndroid_OnPreprocessBuild_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.OnPreprocessBuild
   nameWithType: FixBurstCompilerForAndroid.OnPreprocessBuild
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils
   name: PrefabUtils
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html
   commentId: T:Slothsoft.UnityExtensions.Editor.PrefabUtils
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils
   nameWithType: PrefabUtils
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs
   name: allPrefabs
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs
   commentId: P:Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs
   nameWithType: PrefabUtils.allPrefabs
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs*
   name: allPrefabs
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs
   nameWithType: PrefabUtils.allPrefabs
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly(MonoScript,System.String)
   name: GetAssembly(MonoScript, String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetAssembly_MonoScript_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetAssembly_MonoScript_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly(MonoScript,System.String)
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly(MonoScript, System.String)
   nameWithType: PrefabUtils.GetAssembly(MonoScript, String)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly*
   name: GetAssembly
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetAssembly_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetAssembly_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetAssembly
   nameWithType: PrefabUtils.GetAssembly
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset)
   name: GetNamespace(AssemblyDefinitionAsset)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_AssemblyDefinitionAsset_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_AssemblyDefinitionAsset_
   commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset)
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset)
   nameWithType: PrefabUtils.GetNamespace(AssemblyDefinitionAsset)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset,System.String)
   name: GetNamespace(AssemblyDefinitionAsset, String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_AssemblyDefinitionAsset_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_AssemblyDefinitionAsset_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset,System.String)
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace(AssemblyDefinitionAsset, System.String)
   nameWithType: PrefabUtils.GetNamespace(AssemblyDefinitionAsset, String)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace*
   name: GetNamespace
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_GetNamespace_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.GetNamespace
   nameWithType: PrefabUtils.GetNamespace
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath*
   name: LoadAssetAtPath
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath
   nameWithType: PrefabUtils.LoadAssetAtPath
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
   name: LoadAssetAtPath<T>(FileSystemInfo)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_System_IO_FileSystemInfo_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_System_IO_FileSystemInfo_
   commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
   name.vb: LoadAssetAtPath(Of T)(FileSystemInfo)
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath<T>(System.IO.FileSystemInfo)
@@ -420,14 +420,14 @@ references:
   nameWithType.vb: PrefabUtils.LoadAssetAtPath(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets*
   name: LoadAssets
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssets_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssets_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets
   nameWithType: PrefabUtils.LoadAssets
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets``1(System.String)
   name: LoadAssets<T>(String)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssets__1_System_String_
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssets__1_System_String_
   commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets``1(System.String)
   name.vb: LoadAssets(Of T)(String)
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets<T>(System.String)
@@ -436,154 +436,154 @@ references:
   nameWithType.vb: PrefabUtils.LoadAssets(Of T)(String)
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers
   name: Slothsoft.UnityExtensions.Editor.PropertyDrawers
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.html
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.html
   commentId: N:Slothsoft.UnityExtensions.Editor.PropertyDrawers
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers
   nameWithType: Slothsoft.UnityExtensions.Editor.PropertyDrawers
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer
   name: SerializableKeyValuePairsDrawer
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html
   commentId: T:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer
   nameWithType: SerializableKeyValuePairsDrawer
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes
   name: GetGenericTypes()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetGenericTypes
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetGenericTypes
   commentId: M:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes()
   nameWithType: SerializableKeyValuePairsDrawer.GetGenericTypes()
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes*
   name: GetGenericTypes
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetGenericTypes_
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetGenericTypes_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetGenericTypes
   nameWithType: SerializableKeyValuePairsDrawer.GetGenericTypes
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   name: GetPropertyHeight(SerializedProperty, GUIContent)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetPropertyHeight_SerializedProperty_GUIContent_
   commentId: M:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight(SerializedProperty,GUIContent)
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
   nameWithType: SerializableKeyValuePairsDrawer.GetPropertyHeight(SerializedProperty, GUIContent)
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight*
   name: GetPropertyHeight
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetPropertyHeight_
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_GetPropertyHeight_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.GetPropertyHeight
   nameWithType: SerializableKeyValuePairsDrawer.GetPropertyHeight
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
   name: OnGUI(Rect, SerializedProperty, GUIContent)
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_OnGUI_Rect_SerializedProperty_GUIContent_
   commentId: M:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI(Rect,SerializedProperty,GUIContent)
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
   nameWithType: SerializableKeyValuePairsDrawer.OnGUI(Rect, SerializedProperty, GUIContent)
 - uid: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI*
   name: OnGUI
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_OnGUI_
+  href: api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html#Slothsoft_UnityExtensions_Editor_PropertyDrawers_SerializableKeyValuePairsDrawer_OnGUI_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI
   nameWithType: SerializableKeyValuePairsDrawer.OnGUI
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion
   name: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.html
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.html
   commentId: N:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion
   nameWithType: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter
   name: RenderPipelineConverter
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html
   commentId: T:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter
   nameWithType: RenderPipelineConverter
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI
   name: OnGUI()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_OnGUI
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_OnGUI
   commentId: M:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI()
   nameWithType: RenderPipelineConverter.OnGUI()
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI*
   name: OnGUI
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_OnGUI_
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_OnGUI_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.OnGUI
   nameWithType: RenderPipelineConverter.OnGUI
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow
   name: ShowWindow()
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_ShowWindow
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_ShowWindow
   commentId: M:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow()
   nameWithType: RenderPipelineConverter.ShowWindow()
 - uid: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow*
   name: ShowWindow
-  href: .docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_ShowWindow_
+  href: api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html#Slothsoft_UnityExtensions_Editor_RenderPipelineConversion_RenderPipelineConverter_ShowWindow_
   commentId: Overload:Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.ShowWindow
   nameWithType: RenderPipelineConverter.ShowWindow
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute
   name: ExpandableAttribute
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html
   commentId: T:Slothsoft.UnityExtensions.ExpandableAttribute
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute
   nameWithType: ExpandableAttribute
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
   name: ExpandableAttribute(Type)
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_Type_
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_Type_
   commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute(Type)
   nameWithType: ExpandableAttribute.ExpandableAttribute(Type)
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor*
   name: ExpandableAttribute
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_
   commentId: Overload:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute
   nameWithType: ExpandableAttribute.ExpandableAttribute
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.label
   name: label
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_label
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_label
   commentId: P:Slothsoft.UnityExtensions.ExpandableAttribute.label
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.label
   nameWithType: ExpandableAttribute.label
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.label*
   name: label
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_label_
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_label_
   commentId: Overload:Slothsoft.UnityExtensions.ExpandableAttribute.label
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.label
   nameWithType: ExpandableAttribute.label
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType(UnityEngine.Object)
   name: ValidateType(UnityEngine.Object)
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_ValidateType_UnityEngine_Object_
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_ValidateType_UnityEngine_Object_
   commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType(UnityEngine.Object)
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType(UnityEngine.Object)
   nameWithType: ExpandableAttribute.ValidateType(UnityEngine.Object)
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType*
   name: ValidateType
-  href: .docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_ValidateType_
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute_ValidateType_
   commentId: Overload:Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ValidateType
   nameWithType: ExpandableAttribute.ValidateType
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions
   name: IEnumerableExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html
   commentId: T:Slothsoft.UnityExtensions.IEnumerableExtensions
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions
   nameWithType: IEnumerableExtensions
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Except*
   name: Except
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Except_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Except_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.Except
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Except
   nameWithType: IEnumerableExtensions.Except
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Except``1(System.Collections.Generic.IEnumerable{``0},``0[])
   name: Except<T>(IEnumerable<T>, T[])
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Except__1_System_Collections_Generic_IEnumerable___0____0___
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Except__1_System_Collections_Generic_IEnumerable___0____0___
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Except``1(System.Collections.Generic.IEnumerable{``0},``0[])
   name.vb: Except(Of T)(IEnumerable(Of T), T())
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Except<T>(System.Collections.Generic.IEnumerable<T>, T[])
@@ -592,14 +592,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.Except(Of T)(IEnumerable(Of T), T())
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll*
   name: ForAll
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll
   nameWithType: IEnumerableExtensions.ForAll
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(System.Collections.Generic.IEnumerable{``0},Action{``0})
   name: ForAll<T>(IEnumerable<T>, Action<T>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_System_Collections_Generic_IEnumerable___0__Action___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_System_Collections_Generic_IEnumerable___0__Action___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(System.Collections.Generic.IEnumerable{``0},Action{``0})
   name.vb: ForAll(Of T)(IEnumerable(Of T), Action(Of T))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll<T>(System.Collections.Generic.IEnumerable<T>, Action<T>)
@@ -608,14 +608,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), Action(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo*
   name: IsEquivalentTo
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_IsEquivalentTo_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_IsEquivalentTo_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo
   nameWithType: IEnumerableExtensions.IsEquivalentTo
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
   name: IsEquivalentTo<T>(IEnumerable<T>, IEnumerable<T>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_IsEquivalentTo__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_IsEquivalentTo__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``0})
   name.vb: IsEquivalentTo(Of T)(IEnumerable(Of T), IEnumerable(Of T))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IEnumerable<T>)
@@ -624,14 +624,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.IsEquivalentTo(Of T)(IEnumerable(Of T), IEnumerable(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Log*
   name: Log
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Log_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Log_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.Log
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Log
   nameWithType: IEnumerableExtensions.Log
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Log``1(System.Collections.Generic.IEnumerable{``0})
   name: Log<T>(IEnumerable<T>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Log__1_System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Log__1_System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Log``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: Log(Of T)(IEnumerable(Of T))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Log<T>(System.Collections.Generic.IEnumerable<T>)
@@ -640,14 +640,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.Log(Of T)(IEnumerable(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply*
   name: Multiply
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply
   nameWithType: IEnumerableExtensions.Multiply
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1})
   name: Multiply<TFirst, TSecond>(IEnumerable<TFirst>, IEnumerable<TSecond>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__2_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``2(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1})
   name.vb: Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond>(System.Collections.Generic.IEnumerable<TFirst>, System.Collections.Generic.IEnumerable<TSecond>)
@@ -656,7 +656,7 @@ references:
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},Func{``0,``1,``2})
   name: Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__Func___0___1___2__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IEnumerable___1__Func___0___1___2__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IEnumerable{``1},Func{``0,``1,``2})
   name.vb: Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(System.Collections.Generic.IEnumerable<TFirst>, System.Collections.Generic.IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
@@ -665,14 +665,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None*
   name: None
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.None
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None
   nameWithType: IEnumerableExtensions.None
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(System.Collections.Generic.IEnumerable{``0})
   name: None<TSource>(IEnumerable<TSource>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: None(Of TSource)(IEnumerable(Of TSource))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(System.Collections.Generic.IEnumerable<TSource>)
@@ -681,7 +681,7 @@ references:
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Boolean})
   name: None<TSource>(IEnumerable<TSource>, Func<TSource, Boolean>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Boolean__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Boolean__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Boolean})
   name.vb: None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(System.Collections.Generic.IEnumerable<TSource>, Func<TSource, System.Boolean>)
@@ -690,14 +690,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement*
   name: RandomElement
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomElement_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomElement_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement
   nameWithType: IEnumerableExtensions.RandomElement
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement``1(System.Collections.Generic.IEnumerable{``0})
   name: RandomElement<T>(IEnumerable<T>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomElement__1_System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomElement__1_System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: RandomElement(Of T)(IEnumerable(Of T))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement<T>(System.Collections.Generic.IEnumerable<T>)
@@ -706,14 +706,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.RandomElement(Of T)(IEnumerable(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement*
   name: RandomWeightedElement
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement
   nameWithType: IEnumerableExtensions.RandomWeightedElement
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Int32})
   name: RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Int32__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Int32__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Int32})
   name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(System.Collections.Generic.IEnumerable<T>, Func<T, System.Int32>)
@@ -722,7 +722,7 @@ references:
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElement<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IReadOnlyDictionary___0_System_Int32__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IReadOnlyDictionary___0_System_Int32__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IReadOnlyDictionary{``0,System.Int32})
   name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IReadOnlyDictionary<T, System.Int32>)
@@ -731,14 +731,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending*
   name: RandomWeightedElementDescending
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending
   nameWithType: IEnumerableExtensions.RandomWeightedElementDescending
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Int32})
   name: RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Int32__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_System_Collections_Generic_IEnumerable___0__Func___0_System_Int32__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(System.Collections.Generic.IEnumerable{``0},Func{``0,System.Int32})
   name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(System.Collections.Generic.IEnumerable<T>, Func<T, System.Int32>)
@@ -747,7 +747,7 @@ references:
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElementDescending<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IReadOnlyDictionary___0_System_Int32__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_System_Collections_Generic_IEnumerable___0__System_Collections_Generic_IReadOnlyDictionary___0_System_Int32__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(System.Collections.Generic.IEnumerable{``0},System.Collections.Generic.IReadOnlyDictionary{``0,System.Int32})
   name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(System.Collections.Generic.IEnumerable<T>, System.Collections.Generic.IReadOnlyDictionary<T, System.Int32>)
@@ -756,14 +756,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull*
   name: SelectNotNull
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull
   nameWithType: IEnumerableExtensions.SelectNotNull
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},Func{``0,``1})
   name: SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_System_Collections_Generic_IEnumerable___0__Func___0___1__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_System_Collections_Generic_IEnumerable___0__Func___0___1__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(System.Collections.Generic.IEnumerable{``0},Func{``0,``1})
   name.vb: SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull<TSource, TResult>(System.Collections.Generic.IEnumerable<TSource>, Func<TSource, TResult>)
@@ -772,14 +772,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle*
   name: Shuffle
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Shuffle_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Shuffle_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle
   nameWithType: IEnumerableExtensions.Shuffle
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   name: Shuffle<T>(IEnumerable<T>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Shuffle__1_System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Shuffle__1_System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: Shuffle(Of T)(IEnumerable(Of T))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle<T>(System.Collections.Generic.IEnumerable<T>)
@@ -788,14 +788,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.Shuffle(Of T)(IEnumerable(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet*
   name: ToHashSet
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet
   nameWithType: IEnumerableExtensions.ToHashSet
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet``1(System.Collections.Generic.IEnumerable{``0})
   name: ToHashSet<TSource>(IEnumerable<TSource>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet__1_System_Collections_Generic_IEnumerable___0__
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet__1_System_Collections_Generic_IEnumerable___0__
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet``1(System.Collections.Generic.IEnumerable{``0})
   name.vb: ToHashSet(Of TSource)(IEnumerable(Of TSource))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet<TSource>(System.Collections.Generic.IEnumerable<TSource>)
@@ -804,14 +804,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.ToHashSet(Of TSource)(IEnumerable(Of TSource))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect*
   name: TrySelect
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect
   nameWithType: IEnumerableExtensions.TrySelect
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(System.Collections.Generic.IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name: TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, IEnumerableExtensions.TrySelectFunc<TTarget>>)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_System_Collections_Generic_IEnumerable___0__Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_System_Collections_Generic_IEnumerable___0__Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(System.Collections.Generic.IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name.vb: TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect<TSource, TTarget>(System.Collections.Generic.IEnumerable<TSource>, Func<TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<TTarget>>)
@@ -820,7 +820,7 @@ references:
   nameWithType.vb: IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc`1
   name: IEnumerableExtensions.TrySelectFunc<T>
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc-1.html
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc-1.html
   commentId: T:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc`1
   name.vb: IEnumerableExtensions.TrySelectFunc(Of T)
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<T>
@@ -829,14 +829,14 @@ references:
   nameWithType.vb: IEnumerableExtensions.TrySelectFunc(Of T)
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Without*
   name: Without
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Without_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Without_
   commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.Without
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Without
   nameWithType: IEnumerableExtensions.Without
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Without``1(System.Collections.Generic.IEnumerable{``0},``0)
   name: Without<TSource>(IEnumerable<TSource>, TSource)
-  href: .docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Without__1_System_Collections_Generic_IEnumerable___0____0_
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Without__1_System_Collections_Generic_IEnumerable___0____0_
   commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Without``1(System.Collections.Generic.IEnumerable{``0},``0)
   name.vb: Without(Of TSource)(IEnumerable(Of TSource), TSource)
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Without<TSource>(System.Collections.Generic.IEnumerable<TSource>, TSource)
@@ -845,20 +845,20 @@ references:
   nameWithType.vb: IEnumerableExtensions.Without(Of TSource)(IEnumerable(Of TSource), TSource)
 - uid: Slothsoft.UnityExtensions.KeyValuePairExtensions
   name: KeyValuePairExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html
+  href: api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html
   commentId: T:Slothsoft.UnityExtensions.KeyValuePairExtensions
   fullName: Slothsoft.UnityExtensions.KeyValuePairExtensions
   nameWithType: KeyValuePairExtensions
 - uid: Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html#Slothsoft_UnityExtensions_KeyValuePairExtensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html#Slothsoft_UnityExtensions_KeyValuePairExtensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct
   nameWithType: KeyValuePairExtensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct``2(System.Collections.Generic.KeyValuePair{``0,``1},``0@,``1@)
   name: Deconstruct<TKey, TValue>(KeyValuePair<TKey, TValue>, out TKey, out TValue)
-  href: .docfx/api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html#Slothsoft_UnityExtensions_KeyValuePairExtensions_Deconstruct__2_System_Collections_Generic_KeyValuePair___0___1____0____1__
+  href: api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html#Slothsoft_UnityExtensions_KeyValuePairExtensions_Deconstruct__2_System_Collections_Generic_KeyValuePair___0___1____0____1__
   commentId: M:Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct``2(System.Collections.Generic.KeyValuePair{``0,``1},``0@,``1@)
   name.vb: Deconstruct(Of TKey, TValue)(KeyValuePair(Of TKey, TValue), ByRef TKey, ByRef TValue)
   fullName: Slothsoft.UnityExtensions.KeyValuePairExtensions.Deconstruct<TKey, TValue>(System.Collections.Generic.KeyValuePair<TKey, TValue>, out TKey, out TValue)
@@ -867,13 +867,13 @@ references:
   nameWithType.vb: KeyValuePairExtensions.Deconstruct(Of TKey, TValue)(KeyValuePair(Of TKey, TValue), ByRef TKey, ByRef TValue)
 - uid: Slothsoft.UnityExtensions.LayerAttribute
   name: LayerAttribute
-  href: .docfx/api/Slothsoft.UnityExtensions.LayerAttribute.html
+  href: api/Slothsoft.UnityExtensions.LayerAttribute.html
   commentId: T:Slothsoft.UnityExtensions.LayerAttribute
   fullName: Slothsoft.UnityExtensions.LayerAttribute
   nameWithType: LayerAttribute
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2
   name: SerializableKeyValuePairs<TKey, TValue>
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html
   commentId: T:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2
   name.vb: SerializableKeyValuePairs(Of TKey, TValue)
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>
@@ -882,7 +882,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue)
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.ContainsKey(`0)
   name: ContainsKey(TKey)
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_ContainsKey__0_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_ContainsKey__0_
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.ContainsKey(`0)
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.ContainsKey(TKey)
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).ContainsKey(TKey)
@@ -890,7 +890,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).ContainsKey(TKey)
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.ContainsKey*
   name: ContainsKey
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_ContainsKey_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_ContainsKey_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.ContainsKey
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.ContainsKey
@@ -899,7 +899,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).ContainsKey
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Count
   name: Count
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Count
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Count
   commentId: P:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Count
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Count
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).Count
@@ -907,7 +907,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Count
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Count*
   name: Count
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Count_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Count_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Count
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Count
@@ -916,7 +916,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Count
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.GetEnumerator
   name: GetEnumerator()
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_GetEnumerator
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_GetEnumerator
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.GetEnumerator
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.GetEnumerator()
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).GetEnumerator()
@@ -924,7 +924,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).GetEnumerator()
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.GetEnumerator*
   name: GetEnumerator
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_GetEnumerator_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_GetEnumerator_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.GetEnumerator
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.GetEnumerator
@@ -933,7 +933,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).GetEnumerator
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Item(`0)
   name: Item[TKey]
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Item__0_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Item__0_
   commentId: P:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Item(`0)
   name.vb: Item(TKey)
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Item[TKey]
@@ -942,7 +942,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Item(TKey)
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Item*
   name: Item
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Item_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Item_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Item
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Item
@@ -951,7 +951,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Item
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Keys
   name: Keys
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Keys
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Keys
   commentId: P:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Keys
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Keys
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).Keys
@@ -959,7 +959,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Keys
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Keys*
   name: Keys
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Keys_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Keys_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Keys
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Keys
@@ -968,7 +968,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Keys
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnAfterDeserialize
   name: OnAfterDeserialize()
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnAfterDeserialize
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnAfterDeserialize
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnAfterDeserialize
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.OnAfterDeserialize()
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).OnAfterDeserialize()
@@ -976,7 +976,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).OnAfterDeserialize()
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnAfterDeserialize*
   name: OnAfterDeserialize
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnAfterDeserialize_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnAfterDeserialize_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnAfterDeserialize
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.OnAfterDeserialize
@@ -985,7 +985,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).OnAfterDeserialize
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnBeforeSerialize
   name: OnBeforeSerialize()
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnBeforeSerialize
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnBeforeSerialize
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnBeforeSerialize
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.OnBeforeSerialize()
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).OnBeforeSerialize()
@@ -993,7 +993,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).OnBeforeSerialize()
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnBeforeSerialize*
   name: OnBeforeSerialize
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnBeforeSerialize_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_OnBeforeSerialize_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.OnBeforeSerialize
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.OnBeforeSerialize
@@ -1002,7 +1002,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).OnBeforeSerialize
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems(System.Collections.Generic.IReadOnlyDictionary{`0,`1})
   name: SetItems(IReadOnlyDictionary<TKey, TValue>)
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_System_Collections_Generic_IReadOnlyDictionary__0__1__
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_System_Collections_Generic_IReadOnlyDictionary__0__1__
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems(System.Collections.Generic.IReadOnlyDictionary{`0,`1})
   name.vb: SetItems(IReadOnlyDictionary(Of TKey, TValue))
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.SetItems(System.Collections.Generic.IReadOnlyDictionary<TKey, TValue>)
@@ -1011,7 +1011,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).SetItems(IReadOnlyDictionary(Of TKey, TValue))
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems*
   name: SetItems
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.SetItems
@@ -1020,7 +1020,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).SetItems
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.TryGetValue(`0,`1@)
   name: TryGetValue(TKey, out TValue)
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_TryGetValue__0__1__
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_TryGetValue__0__1__
   commentId: M:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.TryGetValue(`0,`1@)
   name.vb: TryGetValue(TKey, ByRef TValue)
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.TryGetValue(TKey, out TValue)
@@ -1029,7 +1029,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).TryGetValue(TKey, ByRef TValue)
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.TryGetValue*
   name: TryGetValue
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_TryGetValue_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_TryGetValue_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.TryGetValue
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.TryGetValue
@@ -1038,7 +1038,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).TryGetValue
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Values
   name: Values
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Values
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Values
   commentId: P:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Values
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Values
   fullName.vb: Slothsoft.UnityExtensions.SerializableKeyValuePairs(Of TKey, TValue).Values
@@ -1046,7 +1046,7 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Values
 - uid: Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Values*
   name: Values
-  href: .docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Values_
+  href: api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html#Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_Values_
   commentId: Overload:Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.Values
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.SerializableKeyValuePairs<TKey, TValue>.Values
@@ -1055,77 +1055,77 @@ references:
   nameWithType.vb: SerializableKeyValuePairs(Of TKey, TValue).Values
 - uid: Slothsoft.UnityExtensions.SortingLayerAttribute
   name: SortingLayerAttribute
-  href: .docfx/api/Slothsoft.UnityExtensions.SortingLayerAttribute.html
+  href: api/Slothsoft.UnityExtensions.SortingLayerAttribute.html
   commentId: T:Slothsoft.UnityExtensions.SortingLayerAttribute
   fullName: Slothsoft.UnityExtensions.SortingLayerAttribute
   nameWithType: SortingLayerAttribute
 - uid: Slothsoft.UnityExtensions.TilemapExtensions
   name: TilemapExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html
   commentId: T:Slothsoft.UnityExtensions.TilemapExtensions
   fullName: Slothsoft.UnityExtensions.TilemapExtensions
   nameWithType: TilemapExtensions
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.ClearTile(Tilemap,Vector3Int)
   name: ClearTile(Tilemap, Vector3Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_ClearTile_Tilemap_Vector3Int_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_ClearTile_Tilemap_Vector3Int_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.ClearTile(Tilemap,Vector3Int)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.ClearTile(Tilemap, Vector3Int)
   nameWithType: TilemapExtensions.ClearTile(Tilemap, Vector3Int)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.ClearTile*
   name: ClearTile
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_ClearTile_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_ClearTile_
   commentId: Overload:Slothsoft.UnityExtensions.TilemapExtensions.ClearTile
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.ClearTile
   nameWithType: TilemapExtensions.ClearTile
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation(ITilemap)
   name: GetImplementation(ITilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetImplementation_ITilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetImplementation_ITilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation(ITilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation(ITilemap)
   nameWithType: TilemapExtensions.GetImplementation(ITilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation*
   name: GetImplementation
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetImplementation_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetImplementation_
   commentId: Overload:Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetImplementation
   nameWithType: TilemapExtensions.GetImplementation
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetInterface(Tilemap)
   name: GetInterface(Tilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetInterface_Tilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetInterface_Tilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetInterface(Tilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetInterface(Tilemap)
   nameWithType: TilemapExtensions.GetInterface(Tilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetInterface*
   name: GetInterface
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetInterface_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetInterface_
   commentId: Overload:Slothsoft.UnityExtensions.TilemapExtensions.GetInterface
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetInterface
   nameWithType: TilemapExtensions.GetInterface
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(ITilemap)
   name: GetUsedTiles(ITilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_ITilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_ITilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(ITilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(ITilemap)
   nameWithType: TilemapExtensions.GetUsedTiles(ITilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(Tilemap)
   name: GetUsedTiles(Tilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_Tilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_Tilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(Tilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles(Tilemap)
   nameWithType: TilemapExtensions.GetUsedTiles(Tilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles*
   name: GetUsedTiles
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles_
   commentId: Overload:Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles
   nameWithType: TilemapExtensions.GetUsedTiles
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles``1(ITilemap)
   name: GetUsedTiles<TTile>(ITilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles__1_ITilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles__1_ITilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles``1(ITilemap)
   name.vb: GetUsedTiles(Of TTile)(ITilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles<TTile>(ITilemap)
@@ -1134,7 +1134,7 @@ references:
   nameWithType.vb: TilemapExtensions.GetUsedTiles(Of TTile)(ITilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles``1(Tilemap)
   name: GetUsedTiles<TTile>(Tilemap)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles__1_Tilemap_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_GetUsedTiles__1_Tilemap_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles``1(Tilemap)
   name.vb: GetUsedTiles(Of TTile)(Tilemap)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.GetUsedTiles<TTile>(Tilemap)
@@ -1143,83 +1143,83 @@ references:
   nameWithType.vb: TilemapExtensions.GetUsedTiles(Of TTile)(Tilemap)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap,Vector3Int,TileBase)
   name: IsTile(ITilemap, Vector3Int, TileBase)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_ITilemap_Vector3Int_TileBase_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_ITilemap_Vector3Int_TileBase_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap,Vector3Int,TileBase)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap, Vector3Int, TileBase)
   nameWithType: TilemapExtensions.IsTile(ITilemap, Vector3Int, TileBase)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap,Vector3Int,TileBase,Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   name: IsTile(ITilemap, Vector3Int, TileBase, TilemapExtensions.TileComparer)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_ITilemap_Vector3Int_TileBase_Slothsoft_UnityExtensions_TilemapExtensions_TileComparer_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_ITilemap_Vector3Int_TileBase_Slothsoft_UnityExtensions_TilemapExtensions_TileComparer_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap,Vector3Int,TileBase,Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(ITilemap, Vector3Int, TileBase, Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   nameWithType: TilemapExtensions.IsTile(ITilemap, Vector3Int, TileBase, TilemapExtensions.TileComparer)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap,Vector3Int,TileBase)
   name: IsTile(Tilemap, Vector3Int, TileBase)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_Tilemap_Vector3Int_TileBase_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_Tilemap_Vector3Int_TileBase_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap,Vector3Int,TileBase)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap, Vector3Int, TileBase)
   nameWithType: TilemapExtensions.IsTile(Tilemap, Vector3Int, TileBase)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap,Vector3Int,TileBase,Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   name: IsTile(Tilemap, Vector3Int, TileBase, TilemapExtensions.TileComparer)
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_Tilemap_Vector3Int_TileBase_Slothsoft_UnityExtensions_TilemapExtensions_TileComparer_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_Tilemap_Vector3Int_TileBase_Slothsoft_UnityExtensions_TilemapExtensions_TileComparer_
   commentId: M:Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap,Vector3Int,TileBase,Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.IsTile(Tilemap, Vector3Int, TileBase, Slothsoft.UnityExtensions.TilemapExtensions.TileComparer)
   nameWithType: TilemapExtensions.IsTile(Tilemap, Vector3Int, TileBase, TilemapExtensions.TileComparer)
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.IsTile*
   name: IsTile
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.html#Slothsoft_UnityExtensions_TilemapExtensions_IsTile_
   commentId: Overload:Slothsoft.UnityExtensions.TilemapExtensions.IsTile
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.IsTile
   nameWithType: TilemapExtensions.IsTile
 - uid: Slothsoft.UnityExtensions.TilemapExtensions.TileComparer
   name: TilemapExtensions.TileComparer
-  href: .docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.TileComparer.html
+  href: api/Slothsoft.UnityExtensions.TilemapExtensions.TileComparer.html
   commentId: T:Slothsoft.UnityExtensions.TilemapExtensions.TileComparer
   fullName: Slothsoft.UnityExtensions.TilemapExtensions.TileComparer
   nameWithType: TilemapExtensions.TileComparer
 - uid: Slothsoft.UnityExtensions.TransformExtensions
   name: TransformExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html
   commentId: T:Slothsoft.UnityExtensions.TransformExtensions
   fullName: Slothsoft.UnityExtensions.TransformExtensions
   nameWithType: TransformExtensions
 - uid: Slothsoft.UnityExtensions.TransformExtensions.Clear(Transform)
   name: Clear(Transform)
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_Clear_Transform_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_Clear_Transform_
   commentId: M:Slothsoft.UnityExtensions.TransformExtensions.Clear(Transform)
   fullName: Slothsoft.UnityExtensions.TransformExtensions.Clear(Transform)
   nameWithType: TransformExtensions.Clear(Transform)
 - uid: Slothsoft.UnityExtensions.TransformExtensions.Clear*
   name: Clear
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_Clear_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_Clear_
   commentId: Overload:Slothsoft.UnityExtensions.TransformExtensions.Clear
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TransformExtensions.Clear
   nameWithType: TransformExtensions.Clear
 - uid: Slothsoft.UnityExtensions.TransformExtensions.GetChildren(Transform)
   name: GetChildren(Transform)
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_GetChildren_Transform_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_GetChildren_Transform_
   commentId: M:Slothsoft.UnityExtensions.TransformExtensions.GetChildren(Transform)
   fullName: Slothsoft.UnityExtensions.TransformExtensions.GetChildren(Transform)
   nameWithType: TransformExtensions.GetChildren(Transform)
 - uid: Slothsoft.UnityExtensions.TransformExtensions.GetChildren*
   name: GetChildren
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_GetChildren_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_GetChildren_
   commentId: Overload:Slothsoft.UnityExtensions.TransformExtensions.GetChildren
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TransformExtensions.GetChildren
   nameWithType: TransformExtensions.GetChildren
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren*
   name: TryGetComponentInChildren
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInChildren_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInChildren_
   commentId: Overload:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren
   nameWithType: TransformExtensions.TryGetComponentInChildren
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren``1(Transform,``0@)
   name: TryGetComponentInChildren<T>(Transform, out T)
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInChildren__1_Transform___0__
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInChildren__1_Transform___0__
   commentId: M:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren``1(Transform,``0@)
   name.vb: TryGetComponentInChildren(Of T)(Transform, ByRef T)
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInChildren<T>(Transform, out T)
@@ -1228,14 +1228,14 @@ references:
   nameWithType.vb: TransformExtensions.TryGetComponentInChildren(Of T)(Transform, ByRef T)
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy*
   name: TryGetComponentInHierarchy
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInHierarchy_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInHierarchy_
   commentId: Overload:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy
   nameWithType: TransformExtensions.TryGetComponentInHierarchy
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy``1(Transform,``0@)
   name: TryGetComponentInHierarchy<T>(Transform, out T)
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInHierarchy__1_Transform___0__
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInHierarchy__1_Transform___0__
   commentId: M:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy``1(Transform,``0@)
   name.vb: TryGetComponentInHierarchy(Of T)(Transform, ByRef T)
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInHierarchy<T>(Transform, out T)
@@ -1244,14 +1244,14 @@ references:
   nameWithType.vb: TransformExtensions.TryGetComponentInHierarchy(Of T)(Transform, ByRef T)
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent*
   name: TryGetComponentInParent
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInParent_
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInParent_
   commentId: Overload:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent
   nameWithType: TransformExtensions.TryGetComponentInParent
 - uid: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent``1(Transform,``0@)
   name: TryGetComponentInParent<T>(Transform, out T)
-  href: .docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInParent__1_Transform___0__
+  href: api/Slothsoft.UnityExtensions.TransformExtensions.html#Slothsoft_UnityExtensions_TransformExtensions_TryGetComponentInParent__1_Transform___0__
   commentId: M:Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent``1(Transform,``0@)
   name.vb: TryGetComponentInParent(Of T)(Transform, ByRef T)
   fullName: Slothsoft.UnityExtensions.TransformExtensions.TryGetComponentInParent<T>(Transform, out T)
@@ -1260,13 +1260,13 @@ references:
   nameWithType.vb: TransformExtensions.TryGetComponentInParent(Of T)(Transform, ByRef T)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions
   name: Vector2Extensions
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html
   commentId: T:Slothsoft.UnityExtensions.Vector2Extensions
   fullName: Slothsoft.UnityExtensions.Vector2Extensions
   nameWithType: Vector2Extensions
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2,System.Single@,System.Single@)
   name: Deconstruct(Vector2, out Single, out Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_Vector2_System_Single__System_Single__
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_Vector2_System_Single__System_Single__
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2,System.Single@,System.Single@)
   name.vb: Deconstruct(Vector2, ByRef Single, ByRef Single)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2, out System.Single, out System.Single)
@@ -1275,111 +1275,111 @@ references:
   nameWithType.vb: Vector2Extensions.Deconstruct(Vector2, ByRef Single, ByRef Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct
   nameWithType: Vector2Extensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
   name: RoundToInt(Vector2)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_Vector2_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_Vector2_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
   nameWithType: Vector2Extensions.RoundToInt(Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt*
   name: RoundToInt
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt
   nameWithType: Vector2Extensions.RoundToInt
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
   name: SnapToCardinal(Vector2)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_Vector2_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_Vector2_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
   nameWithType: Vector2Extensions.SnapToCardinal(Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal*
   name: SnapToCardinal
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal
   nameWithType: Vector2Extensions.SnapToCardinal
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
   name: SwizzleXY(Vector2)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_Vector2_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_Vector2_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
   nameWithType: Vector2Extensions.SwizzleXY(Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY*
   name: SwizzleXY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY
   nameWithType: Vector2Extensions.SwizzleXY
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
   name: SwizzleXZ(Vector2)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_Vector2_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_Vector2_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
   nameWithType: Vector2Extensions.SwizzleXZ(Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ*
   name: SwizzleXZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ
   nameWithType: Vector2Extensions.SwizzleXZ
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
   name: SwizzleYZ(Vector2)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_Vector2_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_Vector2_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
   nameWithType: Vector2Extensions.SwizzleYZ(Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ*
   name: SwizzleYZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ
   nameWithType: Vector2Extensions.SwizzleYZ
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2,System.Single)
   name: WithX(Vector2, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_Vector2_System_Single_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_Vector2_System_Single_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2,System.Single)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2, System.Single)
   nameWithType: Vector2Extensions.WithX(Vector2, Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithX*
   name: WithX
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.WithX
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithX
   nameWithType: Vector2Extensions.WithX
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2,System.Single)
   name: WithY(Vector2, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_Vector2_System_Single_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_Vector2_System_Single_
   commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2,System.Single)
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2, System.Single)
   nameWithType: Vector2Extensions.WithY(Vector2, Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithY*
   name: WithY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2Extensions.WithY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithY
   nameWithType: Vector2Extensions.WithY
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions
   name: Vector2IntExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html
   commentId: T:Slothsoft.UnityExtensions.Vector2IntExtensions
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions
   nameWithType: Vector2IntExtensions
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct(Vector2Int,System.Int32@,System.Int32@)
   name: Deconstruct(Vector2Int, out Int32, out Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_Deconstruct_Vector2Int_System_Int32__System_Int32__
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_Deconstruct_Vector2Int_System_Int32__System_Int32__
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct(Vector2Int,System.Int32@,System.Int32@)
   name.vb: Deconstruct(Vector2Int, ByRef Int32, ByRef Int32)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct(Vector2Int, out System.Int32, out System.Int32)
@@ -1388,85 +1388,85 @@ references:
   nameWithType.vb: Vector2IntExtensions.Deconstruct(Vector2Int, ByRef Int32, ByRef Int32)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.Deconstruct
   nameWithType: Vector2IntExtensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY(Vector2Int)
   name: SwizzleXY(Vector2Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXY_Vector2Int_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXY_Vector2Int_
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY(Vector2Int)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY(Vector2Int)
   nameWithType: Vector2IntExtensions.SwizzleXY(Vector2Int)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY*
   name: SwizzleXY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXY_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXY
   nameWithType: Vector2IntExtensions.SwizzleXY
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ(Vector2Int)
   name: SwizzleXZ(Vector2Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXZ_Vector2Int_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXZ_Vector2Int_
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ(Vector2Int)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ(Vector2Int)
   nameWithType: Vector2IntExtensions.SwizzleXZ(Vector2Int)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ*
   name: SwizzleXZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXZ_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleXZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleXZ
   nameWithType: Vector2IntExtensions.SwizzleXZ
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ(Vector2Int)
   name: SwizzleYZ(Vector2Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleYZ_Vector2Int_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleYZ_Vector2Int_
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ(Vector2Int)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ(Vector2Int)
   nameWithType: Vector2IntExtensions.SwizzleYZ(Vector2Int)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ*
   name: SwizzleYZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleYZ_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_SwizzleYZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.SwizzleYZ
   nameWithType: Vector2IntExtensions.SwizzleYZ
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.WithX(Vector2Int,System.Int32)
   name: WithX(Vector2Int, Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithX_Vector2Int_System_Int32_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithX_Vector2Int_System_Int32_
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.WithX(Vector2Int,System.Int32)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.WithX(Vector2Int, System.Int32)
   nameWithType: Vector2IntExtensions.WithX(Vector2Int, Int32)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.WithX*
   name: WithX
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithX_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithX_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.WithX
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.WithX
   nameWithType: Vector2IntExtensions.WithX
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.WithY(Vector2Int,System.Int32)
   name: WithY(Vector2Int, Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithY_Vector2Int_System_Int32_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithY_Vector2Int_System_Int32_
   commentId: M:Slothsoft.UnityExtensions.Vector2IntExtensions.WithY(Vector2Int,System.Int32)
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.WithY(Vector2Int, System.Int32)
   nameWithType: Vector2IntExtensions.WithY(Vector2Int, Int32)
 - uid: Slothsoft.UnityExtensions.Vector2IntExtensions.WithY*
   name: WithY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithY_
+  href: api/Slothsoft.UnityExtensions.Vector2IntExtensions.html#Slothsoft_UnityExtensions_Vector2IntExtensions_WithY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector2IntExtensions.WithY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2IntExtensions.WithY
   nameWithType: Vector2IntExtensions.WithY
 - uid: Slothsoft.UnityExtensions.Vector3Extensions
   name: Vector3Extensions
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html
   commentId: T:Slothsoft.UnityExtensions.Vector3Extensions
   fullName: Slothsoft.UnityExtensions.Vector3Extensions
   nameWithType: Vector3Extensions
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct(Vector3,System.Single@,System.Single@,System.Single@)
   name: Deconstruct(Vector3, out Single, out Single, out Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_Deconstruct_Vector3_System_Single__System_Single__System_Single__
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_Deconstruct_Vector3_System_Single__System_Single__System_Single__
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct(Vector3,System.Single@,System.Single@,System.Single@)
   name.vb: Deconstruct(Vector3, ByRef Single, ByRef Single, ByRef Single)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct(Vector3, out System.Single, out System.Single, out System.Single)
@@ -1475,124 +1475,124 @@ references:
   nameWithType.vb: Vector3Extensions.Deconstruct(Vector3, ByRef Single, ByRef Single, ByRef Single)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.Deconstruct
   nameWithType: Vector3Extensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt(Vector3)
   name: RoundToInt(Vector3)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_RoundToInt_Vector3_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_RoundToInt_Vector3_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt(Vector3)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt(Vector3)
   nameWithType: Vector3Extensions.RoundToInt(Vector3)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt*
   name: RoundToInt
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_RoundToInt_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_RoundToInt_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.RoundToInt
   nameWithType: Vector3Extensions.RoundToInt
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal(Vector3)
   name: SnapToCardinal(Vector3)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SnapToCardinal_Vector3_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SnapToCardinal_Vector3_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal(Vector3)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal(Vector3)
   nameWithType: Vector3Extensions.SnapToCardinal(Vector3)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal*
   name: SnapToCardinal
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SnapToCardinal_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SnapToCardinal_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SnapToCardinal
   nameWithType: Vector3Extensions.SnapToCardinal
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY(Vector3)
   name: SwizzleXY(Vector3)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXY_Vector3_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXY_Vector3_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY(Vector3)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY(Vector3)
   nameWithType: Vector3Extensions.SwizzleXY(Vector3)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY*
   name: SwizzleXY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXY_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXY
   nameWithType: Vector3Extensions.SwizzleXY
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ(Vector3)
   name: SwizzleXZ(Vector3)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXZ_Vector3_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXZ_Vector3_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ(Vector3)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ(Vector3)
   nameWithType: Vector3Extensions.SwizzleXZ(Vector3)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ*
   name: SwizzleXZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXZ_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleXZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleXZ
   nameWithType: Vector3Extensions.SwizzleXZ
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ(Vector3)
   name: SwizzleYZ(Vector3)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleYZ_Vector3_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleYZ_Vector3_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ(Vector3)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ(Vector3)
   nameWithType: Vector3Extensions.SwizzleYZ(Vector3)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ*
   name: SwizzleYZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleYZ_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_SwizzleYZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.SwizzleYZ
   nameWithType: Vector3Extensions.SwizzleYZ
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithX(Vector3,System.Single)
   name: WithX(Vector3, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithX_Vector3_System_Single_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithX_Vector3_System_Single_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.WithX(Vector3,System.Single)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithX(Vector3, System.Single)
   nameWithType: Vector3Extensions.WithX(Vector3, Single)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithX*
   name: WithX
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithX_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithX_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.WithX
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithX
   nameWithType: Vector3Extensions.WithX
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithY(Vector3,System.Single)
   name: WithY(Vector3, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithY_Vector3_System_Single_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithY_Vector3_System_Single_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.WithY(Vector3,System.Single)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithY(Vector3, System.Single)
   nameWithType: Vector3Extensions.WithY(Vector3, Single)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithY*
   name: WithY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithY_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.WithY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithY
   nameWithType: Vector3Extensions.WithY
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithZ(Vector3,System.Single)
   name: WithZ(Vector3, Single)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithZ_Vector3_System_Single_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithZ_Vector3_System_Single_
   commentId: M:Slothsoft.UnityExtensions.Vector3Extensions.WithZ(Vector3,System.Single)
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithZ(Vector3, System.Single)
   nameWithType: Vector3Extensions.WithZ(Vector3, Single)
 - uid: Slothsoft.UnityExtensions.Vector3Extensions.WithZ*
   name: WithZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithZ_
+  href: api/Slothsoft.UnityExtensions.Vector3Extensions.html#Slothsoft_UnityExtensions_Vector3Extensions_WithZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3Extensions.WithZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3Extensions.WithZ
   nameWithType: Vector3Extensions.WithZ
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions
   name: Vector3IntExtensions
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html
   commentId: T:Slothsoft.UnityExtensions.Vector3IntExtensions
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions
   nameWithType: Vector3IntExtensions
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct(Vector3Int,System.Int32@,System.Int32@,System.Int32@)
   name: Deconstruct(Vector3Int, out Int32, out Int32, out Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_Deconstruct_Vector3Int_System_Int32__System_Int32__System_Int32__
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_Deconstruct_Vector3Int_System_Int32__System_Int32__System_Int32__
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct(Vector3Int,System.Int32@,System.Int32@,System.Int32@)
   name.vb: Deconstruct(Vector3Int, ByRef Int32, ByRef Int32, ByRef Int32)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct(Vector3Int, out System.Int32, out System.Int32, out System.Int32)
@@ -1601,128 +1601,128 @@ references:
   nameWithType.vb: Vector3IntExtensions.Deconstruct(Vector3Int, ByRef Int32, ByRef Int32, ByRef Int32)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct*
   name: Deconstruct
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_Deconstruct_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_Deconstruct_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.Deconstruct
   nameWithType: Vector3IntExtensions.Deconstruct
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY(Vector3Int)
   name: SwizzleXY(Vector3Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXY_Vector3Int_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXY_Vector3Int_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY(Vector3Int)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY(Vector3Int)
   nameWithType: Vector3IntExtensions.SwizzleXY(Vector3Int)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY*
   name: SwizzleXY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXY_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXY
   nameWithType: Vector3IntExtensions.SwizzleXY
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ(Vector3Int)
   name: SwizzleXZ(Vector3Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXZ_Vector3Int_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXZ_Vector3Int_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ(Vector3Int)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ(Vector3Int)
   nameWithType: Vector3IntExtensions.SwizzleXZ(Vector3Int)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ*
   name: SwizzleXZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXZ_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleXZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleXZ
   nameWithType: Vector3IntExtensions.SwizzleXZ
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ(Vector3Int)
   name: SwizzleYZ(Vector3Int)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleYZ_Vector3Int_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleYZ_Vector3Int_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ(Vector3Int)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ(Vector3Int)
   nameWithType: Vector3IntExtensions.SwizzleYZ(Vector3Int)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ*
   name: SwizzleYZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleYZ_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_SwizzleYZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.SwizzleYZ
   nameWithType: Vector3IntExtensions.SwizzleYZ
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithX(Vector3Int,System.Int32)
   name: WithX(Vector3Int, Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithX_Vector3Int_System_Int32_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithX_Vector3Int_System_Int32_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.WithX(Vector3Int,System.Int32)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithX(Vector3Int, System.Int32)
   nameWithType: Vector3IntExtensions.WithX(Vector3Int, Int32)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithX*
   name: WithX
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithX_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithX_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.WithX
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithX
   nameWithType: Vector3IntExtensions.WithX
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithY(Vector3Int,System.Int32)
   name: WithY(Vector3Int, Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithY_Vector3Int_System_Int32_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithY_Vector3Int_System_Int32_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.WithY(Vector3Int,System.Int32)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithY(Vector3Int, System.Int32)
   nameWithType: Vector3IntExtensions.WithY(Vector3Int, Int32)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithY*
   name: WithY
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithY_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithY_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.WithY
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithY
   nameWithType: Vector3IntExtensions.WithY
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ(Vector3Int,System.Int32)
   name: WithZ(Vector3Int, Int32)
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithZ_Vector3Int_System_Int32_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithZ_Vector3Int_System_Int32_
   commentId: M:Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ(Vector3Int,System.Int32)
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ(Vector3Int, System.Int32)
   nameWithType: Vector3IntExtensions.WithZ(Vector3Int, Int32)
 - uid: Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ*
   name: WithZ
-  href: .docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithZ_
+  href: api/Slothsoft.UnityExtensions.Vector3IntExtensions.html#Slothsoft_UnityExtensions_Vector3IntExtensions_WithZ_
   commentId: Overload:Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector3IntExtensions.WithZ
   nameWithType: Vector3IntExtensions.WithZ
 - uid: Slothsoft.UnityExtensions.Wait
   name: Wait
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.html
+  href: api/Slothsoft.UnityExtensions.Wait.html
   commentId: T:Slothsoft.UnityExtensions.Wait
   fullName: Slothsoft.UnityExtensions.Wait
   nameWithType: Wait
 - uid: Slothsoft.UnityExtensions.Wait.forEndOfFrame
   name: forEndOfFrame
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forEndOfFrame
+  href: api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forEndOfFrame
   commentId: F:Slothsoft.UnityExtensions.Wait.forEndOfFrame
   fullName: Slothsoft.UnityExtensions.Wait.forEndOfFrame
   nameWithType: Wait.forEndOfFrame
 - uid: Slothsoft.UnityExtensions.Wait.forFixedUpdate
   name: forFixedUpdate
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forFixedUpdate
+  href: api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forFixedUpdate
   commentId: F:Slothsoft.UnityExtensions.Wait.forFixedUpdate
   fullName: Slothsoft.UnityExtensions.Wait.forFixedUpdate
   nameWithType: Wait.forFixedUpdate
 - uid: Slothsoft.UnityExtensions.Wait.forSeconds
   name: forSeconds
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forSeconds
+  href: api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forSeconds
   commentId: F:Slothsoft.UnityExtensions.Wait.forSeconds
   fullName: Slothsoft.UnityExtensions.Wait.forSeconds
   nameWithType: Wait.forSeconds
 - uid: Slothsoft.UnityExtensions.Wait.forSecondsRealtime
   name: forSecondsRealtime
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forSecondsRealtime
+  href: api/Slothsoft.UnityExtensions.Wait.html#Slothsoft_UnityExtensions_Wait_forSecondsRealtime
   commentId: F:Slothsoft.UnityExtensions.Wait.forSecondsRealtime
   fullName: Slothsoft.UnityExtensions.Wait.forSecondsRealtime
   nameWithType: Wait.forSecondsRealtime
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache
   name: Wait.WaitForSecondsCache
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html
   commentId: T:Slothsoft.UnityExtensions.Wait.WaitForSecondsCache
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache
   nameWithType: Wait.WaitForSecondsCache
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item(System.Single)
   name: Item[Single]
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsCache_Item_System_Single_
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsCache_Item_System_Single_
   commentId: P:Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item(System.Single)
   name.vb: Item(Single)
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item[System.Single]
@@ -1731,20 +1731,20 @@ references:
   nameWithType.vb: Wait.WaitForSecondsCache.Item(Single)
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item*
   name: Item
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsCache_Item_
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsCache_Item_
   commentId: Overload:Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.Item
   nameWithType: Wait.WaitForSecondsCache.Item
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache
   name: Wait.WaitForSecondsRealtimeCache
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html
   commentId: T:Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache
   nameWithType: Wait.WaitForSecondsRealtimeCache
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item(System.Single)
   name: Item[Single]
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsRealtimeCache_Item_System_Single_
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsRealtimeCache_Item_System_Single_
   commentId: P:Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item(System.Single)
   name.vb: Item(Single)
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item[System.Single]
@@ -1753,7 +1753,7 @@ references:
   nameWithType.vb: Wait.WaitForSecondsRealtimeCache.Item(Single)
 - uid: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item*
   name: Item
-  href: .docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsRealtimeCache_Item_
+  href: api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html#Slothsoft_UnityExtensions_Wait_WaitForSecondsRealtimeCache_Item_
   commentId: Overload:Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item
