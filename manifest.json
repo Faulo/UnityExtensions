@@ -1,0 +1,422 @@
+{
+  "homepages": [],
+  "source_base_path": "/github/workspace",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.ColorExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.ColorExtensions.html",
+          "hash": "SQKZ+cxQd2YocPjfF2BclQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.AssetUtils.html",
+          "hash": "+4ciaNqiXxPhINQU3vyL6Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.Build.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.Build.html",
+          "hash": "S1y/2EVu2WsQFMbST8p31Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html",
+          "hash": "qmAQuG8pusUOKM/AAcoaSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.EditorUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.EditorUtils.html",
+          "hash": "fGonWZc2/xn9MuXs/YjYCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.FixBurstCompilerForAndroid.html",
+          "hash": "9kMvuCcvYYC5He7dF5o1ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html",
+          "hash": "UPhMn5LiXTy1Eidb+QygnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html",
+          "hash": "zfKzmA29EzpygVbpMiBldA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.html",
+          "hash": "6zma526pOiG7jSeBuLJrMA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.RenderPipelineConverter.html",
+          "hash": "PGUt0PHaV0VN2U6POmhhgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.RenderPipelineConversion.html",
+          "hash": "DCk1c/mApFGm0ByuJ+IFpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Editor.html",
+          "hash": "ScAg0BDf9H9UK1TGbY5qkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.ExpandableAttribute.html",
+          "hash": "4OG9qynrNfVMQB7vpUWyyw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc-1.html",
+          "hash": "8BioFok61SzVFulSx/RPFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.IEnumerableExtensions.html",
+          "hash": "LvAdoPglbCRRMgYkST6FSg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.KeyValuePairExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html",
+          "hash": "wlYqu9low26Hy6j7DqlEaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.LayerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.LayerAttribute.html",
+          "hash": "ly+FCdtqXSLc0afj8PGHTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html",
+          "hash": "ZljRG67ElSUnLRkVMfrneg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.SortingLayerAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.SortingLayerAttribute.html",
+          "hash": "HmZqJY4GqdWsZCQ5DViVpA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.TileComparer.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.TileComparer.html",
+          "hash": "uul/MRg7WOJ5EEcvx5QpXA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.TilemapExtensions.html",
+          "hash": "mZXiqec2lRM/MTI/EP5tng=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.TransformExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.TransformExtensions.html",
+          "hash": "EOkFIdlP+aEvIAeJvTZ8Lg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector2Extensions.html",
+          "hash": "6W6oqJslcpxzqGRKhwhqkg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector2IntExtensions.html",
+          "hash": "18tYXGhyIai0QWf/x3FFfA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector3Extensions.html",
+          "hash": "hRpLcoEWlWwyGALgj2GSwA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Vector3IntExtensions.html",
+          "hash": "3ILR2jHgkZwAu6JW1xJUnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsCache.html",
+          "hash": "yx+G3bvqRB0HuhMXIkUrEg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.html",
+          "hash": "lsqzx7BBWpaeojN87xY5Kw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.Wait.html",
+          "hash": "YzTa118b1OSk4bKuQno2sQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": ".docfx/api/Slothsoft.UnityExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/Slothsoft.UnityExtensions.html",
+          "hash": "4zTjbO0VzOI1oMxvUGJ3NA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": ".docfx/api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": ".docfx/api/toc.html",
+          "hash": "ScMMcKvbt9yUNfL+mqJIsA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 30,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: last post processor info is null.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
