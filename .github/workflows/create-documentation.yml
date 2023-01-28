@@ -19,7 +19,7 @@ jobs:
       - name: DocFX
         uses: nikeee/docfx-action@v1.0.0
         with:
-          args: ./docfx/docfx.json
+          args: ./.docfx/docfx.json
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
