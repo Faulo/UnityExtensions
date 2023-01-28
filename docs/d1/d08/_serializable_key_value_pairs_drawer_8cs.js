@@ -1,4 +1,0 @@
-var _serializable_key_value_pairs_drawer_8cs =
-[
-    [ "Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer", "d2/d66/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_property_drawers_1_1_serializable_key_value_pairs_drawer.html", "d2/d66/class_slothsoft_1_1_unity_extensions_1_1_editor_1_1_property_drawers_1_1_serializable_key_value_pairs_drawer" ]
-];
