@@ -25,7 +25,7 @@ namespace Slothsoft.UnityExtensions {
         /// Aligns a vector to one of the 4 cardinal directions.
         /// </summary>
         /// <param name="direction">The vector to align.</param>
-        /// <returns>One of [<see cref="Vector2Int.zero">, <see cref="Vector2Int.up">, <see cref="Vector2Int.down">, <see cref="Vector2Int.left">, <see cref="Vector2Int.right">].</returns>
+        /// <returns>One of [<see cref="Vector2Int.zero"/>, <see cref="Vector2Int.up"/>, <see cref="Vector2Int.down"/>, <see cref="Vector2Int.left"/>, <see cref="Vector2Int.right"/>].</returns>
         public static Vector2Int SnapToCardinal(this Vector2 direction) {
             float x = Math.Abs(direction.x);
             float y = Math.Abs(direction.y);
