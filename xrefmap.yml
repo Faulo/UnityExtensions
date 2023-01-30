@@ -1175,15 +1175,15 @@ references:
   commentId: T:Slothsoft.UnityExtensions.Vector2Extensions
   fullName: Slothsoft.UnityExtensions.Vector2Extensions
   nameWithType: Vector2Extensions
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2,System.Single@,System.Single@)
-  name: Deconstruct(Vector2, out Single, out Single)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_Vector2_System_Single__System_Single__
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2,System.Single@,System.Single@)
-  name.vb: Deconstruct(Vector2, ByRef Single, ByRef Single)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2, out System.Single, out System.Single)
-  fullName.vb: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(Vector2, ByRef System.Single, ByRef System.Single)
-  nameWithType: Vector2Extensions.Deconstruct(Vector2, out Single, out Single)
-  nameWithType.vb: Vector2Extensions.Deconstruct(Vector2, ByRef Single, ByRef Single)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(UnityEngine.Vector2,System.Single@,System.Single@)
+  name: Deconstruct(UnityEngine.Vector2, out Single, out Single)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_UnityEngine_Vector2_System_Single__System_Single__
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(UnityEngine.Vector2,System.Single@,System.Single@)
+  name.vb: Deconstruct(UnityEngine.Vector2, ByRef Single, ByRef Single)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(UnityEngine.Vector2, out System.Single, out System.Single)
+  fullName.vb: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct(UnityEngine.Vector2, ByRef System.Single, ByRef System.Single)
+  nameWithType: Vector2Extensions.Deconstruct(UnityEngine.Vector2, out Single, out Single)
+  nameWithType.vb: Vector2Extensions.Deconstruct(UnityEngine.Vector2, ByRef Single, ByRef Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct*
   name: Deconstruct
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_Deconstruct_
@@ -1191,12 +1191,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.Deconstruct
   nameWithType: Vector2Extensions.Deconstruct
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
-  name: RoundToInt(Vector2)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_Vector2_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(Vector2)
-  nameWithType: Vector2Extensions.RoundToInt(Vector2)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(UnityEngine.Vector2)
+  name: RoundToInt(UnityEngine.Vector2)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_UnityEngine_Vector2_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(UnityEngine.Vector2)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt(UnityEngine.Vector2)
+  nameWithType: Vector2Extensions.RoundToInt(UnityEngine.Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt*
   name: RoundToInt
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_RoundToInt_
@@ -1204,12 +1204,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.RoundToInt
   nameWithType: Vector2Extensions.RoundToInt
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
-  name: SnapToCardinal(Vector2)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_Vector2_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(Vector2)
-  nameWithType: Vector2Extensions.SnapToCardinal(Vector2)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(UnityEngine.Vector2)
+  name: SnapToCardinal(UnityEngine.Vector2)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_UnityEngine_Vector2_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(UnityEngine.Vector2)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal(UnityEngine.Vector2)
+  nameWithType: Vector2Extensions.SnapToCardinal(UnityEngine.Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal*
   name: SnapToCardinal
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SnapToCardinal_
@@ -1217,12 +1217,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SnapToCardinal
   nameWithType: Vector2Extensions.SnapToCardinal
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
-  name: SwizzleXY(Vector2)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_Vector2_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(Vector2)
-  nameWithType: Vector2Extensions.SwizzleXY(Vector2)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(UnityEngine.Vector2)
+  name: SwizzleXY(UnityEngine.Vector2)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_UnityEngine_Vector2_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(UnityEngine.Vector2)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY(UnityEngine.Vector2)
+  nameWithType: Vector2Extensions.SwizzleXY(UnityEngine.Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY*
   name: SwizzleXY
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXY_
@@ -1230,12 +1230,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXY
   nameWithType: Vector2Extensions.SwizzleXY
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
-  name: SwizzleXZ(Vector2)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_Vector2_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(Vector2)
-  nameWithType: Vector2Extensions.SwizzleXZ(Vector2)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(UnityEngine.Vector2)
+  name: SwizzleXZ(UnityEngine.Vector2)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_UnityEngine_Vector2_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(UnityEngine.Vector2)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ(UnityEngine.Vector2)
+  nameWithType: Vector2Extensions.SwizzleXZ(UnityEngine.Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ*
   name: SwizzleXZ
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleXZ_
@@ -1243,12 +1243,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleXZ
   nameWithType: Vector2Extensions.SwizzleXZ
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
-  name: SwizzleYZ(Vector2)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_Vector2_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(Vector2)
-  nameWithType: Vector2Extensions.SwizzleYZ(Vector2)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(UnityEngine.Vector2)
+  name: SwizzleYZ(UnityEngine.Vector2)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_UnityEngine_Vector2_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(UnityEngine.Vector2)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ(UnityEngine.Vector2)
+  nameWithType: Vector2Extensions.SwizzleYZ(UnityEngine.Vector2)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ*
   name: SwizzleYZ
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_SwizzleYZ_
@@ -1256,12 +1256,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.SwizzleYZ
   nameWithType: Vector2Extensions.SwizzleYZ
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2,System.Single)
-  name: WithX(Vector2, Single)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_Vector2_System_Single_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2,System.Single)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithX(Vector2, System.Single)
-  nameWithType: Vector2Extensions.WithX(Vector2, Single)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.WithX(UnityEngine.Vector2,System.Single)
+  name: WithX(UnityEngine.Vector2, Single)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_UnityEngine_Vector2_System_Single_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithX(UnityEngine.Vector2,System.Single)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithX(UnityEngine.Vector2, System.Single)
+  nameWithType: Vector2Extensions.WithX(UnityEngine.Vector2, Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithX*
   name: WithX
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithX_
@@ -1269,12 +1269,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithX
   nameWithType: Vector2Extensions.WithX
-- uid: Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2,System.Single)
-  name: WithY(Vector2, Single)
-  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_Vector2_System_Single_
-  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2,System.Single)
-  fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithY(Vector2, System.Single)
-  nameWithType: Vector2Extensions.WithY(Vector2, Single)
+- uid: Slothsoft.UnityExtensions.Vector2Extensions.WithY(UnityEngine.Vector2,System.Single)
+  name: WithY(UnityEngine.Vector2, Single)
+  href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_UnityEngine_Vector2_System_Single_
+  commentId: M:Slothsoft.UnityExtensions.Vector2Extensions.WithY(UnityEngine.Vector2,System.Single)
+  fullName: Slothsoft.UnityExtensions.Vector2Extensions.WithY(UnityEngine.Vector2, System.Single)
+  nameWithType: Vector2Extensions.WithY(UnityEngine.Vector2, Single)
 - uid: Slothsoft.UnityExtensions.Vector2Extensions.WithY*
   name: WithY
   href: api/Slothsoft.UnityExtensions.Vector2Extensions.html#Slothsoft_UnityExtensions_Vector2Extensions_WithY_
