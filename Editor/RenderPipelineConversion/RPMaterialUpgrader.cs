@@ -2,7 +2,7 @@
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
-    internal class RPMaterialUpgrader : MaterialUpgrader {
+    class RPMaterialUpgrader : MaterialUpgrader {
         readonly bool toHDRP;
 
         public RPMaterialUpgrader(bool toHDRP, string urpShaderName, string hdrpShaderName) {

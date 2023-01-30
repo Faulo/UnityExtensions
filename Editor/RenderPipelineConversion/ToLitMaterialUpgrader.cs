@@ -1,5 +1,5 @@
 ﻿namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
-    internal class ToLitMaterialUpgrader : RPMaterialUpgrader {
+    sealed class ToLitMaterialUpgrader : RPMaterialUpgrader {
         public ToLitMaterialUpgrader(bool toHDRP, string urpShaderName, string hdrpShaderName) : base(toHDRP, urpShaderName, hdrpShaderName) {
             MapTexture("_BaseMap", "_BaseColorMap");
             //MapColor("_BaseColor", "_BaseColor");

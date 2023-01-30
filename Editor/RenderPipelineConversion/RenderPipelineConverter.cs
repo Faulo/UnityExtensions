@@ -1,7 +1,8 @@
-﻿using NUnit.Framework;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using NUnit.Framework;
+using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;
@@ -9,13 +10,13 @@ using UnityEngine.Rendering.HighDefinition;
 using UnityEngine.Rendering.Universal;
 
 namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
-    internal class RenderPipelineConverter : EditorWindow {
+    sealed class RenderPipelineConverter : EditorWindow {
         [MenuItem("Window/Render Pipeline/Slothsoft's HDRP <=> URP Conversion Wizard")]
-        public static void ShowWindow() {
+        static void ShowWindow() {
             GetWindow<RenderPipelineConverter>();
         }
 
-        public void OnGUI() {
+        void OnGUI() {
             titleContent = EditorGUIUtility.TrTextContent("HDRP <=> URP Conversion");
 
             GUILayout.BeginVertical("box");

@@ -1,8 +1,9 @@
 {
     "name": "Slothsoft.UnityExtensions.Editor.RenderPipelineConversion",
+    "rootNamespace": "",
     "references": [
         "Slothsoft.UnityExtensions.Editor",
-        "Slothsoft.UnityExtensions.Runtime",
+        "Slothsoft.UnityExtensions",
         "UnityEditor.UI",
         "Unity.RenderPipelines.Core.Editor",
         "Unity.RenderPipelines.Core.Runtime",
