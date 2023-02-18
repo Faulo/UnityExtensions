@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.Build.Reporting;
 
 namespace Slothsoft.UnityExtensions.Editor {
     public static class Build {
@@ -18,7 +19,11 @@ namespace Slothsoft.UnityExtensions.Editor {
             };
 
 
-            BuildPipeline.BuildPlayer(options);
+            var report = BuildPipeline.BuildPlayer(options);
+
+            if (report.summary.result != BuildResult.Succeeded) {
+                throw new Exception($"Build failed with result '{report.summary.result}', encountered{report.summary.totalWarnings} warnings and {report.summary.totalErrors} errors.");
+            }
 
             EditorApplication.Exit(0);
         }
