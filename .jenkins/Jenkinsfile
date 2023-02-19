@@ -9,6 +9,6 @@ node {
         TEST_MODES = 'EditMode PlayMode'
 		
         // which platforms to deploy to
-        DEPLOY_TO_VERDACCIO = '1'
+        DEPLOY_TO_VERDACCIO = '0'
     }
 }
