@@ -1,5 +1,8 @@
 # Changelog
 
+## [2.5.0] - 2023-03-07
+- Added CLI method Slothsoft.UnityExtensions.Editor.Build.Solution.
+
 ## [2.3.0] - 2023-01-02
 - Added AssetUtils.
 

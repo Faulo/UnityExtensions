@@ -29,7 +29,7 @@ The package is available on the [openupm registry](https://openupm.com/packages/
     }
   ],
   "dependencies": {
-    "net.slothsoft.unity-extensions": "2.4.0",
+    "net.slothsoft.unity-extensions": "2.5.0",
   }
 }
 ```
@@ -39,9 +39,3 @@ Alternatively, you may install it via [openupm-cli](https://github.com/openupm/o
 ```
 openupm add net.slothsoft.unity-extensions
 ```
-
-### Install via git
-Alternatively, you may install it as a git repository:
-- Open Unity.
-- Navigate to Window > Package Manager > + > Add package from git URL...
-- Enter this repository's URL: https://github.com/Faulo/UnityExtensions
