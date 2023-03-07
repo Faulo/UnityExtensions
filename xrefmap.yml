@@ -179,6 +179,19 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.Build.Linux
   nameWithType: Build.Linux
+- uid: Slothsoft.UnityExtensions.Editor.Build.Solution
+  name: Solution()
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Solution
+  commentId: M:Slothsoft.UnityExtensions.Editor.Build.Solution
+  fullName: Slothsoft.UnityExtensions.Editor.Build.Solution()
+  nameWithType: Build.Solution()
+- uid: Slothsoft.UnityExtensions.Editor.Build.Solution*
+  name: Solution
+  href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_Solution_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.Build.Solution
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.Build.Solution
+  nameWithType: Build.Solution
 - uid: Slothsoft.UnityExtensions.Editor.Build.WebGL
   name: WebGL()
   href: api/Slothsoft.UnityExtensions.Editor.Build.html#Slothsoft_UnityExtensions_Editor_Build_WebGL
