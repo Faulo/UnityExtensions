@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Linq;
+using Microsoft.Unity.VisualStudio.Editor;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
@@ -35,5 +36,9 @@ namespace Slothsoft.UnityExtensions.Editor {
         public static void WebGL() => BuildNow(BuildTarget.WebGL, BuildTargetGroup.WebGL);
         public static void Android() => BuildNow(BuildTarget.Android, BuildTargetGroup.Android);
         public static void Apple() => BuildNow(BuildTarget.iOS, BuildTargetGroup.iOS);
+
+        public static void Solution() {
+            new VisualStudioEditor().SyncAll();
+        }
     }
 }

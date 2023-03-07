@@ -3,7 +3,8 @@
     "rootNamespace": "",
     "references": [
         "Slothsoft.UnityExtensions",
-        "Unity.Settings.Editor"
+        "Unity.Settings.Editor",
+        "Unity.VisualStudio.Editor"
     ],
     "includePlatforms": [
         "Editor"
