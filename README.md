@@ -3,6 +3,8 @@
 
 C# extension functions, attributes and editor tools for common Unity problems.
 
+[Documentation](https://faulo.github.io/UnityExtensions/api/Slothsoft.UnityExtensions.html)
+
 ## Key features:
 - Additional Linq-like IEnumerable extensions.
 - Expandable attribute, to in-place edit asset references.
