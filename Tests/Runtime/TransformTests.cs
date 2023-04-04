@@ -98,15 +98,22 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         public void TestTryGetComponentInChildren(string type, bool expectedResult) {
             var context = CreateHierarchy();
 
-            bool actualresult = type switch {
-                nameof(Transform) => context.TryGetComponentInChildren<Transform>(out _),
-                nameof(Renderer) => context.TryGetComponentInChildren<Renderer>(out _),
-                nameof(BoxCollider) => context.TryGetComponentInChildren<BoxCollider>(out _),
-                nameof(SphereCollider) => context.TryGetComponentInChildren<SphereCollider>(out _),
-                _ => throw new NotImplementedException(),
-            };
+            bool actualResult() {
+                switch (type) {
+                    case nameof(Transform):
+                        return context.TryGetComponentInChildren<Transform>(out _);
+                    case nameof(Renderer):
+                        return context.TryGetComponentInChildren<Renderer>(out _);
+                    case nameof(BoxCollider):
+                        return context.TryGetComponentInChildren<BoxCollider>(out _);
+                    case nameof(SphereCollider):
+                        return context.TryGetComponentInChildren<SphereCollider>(out _);
+                    default:
+                        throw new NotImplementedException();
+                }
+            }
 
-            Assert.AreEqual(expectedResult, actualresult);
+            Assert.AreEqual(expectedResult, actualResult());
         }
 
         [TestCase(nameof(Transform), true)]
@@ -116,15 +123,22 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         public void TestTryGetComponentInParent(string type, bool expectedResult) {
             var context = CreateHierarchy();
 
-            bool actualresult = type switch {
-                nameof(Transform) => context.TryGetComponentInParent<Transform>(out _),
-                nameof(Renderer) => context.TryGetComponentInParent<Renderer>(out _),
-                nameof(BoxCollider) => context.TryGetComponentInParent<BoxCollider>(out _),
-                nameof(SphereCollider) => context.TryGetComponentInParent<SphereCollider>(out _),
-                _ => throw new NotImplementedException(),
-            };
+            bool actualResult() {
+                switch (type) {
+                    case nameof(Transform):
+                        return context.TryGetComponentInParent<Transform>(out _);
+                    case nameof(Renderer):
+                        return context.TryGetComponentInParent<Renderer>(out _);
+                    case nameof(BoxCollider):
+                        return context.TryGetComponentInParent<BoxCollider>(out _);
+                    case nameof(SphereCollider):
+                        return context.TryGetComponentInParent<SphereCollider>(out _);
+                    default:
+                        throw new NotImplementedException();
+                }
+            }
 
-            Assert.AreEqual(expectedResult, actualresult);
+            Assert.AreEqual(expectedResult, actualResult());
         }
 
         [TestCase(nameof(Transform), true)]
@@ -134,15 +148,22 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         public void TestTryGetComponentInHierarchy(string type, bool expectedResult) {
             var context = CreateHierarchy();
 
-            bool actualresult = type switch {
-                nameof(Transform) => context.TryGetComponentInHierarchy<Transform>(out _),
-                nameof(Renderer) => context.TryGetComponentInHierarchy<Renderer>(out _),
-                nameof(BoxCollider) => context.TryGetComponentInHierarchy<BoxCollider>(out _),
-                nameof(SphereCollider) => context.TryGetComponentInHierarchy<SphereCollider>(out _),
-                _ => throw new NotImplementedException(),
-            };
+            bool actualResult() {
+                switch (type) {
+                    case nameof(Transform):
+                        return context.TryGetComponentInHierarchy<Transform>(out _);
+                    case nameof(Renderer):
+                        return context.TryGetComponentInHierarchy<Renderer>(out _);
+                    case nameof(BoxCollider):
+                        return context.TryGetComponentInHierarchy<BoxCollider>(out _);
+                    case nameof(SphereCollider):
+                        return context.TryGetComponentInHierarchy<SphereCollider>(out _);
+                    default:
+                        throw new NotImplementedException();
+                }
+            }
 
-            Assert.AreEqual(expectedResult, actualresult);
+            Assert.AreEqual(expectedResult, actualResult());
         }
 
         Transform CreateHierarchy() {

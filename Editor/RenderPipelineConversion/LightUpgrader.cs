@@ -35,15 +35,19 @@ namespace Slothsoft.UnityExtensions.Editor.RenderPipelineConversion {
         string ScaleIntensity(string value, LightType type) => ScaleIntensity(float.Parse(value, CultureInfo.InvariantCulture), type).ToString(CultureInfo.InvariantCulture);
 
         float ScaleIntensity(float value, LightType type) {
-            return type switch {
-                LightType.Directional => toHDRP
+            switch (type) {
+                case LightType.Directional:
+                    return toHDRP
                     ? value * settings.directionalLightIntensityMultiplier
-                    : value / settings.directionalLightIntensityMultiplier,
-                LightType.Point => toHDRP
+                    : value / settings.directionalLightIntensityMultiplier;
+
+                case LightType.Point:
+                    return toHDRP
                     ? value * settings.pointLightIntensityMultiplier
-                    : value / settings.pointLightIntensityMultiplier,
-                _ => throw new System.Exception("LightType " + type + " is not supported by this implementation."),
-            };
+                    : value / settings.pointLightIntensityMultiplier;
+                default:
+                    throw new System.Exception("LightType " + type + " is not supported by this implementation.");
+            }
         }
     }
 }

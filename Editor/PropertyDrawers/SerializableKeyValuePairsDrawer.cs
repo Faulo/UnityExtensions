@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
 
@@ -65,6 +66,13 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             return totalHeight;
         }
 
+        static readonly Dictionary<LineMode, (float key, float value)> lineSettings = new Dictionary<LineMode, (float, float)>() {
+            [LineMode.ShortKeyShortValue] = (0.5f, 0.5f),
+            [LineMode.ShortKeyLongValue] = (0.3f, 0.7f),
+            [LineMode.LongKeyShortValue] = (0.7f, 0.3f),
+            [LineMode.LongKeyLongValue] = (0.5f, 0.5f),
+        };
+
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
             Initialize();
 
@@ -123,13 +131,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                         position.y += rect.height;
                         position.y += EditorGUIUtility.standardVerticalSpacing;
                     } else {
-                        (float key, float value) ratio = lineMode switch {
-                            LineMode.ShortKeyShortValue => (0.5f, 0.5f),
-                            LineMode.ShortKeyLongValue => (0.3f, 0.7f),
-                            LineMode.LongKeyShortValue => (0.7f, 0.3f),
-                            LineMode.LongKeyLongValue => throw new NotImplementedException(),
-                            _ => throw new NotImplementedException(),
-                        };
+                        var ratio = lineSettings[lineMode];
                         rect.x = position.x;
                         rect.width = position.width * ratio.key;
                         rect.height = Mathf.Max(EditorGUI.GetPropertyHeight(key, true), EditorGUI.GetPropertyHeight(value, true));

@@ -34,9 +34,10 @@ namespace Slothsoft.UnityExtensions.Editor {
                             element.Value = settings.setWarningLevelTo;
                         }
 
-                        using var str = new Utf8StringWriter();
-                        projectDocument.Save(str);
-                        fileContent = str.ToString();
+                        using (var str = new Utf8StringWriter()) {
+                            projectDocument.Save(str);
+                            fileContent = str.ToString();
+                        }
                     }
                 }
             }
