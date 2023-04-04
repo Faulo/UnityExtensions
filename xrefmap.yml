@@ -109,13 +109,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile
   nameWithType: AssetUtils.LoadAssetAtFile
-- uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(FileSystemInfo)
+- uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
   name: LoadAssetAtFile<T>(FileSystemInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_FileSystemInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(FileSystemInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_System_IO_FileSystemInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
   name.vb: LoadAssetAtFile(Of T)(FileSystemInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile<T>(FileSystemInfo)
-  fullName.vb: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile(Of T)(FileSystemInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile<T>(System.IO.FileSystemInfo)
+  fullName.vb: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile(Of T)(System.IO.FileSystemInfo)
   nameWithType: AssetUtils.LoadAssetAtFile<T>(FileSystemInfo)
   nameWithType.vb: AssetUtils.LoadAssetAtFile(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType*
@@ -250,24 +250,24 @@ references:
   commentId: T:Slothsoft.UnityExtensions.Editor.CSharpUtils
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils
   nameWithType: CSharpUtils
-- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
-  name: GetAssembly(DirectoryInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_DirectoryInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
-  nameWithType: CSharpUtils.GetAssembly(DirectoryInfo)
-- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
-  name: GetAssembly(FileInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_FileInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
-  nameWithType: CSharpUtils.GetAssembly(FileInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   name: GetAssembly(MonoScript)
   href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_MonoScript_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   nameWithType: CSharpUtils.GetAssembly(MonoScript)
+- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
+  name: GetAssembly(DirectoryInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_DirectoryInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
+  nameWithType: CSharpUtils.GetAssembly(DirectoryInfo)
+- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
+  name: GetAssembly(FileInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_FileInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
+  nameWithType: CSharpUtils.GetAssembly(FileInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.String)
   name: GetAssembly(String)
   href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_String_
@@ -422,13 +422,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath
   nameWithType: PrefabUtils.LoadAssetAtPath
-- uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(FileSystemInfo)
+- uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
   name: LoadAssetAtPath<T>(FileSystemInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_FileSystemInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(FileSystemInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_System_IO_FileSystemInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
   name.vb: LoadAssetAtPath(Of T)(FileSystemInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath<T>(FileSystemInfo)
-  fullName.vb: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath(Of T)(FileSystemInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath<T>(System.IO.FileSystemInfo)
+  fullName.vb: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath(Of T)(System.IO.FileSystemInfo)
   nameWithType: PrefabUtils.LoadAssetAtPath<T>(FileSystemInfo)
   nameWithType.vb: PrefabUtils.LoadAssetAtPath(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets*
@@ -453,11 +453,11 @@ references:
   commentId: T:Slothsoft.UnityExtensions.ExpandableAttribute
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute
   nameWithType: ExpandableAttribute
-- uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
+- uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(System.Type)
   name: ExpandableAttribute(Type)
-  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_Type_
-  commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
-  fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute(Type)
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_System_Type_
+  commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(System.Type)
+  fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute(System.Type)
   nameWithType: ExpandableAttribute.ExpandableAttribute(Type)
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor*
   name: ExpandableAttribute
@@ -521,13 +521,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll
   nameWithType: IEnumerableExtensions.ForAll
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},Action{``0})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},System.Action{``0})
   name: ForAll<T>(IEnumerable<T>, Action<T>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_IEnumerable___0__Action___0__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},Action{``0})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_IEnumerable___0__System_Action___0__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},System.Action{``0})
   name.vb: ForAll(Of T)(IEnumerable(Of T), Action(Of T))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll<T>(IEnumerable<T>, Action<T>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll<T>(IEnumerable<T>, System.Action<T>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), System.Action(Of T))
   nameWithType: IEnumerableExtensions.ForAll<T>(IEnumerable<T>, Action<T>)
   nameWithType.vb: IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), Action(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo*
@@ -578,13 +578,13 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
   nameWithType: IEnumerableExtensions.Multiply<TFirst, TSecond>(IEnumerable<TFirst>, IEnumerable<TSecond>)
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},Func{``0,``1,``2})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},System.Func{``0,``1,``2})
   name: Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_IEnumerable___0__IEnumerable___1__Func___0___1___2__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},Func{``0,``1,``2})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_IEnumerable___0__IEnumerable___1__System_Func___0___1___2__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},System.Func{``0,``1,``2})
   name.vb: Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, System.Func<TFirst, TSecond, TReturn>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), System.Func(Of TFirst, TSecond, TReturn))
   nameWithType: IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None*
@@ -603,13 +603,13 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource))
   nameWithType: IEnumerableExtensions.None<TSource>(IEnumerable<TSource>)
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource))
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},Func{``0,System.Boolean})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},System.Func{``0,System.Boolean})
   name: None<TSource>(IEnumerable<TSource>, Func<TSource, Boolean>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_IEnumerable___0__Func___0_System_Boolean__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},Func{``0,System.Boolean})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},System.Func{``0,System.Boolean})
   name.vb: None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, Func<TSource, System.Boolean>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, System.Boolean))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, System.Func<TSource, System.Boolean>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), System.Func(Of TSource, System.Boolean))
   nameWithType: IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, Func<TSource, Boolean>)
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement*
@@ -635,15 +635,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement
   nameWithType: IEnumerableExtensions.RandomWeightedElement
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},Func{``0,System.Int32})
-  name: RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__Func___0_System_Int32__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},Func{``0,System.Int32})
-  name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, System.Int32>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
-  nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
-  nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElement<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__IReadOnlyDictionary___0_System_Int32__
@@ -653,6 +644,15 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, System.Int32))
   nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name: RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__System_Func___0_System_Int32__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, System.Func<T, System.Int32>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), System.Func(Of T, System.Int32))
+  nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
+  nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending*
   name: RandomWeightedElementDescending
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending_
@@ -660,15 +660,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending
   nameWithType: IEnumerableExtensions.RandomWeightedElementDescending
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},Func{``0,System.Int32})
-  name: RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__Func___0_System_Int32__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},Func{``0,System.Int32})
-  name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, System.Int32>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
-  nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
-  nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElementDescending<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__IReadOnlyDictionary___0_System_Int32__
@@ -678,6 +669,15 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, System.Int32))
   nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name: RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__System_Func___0_System_Int32__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, System.Func<T, System.Int32>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), System.Func(Of T, System.Int32))
+  nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
+  nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull*
   name: SelectNotNull
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull_
@@ -685,13 +685,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull
   nameWithType: IEnumerableExtensions.SelectNotNull
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},Func{``0,``1})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},System.Func{``0,``1})
   name: SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_IEnumerable___0__Func___0___1__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},Func{``0,``1})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_IEnumerable___0__System_Func___0___1__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},System.Func{``0,``1})
   name.vb: SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, System.Func<TSource, TResult>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), System.Func(Of TSource, TResult))
   nameWithType: IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
   nameWithType.vb: IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle*
@@ -733,13 +733,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect
   nameWithType: IEnumerableExtensions.TrySelect
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},System.Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name: TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, IEnumerableExtensions.TrySelectFunc<TTarget>>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_IEnumerable___0__Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_IEnumerable___0__System_Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},System.Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name.vb: TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<TTarget>>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc(Of TTarget)))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, System.Func<TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<TTarget>>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), System.Func(Of TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc(Of TTarget)))
   nameWithType: IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, IEnumerableExtensions.TrySelectFunc<TTarget>>)
   nameWithType.vb: IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc`1

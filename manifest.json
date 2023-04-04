@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.AssetUtils.html",
-          "hash": "Fu4US0jmQCPdhsdc3/pxtg=="
+          "hash": "fklzMPlYT+2KQ2JKrFvpOw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html",
-          "hash": "/xc1xjx7w/Hz5tC+xskbHA=="
+          "hash": "TCiTfDszGnLO5LwPudPfQg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html",
-          "hash": "jBGC196POQcSfcabj+rF6A=="
+          "hash": "tEzAniW8JhHvJjJesKcBwQ=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.ExpandableAttribute.html",
-          "hash": "u2I4XgV8dQPrBThbRskfxA=="
+          "hash": "o1uXse8LJ2YdXCt6usZSvw=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.IEnumerableExtensions.html",
-          "hash": "cCZXpYSn8GQRdGXW7S/rxQ=="
+          "hash": "VwxsKoM+xWqHL6aqaNXH8A=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html",
-          "hash": "Rgf6/lWerKOPy7GUQ3BgXg=="
+          "hash": "iaY8KCcrLZgMlwdoPCy9sQ=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector2Extensions.html",
-          "hash": "v/r9cwuo6RGALiV2/ASi6A=="
+          "hash": "Y3gbNpcmjGZg4LxRtbROdw=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector3Extensions.html",
-          "hash": "EU2csxDwKrVWklR02v183Q=="
+          "hash": "ucSWum3JByM4no5F5VuZ+w=="
         }
       },
       "is_incremental": false,
