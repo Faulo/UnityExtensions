@@ -12,6 +12,7 @@ node('linux && unity') {
         
         // verify that code is formatted
         TEST_FORMATTING = '1'
+		EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
 		
         // which platforms to deploy to
         DEPLOY_TO_VERDACCIO = '0'
