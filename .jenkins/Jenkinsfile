@@ -1,5 +1,10 @@
 node('unity') {
     checkout scm
+	
+	options {
+		disableConcurrentBuilds()
+		disableResume()
+	}
     
     unityPackage {
     	// define unity package location relative to repository
