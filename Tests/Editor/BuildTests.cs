@@ -16,11 +16,10 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestBuildSolution() {
-            /*
             foreach (string file in projectFiles) {
                 File.Delete(file);
             }
-            //*/
+
             Build.Solution();
 
             foreach (string file in projectFiles) {
