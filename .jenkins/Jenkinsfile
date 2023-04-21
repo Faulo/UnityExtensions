@@ -1,26 +1,17 @@
-pipeline {
-	agent {
-		label 'linux && unity'
-	}
-	
-	options {
-		disableConcurrentBuilds()
-		disableResume()
-	}
+node('linux && unity') {
+    checkout scm
     
-	steps {
-		unityPackage {
-			// define unity package location relative to repository
-			PACKAGE_LOCATION = ''
-			
-			// which Unity Test Runner modes to execute
-			TEST_MODES = 'EditMode PlayMode'
-			
-			// verify that code is formatted
-			TEST_FORMATTING = '1'
-			
-			// which platforms to deploy to
-			DEPLOY_TO_VERDACCIO = '0'
-		}
-	}
+    unityPackage {
+    	// define unity package location relative to repository
+        PACKAGE_LOCATION = ''
+        
+        // which Unity Test Runner modes to execute
+        TEST_MODES = 'EditMode PlayMode'
+        
+        // verify that code is formatted
+        TEST_FORMATTING = '1'
+		
+        // which platforms to deploy to
+        DEPLOY_TO_VERDACCIO = '0'
+    }
 }
