@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Linq;
 using Microsoft.Unity.VisualStudio.Editor;
+using Unity.CodeEditor;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
 
@@ -38,7 +39,9 @@ namespace Slothsoft.UnityExtensions.Editor {
         public static void Apple() => BuildNow(BuildTarget.iOS, BuildTargetGroup.iOS);
 
         public static void Solution() {
-            new VisualStudioEditor().SyncAll();
+            var editor = new VisualStudioEditor();
+            CodeEditor.Register(editor);
+            editor.SyncAll();
         }
     }
 }
