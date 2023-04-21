@@ -1,5 +1,7 @@
 node('linux && unity') {
     checkout scm
+	
+	env.BRANCH_NAME = 'main'
     
     unityPackage {
     	// define unity package location relative to repository
