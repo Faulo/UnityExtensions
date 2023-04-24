@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [2.5.2] - 2023-04-24
+
+### Fixed
+- Fixed Build.Solution command creating .csproj files with `<LangVersion>latest</LangVersion>` when Visual Studio is not installed.
+- The option fixBurstCompilerPathForAndroid is only processed when the build target is Android, preventing irrelevant error messages when the Android SDK is not installed.
+
 ## [2.5.1] - 2023-04-04
 
 ### Added
