@@ -18,9 +18,11 @@ namespace Slothsoft.UnityExtensions.Editor {
             : Path.Combine(BuildPipeline.GetPlaybackEngineDirectory(BuildTarget.Android, BuildOptions.None), "NDK");
 
         public void OnPreprocessBuild(BuildReport report) {
-            if (UnityExtensionsSettings.instance.androidSettings.fixBurstCompilerPathForAndroid) {
-                if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable(ANDROID_ENV_NDK))) {
-                    Environment.SetEnvironmentVariable(ANDROID_ENV_NDK, ndkRoot);
+            if (report.summary.platformGroup == BuildTargetGroup.Android) {
+                if (UnityExtensionsSettings.instance.androidSettings.fixBurstCompilerPathForAndroid) {
+                    if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable(ANDROID_ENV_NDK))) {
+                        Environment.SetEnvironmentVariable(ANDROID_ENV_NDK, ndkRoot);
+                    }
                 }
             }
         }
