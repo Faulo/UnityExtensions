@@ -1,4 +1,5 @@
 ﻿using System;
+using System.IO;
 using System.Linq;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEditor;
@@ -20,7 +21,6 @@ namespace Slothsoft.UnityExtensions.Editor {
                     .ToArray(),
             };
 
-
             var report = BuildPipeline.BuildPlayer(options);
 
             if (report.summary.result != BuildResult.Succeeded) {
@@ -41,6 +41,19 @@ namespace Slothsoft.UnityExtensions.Editor {
         public static void Solution() {
             var generator = new ProjectGeneration();
             generator.Sync();
+
+            string oldVersion = "<LangVersion>latest</LangVersion>";
+            string newVersion = $"<LangVersion>{GetCSharpVersion()}</LangVersion>";
+            foreach (var assembly in CompilationPipeline.GetAssemblies()) {
+                var projectFile = new FileInfo(assembly.name + ".csproj");
+                if (projectFile.Exists) {
+                    string contents = File.ReadAllText(projectFile.FullName);
+                    if (contents.Contains(oldVersion)) {
+                        contents = contents.Replace(oldVersion, newVersion);
+                        File.WriteAllText(projectFile.FullName, contents);
+                    }
+                }
+            }
         }
 
         /// <summary>

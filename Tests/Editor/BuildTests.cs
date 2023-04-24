@@ -34,7 +34,7 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
             foreach (string file in projectFiles) {
                 string contents = File.ReadAllText(file);
-                StringAssert.DoesNotContain("<LangVersion>latest</LangVersion>", contents);
+                StringAssert.DoesNotContain(contents, "<LangVersion>latest</LangVersion>");
             }
         }
 
