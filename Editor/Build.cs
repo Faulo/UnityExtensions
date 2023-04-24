@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Reflection;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
@@ -44,21 +43,23 @@ namespace Slothsoft.UnityExtensions.Editor {
             generator.Sync();
         }
 
+        /// <summary>
+        /// <see cref="Microsoft.Unity.VisualStudio.Editor.UnityInstallation"/>
+        /// </summary>
+        /// <returns></returns>
         internal static Version GetCSharpVersion() {
-            var installationType = typeof(ProjectGeneration)
-                .Assembly
-                .GetType(INSTALLATION_TYPE, true);
-            var method = installationType
-                .GetMethods(BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public)
-                .First(m => m.Name == INSTALLATION_METHOD);
             var assembly = CompilationPipeline
                 .GetAssemblies(AssembliesType.Player)
                 .First(a => a.name == AssemblyInfo.NAMESPACE_RUNTIME);
-            // Debug.Log(assembly.compilerOptions.LanguageVersion);
-            return method.Invoke(null, new object[] { assembly }) as Version;
-        }
 
-        const string INSTALLATION_TYPE = "Microsoft.Unity.VisualStudio.Editor.UnityInstallation";
-        const string INSTALLATION_METHOD = "LatestLanguageVersionSupported";
+#if UNITY_2020_2_OR_NEWER
+            if (assembly.compilerOptions is ScriptCompilerOptions options && Version.TryParse(options.LanguageVersion, out var result)) {
+                return result;
+            }
+            return new Version(8, 0);
+#else
+            return new Version(7, 3);
+#endif
+        }
     }
 }
