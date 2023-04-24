@@ -4,6 +4,7 @@ using System.Reflection;
 using Microsoft.Unity.VisualStudio.Editor;
 using UnityEditor;
 using UnityEditor.Build.Reporting;
+using UnityEditor.Compilation;
 
 namespace Slothsoft.UnityExtensions.Editor {
     public static class Build {
@@ -44,9 +45,17 @@ namespace Slothsoft.UnityExtensions.Editor {
         }
 
         internal static Version GetCSharpVersion() {
-            var installationType = typeof(ProjectGeneration).Assembly.GetType(INSTALLATION_TYPE);
-            var method = installationType.GetMethod(INSTALLATION_METHOD, BindingFlags.Static | BindingFlags.NonPublic);
-            return method.Invoke(null, new object[1]) as Version;
+            var installationType = typeof(ProjectGeneration)
+                .Assembly
+                .GetType(INSTALLATION_TYPE, true);
+            var method = installationType
+                .GetMethods(BindingFlags.Static | BindingFlags.NonPublic | BindingFlags.Public)
+                .First(m => m.Name == INSTALLATION_METHOD);
+            var assembly = CompilationPipeline
+                .GetAssemblies(AssembliesType.Player)
+                .First(a => a.name == AssemblyInfo.NAMESPACE_RUNTIME);
+            // Debug.Log(assembly.compilerOptions.LanguageVersion);
+            return method.Invoke(null, new object[] { assembly }) as Version;
         }
 
         const string INSTALLATION_TYPE = "Microsoft.Unity.VisualStudio.Editor.UnityInstallation";
