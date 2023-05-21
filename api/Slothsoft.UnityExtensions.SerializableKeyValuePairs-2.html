@@ -82,42 +82,13 @@
   </div>
   <div classs="implements">
     <h5>Implements</h5>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;TKey, TValue&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">IReadOnlyCollection</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</div>
-    <div><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">IEnumerable</a></div>
     <div><span class="xref">ISerializationCallbackReceiver</span></div>
-  </div>
-  <div class="inheritedMembers">
-    <h5>Inherited Members</h5>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object)">Object.Equals(Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.equals#system-object-equals(system-object-system-object)">Object.Equals(Object, Object)</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gethashcode#system-object-gethashcode">Object.GetHashCode()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.gettype#system-object-gettype">Object.GetType()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.memberwiseclone#system-object-memberwiseclone">Object.MemberwiseClone()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.tostring#system-object-tostring">Object.ToString()</a>
-    </div>
-    <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.object.referenceequals#system-object-referenceequals(system-object-system-object)">Object.ReferenceEquals(Object, Object)</a>
-    </div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Slothsoft.UnityExtensions.html">Slothsoft.UnityExtensions</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
   <h5 id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Serializable]
-public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDictionary&lt;TKey, TValue&gt;, IReadOnlyCollection&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable&lt;KeyValuePair&lt;TKey, TValue&gt;&gt;, IEnumerable, ISerializationCallbackReceiver</code></pre>
+    <pre><code class="lang-csharp hljs">public class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDictionary&lt;TKey, TValue&gt;, ISerializationCallbackReceiver</code></pre>
   </div>
   <h5 class="typeParameters">Type Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -227,7 +198,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TKey&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;TKey&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -252,7 +223,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;TValue&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;TValue&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -321,7 +292,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerator-1">IEnumerator</a>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.keyvaluepair-2">KeyValuePair</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="xref">IEnumerator</span>&lt;<span class="xref">KeyValuePair</span>&lt;TKey, TValue&gt;&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -349,7 +320,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
   
   
   <a id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_" data-uid="Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems*"></a>
-  <h4 id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_System_Collections_Generic_IReadOnlyDictionary__0__1__" data-uid="Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems(System.Collections.Generic.IReadOnlyDictionary{`0,`1})">SetItems(IReadOnlyDictionary&lt;TKey, TValue&gt;)</h4>
+  <h4 id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_SetItems_IReadOnlyDictionary__0__1__" data-uid="Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.SetItems(IReadOnlyDictionary{`0,`1})">SetItems(IReadOnlyDictionary&lt;TKey, TValue&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -367,7 +338,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">IReadOnlyDictionary</a>&lt;TKey, TValue&gt;</td>
+        <td><span class="xref">IReadOnlyDictionary</span>&lt;TKey, TValue&gt;</td>
         <td><span class="parametername">dictionary</span></td>
         <td></td>
       </tr>
@@ -420,46 +391,7 @@ public sealed class SerializableKeyValuePairs&lt;TKey, TValue&gt; : IReadOnlyDic
       </tr>
     </tbody>
   </table>
-  <h3 id="eii">Explicit Interface Implementations
-  </h3>
-  
-  
-  <a id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_System_Collections_IEnumerable_GetEnumerator_" data-uid="Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.System#Collections#IEnumerable#GetEnumerator*"></a>
-  <h4 id="Slothsoft_UnityExtensions_SerializableKeyValuePairs_2_System_Collections_IEnumerable_GetEnumerator" data-uid="Slothsoft.UnityExtensions.SerializableKeyValuePairs`2.System#Collections#IEnumerable#GetEnumerator">IEnumerable.GetEnumerator()</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">IEnumerator IEnumerable.GetEnumerator()</code></pre>
-  </div>
-  <h5 class="returns">Returns</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerator">IEnumerator</a></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
   <h3 id="implements">Implements</h3>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlydictionary-2">System.Collections.Generic.IReadOnlyDictionary&lt;TKey,TValue&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ireadonlycollection-1">System.Collections.Generic.IReadOnlyCollection&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">System.Collections.Generic.IEnumerable&lt;T&gt;</a>
-  </div>
-  <div>
-      <a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.ienumerable">System.Collections.IEnumerable</a>
-  </div>
   <div>
       <span class="xref">ISerializationCallbackReceiver</span>
   </div>

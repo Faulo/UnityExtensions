@@ -116,7 +116,7 @@
   
   <a id="Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs_" data-uid="Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs*"></a>
   <h4 id="Slothsoft_UnityExtensions_Editor_PrefabUtils_allPrefabs" data-uid="Slothsoft.UnityExtensions.Editor.PrefabUtils.allPrefabs">allPrefabs</h4>
-  <div class="markdown level1 summary"><p>Loads all prefabs inside the project. Honors the settings '<see cref="!:PrefabUtilsSettings.assetsFolder"></see>' and '<see cref="!:PrefabUtilsSettings.prefabExtension"></see>'.</p>
+  <div class="markdown level1 summary"><p>Loads all prefabs inside the project. Honors the settings '<span class="xref">Slothsoft.UnityExtensions.Editor.PackageSettings.PrefabUtilsSettings.assetsFolder</span>' and '<span class="xref">Slothsoft.UnityExtensions.Editor.PackageSettings.PrefabUtilsSettings.prefabExtension</span>'.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -133,7 +133,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;<span class="xref">GameObject</span>&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;<span class="xref">GameObject</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
@@ -148,8 +148,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use 'CSharpUtils.GetAssembly' instead.&quot;)]
-public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string assetPath = null)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -196,8 +195,7 @@ public static AssemblyDefinitionAsset GetAssembly(MonoScript script, string asse
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use 'CSharpUtils.GetNamespace' instead.&quot;)]
-public static string GetNamespace(AssemblyDefinitionAsset assembly)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetNamespace(AssemblyDefinitionAsset assembly)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -239,8 +237,7 @@ public static string GetNamespace(AssemblyDefinitionAsset assembly)</code></pre>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use 'CSharpUtils.GetNamespace' instead.&quot;)]
-public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath)</code></pre>
+    <pre><code class="lang-csharp hljs">public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -282,13 +279,12 @@ public static string GetNamespace(AssemblyDefinitionAsset assembly, string asset
   
   
   <a id="Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath_" data-uid="Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath*"></a>
-  <h4 id="Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_FileSystemInfo_" data-uid="Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(FileSystemInfo)">LoadAssetAtPath&lt;T&gt;(FileSystemInfo)</h4>
+  <h4 id="Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_System_IO_FileSystemInfo_" data-uid="Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)">LoadAssetAtPath&lt;T&gt;(FileSystemInfo)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use 'AssetUtils.LoadAssetAtFile' instead.&quot;)]
-public static T LoadAssetAtPath&lt;T&gt;(FileSystemInfo file)
+    <pre><code class="lang-csharp hljs">public static T LoadAssetAtPath&lt;T&gt;(FileSystemInfo file)
     where T : UnityObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -302,7 +298,7 @@ public static T LoadAssetAtPath&lt;T&gt;(FileSystemInfo file)
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">FileSystemInfo</span></td>
+        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.io.filesysteminfo">FileSystemInfo</a></td>
         <td><span class="parametername">file</span></td>
         <td></td>
       </tr>
@@ -346,8 +342,7 @@ public static T LoadAssetAtPath&lt;T&gt;(FileSystemInfo file)
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[Obsolete(&quot;Use 'AssetUtils.LoadAssetsOfType' instead.&quot;)]
-public static IEnumerable&lt;T&gt; LoadAssets&lt;T&gt;(string searchFolder = &quot;Assets&quot;)
+    <pre><code class="lang-csharp hljs">public static IEnumerable&lt;T&gt; LoadAssets&lt;T&gt;(string searchFolder = &quot;Assets&quot;)
     where T : UnityObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
@@ -377,7 +372,7 @@ public static IEnumerable&lt;T&gt; LoadAssets&lt;T&gt;(string searchFolder = &qu
     </thead>
     <tbody>
       <tr>
-        <td><a class="xref" href="https://learn.microsoft.com/dotnet/api/system.collections.generic.ienumerable-1">IEnumerable</a>&lt;T&gt;</td>
+        <td><span class="xref">IEnumerable</span>&lt;T&gt;</td>
         <td></td>
       </tr>
     </tbody>

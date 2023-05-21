@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.AssetUtils.html",
-          "hash": "OxB0nrNW27GfhkmCbBUpdw=="
+          "hash": "fklzMPlYT+2KQ2JKrFvpOw=="
         }
       },
       "is_incremental": false,
@@ -45,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html",
-          "hash": "/xc1xjx7w/Hz5tC+xskbHA=="
+          "hash": "TCiTfDszGnLO5LwPudPfQg=="
         }
       },
       "is_incremental": false,
@@ -81,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html",
-          "hash": "11Pl8XZUMShfr6F+tbChzA=="
+          "hash": "znv/uLOHzobocI3308iTKA=="
         }
       },
       "is_incremental": false,
@@ -105,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.ExpandableAttribute.html",
-          "hash": "o1uXse8LJ2YdXCt6usZSvw=="
+          "hash": "u2I4XgV8dQPrBThbRskfxA=="
         }
       },
       "is_incremental": false,
@@ -129,7 +129,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.IEnumerableExtensions.html",
-          "hash": "/OnN6nfDMI69ltEYwc2QEw=="
+          "hash": "cCZXpYSn8GQRdGXW7S/rxQ=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.KeyValuePairExtensions.html",
-          "hash": "/kubxZ9uIyzlqVdZmkL1Lw=="
+          "hash": "gpYy5W87u2R6K7LEhiGlSA=="
         }
       },
       "is_incremental": false,
@@ -165,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html",
-          "hash": "qVV7WYRh4bAPZmh+ErEyYQ=="
+          "hash": "jHhujm5n9COQa2jpG2XbBg=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.TilemapExtensions.html",
-          "hash": "1bLJNLGmXhIzKvW/uDhVtQ=="
+          "hash": "w0GlEQ0+orXBZJSysMKL/A=="
         }
       },
       "is_incremental": false,
@@ -225,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector2Extensions.html",
-          "hash": "Y3gbNpcmjGZg4LxRtbROdw=="
+          "hash": "v/r9cwuo6RGALiV2/ASi6A=="
         }
       },
       "is_incremental": false,
@@ -249,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector3Extensions.html",
-          "hash": "ucSWum3JByM4no5F5VuZ+w=="
+          "hash": "EU2csxDwKrVWklR02v183Q=="
         }
       },
       "is_incremental": false,
