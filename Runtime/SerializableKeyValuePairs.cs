@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
     [Serializable]
-    public sealed class SerializableKeyValuePairs<TKey, TValue> : IReadOnlyDictionary<TKey, TValue>, ISerializationCallbackReceiver {
+    public class SerializableKeyValuePairs<TKey, TValue> : IReadOnlyDictionary<TKey, TValue>, ISerializationCallbackReceiver {
         [Serializable]
         struct Pair {
             [SerializeField, Expandable]
