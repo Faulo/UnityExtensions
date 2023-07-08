@@ -15,10 +15,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 locationPathName = path,
                 target = target,
                 targetGroup = targetGroup,
-                scenes = EditorBuildSettings.scenes
-                    .Where(scene => scene.enabled)
-                    .Select(scene => scene.path)
-                    .ToArray(),
+                scenes = EditorBuildSettingsScene.GetActiveSceneList(EditorBuildSettings.scenes),
             };
 
             var report = BuildPipeline.BuildPlayer(options);
