@@ -761,6 +761,22 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle(Of T)(IEnumerable(Of T))
   nameWithType: IEnumerableExtensions.Shuffle<T>(IEnumerable<T>)
   nameWithType.vb: IEnumerableExtensions.Shuffle(Of T)(IEnumerable(Of T))
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary*
+  name: ToDictionary
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToDictionary_
+  commentId: Overload:Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary
+  nameWithType: IEnumerableExtensions.ToDictionary
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary``2(IEnumerable{System.ValueTuple{``0,``1}})
+  name: ToDictionary<TKey, TValue>(IEnumerable<(TKey, TValue)>)
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToDictionary__2_IEnumerable_System_ValueTuple___0___1___
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary``2(IEnumerable{System.ValueTuple{``0,``1}})
+  name.vb: ToDictionary(Of TKey, TValue)(IEnumerable(Of (TKey, TValue)))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary<TKey, TValue>(IEnumerable<System.ValueTuple<TKey, TValue>>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary(Of TKey, TValue)(IEnumerable(Of System.ValueTuple(Of TKey, TValue)))
+  nameWithType: IEnumerableExtensions.ToDictionary<TKey, TValue>(IEnumerable<(TKey, TValue)>)
+  nameWithType.vb: IEnumerableExtensions.ToDictionary(Of TKey, TValue)(IEnumerable(Of (TKey, TValue)))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet*
   name: ToHashSet
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet_

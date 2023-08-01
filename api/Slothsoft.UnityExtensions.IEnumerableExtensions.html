@@ -1060,6 +1060,68 @@
   </table>
   
   
+  <a id="Slothsoft_UnityExtensions_IEnumerableExtensions_ToDictionary_" data-uid="Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary*"></a>
+  <h4 id="Slothsoft_UnityExtensions_IEnumerableExtensions_ToDictionary__2_IEnumerable_System_ValueTuple___0___1___" data-uid="Slothsoft.UnityExtensions.IEnumerableExtensions.ToDictionary``2(IEnumerable{System.ValueTuple{``0,``1}})">ToDictionary&lt;TKey, TValue&gt;(IEnumerable&lt;(TKey, TValue)&gt;)</h4>
+  <div class="markdown level1 summary"><p>Creates a dictionary from a list of tuples, using the first value of the tuple as key.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;TKey, TValue&gt; ToDictionary&lt;TKey, TValue&gt;(this IEnumerable&lt;(TKey, TValue)&gt; values)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="https://learn.microsoft.com/dotnet/api/system.valuetuple-2">ValueTuple</a>&lt;TKey, TValue&gt;&gt;</td>
+        <td><span class="parametername">values</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Dictionary</span>&lt;TKey, TValue&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TKey</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TValue</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
   <a id="Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet_" data-uid="Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet*"></a>
   <h4 id="Slothsoft_UnityExtensions_IEnumerableExtensions_ToHashSet__1_IEnumerable___0__" data-uid="Slothsoft.UnityExtensions.IEnumerableExtensions.ToHashSet``1(IEnumerable{``0})">ToHashSet&lt;TSource&gt;(IEnumerable&lt;TSource&gt;)</h4>
   <div class="markdown level1 summary"><p>Creates a unique set from <code data-dev-comment-type="paramref" class="paramref">source</code>.</p>
@@ -1067,7 +1129,7 @@
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static ISet&lt;TSource&gt; ToHashSet&lt;TSource&gt;(this IEnumerable&lt;TSource&gt; source)</code></pre>
+    <pre><code class="lang-csharp hljs">public static HashSet&lt;TSource&gt; ToHashSet&lt;TSource&gt;(this IEnumerable&lt;TSource&gt; source)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -1096,7 +1158,7 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">ISet</span>&lt;TSource&gt;</td>
+        <td><span class="xref">HashSet</span>&lt;TSource&gt;</td>
         <td></td>
       </tr>
     </tbody>
