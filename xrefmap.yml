@@ -109,13 +109,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile
   nameWithType: AssetUtils.LoadAssetAtFile
-- uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
+- uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(FileSystemInfo)
   name: LoadAssetAtFile<T>(FileSystemInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_System_IO_FileSystemInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(System.IO.FileSystemInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.AssetUtils.html#Slothsoft_UnityExtensions_Editor_AssetUtils_LoadAssetAtFile__1_FileSystemInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile``1(FileSystemInfo)
   name.vb: LoadAssetAtFile(Of T)(FileSystemInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile<T>(System.IO.FileSystemInfo)
-  fullName.vb: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile(Of T)(System.IO.FileSystemInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile<T>(FileSystemInfo)
+  fullName.vb: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetAtFile(Of T)(FileSystemInfo)
   nameWithType: AssetUtils.LoadAssetAtFile<T>(FileSystemInfo)
   nameWithType.vb: AssetUtils.LoadAssetAtFile(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.AssetUtils.LoadAssetsOfType*
@@ -250,24 +250,24 @@ references:
   commentId: T:Slothsoft.UnityExtensions.Editor.CSharpUtils
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils
   nameWithType: CSharpUtils
+- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
+  name: GetAssembly(DirectoryInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_DirectoryInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(DirectoryInfo)
+  nameWithType: CSharpUtils.GetAssembly(DirectoryInfo)
+- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
+  name: GetAssembly(FileInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_FileInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(FileInfo)
+  nameWithType: CSharpUtils.GetAssembly(FileInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   name: GetAssembly(MonoScript)
   href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_MonoScript_
   commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(MonoScript)
   nameWithType: CSharpUtils.GetAssembly(MonoScript)
-- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
-  name: GetAssembly(DirectoryInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_DirectoryInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.DirectoryInfo)
-  nameWithType: CSharpUtils.GetAssembly(DirectoryInfo)
-- uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
-  name: GetAssembly(FileInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_IO_FileInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.IO.FileInfo)
-  nameWithType: CSharpUtils.GetAssembly(FileInfo)
 - uid: Slothsoft.UnityExtensions.Editor.CSharpUtils.GetAssembly(System.String)
   name: GetAssembly(String)
   href: api/Slothsoft.UnityExtensions.Editor.CSharpUtils.html#Slothsoft_UnityExtensions_Editor_CSharpUtils_GetAssembly_System_String_
@@ -422,13 +422,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath
   nameWithType: PrefabUtils.LoadAssetAtPath
-- uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
+- uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(FileSystemInfo)
   name: LoadAssetAtPath<T>(FileSystemInfo)
-  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_System_IO_FileSystemInfo_
-  commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(System.IO.FileSystemInfo)
+  href: api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html#Slothsoft_UnityExtensions_Editor_PrefabUtils_LoadAssetAtPath__1_FileSystemInfo_
+  commentId: M:Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath``1(FileSystemInfo)
   name.vb: LoadAssetAtPath(Of T)(FileSystemInfo)
-  fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath<T>(System.IO.FileSystemInfo)
-  fullName.vb: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath(Of T)(System.IO.FileSystemInfo)
+  fullName: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath<T>(FileSystemInfo)
+  fullName.vb: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssetAtPath(Of T)(FileSystemInfo)
   nameWithType: PrefabUtils.LoadAssetAtPath<T>(FileSystemInfo)
   nameWithType.vb: PrefabUtils.LoadAssetAtPath(Of T)(FileSystemInfo)
 - uid: Slothsoft.UnityExtensions.Editor.PrefabUtils.LoadAssets*
