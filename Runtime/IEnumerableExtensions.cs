@@ -26,6 +26,7 @@ namespace Slothsoft.UnityExtensions {
             foreach (var item in source) {
                 action(item);
             }
+
             return source;
         }
 
@@ -36,6 +37,7 @@ namespace Slothsoft.UnityExtensions {
             foreach (var item in source) {
                 UnityEngine.Debug.Log(item);
             }
+
             return source;
         }
 
@@ -54,6 +56,7 @@ namespace Slothsoft.UnityExtensions {
             if (!(source is IReadOnlyList<T> elements)) {
                 elements = source.ToList();
             }
+
             return elements.Count == 0
                 ? default
                 : elements[random.Next(elements.Count)];
@@ -68,6 +71,7 @@ namespace Slothsoft.UnityExtensions {
             foreach (var element in source) {
                 weights[element] = weighting(element);
             }
+
             return RandomWeightedElement(source, weights);
         }
 
@@ -82,8 +86,10 @@ namespace Slothsoft.UnityExtensions {
                 if (weights[element] > randomWeight) {
                     return element;
                 }
+
                 randomWeight -= weights[element];
             }
+
             return default;
         }
 
@@ -96,6 +102,7 @@ namespace Slothsoft.UnityExtensions {
             foreach (var element in source) {
                 weights[element] = weighting(element);
             }
+
             return source.RandomWeightedElementDescending(weights);
         }
 
@@ -116,6 +123,7 @@ namespace Slothsoft.UnityExtensions {
                     totalWeight += weight;
                 }
             }
+
             return totalWeight;
         }
 
@@ -170,14 +178,15 @@ namespace Slothsoft.UnityExtensions {
         /// <summary>
         /// Creates a unique set from <paramref name="source"/>.
         /// </summary>
-        public static ISet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source) {
-            var result = new HashSet<TSource>();
-            foreach (var value in source) {
-                if (!result.Contains(value)) {
-                    result.Add(value);
-                }
-            }
-            return result;
+        public static HashSet<TSource> ToHashSet<TSource>(this IEnumerable<TSource> source) {
+            return new HashSet<TSource>(source);
+        }
+
+        /// <summary>
+        /// Creates a dictionary from a list of tuples, using the first value of the tuple as key.
+        /// </summary>
+        public static Dictionary<TKey, TValue> ToDictionary<TKey, TValue>(this IEnumerable<(TKey, TValue)> values) {
+            return values.ToDictionary(value => value.Item1, value => value.Item2);
         }
 
         /// <summary>
@@ -187,11 +196,13 @@ namespace Slothsoft.UnityExtensions {
             if (source.Count() != target.Count()) {
                 return false;
             }
+
             foreach (var element in source) {
                 if (!target.Contains(element)) {
                     return false;
                 }
             }
+
             return true;
         }
 

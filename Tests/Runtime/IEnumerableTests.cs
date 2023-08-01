@@ -7,7 +7,7 @@ using UnityEngine.TestTools;
 
 namespace Slothsoft.UnityExtensions.Tests.Runtime {
     [TestFixture(TestOf = typeof(IEnumerableExtensions))]
-    sealed class IEnumerableTest {
+    sealed class IEnumerableTests {
         #region SelectNotNull
         [Test]
         public void TestSelectNotNull() {
@@ -255,6 +255,24 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         }
         #endregion
 
+        #region ToDictionary
+        [Test]
+        public void TestToDictionary() {
+            CollectionAssert.AreEqual(
+                new Dictionary<string, int>() {
+                    ["a"] = 1,
+                    ["b"] = 2,
+                    ["c"] = 3,
+                },
+                new[] {
+                    ("a", 1),
+                    ("b", 2),
+                    ("c", 3),
+                }.ToDictionary()
+            );
+        }
+        #endregion
+
         #region IsEquivalentTo
         [Test]
         public void TestIsEquivalentToTrue() {
@@ -288,6 +306,7 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
                             output = i;
                             return i % 2 == 0;
                         }
+
                         return selector;
                     })
             );
