@@ -38,7 +38,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             string assemblyPath = new FileInfo(AssetDatabase.GetAssetPath(assembly)).Directory.FullName;
             string scriptPath = new FileInfo(assetPath).Directory.FullName;
             string scriptNamespace = scriptPath
-                .Substring(assemblyPath.Length)
+[assemblyPath.Length..]
                 .Replace(Path.DirectorySeparatorChar, '.');
             return CleanNamespace(GetNamespace(assembly) + scriptNamespace);
         }

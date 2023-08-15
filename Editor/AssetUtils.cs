@@ -18,7 +18,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 string path = file.FullName;
                 string root = new DirectoryInfo(".").FullName;
                 if (path.StartsWith(root)) {
-                    path = path.Substring(root.Length + 1);
+                    path = path[(root.Length + 1)..];
                 }
 
                 asset = AssetDatabase.LoadAssetAtPath<T>(path);

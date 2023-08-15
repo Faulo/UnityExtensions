@@ -69,9 +69,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
         static Settings settings {
             get {
-                if (settingsCache == null) {
-                    settingsCache = new Settings(SETTINGS_PACKAGE);
-                }
+                settingsCache ??= new Settings(SETTINGS_PACKAGE);
 
                 return settingsCache;
             }
@@ -80,9 +78,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
         internal static UnityExtensionsSettings instance {
             get {
-                if (instanceCache == null) {
-                    instanceCache = settings.Get(nameof(instance), SettingsScope.Project, new UnityExtensionsSettings());
-                }
+                instanceCache ??= settings.Get(nameof(instance), SettingsScope.Project, new UnityExtensionsSettings());
 
                 return instanceCache;
             }
