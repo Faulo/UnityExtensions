@@ -31,6 +31,7 @@ namespace Slothsoft.UnityExtensions {
             if (UnityEngine.Mathf.Approximately(x, y)) {
                 return UnityEngine.Vector2Int.zero;
             }
+
             return x > y
                 ? UnityEngine.Vector2Int.right * Math.Sign(direction.x)
                 : UnityEngine.Vector2Int.up * Math.Sign(direction.y);

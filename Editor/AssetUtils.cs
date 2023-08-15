@@ -20,8 +20,10 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (path.StartsWith(root)) {
                     path = path.Substring(root.Length + 1);
                 }
+
                 asset = AssetDatabase.LoadAssetAtPath<T>(path);
             }
+
             return asset;
         }
 
@@ -44,6 +46,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                             return true;
                         }
                     }
+
                     return false;
                 });
             }

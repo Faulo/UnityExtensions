@@ -12,6 +12,7 @@ namespace Slothsoft.UnityExtensions {
             for (int i = 0; i < parent.childCount; i++) {
                 children[i] = parent.GetChild(i);
             }
+
             return children;
         }
 
@@ -43,6 +44,7 @@ namespace Slothsoft.UnityExtensions {
                     return true;
                 }
             }
+
             target = default;
             return false;
         }
@@ -59,11 +61,13 @@ namespace Slothsoft.UnityExtensions {
             if (context.TryGetComponent(out target)) {
                 return true;
             }
+
             for (int i = 0; i < context.childCount; i++) {
                 if (context.GetChild(i).TryGetComponentInChildren(out target)) {
                     return true;
                 }
             }
+
             return false;
         }
 
@@ -81,11 +85,13 @@ namespace Slothsoft.UnityExtensions {
                     return true;
                 }
             }
+
             for (int i = 0; i < context.childCount; i++) {
                 if (context.GetChild(i).TryGetComponentInChildren(out target)) {
                     return true;
                 }
             }
+
             target = default;
             return false;
         }

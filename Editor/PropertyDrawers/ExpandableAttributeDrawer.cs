@@ -18,12 +18,15 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             if (property.propertyType != SerializedPropertyType.ObjectReference) {
                 return false;
             }
+
             if (property.isArray) {
                 return false;
             }
+
             if (!property.objectReferenceValue) {
                 return false;
             }
+
             return true;
         }
 
@@ -97,7 +100,6 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
 
             marchingRect.y += settings.totalSpacing + EditorGUIUtility.standardVerticalSpacing;
 
-
             if (settings.showSourceFile) {
                 marchingRect.y += EditorGUIUtility.singleLineHeight + EditorGUIUtility.standardVerticalSpacing;
                 propertyRects.Add(marchingRect);
@@ -116,7 +118,6 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             #endregion
 
             DrawBackground(bodyRect);
-
 
             #region Draw Fields
             EditorGUI.indentLevel++;

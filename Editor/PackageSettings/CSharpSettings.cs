@@ -19,7 +19,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         internal ProjectFileSettings[] projectFileSettings = new ProjectFileSettings[0];
         internal ProjectFileSettings ProjectFileSettingsForAssembly(string assemblyName) {
             return projectFileSettings
-                .FirstOrDefault(settings => settings == null ? false : settings.Matches(assemblyName));
+                .FirstOrDefault(settings => settings != null && settings.Matches(assemblyName));
         }
     }
 }

@@ -35,9 +35,9 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
             if (grid) {
                 UnityObject.Destroy(grid.gameObject);
             }
+
             yield return null;
         }
-
 
         Grid grid;
         Tilemap tilemap;

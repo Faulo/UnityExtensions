@@ -54,6 +54,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
                         instance = CreateInstance<SettingsObject>();
                         instance.Load();
                     }
+
                     var template = AssetDatabase.LoadAssetAtPath<VisualTreeAsset>(SETTINGS_TEMPLATE);
                     template.CloneTree(rootElement);
                     rootElement.Bind(new SerializedObject(instance));
@@ -71,6 +72,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
                 if (settingsCache == null) {
                     settingsCache = new Settings(SETTINGS_PACKAGE);
                 }
+
                 return settingsCache;
             }
         }
@@ -81,6 +83,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
                 if (instanceCache == null) {
                     instanceCache = settings.Get(nameof(instance), SettingsScope.Project, new UnityExtensionsSettings());
                 }
+
                 return instanceCache;
             }
         }

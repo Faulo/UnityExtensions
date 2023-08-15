@@ -108,6 +108,7 @@ namespace Slothsoft.UnityExtensions {
             if (!foldoutFlags.ContainsKey(label)) {
                 foldoutFlags[label] = isOpenByDefault;
             }
+
             foldoutFlags[label] = EditorGUILayout.Foldout(foldoutFlags[label], label, foldoutStyle);
             return foldoutFlags[label];
         }

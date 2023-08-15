@@ -15,6 +15,7 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
                 Assert.Inconclusive("Can't use WaitForEndOfFrame without a graphics device.");
                 yield break;
             }
+
             var stopWatch = new Stopwatch();
             yield return Wait.forEndOfFrame;
             stopWatch.Start();

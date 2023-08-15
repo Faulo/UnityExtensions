@@ -56,6 +56,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (namespacesCache == null && assemblyDirectory != null) {
                     namespacesCache = CreateNamespaceDictionary(assemblyDirectory, rootNamespace);
                 }
+
                 return namespacesCache;
             }
             set {
@@ -71,6 +72,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                 if (invalidFilesCache == null && namespaces != null) {
                     invalidFilesCache = FindInvalidFiles(namespaces).ToList();
                 }
+
                 return invalidFilesCache;
             }
             set => invalidFilesCache = value;
@@ -101,6 +103,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     }
                 }
             }
+
             listFiles = EditorGUILayout.Foldout(listFiles, "Show invalid files");
             if (listFiles) {
                 if (invalidFiles == null) {
@@ -123,6 +126,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     }
                 }
             }
+
             if (GUILayout.Button("Fix namespaces in assembly")) {
                 EditorUtils.ClearConsole();
                 if (invalidFiles == null) {
@@ -131,6 +135,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     FixInvalidFiles(invalidFiles);
                 }
             }
+
             GUILayout.EndVertical();
         }
 
@@ -148,6 +153,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     }
                 }
             }
+
             crawl(assemblyDirectory, rootNamespace);
             return list.OrderBy(info => info.directory.FullName);
         }

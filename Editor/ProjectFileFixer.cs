@@ -30,6 +30,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                         foreach (var element in projectDocument.Descendants(XName.Get("LangVersion", NS_CSPROJ))) {
                             element.Value = settings.setCSharpVersionTo;
                         }
+
                         foreach (var element in projectDocument.Descendants(XName.Get("WarningLevel", NS_CSPROJ))) {
                             element.Value = settings.setWarningLevelTo;
                         }
@@ -41,6 +42,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                     }
                 }
             }
+
             return fileContent;
         }
     }

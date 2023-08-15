@@ -31,15 +31,19 @@ namespace Slothsoft.UnityExtensions {
             if (Mathf.Approximately(x, y) && Mathf.Approximately(y, z)) {
                 return Vector3Int.zero;
             }
+
             if (x > y && x > z) {
                 return new Vector3Int(1, 0, 0) * Math.Sign(direction.x);
             }
+
             if (y > x && y > z) {
                 return new Vector3Int(0, 1, 0) * Math.Sign(direction.y);
             }
+
             if (z > x && z > y) {
                 return new Vector3Int(0, 0, 1) * Math.Sign(direction.z);
             }
+
             return Vector3Int.zero;
         }
     }

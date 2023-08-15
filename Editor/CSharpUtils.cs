@@ -31,6 +31,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             if (stripRuntimeFromNamespace) {
                 ns = assembly.name.Replace(".Runtime", "");
             }
+
             return CleanNamespace(ns);
         }
         public static string GetNamespace(AssemblyDefinitionAsset assembly, string assetPath) {

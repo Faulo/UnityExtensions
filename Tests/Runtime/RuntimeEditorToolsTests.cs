@@ -27,6 +27,7 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
             } else {
                 obj = ScriptableObject.CreateInstance(typeof(TObject)) as TObject;
             }
+
             editor = Editor.CreateEditor(obj, typeof(TEditor)) as TEditor;
 
             Assert.IsNotNull(obj);

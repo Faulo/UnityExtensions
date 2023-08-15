@@ -25,6 +25,7 @@ namespace Slothsoft.UnityExtensions {
                     return false;
                 }
             }
+
             return true;
         }
     }

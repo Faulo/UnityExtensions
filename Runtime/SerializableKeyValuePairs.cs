@@ -23,6 +23,7 @@ namespace Slothsoft.UnityExtensions {
                     isDirty = false;
                     LoadItems();
                 }
+
                 return dictionaryCache;
             }
         }
@@ -45,6 +46,7 @@ namespace Slothsoft.UnityExtensions {
                     items[i].value = pair.Value;
                     i++;
                 }
+
                 isDirty = true;
             }
         }

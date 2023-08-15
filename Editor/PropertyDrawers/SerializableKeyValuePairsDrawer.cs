@@ -17,6 +17,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             if (types.Length != 2) {
                 Debug.LogWarning($"Unable to determine generic types from {fieldInfo}! If you extended {typeof(SerializableKeyValuePairsDrawer)}, you should override {nameof(SerializableKeyValuePairsDrawer)}::{nameof(GetGenericTypes)}!");
             }
+
             return (types[0], types[1]);
         }
 
@@ -91,6 +92,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                     padding = style.padding,
                 };
             }
+
             property.isExpanded = EditorGUI.BeginFoldoutHeaderGroup(rect, property.isExpanded, label, style);
 
             rect.x = position.x + position.width - EditorGUIUtility.fieldWidth;
@@ -103,7 +105,6 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             position.y += EditorGUIUtility.singleLineHeight;
 
             EditorGUI.EndFoldoutHeaderGroup();
-
 
             if (property.isExpanded) {
                 EditorGUI.indentLevel++;
@@ -142,6 +143,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
                         position.y += rect.height;
                     }
                 }
+
                 EditorGUI.indentLevel--;
             }
         }
