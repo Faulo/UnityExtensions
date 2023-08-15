@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [3.0.0] - 2023-08-15
+
+### Changed
+- Increased the minimum Unity version 2021.3.0.
+- Increased the minimum Visual Studio package to 2.0.20.
+
+
 ## [2.6.0] - 2023-08-01
 
 ### Added
