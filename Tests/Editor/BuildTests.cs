@@ -40,7 +40,7 @@ namespace Slothsoft.UnityExtensions.Tests.Editor {
 
         [Test]
         public void TestGetCSharpVersion() {
-            Assert.AreEqual(new Version(7, 3), Build.GetCSharpVersion());
+            Assert.AreEqual(new Version(9, 0), Build.GetCSharpVersion());
         }
     }
 }

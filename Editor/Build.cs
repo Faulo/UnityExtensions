@@ -35,9 +35,17 @@ namespace Slothsoft.UnityExtensions.Editor {
         public static void Android() => BuildNow(BuildTarget.Android, BuildTargetGroup.Android);
         public static void Apple() => BuildNow(BuildTarget.iOS, BuildTargetGroup.iOS);
 
+        const string PROJECT_GENERATOR = "LegacyStyleProjectGeneration";
+        static Type ProjectGeneratorType =>
+             typeof(ProjectGeneration)
+            .Assembly
+            .GetTypes()
+            .First(type => type.Name == PROJECT_GENERATOR);
+
+        static IGenerator ProjectGenerator => Activator.CreateInstance(ProjectGeneratorType) as IGenerator;
+
         public static void Solution() {
-            var generator = new ProjectGeneration();
-            generator.Sync();
+            ProjectGenerator.Sync();
 
             string oldVersion = "<LangVersion>latest</LangVersion>";
             string newVersion = $"<LangVersion>{GetCSharpVersion()}</LangVersion>";
@@ -66,6 +74,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             if (assembly.compilerOptions is ScriptCompilerOptions options && Version.TryParse(options.LanguageVersion, out var result)) {
                 return result;
             }
+
             return new Version(8, 0);
 #else
             return new Version(7, 3);
