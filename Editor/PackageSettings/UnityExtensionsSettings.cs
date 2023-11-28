@@ -48,7 +48,7 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
             static SettingsObject instance;
             [SettingsProvider]
-            static SettingsProvider CreateSettingsProvider() => new SettingsProvider(SETTINGS_MENU, SettingsScope.Project) {
+            static SettingsProvider CreateSettingsProvider() => new(SETTINGS_MENU, SettingsScope.Project) {
                 activateHandler = (searchContext, rootElement) => {
                     if (!instance) {
                         instance = CreateInstance<SettingsObject>();
@@ -86,23 +86,23 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         static UnityExtensionsSettings instanceCache;
 
         [UserSetting]
-        static UserSetting<ExpandableSettings> m_expandableSettings = new UserSetting<ExpandableSettings>(settings, nameof(m_expandableSettings), new ExpandableSettings());
+        static UserSetting<ExpandableSettings> m_expandableSettings = new(settings, nameof(m_expandableSettings), new ExpandableSettings());
         internal ExpandableSettings expandableSettings => m_expandableSettings.value;
 
         [UserSetting]
-        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new UserSetting<RenderPipelineConversionSettings>(settings, nameof(m_renderPipelineConversionSettings), new RenderPipelineConversionSettings());
+        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new(settings, nameof(m_renderPipelineConversionSettings), new RenderPipelineConversionSettings());
         internal RenderPipelineConversionSettings renderPipelineConversionSettings => m_renderPipelineConversionSettings.value;
 
         [UserSetting]
-        static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new UserSetting<PrefabUtilsSettings>(settings, nameof(m_prefabUtilsSettings), new PrefabUtilsSettings());
+        static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new(settings, nameof(m_prefabUtilsSettings), new PrefabUtilsSettings());
         internal PrefabUtilsSettings prefabUtilsSettings => m_prefabUtilsSettings.value;
 
         [UserSetting]
-        static UserSetting<CSharpSettings> m_cSharpSettings = new UserSetting<CSharpSettings>(settings, nameof(m_cSharpSettings), new CSharpSettings());
+        static UserSetting<CSharpSettings> m_cSharpSettings = new(settings, nameof(m_cSharpSettings), new CSharpSettings());
         internal CSharpSettings cSharpSettings => m_cSharpSettings.value;
 
         [UserSetting]
-        static UserSetting<AndroidSettings> m_androidSettings = new UserSetting<AndroidSettings>(settings, nameof(m_androidSettings), new AndroidSettings());
+        static UserSetting<AndroidSettings> m_androidSettings = new(settings, nameof(m_androidSettings), new AndroidSettings());
         internal AndroidSettings androidSettings => m_androidSettings.value;
     }
 }

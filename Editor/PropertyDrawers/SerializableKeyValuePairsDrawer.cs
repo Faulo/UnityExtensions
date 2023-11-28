@@ -67,7 +67,7 @@ namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
             return totalHeight;
         }
 
-        static readonly Dictionary<LineMode, (float key, float value)> lineSettings = new Dictionary<LineMode, (float, float)>() {
+        static readonly Dictionary<LineMode, (float key, float value)> lineSettings = new() {
             [LineMode.ShortKeyShortValue] = (0.5f, 0.5f),
             [LineMode.ShortKeyLongValue] = (0.3f, 0.7f),
             [LineMode.LongKeyShortValue] = (0.7f, 0.3f),

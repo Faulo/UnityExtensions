@@ -22,9 +22,9 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         internal ExpandableBackgroundStyle backgroundStyle = ExpandableBackgroundStyle.HelpBox;
 
         [SerializeField, Tooltip("The colour that is used to darken the background.")]
-        internal Color darkenColor = new Color(0, 0, 0, 0.2f);
+        internal Color darkenColor = new(0, 0, 0, 0.2f);
 
         [SerializeField, Tooltip("The colour that is used to lighten the background.")]
-        internal Color lightenColor = new Color(1, 1, 1, 0.2f);
+        internal Color lightenColor = new(1, 1, 1, 0.2f);
     }
 }
