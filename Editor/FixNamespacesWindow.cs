@@ -30,7 +30,7 @@ namespace Slothsoft.UnityExtensions.Editor {
             get => useFolderHierarchyCache;
             set {
                 if (useFolderHierarchyCache != value) {
-                    useFolderHierarchy = value;
+                    useFolderHierarchyCache = value;
                     invalidFiles = null;
                 }
             }
