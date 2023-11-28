@@ -26,6 +26,17 @@ namespace Slothsoft.UnityExtensions.Editor {
             GetWindow<FixNamespacesWindow>();
         }
 
+        bool useFolderHierarchy {
+            get => useFolderHierarchyCache;
+            set {
+                if (useFolderHierarchyCache != value) {
+                    useFolderHierarchy = value;
+                    invalidFiles = null;
+                }
+            }
+        }
+        bool useFolderHierarchyCache = true;
+
         AssemblyDefinitionAsset assembly {
             get => assemblyCache;
             set {
@@ -85,6 +96,9 @@ namespace Slothsoft.UnityExtensions.Editor {
         void OnGUI() {
             GUILayout.BeginVertical("box");
             GUILayout.Label("Fix C# Namespaces");
+
+            useFolderHierarchy = EditorGUILayout.Toggle("Use Folder Hierarchy", useFolderHierarchy);
+
             assembly = EditorGUILayout.ObjectField("Assembly", assembly, typeof(AssemblyDefinitionAsset), false) as AssemblyDefinitionAsset;
             EditorGUILayout.LabelField(assemblyDirectory?.FullName);
             rootNamespace = EditorGUILayout.TextField("Root namespace", rootNamespace);
@@ -141,15 +155,18 @@ namespace Slothsoft.UnityExtensions.Editor {
 
         IEnumerable<NamespaceInfo> CreateNamespaceDictionary(DirectoryInfo assemblyDirectory, string rootNamespace) {
             var list = new Stack<NamespaceInfo>();
-            void crawl(DirectoryInfo directory, string ns) {
+            void crawl(DirectoryInfo directory, string rootNamespace) {
                 if (directory.GetFileSystemInfos().Any()) {
                     list.Push(new NamespaceInfo {
                         asset = AssetUtils.LoadAssetAtFile<DefaultAsset>(directory),
-                        classNamespace = ns,
+                        classNamespace = rootNamespace,
                         directory = directory,
                     });
                     foreach (var childDirectory in directory.GetDirectories()) {
-                        crawl(childDirectory, $"{ns}.{childDirectory.Name}");
+                        string ns = useFolderHierarchy
+                            ? $"{rootNamespace}.{childDirectory.Name}"
+                            : rootNamespace;
+                        crawl(childDirectory, ns);
                     }
                 }
             }
