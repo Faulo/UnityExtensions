@@ -113,11 +113,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.Test.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.Editor.Test.html",
+          "hash": "MnSwFxN2hoVKKvxgmP/LQA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.yml",
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.html",
-          "hash": "7H1A60DaoIR0KOnLkpCwRA=="
+          "hash": "T9ffS+AG82urMM5A7Q4wmg=="
         }
       },
       "is_incremental": false,
@@ -357,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "n2eqsaGrb+2akAB0EovnXQ=="
+          "hash": "2QQMWGQK2SAAuZfFz2eMnw=="
         }
       },
       "is_incremental": false,
@@ -408,7 +420,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 28,
+          "total_file_count": 29,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

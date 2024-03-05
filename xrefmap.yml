@@ -498,6 +498,25 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.OnGUI
   nameWithType: SerializableKeyValuePairsDrawer.OnGUI
+- uid: Slothsoft.UnityExtensions.Editor.Test
+  name: Test
+  href: api/Slothsoft.UnityExtensions.Editor.Test.html
+  commentId: T:Slothsoft.UnityExtensions.Editor.Test
+  fullName: Slothsoft.UnityExtensions.Editor.Test
+  nameWithType: Test
+- uid: Slothsoft.UnityExtensions.Editor.Test.MissingReferences
+  name: MissingReferences()
+  href: api/Slothsoft.UnityExtensions.Editor.Test.html#Slothsoft_UnityExtensions_Editor_Test_MissingReferences
+  commentId: M:Slothsoft.UnityExtensions.Editor.Test.MissingReferences
+  fullName: Slothsoft.UnityExtensions.Editor.Test.MissingReferences()
+  nameWithType: Test.MissingReferences()
+- uid: Slothsoft.UnityExtensions.Editor.Test.MissingReferences*
+  name: MissingReferences
+  href: api/Slothsoft.UnityExtensions.Editor.Test.html#Slothsoft_UnityExtensions_Editor_Test_MissingReferences_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.Test.MissingReferences
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.Test.MissingReferences
+  nameWithType: Test.MissingReferences
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute
   name: ExpandableAttribute
   href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html
