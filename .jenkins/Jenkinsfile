@@ -1,4 +1,4 @@
-node('linux && unity') {
+node('npm') {
     checkout scm
 	
 	env.BRANCH_NAME = 'main'
