@@ -2,6 +2,9 @@ pipeline {
 	agent {
 		label 'npm'
 	}
+	environment {
+		BRANCH_NAME = 'main'
+	}
 	stages {
 		stage('Index workspace') {
 			steps {
