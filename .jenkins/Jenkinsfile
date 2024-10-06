@@ -1,6 +1,6 @@
 pipeline {
 	agent {
-		label 'npm'
+		label 'npm && linux'
 	}
 	environment {
 		BRANCH_NAME = 'main'
@@ -13,7 +13,7 @@ pipeline {
 					Jenkins.instance.getNodes().each { node ->
 						if (node.getComputer().isOnline()) {
 							def label = node.getLabelString()
-							if (label.contains('unity')) {
+							if (label.contains('unity') && label.contains('linux')) {
 								def name = node.getNodeName()
 								echo "Identified Unity node '${name}'"
 								nodes.add(name)
