@@ -15,7 +15,7 @@ pipeline {
 							def label = node.getLabelString()
 							if (label.contains('unity')) {
 								def name = node.getNodeName()
-								echo "Identified steamcmd node '${name}'"
+								echo "Identified Unity node '${name}'"
 								nodes.add(name)
 							}
 						}
