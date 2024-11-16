@@ -11,7 +11,6 @@ namespace Slothsoft.UnityExtensions {
 
         public const string NAMESPACE_RUNTIME = "Slothsoft.UnityExtensions";
         public const string NAMESPACE_EDITOR = "Slothsoft.UnityExtensions.Editor";
-        public const string NAMESPACE_EDITOR_CONVERSION = "Slothsoft.UnityExtensions.Editor.RenderPipelineConversion";
 
         public const string NAMESPACE_TESTS_RUNTIME = "Slothsoft.UnityExtensions.Tests.Runtime";
         public const string NAMESPACE_TESTS_EDITOR = "Slothsoft.UnityExtensions.Tests.Editor";
