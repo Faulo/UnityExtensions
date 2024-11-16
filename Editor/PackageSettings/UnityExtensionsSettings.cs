@@ -16,10 +16,6 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
             ExpandableSettings expandableSettings;
 
             [Space]
-            [SerializeField, Tooltip("Use the following options to change render pipeline conversion")]
-            RenderPipelineConversionSettings renderPipelineConversionSettings;
-
-            [Space]
             [SerializeField, Tooltip("Use the following options to locate prefabs.")]
             PrefabUtilsSettings prefabUtilsSettings;
 
@@ -33,14 +29,12 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
 
             void Load() {
                 expandableSettings = m_expandableSettings.value;
-                renderPipelineConversionSettings = m_renderPipelineConversionSettings.value;
                 prefabUtilsSettings = m_prefabUtilsSettings.value;
                 cSharpSettings = m_cSharpSettings.value;
                 androidSettings = m_androidSettings.value;
             }
             void Save() {
                 m_expandableSettings.ApplyModifiedProperties();
-                m_renderPipelineConversionSettings.ApplyModifiedProperties();
                 m_prefabUtilsSettings.ApplyModifiedProperties();
                 m_cSharpSettings.ApplyModifiedProperties();
                 m_androidSettings.ApplyModifiedProperties();
@@ -88,10 +82,6 @@ namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
         [UserSetting]
         static UserSetting<ExpandableSettings> m_expandableSettings = new(settings, nameof(m_expandableSettings), new ExpandableSettings());
         internal ExpandableSettings expandableSettings => m_expandableSettings.value;
-
-        [UserSetting]
-        static UserSetting<RenderPipelineConversionSettings> m_renderPipelineConversionSettings = new(settings, nameof(m_renderPipelineConversionSettings), new RenderPipelineConversionSettings());
-        internal RenderPipelineConversionSettings renderPipelineConversionSettings => m_renderPipelineConversionSettings.value;
 
         [UserSetting]
         static UserSetting<PrefabUtilsSettings> m_prefabUtilsSettings = new(settings, nameof(m_prefabUtilsSettings), new PrefabUtilsSettings());
