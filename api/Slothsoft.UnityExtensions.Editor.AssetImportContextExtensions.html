@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class UnityObjectExtensions
+    <title>Class AssetImportContextExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class UnityObjectExtensions
+    <meta name="title" content="Class AssetImportContextExtensions
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,17 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="CursedBroom.Core.Extensions.UnityObjectExtensions">
+            <article class="content wrap" id="_content" data-uid="Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions">
   
   
-  <h1 id="CursedBroom_Core_Extensions_UnityObjectExtensions" data-uid="CursedBroom.Core.Extensions.UnityObjectExtensions" class="text-break">Class UnityObjectExtensions
+  <h1 id="Slothsoft_UnityExtensions_Editor_AssetImportContextExtensions" data-uid="Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions" class="text-break">Class AssetImportContextExtensions
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">UnityObjectExtensions</span></div>
+    <div class="level1"><span class="xref">AssetImportContextExtensions</span></div>
   </div>
   <div class="inheritedMembers">
     <h5>Inherited Members</h5>
@@ -104,23 +104,24 @@
       <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
     </div>
   </div>
-  <h6><strong>Namespace</strong>: <a class="xref" href="CursedBroom.Core.Extensions.html">CursedBroom.Core.Extensions</a></h6>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Slothsoft.UnityExtensions.Editor.html">Slothsoft.UnityExtensions.Editor</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="CursedBroom_Core_Extensions_UnityObjectExtensions_syntax">Syntax</h5>
+  <h5 id="Slothsoft_UnityExtensions_Editor_AssetImportContextExtensions_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static class UnityObjectExtensions</code></pre>
+    <pre><code class="lang-csharp hljs">public static class AssetImportContextExtensions</code></pre>
   </div>
   <h3 id="methods">Methods
   </h3>
   
   
-  <a id="CursedBroom_Core_Extensions_UnityObjectExtensions_SmartDestroy_" data-uid="CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy*"></a>
-  <h4 id="CursedBroom_Core_Extensions_UnityObjectExtensions_SmartDestroy_UnityObject_" data-uid="CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy(UnityObject)">SmartDestroy(UnityObject)</h4>
+  <a id="Slothsoft_UnityExtensions_Editor_AssetImportContextExtensions_TryDependOnArtifact_" data-uid="Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.TryDependOnArtifact*"></a>
+  <h4 id="Slothsoft_UnityExtensions_Editor_AssetImportContextExtensions_TryDependOnArtifact__1_AssetImportContext_System_String___0__" data-uid="Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.TryDependOnArtifact``1(AssetImportContext,System.String,``0@)">TryDependOnArtifact&lt;T&gt;(AssetImportContext, String, out T)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public static void SmartDestroy(this UnityObject obj)</code></pre>
+    <pre><code class="lang-csharp hljs">public static bool TryDependOnArtifact&lt;T&gt;(this AssetImportContext context, string path, out T artifact)
+    where T : UnityObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -133,8 +134,48 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">UnityObject</span></td>
-        <td><span class="parametername">obj</span></td>
+        <td><span class="xref">AssetImportContext</span></td>
+        <td><span class="parametername">context</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">path</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">artifact</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>

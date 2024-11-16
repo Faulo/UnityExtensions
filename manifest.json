@@ -5,11 +5,11 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.BoundsIntExtensions.yml",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.BoundsIntExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.BoundsIntExtensions.html",
-          "hash": "lUCP7WIchR3rT3XbXrcvjg=="
+          "relative_path": "api/Slothsoft.UnityExtensions.BoundsIntExtensions.html",
+          "hash": "KXz1Dl7CvsgcsfPPH3717Q=="
         }
       },
       "is_incremental": false,
@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.CollectionExtensions.yml",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.CollectionExtensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.CollectionExtensions.html",
-          "hash": "T0Ck5pa2VGHUeFz3sAvqQg=="
+          "relative_path": "api/Slothsoft.UnityExtensions.CollectionExtensions.html",
+          "hash": "soO+2a3Q0FHNBD8jOfc3aQ=="
         }
       },
       "is_incremental": false,
@@ -29,107 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.Color32Extensions.yml",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Color32Extensions.yml",
       "output": {
         ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.Color32Extensions.html",
-          "hash": "8E/lxkY+arEEN6px93Se6w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.SpriteExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.SpriteExtensions.html",
-          "hash": "L2AA35IFst0MAsNSZWd7SQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.Texture2DExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.Texture2DExtensions.html",
-          "hash": "iLuo7OyGTtmxUU51Nl2FuQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.TypeExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.TypeExtensions.html",
-          "hash": "HmAi1VOxQsA57SIDhnv8Xw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.UnityObjectExtensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.UnityObjectExtensions.html",
-          "hash": "mhzPcMfUiVzza2jW5Alm/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.Extensions.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.Extensions.html",
-          "hash": "p6FRqJwZuQrizFEAeGGw/g=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.ImplementationForAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.ImplementationForAttribute.html",
-          "hash": "cVXuGg3V0T5VZ2Iq6w9E6A=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.ImplementationLocator-1.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.ImplementationLocator-1.html",
-          "hash": "HSd3TADggmMQ+QmlldXC6Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/CursedBroom.Core.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/CursedBroom.Core.html",
-          "hash": "efJaUOvajNBkKWV5f97bIw=="
+          "relative_path": "api/Slothsoft.UnityExtensions.Color32Extensions.html",
+          "hash": "xfI/TVL5XPPefJ78QQmvXQ=="
         }
       },
       "is_incremental": false,
@@ -142,6 +46,18 @@
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.ColorExtensions.html",
           "hash": "jU0ZocLJmexs3yNlQVdP1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.html",
+          "hash": "Z5/SdTxLcoeu5ziSfuNcCw=="
         }
       },
       "is_incremental": false,
@@ -261,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.html",
-          "hash": "T9ffS+AG82urMM5A7Q4wmg=="
+          "hash": "VyH+UUT4gLfsB+8/SyTH8w=="
         }
       },
       "is_incremental": false,
@@ -298,6 +214,30 @@
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.IEnumerableExtensions.html",
           "hash": "056KAJ4m+x2nvZ98MSSRDw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.ImplementationForAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.ImplementationForAttribute.html",
+          "hash": "LXlO22OIXHdt8yxPRduQ7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.ImplementationLocator-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.ImplementationLocator-1.html",
+          "hash": "i2r3f2irTyUtupvVsvxe3g=="
         }
       },
       "is_incremental": false,
@@ -353,6 +293,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.SpriteExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.SpriteExtensions.html",
+          "hash": "8mCApmacUkoBmRjXdEissg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Texture2DExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.Texture2DExtensions.html",
+          "hash": "QZowgodiEtq0hJOWlJrlPA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.UnityExtensions.TilemapExtensions.TileComparer.yml",
       "output": {
         ".html": {
@@ -382,6 +346,30 @@
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.TransformExtensions.html",
           "hash": "nWyz3InPBISTC+MWqJjOHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.TypeExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.TypeExtensions.html",
+          "hash": "vcbEU57jwDepoZK6ShzflA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.UnityObjectExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.UnityObjectExtensions.html",
+          "hash": "H5LUL9KMl1kVEgVmejGnZQ=="
         }
       },
       "is_incremental": false,
@@ -477,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.html",
-          "hash": "p86bwRg2G57Nc9vIRTFisw=="
+          "hash": "05ywQaeuYieU7WHw7JKCoQ=="
         }
       },
       "is_incremental": false,
@@ -501,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "yUkFi0BHG5s6rACbKogoBw=="
+          "hash": "qDvOrQr+kk7MLNW3bhGuWw=="
         }
       },
       "is_incremental": false,
@@ -552,7 +540,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 40,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
