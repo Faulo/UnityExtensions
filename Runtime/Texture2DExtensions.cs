@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.Assertions;
 using UnityObject = UnityEngine.Object;
 
-namespace CursedBroom.Core.Extensions {
+namespace Slothsoft.UnityExtensions {
     public static class Texture2DExtensions {
         static RectInt RoundToInt(Rect rect) {
             return new(

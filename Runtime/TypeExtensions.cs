@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CursedBroom.Core.Extensions {
+namespace Slothsoft.UnityExtensions {
     public static class TypeExtensions {
         public static IEnumerable<Type> FindImplementations(this Type type) {
             return AppDomain.CurrentDomain

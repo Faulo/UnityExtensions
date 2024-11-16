@@ -1,4 +1,4 @@
-﻿using System.Reflection;
+using System.Reflection;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {

@@ -2,9 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using CursedBroom.Core.Extensions;
 
-namespace CursedBroom.Core {
+namespace Slothsoft.UnityExtensions {
     public sealed class ImplementationLocator<TInterface> where TInterface : class {
 
         static IEnumerable<Implementation<TInterface>> CreateImplementations(Type type) {

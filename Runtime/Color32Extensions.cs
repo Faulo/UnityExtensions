@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace CursedBroom.Core.Extensions {
+namespace Slothsoft.UnityExtensions {
     public static class Color32Extensions {
         public static bool IsEqualTo(this Color32 first, in Color32 second)
             => first.r == second.r

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 
-namespace CursedBroom.Core.Extensions {
+namespace Slothsoft.UnityExtensions {
     public static class SpriteExtensions {
         public static RectInt GetRect(this Sprite sprite, bool subtractBorder = false) {
             var rect = sprite.rect;

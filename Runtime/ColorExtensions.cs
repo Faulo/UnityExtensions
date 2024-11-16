@@ -13,9 +13,9 @@ namespace Slothsoft.UnityExtensions {
             blue = color.b;
             alpha = color.a;
         }
-        public static Color WithRed(this Color color, float red) => new Color(red, color.g, color.b, color.a);
-        public static Color WithGreen(this Color color, float green) => new Color(color.r, green, color.b, color.a);
-        public static Color WithBlue(this Color color, float blue) => new Color(color.r, color.g, blue, color.a);
-        public static Color WithAlpha(this Color color, float alpha) => new Color(color.r, color.g, color.b, alpha);
+        public static Color WithRed(this Color color, float red) => new(red, color.g, color.b, color.a);
+        public static Color WithGreen(this Color color, float green) => new(color.r, green, color.b, color.a);
+        public static Color WithBlue(this Color color, float blue) => new(color.r, color.g, blue, color.a);
+        public static Color WithAlpha(this Color color, float alpha) => new(color.r, color.g, color.b, alpha);
     }
 }

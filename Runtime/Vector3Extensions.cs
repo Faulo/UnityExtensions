@@ -9,16 +9,16 @@ namespace Slothsoft.UnityExtensions {
             z = vector.z;
         }
 
-        public static Vector3 WithX(this Vector3 vector, float x) => new Vector3(x, vector.y, vector.z);
-        public static Vector3 WithY(this Vector3 vector, float y) => new Vector3(vector.x, y, vector.z);
-        public static Vector3 WithZ(this Vector3 vector, float z) => new Vector3(vector.x, vector.y, z);
+        public static Vector3 WithX(this Vector3 vector, float x) => new(x, vector.y, vector.z);
+        public static Vector3 WithY(this Vector3 vector, float y) => new(vector.x, y, vector.z);
+        public static Vector3 WithZ(this Vector3 vector, float z) => new(vector.x, vector.y, z);
 
-        public static Vector2 SwizzleXY(this Vector3 vector) => new Vector2(vector.x, vector.y);
-        public static Vector2 SwizzleXZ(this Vector3 vector) => new Vector2(vector.x, vector.z);
-        public static Vector2 SwizzleYZ(this Vector3 vector) => new Vector2(vector.y, vector.z);
+        public static Vector2 SwizzleXY(this Vector3 vector) => new(vector.x, vector.y);
+        public static Vector2 SwizzleXZ(this Vector3 vector) => new(vector.x, vector.z);
+        public static Vector2 SwizzleYZ(this Vector3 vector) => new(vector.y, vector.z);
 
         [Obsolete("RoundToInt extension method is obsolete, use Vector3Int.RoundToInt instead.")]
-        public static Vector3Int RoundToInt(this Vector3 vector) => new Vector3Int(
+        public static Vector3Int RoundToInt(this Vector3 vector) => new(
             Mathf.RoundToInt(vector.x),
             Mathf.RoundToInt(vector.y),
             Mathf.RoundToInt(vector.z)

@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 
 namespace Slothsoft.UnityExtensions {
     public static class TransformExtensions {

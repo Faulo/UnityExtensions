@@ -1,6 +1,6 @@
 using System;
 
-namespace CursedBroom.Core {
+namespace Slothsoft.UnityExtensions {
     public sealed class ImplementationForAttribute : Attribute {
         internal readonly Type interfaceType;
         internal readonly string label;

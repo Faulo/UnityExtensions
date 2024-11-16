@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace Slothsoft.UnityExtensions {
                 return dictionaryCache;
             }
         }
-        ConcurrentDictionary<TKey, TValue> dictionaryCache = new ConcurrentDictionary<TKey, TValue>();
+        ConcurrentDictionary<TKey, TValue> dictionaryCache = new();
         bool isDirty = true;
 
         public void OnBeforeSerialize() {

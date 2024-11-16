@@ -7,15 +7,15 @@ namespace Slothsoft.UnityExtensions {
             y = vector.y;
         }
 
-        public static UnityEngine.Vector2 WithX(this UnityEngine.Vector2 vector, float x) => new UnityEngine.Vector2(x, vector.y);
-        public static UnityEngine.Vector2 WithY(this UnityEngine.Vector2 vector, float y) => new UnityEngine.Vector2(vector.x, y);
+        public static UnityEngine.Vector2 WithX(this UnityEngine.Vector2 vector, float x) => new(x, vector.y);
+        public static UnityEngine.Vector2 WithY(this UnityEngine.Vector2 vector, float y) => new(vector.x, y);
 
-        public static UnityEngine.Vector3 SwizzleXZ(this UnityEngine.Vector2 vector) => new UnityEngine.Vector3(vector.x, 0, vector.y);
-        public static UnityEngine.Vector3 SwizzleXY(this UnityEngine.Vector2 vector) => new UnityEngine.Vector3(vector.x, vector.y, 0);
-        public static UnityEngine.Vector3 SwizzleYZ(this UnityEngine.Vector2 vector) => new UnityEngine.Vector3(0, vector.x, vector.y);
+        public static UnityEngine.Vector3 SwizzleXZ(this UnityEngine.Vector2 vector) => new(vector.x, 0, vector.y);
+        public static UnityEngine.Vector3 SwizzleXY(this UnityEngine.Vector2 vector) => new(vector.x, vector.y, 0);
+        public static UnityEngine.Vector3 SwizzleYZ(this UnityEngine.Vector2 vector) => new(0, vector.x, vector.y);
 
         [Obsolete("RoundToInt extension method is obsolete, use UnityEngine.Vector2Int.RoundToInt instead.")]
-        public static UnityEngine.Vector2Int RoundToInt(this UnityEngine.Vector2 vector) => new UnityEngine.Vector2Int(
+        public static UnityEngine.Vector2Int RoundToInt(this UnityEngine.Vector2 vector) => new(
             UnityEngine.Mathf.RoundToInt(vector.x),
             UnityEngine.Mathf.RoundToInt(vector.y)
         );

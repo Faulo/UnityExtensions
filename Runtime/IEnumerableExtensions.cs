@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine.Assertions;
 
 namespace Slothsoft.UnityExtensions {
     public static class IEnumerableExtensions {
-        static readonly Random random = new Random();
+        static readonly Random random = new();
 
         /// <summary>
         /// Like <see cref="Enumerable.Select"/>, but only return non-null values.
@@ -53,7 +53,7 @@ namespace Slothsoft.UnityExtensions {
         /// </summary>
         public static T RandomElement<T>(this IEnumerable<T> source) {
             Assert.IsNotNull(source, "Source must not be null.");
-            if (!(source is IReadOnlyList<T> elements)) {
+            if (source is not IReadOnlyList<T> elements) {
                 elements = source.ToList();
             }
 

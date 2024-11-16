@@ -23,7 +23,7 @@ namespace Slothsoft.UnityExtensions {
         GUIStyle buttonStyle;
         GUIStyle foldoutStyle;
         GUIStyle objectStyle;
-        readonly Dictionary<string, bool> foldoutFlags = new Dictionary<string, bool>();
+        readonly Dictionary<string, bool> foldoutFlags = new();
 
         /// <summary>
         /// The text on the topmost foldout button.

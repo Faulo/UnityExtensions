@@ -1,4 +1,4 @@
-﻿using Slothsoft.UnityExtensions.Editor.PackageSettings;
+using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor.CSharpFileFixer {

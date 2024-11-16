@@ -1,4 +1,4 @@
-﻿namespace Slothsoft.UnityExtensions.Editor {
+namespace Slothsoft.UnityExtensions.Editor {
     enum ExpandableBackgroundStyle {
         None,
         HelpBox,

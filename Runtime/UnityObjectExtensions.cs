@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace CursedBroom.Core.Extensions {
+namespace Slothsoft.UnityExtensions {
     public static class UnityObjectExtensions {
 #if UNITY_EDITOR
         public static void RenameTo(this UnityObject obj, string newName) {

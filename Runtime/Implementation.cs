@@ -1,6 +1,6 @@
 using System;
 
-namespace CursedBroom.Core {
+namespace Slothsoft.UnityExtensions {
     public record Implementation<TInterface> : IComparable<Implementation<TInterface>> where TInterface : class {
         readonly Type classType;
 
