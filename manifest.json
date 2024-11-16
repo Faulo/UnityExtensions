@@ -53,6 +53,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html",
+          "hash": "v/mA0ZzW1YCzTbGyGjm5MA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.yml",
       "output": {
         ".html": {
@@ -177,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.html",
-          "hash": "VyH+UUT4gLfsB+8/SyTH8w=="
+          "hash": "vcrU9EDnXfUQyXDy06jizA=="
         }
       },
       "is_incremental": false,
@@ -489,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "qDvOrQr+kk7MLNW3bhGuWw=="
+          "hash": "dWGIg976gKaHxvkOCx1tGQ=="
         }
       },
       "is_incremental": false,
@@ -540,7 +552,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 40,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

@@ -196,6 +196,67 @@ references:
   commentId: N:Slothsoft.UnityExtensions.Editor
   fullName: Slothsoft.UnityExtensions.Editor
   nameWithType: Slothsoft.UnityExtensions.Editor
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions
+  name: AnimationClipExtensions
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html
+  commentId: T:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions
+  nameWithType: AnimationClipExtensions
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings(AnimationClip)
+  name: GetSettings(AnimationClip)
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_GetSettings_AnimationClip_
+  commentId: M:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings(AnimationClip)
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings(AnimationClip)
+  nameWithType: AnimationClipExtensions.GetSettings(AnimationClip)
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings*
+  name: GetSettings
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_GetSettings_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSettings
+  nameWithType: AnimationClipExtensions.GetSettings
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes(AnimationClip)
+  name: GetSpriteKeyframes(AnimationClip)
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_GetSpriteKeyframes_AnimationClip_
+  commentId: M:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes(AnimationClip)
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes(AnimationClip)
+  nameWithType: AnimationClipExtensions.GetSpriteKeyframes(AnimationClip)
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes*
+  name: GetSpriteKeyframes
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_GetSpriteKeyframes_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.GetSpriteKeyframes
+  nameWithType: AnimationClipExtensions.GetSpriteKeyframes
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings(AnimationClip,AnimationClipSettings)
+  name: SetSettings(AnimationClip, AnimationClipSettings)
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_SetSettings_AnimationClip_AnimationClipSettings_
+  commentId: M:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings(AnimationClip,AnimationClipSettings)
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings(AnimationClip, AnimationClipSettings)
+  nameWithType: AnimationClipExtensions.SetSettings(AnimationClip, AnimationClipSettings)
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings*
+  name: SetSettings
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_SetSettings_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSettings
+  nameWithType: AnimationClipExtensions.SetSettings
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes(AnimationClip,ObjectReferenceKeyframe[])
+  name: SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe[])
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_SetSpriteKeyframes_AnimationClip_ObjectReferenceKeyframe___
+  commentId: M:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes(AnimationClip,ObjectReferenceKeyframe[])
+  name.vb: SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe())
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe[])
+  fullName.vb: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe())
+  nameWithType: AnimationClipExtensions.SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe[])
+  nameWithType.vb: AnimationClipExtensions.SetSpriteKeyframes(AnimationClip, ObjectReferenceKeyframe())
+- uid: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes*
+  name: SetSpriteKeyframes
+  href: api/Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.html#Slothsoft_UnityExtensions_Editor_AnimationClipExtensions_SetSpriteKeyframes_
+  commentId: Overload:Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes
+  isSpec: "True"
+  fullName: Slothsoft.UnityExtensions.Editor.AnimationClipExtensions.SetSpriteKeyframes
+  nameWithType: AnimationClipExtensions.SetSpriteKeyframes
 - uid: Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions
   name: AssetImportContextExtensions
   href: api/Slothsoft.UnityExtensions.Editor.AssetImportContextExtensions.html
