@@ -1,6 +1,322 @@
 ### YamlMime:XRefMap
 sorted: true
 references:
+- uid: CursedBroom.Core
+  name: CursedBroom.Core
+  href: api/CursedBroom.Core.html
+  commentId: N:CursedBroom.Core
+  fullName: CursedBroom.Core
+  nameWithType: CursedBroom.Core
+- uid: CursedBroom.Core.Extensions
+  name: CursedBroom.Core.Extensions
+  href: api/CursedBroom.Core.Extensions.html
+  commentId: N:CursedBroom.Core.Extensions
+  fullName: CursedBroom.Core.Extensions
+  nameWithType: CursedBroom.Core.Extensions
+- uid: CursedBroom.Core.Extensions.BoundsIntExtensions
+  name: BoundsIntExtensions
+  href: api/CursedBroom.Core.Extensions.BoundsIntExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.BoundsIntExtensions
+  fullName: CursedBroom.Core.Extensions.BoundsIntExtensions
+  nameWithType: BoundsIntExtensions
+- uid: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt@,Vector2Int@)
+  name: Contains2D(BoundsInt, Vector2Int)
+  href: api/CursedBroom.Core.Extensions.BoundsIntExtensions.html#CursedBroom_Core_Extensions_BoundsIntExtensions_Contains2D_BoundsInt__Vector2Int__
+  commentId: M:CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt@,Vector2Int@)
+  name.vb: Contains2D(ByRef BoundsInt, ByRef Vector2Int)
+  fullName: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt, Vector2Int)
+  fullName.vb: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(ByRef BoundsInt, ByRef Vector2Int)
+  nameWithType: BoundsIntExtensions.Contains2D(BoundsInt, Vector2Int)
+  nameWithType.vb: BoundsIntExtensions.Contains2D(ByRef BoundsInt, ByRef Vector2Int)
+- uid: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt@,Vector3Int@)
+  name: Contains2D(BoundsInt, Vector3Int)
+  href: api/CursedBroom.Core.Extensions.BoundsIntExtensions.html#CursedBroom_Core_Extensions_BoundsIntExtensions_Contains2D_BoundsInt__Vector3Int__
+  commentId: M:CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt@,Vector3Int@)
+  name.vb: Contains2D(ByRef BoundsInt, ByRef Vector3Int)
+  fullName: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(BoundsInt, Vector3Int)
+  fullName.vb: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D(ByRef BoundsInt, ByRef Vector3Int)
+  nameWithType: BoundsIntExtensions.Contains2D(BoundsInt, Vector3Int)
+  nameWithType.vb: BoundsIntExtensions.Contains2D(ByRef BoundsInt, ByRef Vector3Int)
+- uid: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D*
+  name: Contains2D
+  href: api/CursedBroom.Core.Extensions.BoundsIntExtensions.html#CursedBroom_Core_Extensions_BoundsIntExtensions_Contains2D_
+  commentId: Overload:CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.BoundsIntExtensions.Contains2D
+  nameWithType: BoundsIntExtensions.Contains2D
+- uid: CursedBroom.Core.Extensions.CollectionExtensions
+  name: CollectionExtensions
+  href: api/CursedBroom.Core.Extensions.CollectionExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.CollectionExtensions
+  fullName: CursedBroom.Core.Extensions.CollectionExtensions
+  nameWithType: CollectionExtensions
+- uid: CursedBroom.Core.Extensions.CollectionExtensions.GetXY*
+  name: GetXY
+  href: api/CursedBroom.Core.Extensions.CollectionExtensions.html#CursedBroom_Core_Extensions_CollectionExtensions_GetXY_
+  commentId: Overload:CursedBroom.Core.Extensions.CollectionExtensions.GetXY
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.CollectionExtensions.GetXY
+  nameWithType: CollectionExtensions.GetXY
+- uid: CursedBroom.Core.Extensions.CollectionExtensions.GetXY``1(IReadOnlyList{``0},System.Int32,System.Int32,System.Int32)
+  name: GetXY<T>(IReadOnlyList<T>, Int32, Int32, Int32)
+  href: api/CursedBroom.Core.Extensions.CollectionExtensions.html#CursedBroom_Core_Extensions_CollectionExtensions_GetXY__1_IReadOnlyList___0__System_Int32_System_Int32_System_Int32_
+  commentId: M:CursedBroom.Core.Extensions.CollectionExtensions.GetXY``1(IReadOnlyList{``0},System.Int32,System.Int32,System.Int32)
+  name.vb: GetXY(Of T)(IReadOnlyList(Of T), Int32, Int32, Int32)
+  fullName: CursedBroom.Core.Extensions.CollectionExtensions.GetXY<T>(IReadOnlyList<T>, System.Int32, System.Int32, System.Int32)
+  fullName.vb: CursedBroom.Core.Extensions.CollectionExtensions.GetXY(Of T)(IReadOnlyList(Of T), System.Int32, System.Int32, System.Int32)
+  nameWithType: CollectionExtensions.GetXY<T>(IReadOnlyList<T>, Int32, Int32, Int32)
+  nameWithType.vb: CollectionExtensions.GetXY(Of T)(IReadOnlyList(Of T), Int32, Int32, Int32)
+- uid: CursedBroom.Core.Extensions.CollectionExtensions.GetXY``1(System.Span{``0},System.Int32,System.Int32,System.Int32)
+  name: GetXY<T>(Span<T>, Int32, Int32, Int32)
+  href: api/CursedBroom.Core.Extensions.CollectionExtensions.html#CursedBroom_Core_Extensions_CollectionExtensions_GetXY__1_System_Span___0__System_Int32_System_Int32_System_Int32_
+  commentId: M:CursedBroom.Core.Extensions.CollectionExtensions.GetXY``1(System.Span{``0},System.Int32,System.Int32,System.Int32)
+  name.vb: GetXY(Of T)(Span(Of T), Int32, Int32, Int32)
+  fullName: CursedBroom.Core.Extensions.CollectionExtensions.GetXY<T>(System.Span<T>, System.Int32, System.Int32, System.Int32)
+  fullName.vb: CursedBroom.Core.Extensions.CollectionExtensions.GetXY(Of T)(System.Span(Of T), System.Int32, System.Int32, System.Int32)
+  nameWithType: CollectionExtensions.GetXY<T>(Span<T>, Int32, Int32, Int32)
+  nameWithType.vb: CollectionExtensions.GetXY(Of T)(Span(Of T), Int32, Int32, Int32)
+- uid: CursedBroom.Core.Extensions.Color32Extensions
+  name: Color32Extensions
+  href: api/CursedBroom.Core.Extensions.Color32Extensions.html
+  commentId: T:CursedBroom.Core.Extensions.Color32Extensions
+  fullName: CursedBroom.Core.Extensions.Color32Extensions
+  nameWithType: Color32Extensions
+- uid: CursedBroom.Core.Extensions.Color32Extensions.CreateTexture(Color32[],System.Int32,System.Int32)
+  name: CreateTexture(Color32[], Int32, Int32)
+  href: api/CursedBroom.Core.Extensions.Color32Extensions.html#CursedBroom_Core_Extensions_Color32Extensions_CreateTexture_Color32___System_Int32_System_Int32_
+  commentId: M:CursedBroom.Core.Extensions.Color32Extensions.CreateTexture(Color32[],System.Int32,System.Int32)
+  name.vb: CreateTexture(Color32(), Int32, Int32)
+  fullName: CursedBroom.Core.Extensions.Color32Extensions.CreateTexture(Color32[], System.Int32, System.Int32)
+  fullName.vb: CursedBroom.Core.Extensions.Color32Extensions.CreateTexture(Color32(), System.Int32, System.Int32)
+  nameWithType: Color32Extensions.CreateTexture(Color32[], Int32, Int32)
+  nameWithType.vb: Color32Extensions.CreateTexture(Color32(), Int32, Int32)
+- uid: CursedBroom.Core.Extensions.Color32Extensions.CreateTexture*
+  name: CreateTexture
+  href: api/CursedBroom.Core.Extensions.Color32Extensions.html#CursedBroom_Core_Extensions_Color32Extensions_CreateTexture_
+  commentId: Overload:CursedBroom.Core.Extensions.Color32Extensions.CreateTexture
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.Color32Extensions.CreateTexture
+  nameWithType: Color32Extensions.CreateTexture
+- uid: CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo(Color32,Color32@)
+  name: IsEqualTo(Color32, Color32)
+  href: api/CursedBroom.Core.Extensions.Color32Extensions.html#CursedBroom_Core_Extensions_Color32Extensions_IsEqualTo_Color32_Color32__
+  commentId: M:CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo(Color32,Color32@)
+  name.vb: IsEqualTo(Color32, ByRef Color32)
+  fullName: CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo(Color32, Color32)
+  fullName.vb: CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo(Color32, ByRef Color32)
+  nameWithType: Color32Extensions.IsEqualTo(Color32, Color32)
+  nameWithType.vb: Color32Extensions.IsEqualTo(Color32, ByRef Color32)
+- uid: CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo*
+  name: IsEqualTo
+  href: api/CursedBroom.Core.Extensions.Color32Extensions.html#CursedBroom_Core_Extensions_Color32Extensions_IsEqualTo_
+  commentId: Overload:CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.Color32Extensions.IsEqualTo
+  nameWithType: Color32Extensions.IsEqualTo
+- uid: CursedBroom.Core.Extensions.SpriteExtensions
+  name: SpriteExtensions
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.SpriteExtensions
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions
+  nameWithType: SpriteExtensions
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32(Sprite,Color32@)
+  name: GetPixels32(Sprite, Color32)
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetPixels32_Sprite_Color32__
+  commentId: M:CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32(Sprite,Color32@)
+  name.vb: GetPixels32(Sprite, ByRef Color32)
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32(Sprite, Color32)
+  fullName.vb: CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32(Sprite, ByRef Color32)
+  nameWithType: SpriteExtensions.GetPixels32(Sprite, Color32)
+  nameWithType.vb: SpriteExtensions.GetPixels32(Sprite, ByRef Color32)
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32*
+  name: GetPixels32
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetPixels32_
+  commentId: Overload:CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetPixels32
+  nameWithType: SpriteExtensions.GetPixels32
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition(Sprite)
+  name: GetPixelsWithPosition(Sprite)
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetPixelsWithPosition_Sprite_
+  commentId: M:CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition(Sprite)
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition(Sprite)
+  nameWithType: SpriteExtensions.GetPixelsWithPosition(Sprite)
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition*
+  name: GetPixelsWithPosition
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetPixelsWithPosition_
+  commentId: Overload:CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetPixelsWithPosition
+  nameWithType: SpriteExtensions.GetPixelsWithPosition
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetRect(Sprite,System.Boolean)
+  name: GetRect(Sprite, Boolean)
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetRect_Sprite_System_Boolean_
+  commentId: M:CursedBroom.Core.Extensions.SpriteExtensions.GetRect(Sprite,System.Boolean)
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetRect(Sprite, System.Boolean)
+  nameWithType: SpriteExtensions.GetRect(Sprite, Boolean)
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.GetRect*
+  name: GetRect
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_GetRect_
+  commentId: Overload:CursedBroom.Core.Extensions.SpriteExtensions.GetRect
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.GetRect
+  nameWithType: SpriteExtensions.GetRect
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent(Sprite)
+  name: IsFullyTransparent(Sprite)
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_IsFullyTransparent_Sprite_
+  commentId: M:CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent(Sprite)
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent(Sprite)
+  nameWithType: SpriteExtensions.IsFullyTransparent(Sprite)
+- uid: CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent*
+  name: IsFullyTransparent
+  href: api/CursedBroom.Core.Extensions.SpriteExtensions.html#CursedBroom_Core_Extensions_SpriteExtensions_IsFullyTransparent_
+  commentId: Overload:CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.SpriteExtensions.IsFullyTransparent
+  nameWithType: SpriteExtensions.IsFullyTransparent
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions
+  name: Texture2DExtensions
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.Texture2DExtensions
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions
+  nameWithType: Texture2DExtensions
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D,Rect@,Color32@)
+  name: GetPixels32(Texture2D, Rect, Color32)
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_GetPixels32_Texture2D_Rect__Color32__
+  commentId: M:CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D,Rect@,Color32@)
+  name.vb: GetPixels32(Texture2D, ByRef Rect, ByRef Color32)
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D, Rect, Color32)
+  fullName.vb: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D, ByRef Rect, ByRef Color32)
+  nameWithType: Texture2DExtensions.GetPixels32(Texture2D, Rect, Color32)
+  nameWithType.vb: Texture2DExtensions.GetPixels32(Texture2D, ByRef Rect, ByRef Color32)
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D,RectInt@,Color32@)
+  name: GetPixels32(Texture2D, RectInt, Color32)
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_GetPixels32_Texture2D_RectInt__Color32__
+  commentId: M:CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D,RectInt@,Color32@)
+  name.vb: GetPixels32(Texture2D, ByRef RectInt, ByRef Color32)
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D, RectInt, Color32)
+  fullName.vb: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32(Texture2D, ByRef RectInt, ByRef Color32)
+  nameWithType: Texture2DExtensions.GetPixels32(Texture2D, RectInt, Color32)
+  nameWithType.vb: Texture2DExtensions.GetPixels32(Texture2D, ByRef RectInt, ByRef Color32)
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32*
+  name: GetPixels32
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_GetPixels32_
+  commentId: Overload:CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.GetPixels32
+  nameWithType: Texture2DExtensions.GetPixels32
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent(Texture2D)
+  name: IsFullyTransparent(Texture2D)
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_IsFullyTransparent_Texture2D_
+  commentId: M:CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent(Texture2D)
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent(Texture2D)
+  nameWithType: Texture2DExtensions.IsFullyTransparent(Texture2D)
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent*
+  name: IsFullyTransparent
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_IsFullyTransparent_
+  commentId: Overload:CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.IsFullyTransparent
+  nameWithType: Texture2DExtensions.IsFullyTransparent
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32(Texture2D,RectInt@,Color32[])
+  name: SetPixels32(Texture2D, RectInt, Color32[])
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_SetPixels32_Texture2D_RectInt__Color32___
+  commentId: M:CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32(Texture2D,RectInt@,Color32[])
+  name.vb: SetPixels32(Texture2D, ByRef RectInt, Color32())
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32(Texture2D, RectInt, Color32[])
+  fullName.vb: CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32(Texture2D, ByRef RectInt, Color32())
+  nameWithType: Texture2DExtensions.SetPixels32(Texture2D, RectInt, Color32[])
+  nameWithType.vb: Texture2DExtensions.SetPixels32(Texture2D, ByRef RectInt, Color32())
+- uid: CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32*
+  name: SetPixels32
+  href: api/CursedBroom.Core.Extensions.Texture2DExtensions.html#CursedBroom_Core_Extensions_Texture2DExtensions_SetPixels32_
+  commentId: Overload:CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.Texture2DExtensions.SetPixels32
+  nameWithType: Texture2DExtensions.SetPixels32
+- uid: CursedBroom.Core.Extensions.TypeExtensions
+  name: TypeExtensions
+  href: api/CursedBroom.Core.Extensions.TypeExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.TypeExtensions
+  fullName: CursedBroom.Core.Extensions.TypeExtensions
+  nameWithType: TypeExtensions
+- uid: CursedBroom.Core.Extensions.TypeExtensions.FindImplementations(System.Type)
+  name: FindImplementations(Type)
+  href: api/CursedBroom.Core.Extensions.TypeExtensions.html#CursedBroom_Core_Extensions_TypeExtensions_FindImplementations_System_Type_
+  commentId: M:CursedBroom.Core.Extensions.TypeExtensions.FindImplementations(System.Type)
+  fullName: CursedBroom.Core.Extensions.TypeExtensions.FindImplementations(System.Type)
+  nameWithType: TypeExtensions.FindImplementations(Type)
+- uid: CursedBroom.Core.Extensions.TypeExtensions.FindImplementations*
+  name: FindImplementations
+  href: api/CursedBroom.Core.Extensions.TypeExtensions.html#CursedBroom_Core_Extensions_TypeExtensions_FindImplementations_
+  commentId: Overload:CursedBroom.Core.Extensions.TypeExtensions.FindImplementations
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.TypeExtensions.FindImplementations
+  nameWithType: TypeExtensions.FindImplementations
+- uid: CursedBroom.Core.Extensions.UnityObjectExtensions
+  name: UnityObjectExtensions
+  href: api/CursedBroom.Core.Extensions.UnityObjectExtensions.html
+  commentId: T:CursedBroom.Core.Extensions.UnityObjectExtensions
+  fullName: CursedBroom.Core.Extensions.UnityObjectExtensions
+  nameWithType: UnityObjectExtensions
+- uid: CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy(UnityObject)
+  name: SmartDestroy(UnityObject)
+  href: api/CursedBroom.Core.Extensions.UnityObjectExtensions.html#CursedBroom_Core_Extensions_UnityObjectExtensions_SmartDestroy_UnityObject_
+  commentId: M:CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy(UnityObject)
+  fullName: CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy(UnityObject)
+  nameWithType: UnityObjectExtensions.SmartDestroy(UnityObject)
+- uid: CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy*
+  name: SmartDestroy
+  href: api/CursedBroom.Core.Extensions.UnityObjectExtensions.html#CursedBroom_Core_Extensions_UnityObjectExtensions_SmartDestroy_
+  commentId: Overload:CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy
+  isSpec: "True"
+  fullName: CursedBroom.Core.Extensions.UnityObjectExtensions.SmartDestroy
+  nameWithType: UnityObjectExtensions.SmartDestroy
+- uid: CursedBroom.Core.ImplementationForAttribute
+  name: ImplementationForAttribute
+  href: api/CursedBroom.Core.ImplementationForAttribute.html
+  commentId: T:CursedBroom.Core.ImplementationForAttribute
+  fullName: CursedBroom.Core.ImplementationForAttribute
+  nameWithType: ImplementationForAttribute
+- uid: CursedBroom.Core.ImplementationForAttribute.#ctor(System.Type,System.String,System.Int32)
+  name: ImplementationForAttribute(Type, String, Int32)
+  href: api/CursedBroom.Core.ImplementationForAttribute.html#CursedBroom_Core_ImplementationForAttribute__ctor_System_Type_System_String_System_Int32_
+  commentId: M:CursedBroom.Core.ImplementationForAttribute.#ctor(System.Type,System.String,System.Int32)
+  fullName: CursedBroom.Core.ImplementationForAttribute.ImplementationForAttribute(System.Type, System.String, System.Int32)
+  nameWithType: ImplementationForAttribute.ImplementationForAttribute(Type, String, Int32)
+- uid: CursedBroom.Core.ImplementationForAttribute.#ctor*
+  name: ImplementationForAttribute
+  href: api/CursedBroom.Core.ImplementationForAttribute.html#CursedBroom_Core_ImplementationForAttribute__ctor_
+  commentId: Overload:CursedBroom.Core.ImplementationForAttribute.#ctor
+  isSpec: "True"
+  fullName: CursedBroom.Core.ImplementationForAttribute.ImplementationForAttribute
+  nameWithType: ImplementationForAttribute.ImplementationForAttribute
+- uid: CursedBroom.Core.ImplementationLocator`1
+  name: ImplementationLocator<TInterface>
+  href: api/CursedBroom.Core.ImplementationLocator-1.html
+  commentId: T:CursedBroom.Core.ImplementationLocator`1
+  name.vb: ImplementationLocator(Of TInterface)
+  fullName: CursedBroom.Core.ImplementationLocator<TInterface>
+  fullName.vb: CursedBroom.Core.ImplementationLocator(Of TInterface)
+  nameWithType: ImplementationLocator<TInterface>
+  nameWithType.vb: ImplementationLocator(Of TInterface)
+- uid: CursedBroom.Core.ImplementationLocator`1.implementations
+  name: implementations
+  href: api/CursedBroom.Core.ImplementationLocator-1.html#CursedBroom_Core_ImplementationLocator_1_implementations
+  commentId: P:CursedBroom.Core.ImplementationLocator`1.implementations
+  fullName: CursedBroom.Core.ImplementationLocator<TInterface>.implementations
+  fullName.vb: CursedBroom.Core.ImplementationLocator(Of TInterface).implementations
+  nameWithType: ImplementationLocator<TInterface>.implementations
+  nameWithType.vb: ImplementationLocator(Of TInterface).implementations
+- uid: CursedBroom.Core.ImplementationLocator`1.implementations*
+  name: implementations
+  href: api/CursedBroom.Core.ImplementationLocator-1.html#CursedBroom_Core_ImplementationLocator_1_implementations_
+  commentId: Overload:CursedBroom.Core.ImplementationLocator`1.implementations
+  isSpec: "True"
+  fullName: CursedBroom.Core.ImplementationLocator<TInterface>.implementations
+  fullName.vb: CursedBroom.Core.ImplementationLocator(Of TInterface).implementations
+  nameWithType: ImplementationLocator<TInterface>.implementations
+  nameWithType.vb: ImplementationLocator(Of TInterface).implementations
 - uid: Slothsoft.UnityExtensions
   name: Slothsoft.UnityExtensions
   href: api/Slothsoft.UnityExtensions.html
@@ -523,11 +839,11 @@ references:
   commentId: T:Slothsoft.UnityExtensions.ExpandableAttribute
   fullName: Slothsoft.UnityExtensions.ExpandableAttribute
   nameWithType: ExpandableAttribute
-- uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
+- uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(System.Type)
   name: ExpandableAttribute(Type)
-  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_Type_
-  commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(Type)
-  fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute(Type)
+  href: api/Slothsoft.UnityExtensions.ExpandableAttribute.html#Slothsoft_UnityExtensions_ExpandableAttribute__ctor_System_Type_
+  commentId: M:Slothsoft.UnityExtensions.ExpandableAttribute.#ctor(System.Type)
+  fullName: Slothsoft.UnityExtensions.ExpandableAttribute.ExpandableAttribute(System.Type)
   nameWithType: ExpandableAttribute.ExpandableAttribute(Type)
 - uid: Slothsoft.UnityExtensions.ExpandableAttribute.#ctor*
   name: ExpandableAttribute
@@ -591,13 +907,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll
   nameWithType: IEnumerableExtensions.ForAll
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},Action{``0})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},System.Action{``0})
   name: ForAll<T>(IEnumerable<T>, Action<T>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_IEnumerable___0__Action___0__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},Action{``0})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_ForAll__1_IEnumerable___0__System_Action___0__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll``1(IEnumerable{``0},System.Action{``0})
   name.vb: ForAll(Of T)(IEnumerable(Of T), Action(Of T))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll<T>(IEnumerable<T>, Action<T>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), Action(Of T))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll<T>(IEnumerable<T>, System.Action<T>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), System.Action(Of T))
   nameWithType: IEnumerableExtensions.ForAll<T>(IEnumerable<T>, Action<T>)
   nameWithType.vb: IEnumerableExtensions.ForAll(Of T)(IEnumerable(Of T), Action(Of T))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.IsEquivalentTo*
@@ -648,13 +964,13 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
   nameWithType: IEnumerableExtensions.Multiply<TFirst, TSecond>(IEnumerable<TFirst>, IEnumerable<TSecond>)
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond)(IEnumerable(Of TFirst), IEnumerable(Of TSecond))
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},Func{``0,``1,``2})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},System.Func{``0,``1,``2})
   name: Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_IEnumerable___0__IEnumerable___1__Func___0___1___2__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},Func{``0,``1,``2})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_Multiply__3_IEnumerable___0__IEnumerable___1__System_Func___0___1___2__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply``3(IEnumerable{``0},IEnumerable{``1},System.Func{``0,``1,``2})
   name.vb: Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, System.Func<TFirst, TSecond, TReturn>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), System.Func(Of TFirst, TSecond, TReturn))
   nameWithType: IEnumerableExtensions.Multiply<TFirst, TSecond, TReturn>(IEnumerable<TFirst>, IEnumerable<TSecond>, Func<TFirst, TSecond, TReturn>)
   nameWithType.vb: IEnumerableExtensions.Multiply(Of TFirst, TSecond, TReturn)(IEnumerable(Of TFirst), IEnumerable(Of TSecond), Func(Of TFirst, TSecond, TReturn))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None*
@@ -673,13 +989,13 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource))
   nameWithType: IEnumerableExtensions.None<TSource>(IEnumerable<TSource>)
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource))
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},Func{``0,System.Boolean})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},System.Func{``0,System.Boolean})
   name: None<TSource>(IEnumerable<TSource>, Func<TSource, Boolean>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_IEnumerable___0__Func___0_System_Boolean__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},Func{``0,System.Boolean})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_None__1_IEnumerable___0__System_Func___0_System_Boolean__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.None``1(IEnumerable{``0},System.Func{``0,System.Boolean})
   name.vb: None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, Func<TSource, System.Boolean>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, System.Boolean))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, System.Func<TSource, System.Boolean>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), System.Func(Of TSource, System.Boolean))
   nameWithType: IEnumerableExtensions.None<TSource>(IEnumerable<TSource>, Func<TSource, Boolean>)
   nameWithType.vb: IEnumerableExtensions.None(Of TSource)(IEnumerable(Of TSource), Func(Of TSource, Boolean))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomElement*
@@ -705,15 +1021,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement
   nameWithType: IEnumerableExtensions.RandomWeightedElement
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},Func{``0,System.Int32})
-  name: RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__Func___0_System_Int32__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},Func{``0,System.Int32})
-  name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, System.Int32>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
-  nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
-  nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElement<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__IReadOnlyDictionary___0_System_Int32__
@@ -723,6 +1030,15 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, System.Int32))
   nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name: RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElement__1_IEnumerable___0__System_Func___0_System_Int32__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name.vb: RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, System.Func<T, System.Int32>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), System.Func(Of T, System.Int32))
+  nameWithType: IEnumerableExtensions.RandomWeightedElement<T>(IEnumerable<T>, Func<T, Int32>)
+  nameWithType.vb: IEnumerableExtensions.RandomWeightedElement(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending*
   name: RandomWeightedElementDescending
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending_
@@ -730,15 +1046,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending
   nameWithType: IEnumerableExtensions.RandomWeightedElementDescending
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},Func{``0,System.Int32})
-  name: RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__Func___0_System_Int32__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},Func{``0,System.Int32})
-  name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, System.Int32>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, System.Int32))
-  nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
-  nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},IReadOnlyDictionary{``0,System.Int32})
   name: RandomWeightedElementDescending<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__IReadOnlyDictionary___0_System_Int32__
@@ -748,6 +1055,15 @@ references:
   fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, System.Int32))
   nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, IReadOnlyDictionary<T, Int32>)
   nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), IReadOnlyDictionary(Of T, Int32))
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name: RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_RandomWeightedElementDescending__1_IEnumerable___0__System_Func___0_System_Int32__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending``1(IEnumerable{``0},System.Func{``0,System.Int32})
+  name.vb: RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, System.Func<T, System.Int32>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), System.Func(Of T, System.Int32))
+  nameWithType: IEnumerableExtensions.RandomWeightedElementDescending<T>(IEnumerable<T>, Func<T, Int32>)
+  nameWithType.vb: IEnumerableExtensions.RandomWeightedElementDescending(Of T)(IEnumerable(Of T), Func(Of T, Int32))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull*
   name: SelectNotNull
   href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull_
@@ -755,13 +1071,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull
   nameWithType: IEnumerableExtensions.SelectNotNull
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},Func{``0,``1})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},System.Func{``0,``1})
   name: SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_IEnumerable___0__Func___0___1__
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},Func{``0,``1})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_SelectNotNull__2_IEnumerable___0__System_Func___0___1__
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull``2(IEnumerable{``0},System.Func{``0,``1})
   name.vb: SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, System.Func<TSource, TResult>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), System.Func(Of TSource, TResult))
   nameWithType: IEnumerableExtensions.SelectNotNull<TSource, TResult>(IEnumerable<TSource>, Func<TSource, TResult>)
   nameWithType.vb: IEnumerableExtensions.SelectNotNull(Of TSource, TResult)(IEnumerable(Of TSource), Func(Of TSource, TResult))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.Shuffle*
@@ -819,13 +1135,13 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect
   nameWithType: IEnumerableExtensions.TrySelect
-- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
+- uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},System.Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name: TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, IEnumerableExtensions.TrySelectFunc<TTarget>>)
-  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_IEnumerable___0__Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
-  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
+  href: api/Slothsoft.UnityExtensions.IEnumerableExtensions.html#Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelect__2_IEnumerable___0__System_Func___0_Slothsoft_UnityExtensions_IEnumerableExtensions_TrySelectFunc___1___
+  commentId: M:Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect``2(IEnumerable{``0},System.Func{``0,Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc{``1}})
   name.vb: TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
-  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<TTarget>>)
-  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc(Of TTarget)))
+  fullName: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, System.Func<TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc<TTarget>>)
+  fullName.vb: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), System.Func(Of TSource, Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc(Of TTarget)))
   nameWithType: IEnumerableExtensions.TrySelect<TSource, TTarget>(IEnumerable<TSource>, Func<TSource, IEnumerableExtensions.TrySelectFunc<TTarget>>)
   nameWithType.vb: IEnumerableExtensions.TrySelect(Of TSource, TTarget)(IEnumerable(Of TSource), Func(Of TSource, IEnumerableExtensions.TrySelectFunc(Of TTarget)))
 - uid: Slothsoft.UnityExtensions.IEnumerableExtensions.TrySelectFunc`1
