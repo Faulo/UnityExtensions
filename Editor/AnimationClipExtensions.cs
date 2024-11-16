@@ -2,7 +2,7 @@ using UnityEditor;
 using UnityEngine;
 
 namespace Slothsoft.UnityExtensions.Editor {
-    static class AnimationClipExtensions {
+    public static class AnimationClipExtensions {
         static EditorCurveBinding spriteBinding = EditorCurveBinding
             .PPtrCurve("", typeof(SpriteRenderer), "m_Sprite");
 
