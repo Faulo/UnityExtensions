@@ -1,44 +1,49 @@
 pipeline {
 	agent {
-		label 'npm && linux'
+		label 'npm'
 	}
 	environment {
 		BRANCH_NAME = 'main'
 	}
 	stages {
-		stage('Index workspace') {
+		stage('Linux') {
 			steps {
 				script {
-					def nodes = []
-					Jenkins.instance.getNodes().each { node ->
-						if (node.getComputer().isOnline()) {
-							def label = node.getLabelString()
-							if (label.contains('unity') && label.contains('linux')) {
-								def name = node.getNodeName()
-								echo "Identified Unity node '${name}'"
-								nodes.add(name)
-							}
-						}
+					unityPackage {
+						// define unity package location relative to repository
+						PACKAGE_LOCATION = ''
+						UNITY_NODE = 'unity && linux'
+
+						// which Unity Test Runner modes to execute
+						TEST_MODES = 'EditMode PlayMode'
+
+						// verify that code is formatted
+						TEST_FORMATTING = '1'
+						EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
+
+						// which platforms to deploy to
+						DEPLOY_TO_VERDACCIO = '0'
 					}
+				}
+			}
+		}
+		stage('Windows') {
+			steps {
+				script {
+					unityPackage {
+						// define unity package location relative to repository
+						PACKAGE_LOCATION = ''
+						UNITY_NODE = 'unity && windows'
 
-					for (def name : nodes.sort()) {
-						stage("Node: ${name}") {
-							unityPackage {
-								// define unity package location relative to repository
-								PACKAGE_LOCATION = ''
-								UNITY_NODE = name
+						// which Unity Test Runner modes to execute
+						TEST_MODES = 'EditMode PlayMode'
 
-								// which Unity Test Runner modes to execute
-								TEST_MODES = 'EditMode PlayMode'
+						// verify that code is formatted
+						TEST_FORMATTING = '1'
+						EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
 
-								// verify that code is formatted
-								TEST_FORMATTING = '1'
-								EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
-
-								// which platforms to deploy to
-								DEPLOY_TO_VERDACCIO = '0'
-							}
-						}
+						// which platforms to deploy to
+						DEPLOY_TO_VERDACCIO = '0'
 					}
 				}
 			}
