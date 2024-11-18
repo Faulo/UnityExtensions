@@ -8,6 +8,44 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [4.0.0] - 2024-11-18
+
+### Removed
+- Removed Render Pipeline Converter.
+
+### Added
+- Added BoundsInt.Contains2D(Vector2Int position).
+- Added BoundsInt.Contains2D(Vector3Int position).
+- Added IReadOnlyList<T>.GetXY(int x, int y, int width).
+- Added Span<T>.GetXY(int x, int y, int width).
+- Added Color32.IsEqualTo(Color32 second).
+- Added Color32[].CreateTexture(int width, int height).
+- Added Color32[].CreateTexture(int width, int height).
+- Added Sprite.GetRect(bool subtractBorder = false).
+- Added Sprite.GetPixels32(in Color32 clearColor = default).
+- Added Sprite.GetPixelsWithPosition().
+- Added Sprite.IsFullyTransparent().
+- Added Texture2D.GetPixels32(in RectInt rect, in Color32 clearColor = default).
+- Added Texture2D.GetPixels32(in Rect rect, in Color32 clearColor = default).
+- Added Texture2D.SetPixels32(in RectInt rect, Color32[] pixels).
+- Added Texture2D.GetPixels(in RectInt rect).
+- Added Texture2D.GetPixels(in Rect rect).
+- Added Texture2D.SetPixels(in RectInt rect, Color[] pixels).
+- Added Texture2D.IsFullyTransparent().
+- Added Texture2D.AsReadable().
+- Added Texture2D.GetSpritesRow(int rowIndex).
+- Added Texture2D.GetSpritesMatrix().
+- Added Texture2D.GetSprites().
+- Added Type.FindImplementations().
+- Added UnityObject.SmartDestroy().
+- Added UnityObject.RenameTo(string newName).
+- Added AnimationClip.GetSettings().
+- Added AnimationClip.SetSettings(AnimationClipSettings settings).
+- Added AnimationClip.GetSpriteKeyframes().
+- Added AnimationClip.SetSpriteKeyframes(ObjectReferenceKeyframe[] frames).
+- Added AssetImportContext.TryDependOnArtifact<T>(string path, out T artifact).
+- Added Implementation, ImplementationForAttribute, ImplementationLocator.
+
 ## [3.1.0] - 2023-11-28
 
 ### Added
