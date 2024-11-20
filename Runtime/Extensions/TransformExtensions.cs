@@ -40,9 +40,11 @@ namespace Slothsoft.UnityExtensions {
         public static bool TryGetComponentInParent<T>(this Transform context, out T target)
             where T : class {
             for (var ancestor = context; ancestor; ancestor = ancestor.parent) {
+#pragma warning disable UNT0014 // Invalid type for call to GetComponent
                 if (ancestor.TryGetComponent(out target)) {
                     return true;
                 }
+#pragma warning restore UNT0014 // Invalid type for call to GetComponent
             }
 
             target = default;
@@ -58,9 +60,11 @@ namespace Slothsoft.UnityExtensions {
         /// <returns></returns>
         public static bool TryGetComponentInChildren<T>(this Transform context, out T target)
             where T : class {
+#pragma warning disable UNT0014 // Invalid type for call to GetComponent
             if (context.TryGetComponent(out target)) {
                 return true;
             }
+#pragma warning restore UNT0014 // Invalid type for call to GetComponent
 
             for (int i = 0; i < context.childCount; i++) {
                 if (context.GetChild(i).TryGetComponentInChildren(out target)) {
@@ -81,9 +85,11 @@ namespace Slothsoft.UnityExtensions {
         public static bool TryGetComponentInHierarchy<T>(this Transform context, out T target)
             where T : class {
             for (var ancestor = context; ancestor; ancestor = ancestor.parent) {
+#pragma warning disable UNT0014 // Invalid type for call to GetComponent
                 if (ancestor.TryGetComponent(out target)) {
                     return true;
                 }
+#pragma warning restore UNT0014 // Invalid type for call to GetComponent
             }
 
             for (int i = 0; i < context.childCount; i++) {
