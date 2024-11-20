@@ -1,0 +1,284 @@
+# Entfernen Sie die folgende Zeile, wenn Sie EDITORCONFIG-Einstellungen von höheren Verzeichnissen vererben möchten.
+root = true
+
+# C#-Dateien
+[*.cs]
+
+#### Wichtige EditorConfig-Optionen ####
+
+# Einzüge und Abstände
+indent_size = 4
+indent_style = space
+tab_width = 4
+
+# Einstellungen für neue Zeilen
+trim_trailing_whitespace = true
+end_of_line = crlf
+insert_final_newline = true
+
+#### .NET-Codierungskonventionen ####
+
+# Using-Direktiven organisieren
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = true
+
+# this.- und Me.-Einstellungen
+dotnet_style_qualification_for_event = false:warning
+dotnet_style_qualification_for_field = false:warning
+dotnet_style_qualification_for_method = false:warning
+dotnet_style_qualification_for_property = false:warning
+
+# Einstellungen für Sprachschlüsselwörter und BCL-Typen
+dotnet_style_predefined_type_for_locals_parameters_members = true:warning
+dotnet_style_predefined_type_for_member_access = true:warning
+
+# Einstellungen für Klammern
+dotnet_style_parentheses_in_arithmetic_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
+dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
+dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:warning
+
+# Einstellungen für Modifizierer
+dotnet_style_require_accessibility_modifiers = omit_if_default:warning
+
+# Einstellungen für Ausdrucksebene
+dotnet_style_coalesce_expression = true:warning
+dotnet_style_collection_initializer = true:warning
+dotnet_style_explicit_tuple_names = true:warning
+dotnet_style_null_propagation = false:warning
+dotnet_style_object_initializer = true:warning
+dotnet_style_prefer_auto_properties = true:warning
+dotnet_style_prefer_compound_assignment = true:warning
+dotnet_style_prefer_conditional_expression_over_assignment = true:none
+dotnet_style_prefer_conditional_expression_over_return = true:none
+dotnet_style_prefer_inferred_anonymous_type_member_names = true:warning
+dotnet_style_prefer_inferred_tuple_names = true:warning
+dotnet_style_prefer_is_null_check_over_reference_equality_method = true:warning
+dotnet_style_prefer_simplified_interpolation = true:warning
+
+# Einstellungen für Felder
+dotnet_style_readonly_field = false:warning
+
+# Einstellungen für Parameter
+dotnet_code_quality_unused_parameters = all:warning
+
+#### C#-Codierungskonventionen ####
+
+# Var-Einstellungen
+csharp_style_var_elsewhere = true:warning
+csharp_style_var_for_built_in_types = false:warning
+csharp_style_var_when_type_is_apparent = true:warning
+
+# Ausdruckskörpermember
+csharp_style_expression_bodied_methods = when_on_single_line:none
+csharp_style_expression_bodied_constructors = when_on_single_line:none
+csharp_style_expression_bodied_operators = when_on_single_line:none
+csharp_style_expression_bodied_properties = when_on_single_line:none
+csharp_style_expression_bodied_indexers = when_on_single_line:none
+csharp_style_expression_bodied_accessors = when_on_single_line:none
+csharp_style_expression_bodied_lambdas = when_on_single_line:none
+csharp_style_expression_bodied_local_functions = when_on_single_line:none
+
+# Einstellungen für den Musterabgleich
+csharp_style_pattern_matching_over_as_with_null_check = true:warning
+csharp_style_pattern_matching_over_is_with_cast_check = true:warning
+csharp_style_prefer_switch_expression = true:warning
+
+# Einstellungen für NULL-Überprüfung
+csharp_style_conditional_delegate_call = true:warning
+
+# Einstellungen für Modifizierer
+csharp_prefer_static_local_function = true:warning
+csharp_preferred_modifier_order = public,private,protected,internal,static,extern,new,virtual,abstract,sealed,override,readonly,unsafe,volatile,async:warning
+
+# Einstellungen für Codeblöcke
+csharp_prefer_braces = true:warning
+csharp_prefer_simple_using_statement = true:warning
+
+# Einstellungen für Ausdrucksebene
+csharp_prefer_simple_default_expression = true:warning
+csharp_style_deconstructed_variable_declaration = true:warning
+csharp_style_inlined_variable_declaration = true:warning
+csharp_style_pattern_local_over_anonymous_function = true:warning
+csharp_style_prefer_index_operator = true:warning
+csharp_style_prefer_range_operator = true:warning
+csharp_style_throw_expression = true:warning
+csharp_style_unused_value_assignment_preference = discard_variable:none
+csharp_style_unused_value_expression_statement_preference = discard_variable:none
+
+# Einstellungen für using-Anweisungen
+csharp_using_directive_placement = outside_namespace:warning
+
+# New line preferences
+csharp_style_allow_blank_line_after_colon_in_constructor_initializer_experimental = false
+csharp_style_allow_blank_lines_between_consecutive_braces_experimental = false
+csharp_style_allow_embedded_statements_on_same_line_experimental = false
+
+#### C#-Formatierungsregeln ####
+
+# Einstellungen für neue Zeilen
+csharp_new_line_before_catch = false
+csharp_new_line_before_else = false
+csharp_new_line_before_finally = false
+csharp_new_line_before_members_in_anonymous_types = true
+csharp_new_line_before_members_in_object_initializers = true
+csharp_new_line_before_open_brace = none
+csharp_new_line_between_query_expression_clauses = true
+
+# Einstellungen für Einrückung
+csharp_indent_block_contents = true
+csharp_indent_braces = false
+csharp_indent_case_contents = true
+csharp_indent_case_contents_when_block = false
+csharp_indent_labels = flush_left
+csharp_indent_switch_labels = true
+
+# Einstellungen für Abstände
+csharp_space_after_cast = false
+csharp_space_after_colon_in_inheritance_clause = true
+csharp_space_after_comma = true
+csharp_space_after_dot = false
+csharp_space_after_keywords_in_control_flow_statements = true
+csharp_space_after_semicolon_in_for_statement = true
+csharp_space_around_binary_operators = before_and_after
+csharp_space_around_declaration_statements = false
+csharp_space_before_colon_in_inheritance_clause = true
+csharp_space_before_comma = false
+csharp_space_before_dot = false
+csharp_space_before_open_square_brackets = false
+csharp_space_before_semicolon_in_for_statement = false
+csharp_space_between_empty_square_brackets = false
+csharp_space_between_method_call_empty_parameter_list_parentheses = false
+csharp_space_between_method_call_name_and_opening_parenthesis = false
+csharp_space_between_method_call_parameter_list_parentheses = false
+csharp_space_between_method_declaration_empty_parameter_list_parentheses = false
+csharp_space_between_method_declaration_name_and_open_parenthesis = false
+csharp_space_between_method_declaration_parameter_list_parentheses = false
+csharp_space_between_parentheses = false
+csharp_space_between_square_brackets = false
+
+# Umbrucheinstellungen
+csharp_preserve_single_line_blocks = true
+csharp_preserve_single_line_statements = false
+
+#### Benennungsstile ####
+
+# Benennungsregeln
+
+dotnet_naming_rule.schnittstelle_should_be_beginnt_mit_i.severity = warning
+dotnet_naming_rule.schnittstelle_should_be_beginnt_mit_i.symbols = schnittstelle
+dotnet_naming_rule.schnittstelle_should_be_beginnt_mit_i.style = beginnt_mit_i
+
+dotnet_naming_rule.type_should_be_pascalcase.severity = warning
+dotnet_naming_rule.type_should_be_pascalcase.symbols = type
+dotnet_naming_rule.type_should_be_pascalcase.style = pascalcase
+
+dotnet_naming_rule.method_member_should_be_pascalcase.severity = warning
+dotnet_naming_rule.method_member_should_be_pascalcase.symbols = method_member
+dotnet_naming_rule.method_member_should_be_pascalcase.style = pascalcase
+
+dotnet_naming_rule.constants_should_be_capslock.severity = warning
+dotnet_naming_rule.constants_should_be_capslock.symbols = constants
+dotnet_naming_rule.constants_should_be_capslock.style = capslock
+
+dotnet_naming_rule.non_method_member_should_be_camelcase.severity = warning
+dotnet_naming_rule.non_method_member_should_be_camelcase.symbols = non_method_member
+dotnet_naming_rule.non_method_member_should_be_camelcase.style = camelcase
+
+dotnet_naming_rule.local_variable_should_be_camelcase.severity = warning
+dotnet_naming_rule.local_variable_should_be_camelcase.symbols = local_variable
+dotnet_naming_rule.local_variable_should_be_camelcase.style = camelcase
+
+dotnet_naming_rule.local_event_should_be_camelcase.severity = warning
+dotnet_naming_rule.local_event_should_be_camelcase.symbols = event
+dotnet_naming_rule.local_event_should_be_camelcase.style = oncamelcase
+
+# Symbolspezifikationen
+
+dotnet_naming_symbols.schnittstelle.applicable_kinds = interface
+dotnet_naming_symbols.schnittstelle.applicable_accessibilities = public, internal, private, protected, protected_internal
+dotnet_naming_symbols.schnittstelle.required_modifiers = 
+
+dotnet_naming_symbols.type.applicable_kinds = namespace, type_parameter, class, struct, interface, enum, delegate
+dotnet_naming_symbols.type.applicable_accessibilities = *
+dotnet_naming_symbols.type.required_modifiers = 
+
+dotnet_naming_symbols.non_method_member.applicable_kinds = property, field
+dotnet_naming_symbols.non_method_member.applicable_accessibilities = public, internal, friend, protected, protected_internal, protected_friend
+dotnet_naming_symbols.non_method_member.required_modifiers = 
+
+dotnet_naming_symbols.event.applicable_kinds = event
+dotnet_naming_symbols.event.applicable_accessibilities = *
+dotnet_naming_symbols.event.required_modifiers = 
+
+dotnet_naming_symbols.local_variable.applicable_kinds = parameter, local, local_function
+dotnet_naming_symbols.local_variable.applicable_accessibilities = *
+dotnet_naming_symbols.local_variable.required_modifiers = 
+
+dotnet_naming_symbols.method_member.applicable_kinds = method
+dotnet_naming_symbols.method_member.applicable_accessibilities = *
+dotnet_naming_symbols.method_member.required_modifiers = 
+
+dotnet_naming_symbols.constants.applicable_kinds = field
+dotnet_naming_symbols.constants.applicable_accessibilities = *
+dotnet_naming_symbols.constants.required_modifiers = const
+
+# Benennungsstile
+
+dotnet_naming_style.pascalcase.required_prefix = 
+dotnet_naming_style.pascalcase.required_suffix = 
+dotnet_naming_style.pascalcase.word_separator = 
+dotnet_naming_style.pascalcase.capitalization = pascal_case
+
+dotnet_naming_style.beginnt_mit_i.required_prefix = I
+dotnet_naming_style.beginnt_mit_i.required_suffix = 
+dotnet_naming_style.beginnt_mit_i.word_separator = 
+dotnet_naming_style.beginnt_mit_i.capitalization = pascal_case
+
+dotnet_naming_style.camelcase.required_prefix = 
+dotnet_naming_style.camelcase.required_suffix = 
+dotnet_naming_style.camelcase.word_separator = 
+dotnet_naming_style.camelcase.capitalization = camel_case
+
+dotnet_naming_style.oncamelcase.required_prefix = on
+dotnet_naming_style.oncamelcase.required_suffix = 
+dotnet_naming_style.oncamelcase.word_separator = 
+dotnet_naming_style.oncamelcase.capitalization = pascal_case
+
+dotnet_naming_style.capslock.required_prefix = 
+dotnet_naming_style.capslock.required_suffix = 
+dotnet_naming_style.capslock.word_separator = 
+dotnet_naming_style.capslock.capitalization = all_upper
+
+# Unity Tools https://github.com/microsoft/Microsoft.Unity.Analyzers/blob/master/doc/index.md
+dotnet_diagnostic.UNT0001.severity = none		# Empty Unity message
+dotnet_diagnostic.UNT0002.severity = warning	# Inefficient tag comparison
+dotnet_diagnostic.UNT0003.severity = warning	# Usage of non generic GetComponent
+dotnet_diagnostic.UNT0004.severity = warning	# Time.fixedDeltaTime used with Update
+dotnet_diagnostic.UNT0005.severity = none		# Time.deltaTime used with FixedUpdate
+dotnet_diagnostic.UNT0006.severity = warning	# Incorrect message signature
+dotnet_diagnostic.UNT0007.severity = warning	# Null coalescing on Unity objects 
+dotnet_diagnostic.UNT0008.severity = warning	# Null propagation on Unity objects
+dotnet_diagnostic.UNT0009.severity = warning	# Missing static constructor with InitializeOnLoad
+dotnet_diagnostic.UNT0010.severity = warning	# MonoBehaviour instance creation
+dotnet_diagnostic.UNT0011.severity = warning	# ScriptableObject instance creation
+dotnet_diagnostic.UNT0012.severity = warning	# Unused coroutine return value
+dotnet_diagnostic.UNT0013.severity = none		# Invalid or redundant SerializeField attribute
+dotnet_diagnostic.UNT0014.severity = warning	# GetComponent called with non-Component or non-Interface type
+dotnet_diagnostic.UNT0015.severity = warning	# Incorrect method signature with InitializeOnLoadMethod or RuntimeInitializeOnLoadMethod attribute
+dotnet_diagnostic.UNT0016.severity = warning	# Unsafe way to get the method name
+dotnet_diagnostic.UNT0017.severity = none		# SetPixels invocation is slow
+dotnet_diagnostic.UNT0018.severity = warning	# System.Reflection features in performance critical messages
+dotnet_diagnostic.UNT0019.severity = warning	# Unnecessary indirection call for GameObject.gameObject
+dotnet_diagnostic.UNT0020.severity = warning	# MenuItem attribute used on non-static method
+dotnet_diagnostic.UNT0021.severity = warning	# Unity message should be protected [opt-in]
+dotnet_diagnostic.UNT0022.severity = warning	# Inefficient method to set position and rotation
+dotnet_diagnostic.UNT0023.severity = warning	# Coalescing assignment on Unity objects
+dotnet_diagnostic.UNT0024.severity = warning	# Give priority to scalar calculations over vector calculations
+dotnet_diagnostic.UNT0025.severity = warning	# Input.GetKey overloads with KeyCode argument
+dotnet_diagnostic.UNT0026.severity = warning	# GetComponent always allocates
+
+# @UNT0004+UNT0005: https://docs.unity3d.com/ScriptReference/Time-fixedDeltaTime.html
+# @UNT0007+UNT0008: https://stackoverflow.com/questions/58487442/why-does-resharper-not-suggest-using-null-propagation-for-both-of-these-blocks
+
+# Visual Studio Diagnostics

@@ -1,0 +1,20 @@
+{
+    "name": "Slothsoft.UnityExtensions.Editor",
+    "rootNamespace": "",
+    "references": [
+        "Slothsoft.UnityExtensions",
+        "Unity.Settings.Editor",
+        "Unity.VisualStudio.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

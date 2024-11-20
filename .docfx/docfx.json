@@ -1,0 +1,66 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+	      "src": "../",
+          "files": [
+            "Runtime/**.cs",
+            "Editor/**.cs"
+          ]
+        }
+      ],
+      "dest": "api",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false
+    }
+  ],
+  "build": {
+	"xref" : [
+	  "https://normanderwan.github.io/UnityXrefMaps/xrefmap.yml"
+	],
+	"xrefService": [
+	  "https://xref.docs.microsoft.com/query?uid={uid}"
+	],
+    "content": [
+      {
+        "files": [
+          "api/**.yml",
+          "api/index.md"
+        ]
+      },
+      {
+        "files": [
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+        ],
+        "exclude": [
+        ]
+      }
+    ],
+    "dest": "docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false
+  }
+}
