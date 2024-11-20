@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;

@@ -2,11 +2,11 @@ using System;
 using System.Linq;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
+namespace Slothsoft.UnityExtensions.Editor {
     [Serializable]
     sealed class CSharpSettings {
         [Header(".cs settings")]
-        [SerializeField, Tooltip("Add C# namespace based on assembly and folder hierarchy to every new .cs file.")]
+        [SerializeField, Tooltip("Add C# namespace Slothsoft.UnityExtensions.Editor on assembly and folder hierarchy to every new .cs file.")]
         internal bool addNamespaceToCSharpFiles = true;
         [SerializeField, Tooltip("Remove the 'Runtime' segment of namespaces when creating new .cs files.")]
         internal bool stripRuntimeFromNamespace = true;

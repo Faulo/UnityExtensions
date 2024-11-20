@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
+namespace Slothsoft.UnityExtensions.Editor {
     [Serializable]
     sealed class ExpandableSettings {
         [Header("Additional Rows")]

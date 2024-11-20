@@ -4,7 +4,7 @@ using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Slothsoft.UnityExtensions.Editor.PackageSettings {
+namespace Slothsoft.UnityExtensions.Editor {
     sealed class UnityExtensionsSettings {
         const string SETTINGS_PACKAGE = "net.slothsoft.unity-extensions";
         const string SETTINGS_MENU = "Project/Slothsoft's Unity Extensions";

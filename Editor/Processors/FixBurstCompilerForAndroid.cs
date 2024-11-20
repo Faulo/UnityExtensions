@@ -1,6 +1,5 @@
 using System;
 using System.IO;
-using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEditor.Build;
 using UnityEditor.Build.Reporting;

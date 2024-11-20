@@ -2,7 +2,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Xml.Linq;
-using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 
 namespace Slothsoft.UnityExtensions.Editor {

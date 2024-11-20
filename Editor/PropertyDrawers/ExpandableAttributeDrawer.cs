@@ -1,10 +1,9 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
-using Slothsoft.UnityExtensions.Editor.PackageSettings;
 using UnityEditor;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
+namespace Slothsoft.UnityExtensions.Editor {
     /// <summary>
     /// Draws the property field for any field marked with ExpandableAttribute.
     /// </summary>

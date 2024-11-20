@@ -133,7 +133,7 @@ namespace Slothsoft.UnityExtensions.Editor {
                                 }
                             }
                         } else {
-                            EditorGUILayout.LabelField("All namespace declarations match their folder!");
+                            EditorGUILayout.LabelField("All namespace Slothsoft.UnityExtensions.Editor match their folder!");
                         }
                     } else {
                         EditorGUILayout.LabelField("Failed to find any class files!");

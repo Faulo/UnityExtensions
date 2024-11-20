@@ -1,9 +1,9 @@
-﻿using System.Linq;
+using System.Linq;
 using System.Reflection;
 using UnityEditor;
 using UnityEngine;
 
-namespace Slothsoft.UnityExtensions.Editor.PropertyDrawers {
+namespace Slothsoft.UnityExtensions.Editor {
     [CustomPropertyDrawer(typeof(SortingLayerAttribute))]
     sealed class SortingLayerPropertyDrawer : PropertyDrawer {
         public override void OnGUI(Rect position, SerializedProperty property, GUIContent label) {
