@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.CollectionExtensions.html",
-          "hash": "dk9pqT602tCy1/amjsezww=="
+          "hash": "95ID0gUgr2I7r9Y9h6x74w=="
         }
       },
       "is_incremental": false,
@@ -141,7 +141,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.PrefabUtils.html",
-          "hash": "Dm1JZGpuUbKT2oB/FslVeQ=="
+          "hash": "JU8kkDh3XNt2UJ6caI/kfw=="
         }
       },
       "is_incremental": false,
@@ -149,23 +149,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.yml",
+      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.SerializableKeyValuePairsDrawer.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.SerializableKeyValuePairsDrawer.html",
-          "hash": "4A+oKSX70ACIwcZjlCEt/Q=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.UnityExtensions.Editor.PropertyDrawers.html",
-          "hash": "qmdVmqBKze3rf0JZL7sNjA=="
+          "relative_path": "api/Slothsoft.UnityExtensions.Editor.SerializableKeyValuePairsDrawer.html",
+          "hash": "eFKcQBCnkU2L5hbUQXqdxg=="
         }
       },
       "is_incremental": false,
@@ -189,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Editor.html",
-          "hash": "vcrU9EDnXfUQyXDy06jizA=="
+          "hash": "5Gbk7pCPUG0LrX4gRnwBDQ=="
         }
       },
       "is_incremental": false,
@@ -201,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.ExpandableAttribute.html",
-          "hash": "qllUG9BI+LPDVY5GVKBxXQ=="
+          "hash": "JKUVD0D2Tx6yeBSmCNJeWw=="
         }
       },
       "is_incremental": false,
@@ -225,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.IEnumerableExtensions.html",
-          "hash": "056KAJ4m+x2nvZ98MSSRDw=="
+          "hash": "B/3t52jOR0GzsRoDSRVWNA=="
         }
       },
       "is_incremental": false,
@@ -237,7 +225,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.ImplementationForAttribute.html",
-          "hash": "LXlO22OIXHdt8yxPRduQ7g=="
+          "hash": "Em+oA3rU5aQ4aUg2Ks7b1Q=="
         }
       },
       "is_incremental": false,
@@ -285,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.SerializableKeyValuePairs-2.html",
-          "hash": "JiL0WES0cEbRJgEKgPCJ/w=="
+          "hash": "eVC2ZyBACH3G8XIh3b2M4A=="
         }
       },
       "is_incremental": false,
@@ -369,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.TypeExtensions.html",
-          "hash": "vcbEU57jwDepoZK6ShzflA=="
+          "hash": "1L1HKeCsZxUxgNG3XEAjHA=="
         }
       },
       "is_incremental": false,
@@ -393,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector2Extensions.html",
-          "hash": "7EoXm3eaav5bkxMvsrDznA=="
+          "hash": "IMaNsqWf1T1vukxGAZyepg=="
         }
       },
       "is_incremental": false,
@@ -417,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.UnityExtensions.Vector3Extensions.html",
-          "hash": "IetRlHETeZDuBrhqaV8jMw=="
+          "hash": "PZIuHZVE2T3RJrkvjEJUoA=="
         }
       },
       "is_incremental": false,
@@ -501,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "dWGIg976gKaHxvkOCx1tGQ=="
+          "hash": "IcDplWBNMSTb35D4q1raIQ=="
         }
       },
       "is_incremental": false,
@@ -552,7 +540,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 40,
+          "total_file_count": 39,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
