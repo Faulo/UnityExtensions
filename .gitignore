@@ -1,7 +1,0 @@
-/.docfx/*/
-!/.docfx/api/
-/.docfx/api/*
-!/.docfx/api/index.md
-/docs/
-obj/
-obj.meta
