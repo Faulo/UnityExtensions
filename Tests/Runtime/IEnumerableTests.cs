@@ -146,14 +146,14 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         [Test]
         public void TestRandomWeightedElementFromListWith1ElementZeroChance() {
             for (int i = 0; i < randomNumberIterations; i++) {
-                Assert.IsNull(new object[1] { new object() }.RandomWeightedElement(o => 0));
+                Assert.IsNull(new object[1] { new() }.RandomWeightedElement(o => 0));
             }
         }
         [Test]
         public void TestRandomWeightedElementFromListWith1ElementNegativeChance() {
             for (int i = 0; i < randomNumberIterations; i++) {
                 Assert.Throws<UnityEngine.Assertions.AssertionException>(
-                    () => new object[1] { new object() }.RandomWeightedElement(o => -1),
+                    () => new object[1] { new() }.RandomWeightedElement(o => -1),
                     "Weight must be positive or zero."
                 );
             }

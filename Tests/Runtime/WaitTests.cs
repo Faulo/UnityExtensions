@@ -11,8 +11,8 @@ namespace Slothsoft.UnityExtensions.Tests.Runtime {
         float errorMargin => Time.fixedDeltaTime;
         [UnityTest]
         public IEnumerator TestWaitForEndOfFrame() {
-            if (SystemInfo.graphicsDeviceID == 0) {
-                Assert.Inconclusive("Can't use WaitForEndOfFrame without a graphics device.");
+            if (Application.isBatchMode) {
+                Assert.Inconclusive("Can't use WaitForEndOfFrame in batch mode.");
                 yield break;
             }
 
