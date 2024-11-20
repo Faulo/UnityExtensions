@@ -13,8 +13,8 @@ tab_width = 4
 
 # Einstellungen für neue Zeilen
 trim_trailing_whitespace = true
-end_of_line = crlf:none
-insert_final_newline = true:none
+end_of_line = crlf
+insert_final_newline = true
 
 #### .NET-Codierungskonventionen ####
 
