@@ -472,6 +472,30 @@
       "version": ""
     },
     {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.IsExternalInit.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.IsExternalInit.html",
+          "hash": "6KE9yzP9ql2IuJhYS9DtHA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/System.Runtime.CompilerServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/System.Runtime.CompilerServices.html",
+          "hash": "AirfSBRqCBuLjpunfoVgQw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
       "type": "Conceptual",
       "source_relative_path": "api/index.md",
       "output": {
@@ -489,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "IcDplWBNMSTb35D4q1raIQ=="
+          "hash": "k4upbsDyslrY4mz+AmJLAg=="
         }
       },
       "is_incremental": false,
@@ -540,7 +564,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 39,
+          "total_file_count": 41,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

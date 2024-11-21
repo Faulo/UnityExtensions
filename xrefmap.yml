@@ -2149,3 +2149,15 @@ references:
   isSpec: "True"
   fullName: Slothsoft.UnityExtensions.Wait.WaitForSecondsRealtimeCache.Item
   nameWithType: Wait.WaitForSecondsRealtimeCache.Item
+- uid: System.Runtime.CompilerServices
+  name: System.Runtime.CompilerServices
+  href: api/System.Runtime.CompilerServices.html
+  commentId: N:System.Runtime.CompilerServices
+  fullName: System.Runtime.CompilerServices
+  nameWithType: System.Runtime.CompilerServices
+- uid: System.Runtime.CompilerServices.IsExternalInit
+  name: IsExternalInit
+  href: api/System.Runtime.CompilerServices.IsExternalInit.html
+  commentId: T:System.Runtime.CompilerServices.IsExternalInit
+  fullName: System.Runtime.CompilerServices.IsExternalInit
+  nameWithType: IsExternalInit
